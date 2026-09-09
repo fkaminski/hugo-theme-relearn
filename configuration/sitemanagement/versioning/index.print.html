@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html id="R-html" lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.165.0">
+    <meta name="generator" content="Relearn 9.0.3+cca22eec0fbd822d67073ae1d40be765e061a1e0">
+    <meta name="description" content="How to keep older versions of your site">
+    <meta name="author" content="Sören Weber">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://fkaminski.github.io/hugo-theme-relearn/images/hero.png">
+    <meta name="twitter:title" content="Versioning :: Hugo Relearn Theme">
+    <meta name="twitter:description" content="How to keep older versions of your site">
+    <meta property="og:url" content="https://fkaminski.github.io/hugo-theme-relearn/configuration/sitemanagement/versioning/index.html">
+    <meta property="og:site_name" content="Hugo Relearn Theme">
+    <meta property="og:title" content="Versioning :: Hugo Relearn Theme">
+    <meta property="og:description" content="How to keep older versions of your site">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://fkaminski.github.io/hugo-theme-relearn/images/hero.png">
+    <meta itemprop="name" content="Versioning :: Hugo Relearn Theme">
+    <meta itemprop="description" content="How to keep older versions of your site">
+    <meta itemprop="wordCount" content="2012">
+    <meta itemprop="image" content="https://fkaminski.github.io/hugo-theme-relearn/images/hero.png">
+    <meta itemprop="keywords" content="Howto,DisableVersioningWarning,Version,VersionIndexURL,Versions">
+    <title>Versioning :: Hugo Relearn Theme</title>
+    <link href="https://fkaminski.github.io/hugo-theme-relearn/configuration/sitemanagement/versioning/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://fkaminski.github.io/hugo-theme-relearn/configuration/sitemanagement/versioning/index.html" rel="alternate" hreflang="en">
+    <link href="https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sitemanagement/versioning/index.html" rel="alternate" hreflang="art-x-pir">
+    <link href="https://fkaminski.github.io/hugo-theme-relearn/configuration/sitemanagement/versioning/index.html" rel="canonical" type="text/html" title="Versioning :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/configuration/sitemanagement/versioning/index.xml" rel="alternate" type="application/rss+xml" title="Versioning :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/images/logo.a0d6f24580a63a8065f77e889fdf2ee51c464658dd001245f5e071f2881664de.svg" rel="icon" type="image/svg+xml">
+    <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.78b49c23f59ffb08554285843ed4c841484fe34c489058b2991edc027cdd47fc.css" rel="stylesheet">
+    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.7b340a2a0841d2466dca47e43cbd8c4dfe6a4f77a6c81c984d49ebb60ba2e299.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.9af015a288d1c0d444de2d8fb41fd8fdd679ead7dd60e637608740d50078fdf9.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.c58b508bccda750a48211b66c89002539e69e1ef1f10dbde995b328356a36f14.js" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="../../../"+"searchindex.en.min.eaeab575b018276d29491338e55a914643666ad680d6b0bca7148f248ea79fb1.js";
+    </script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.multi.min.ffaee7f1e07179595fe8a4b7c469761f90999470e1f04dcb0a94dc2c1cb44f9c.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.en.min.94d0a7cb1f111200e2f5be9dc32699cf266aaa29011e414bdcd36a18ea0fd5ee.js" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
+    <link href="/hugo-theme-relearn/css/perfect-scrollbar/perfect-scrollbar.min.c66b59a97910bc3557f3b388f9b0d6662405c65f245bdc1ede3f339d96b7f30e.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/theme.min.ef8860872a334d7e8e7222371833236e6b7e9465d9926110b99bfd3915e8499b.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/format-print.min.39e0dc30e3ca73e623fcf660fac10bf09db5539b3d13e59e90977cf7137e6aee.css" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.path='\/configuration\/sitemanagement\/versioning\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/fkaminski.github.io\/hugo-theme-relearn';
+      window.relearn.disableInlineCopyToClipboard=true;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'relearn-dark', 'relearn-light', 'relearn-bright', 'zen-auto', 'zen-dark', 'zen-light', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+    <style>
+       
+      #R-body img.bg-white {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body class="mobile-support print" data-origin="/hugo-theme-relearn/configuration/sitemanagement/versioning/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#example-versioning-an-existing-nonversioned-site">Example: Versioning an Existing Nonversioned Site</a></li>
+    <li><a href="#example-add-a-new-version-to-a-versioned-site">Example: Add a New Version to a Versioned Site</a></li>
+    <li><a href="#example-multilingual-setup">Example: Multilingual Setup</a></li>
+    <li><a href="#hiding-the-versioning-warning">Hiding the Versioning Warning</a></li>
+    <li><a href="#adjusting-the-versioning-warning">Adjusting the Versioning Warning</a>
+      <ul>
+        <li><a href="#method-1">Method 1</a></li>
+        <li><a href="#method-2">Method 2</a></li>
+      </ul>
+    </li>
+    <li><a href="#change-url-of-the-version-index">Change URL of the Version Index</a></li>
+  </ul>
+</nav> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/index.html"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/configuration/index.html"><span itemprop="name">Configuration</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/configuration/sitemanagement/index.html"><span itemprop="name">Site Management</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Versioning</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/configuration/sitemanagement/versioning/_index.en.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/configuration/sitemanagement/versioning/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/configuration/sitemanagement/multilingual/index.html" title="Multilingual (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/configuration/sitemanagement/meta/index.html" title="Meta Information (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable configuration" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="versioning">Versioning</h1>
+
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears"></i></span><span class="badge-content">Option</span></span> The theme offers a way to version your site. This is useful if you want to keep older versions of your site available while also providing links to the current version. Each site version needs to be created separately and is functional independent of each other.</p>
+<p>A version switcher will be displayed at the top of the sidebar if versioning is configured. If the user selects a different version, the theme will navigate to the actual page location but in the selected version. If this page does not exist in the selected version, the 404 page will be displayed.</p>
+<p>If you want to have more control, where the version switcher is positioned or you want to configure a different icon, see the <a href="/hugo-theme-relearn/configuration/sidebar/menus/index.html#defining-sidebar-menus">chapter on sidebar configuration</a>.</p>
+<h2 id="example-versioning-an-existing-nonversioned-site">Example: Versioning an Existing Nonversioned Site<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Assume, you have written a documentation for an app. At some point you are a releasing a new major version. This new version requires enhanced documentation while the older documentation must still be available for users of the older app version.</p>
+<p>Your site&rsquo;s source files reside in the directory <code>/home/me/mysite</code> on your local disc. The current URL of your site (the value set in <code>baseURL</code> in your <code>hugo.toml</code>) is <code>https://example.com/</code>. When done, the URL of the latest version of your site should not change. The archived version of your site should be available at the URL <code>https://example.com/v1.0/</code>.</p>
+<p>This is your intial config file before versioning:</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title">/home/me/mysite/hugo.</div>
+    <button
+      aria-controls="R-tab-id-3206e5e51545ecde519f3776ac846ef0" aria-expanded="true"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+    >
+      <span class="tab-nav-text">toml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-f349a0a421b5d268dea46f5a5b6a6ae7" aria-expanded="false"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+    >
+      <span class="tab-nav-text">yaml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-047cb8a2d679e9cdc84bf624fadd37ee" aria-expanded="false"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+    >
+      <span class="tab-nav-text">json</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-3206e5e51545ecde519f3776ac846ef0"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/&#39;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-f349a0a421b5d268dea46f5a5b6a6ae7"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-047cb8a2d679e9cdc84bf624fadd37ee"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.com/&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<p>To setup versioning, you have to do the following steps:</p>
+<ol>
+<li>
+<p>Prepare <code>/home/me/mysite/hugo.toml</code> of the current version for versioning.</p>
+<ul>
+<li>add an array of all available <code>versions</code></li>
+<li>add information, which of these versions is the latest by setting the <code>isLatest</code> option on <strong>one</strong> item (here onto <code>v2.0</code>) in the <code>versions</code> array</li>
+<li>add information, which of these versions your site actually is, by setting the <code>version</code> option (here to <code>v2.0</code>)</li>
+</ul>
+<p>After the modifications the config file looks like:</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title">/home/me/mysite/hugo.</div>
+    <button
+      aria-controls="R-tab-id-1a7c2ad54317b009419a3b35477c2d9d" aria-expanded="true"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+    >
+      <span class="tab-nav-text">toml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-a96a03d2ad79d09eb045e371c3a54f0a" aria-expanded="false"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+    >
+      <span class="tab-nav-text">yaml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-4179ce5d965b295262e99af4eb01cf55" aria-expanded="false"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+    >
+      <span class="tab-nav-text">json</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-1a7c2ad54317b009419a3b35477c2d9d"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">version</span> <span class="p">=</span> <span class="s1">&#39;v2.0&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">params</span><span class="p">.</span><span class="nx">versions</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">identifier</span> <span class="p">=</span> <span class="s1">&#39;v2.0&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">isLatest</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;Latest&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">params</span><span class="p">.</span><span class="nx">versions</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/v1.0/&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">identifier</span> <span class="p">=</span> <span class="s1">&#39;v1.0&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;v1.0&#39;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-a96a03d2ad79d09eb045e371c3a54f0a"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l">v2.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">versions</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l">v2.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">isLatest</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/v1.0/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l">v1.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">v1.0</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-4179ce5d965b295262e99af4eb01cf55"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.com/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;version&#34;</span><span class="p">:</span> <span class="s2">&#34;v2.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;versions&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">         <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.com/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;identifier&#34;</span><span class="p">:</span> <span class="s2">&#34;v2.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;isLatest&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;Latest&#34;</span>
+</span></span><span class="line"><span class="cl">         <span class="p">},</span>
+</span></span><span class="line"><span class="cl">         <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.com/v1.0/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;identifier&#34;</span><span class="p">:</span> <span class="s2">&#34;v1.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;v1.0&#34;</span>
+</span></span><span class="line"><span class="cl">         <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">]</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<p>Generate the current site with the changed configuration and deploy the resulting directory to <code>baseURL</code> (here to <code>https://example.com/</code>)</p>
+<ul>
+<li>this step has not changed to your previous deploy, so everything should be familiar until here</li>
+</ul>
+</li>
+<li>
+<p>Copy the source files from <code>/home/me/mysite</code> into a new directory <code>/home/me/mysite-1.0</code> for the archived version</p>
+</li>
+<li>
+<p>Prepare <code>/home/me/mysite-1.0/hugo.toml</code> of the archived version for release.</p>
+<ul>
+<li>change the information, which of the versions your site actually is, by setting the <code>version</code> option (here to <code>v1.0</code>)</li>
+<li>change the top level <code>baseURL</code> to the URL of version 1.0 (here to <code>https://example.com/v1.0/</code>)</li>
+</ul>
+<p>After the modifications the config file looks like:</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title">/home/me/mysite-1.0/hugo.</div>
+    <button
+      aria-controls="R-tab-id-097f0cea50f651fa58ede022467acf9f" aria-expanded="true"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+    >
+      <span class="tab-nav-text">toml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-abb4706bd78115fca9c5cfffb84663e4" aria-expanded="false"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+    >
+      <span class="tab-nav-text">yaml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-a5c79d22d2193ff23e83103525b75cb6" aria-expanded="false"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+    >
+      <span class="tab-nav-text">json</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-097f0cea50f651fa58ede022467acf9f"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/v1.0/&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">version</span> <span class="p">=</span> <span class="s1">&#39;v1.0&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">params</span><span class="p">.</span><span class="nx">versions</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">identifier</span> <span class="p">=</span> <span class="s1">&#39;v2.0&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">isLatest</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;Latest&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">params</span><span class="p">.</span><span class="nx">versions</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/v1.0/&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">identifier</span> <span class="p">=</span> <span class="s1">&#39;v1.0&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;v1.0&#39;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-abb4706bd78115fca9c5cfffb84663e4"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/v1.0/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l">v1.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">versions</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l">v2.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">isLatest</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/v1.0/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l">v1.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">v1.0</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-a5c79d22d2193ff23e83103525b75cb6"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.com/v1.0/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;version&#34;</span><span class="p">:</span> <span class="s2">&#34;v1.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;versions&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">         <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.com/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;identifier&#34;</span><span class="p">:</span> <span class="s2">&#34;v2.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;isLatest&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;Latest&#34;</span>
+</span></span><span class="line"><span class="cl">         <span class="p">},</span>
+</span></span><span class="line"><span class="cl">         <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.com/v1.0/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;identifier&#34;</span><span class="p">:</span> <span class="s2">&#34;v1.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;v1.0&#34;</span>
+</span></span><span class="line"><span class="cl">         <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">]</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<p>Generate the archived site with the changed configuration and deploy the resulting directory to <code>baseURL</code> (here to <code>https://example.com/v1.0/</code>)</p>
+</li>
+<li>
+<p>Now you&rsquo;re ready to edit the content of your current version and proceed with your usual workflow.</p>
+</li>
+</ol>
+<p><strong>A few things to note here:</strong></p>
+<ul>
+<li><code>version</code> must be an <code>identifier</code> of one of the entries in the <code>versions</code> array</li>
+<li>you are not limited with the <code>baseURL</code>; these can be absolute or relative to your server root, can also reside in sub-subdirectories or be subdomains</li>
+<li>you can generate your archived versions into a sub-directory of the current version (as with this example)</li>
+<li>if you generate your archived versions into a sub-directory take care in your workflow not to delete older archived versions during build</li>
+<li>the example does not take version control systems into account (like git or subversion) as such a workflow is highly subjective</li>
+<li>both sites are completely independent autonomous Hugo sites; if you want to test this setup locally, you will need two running Hugo servers</li>
+<li>if you want to test this locally, you will need to adept the top level <code>baseURL</code> parameter as well as the <code>baseURL</code> parameter in the <code>versions</code> array to your local setup; best is to have <a href="https://gohugo.io/configuration/introduction/#configuration-directory" rel="external" target="_self">preconfigured environment configs</a> available</li>
+</ul>
+<h2 id="example-add-a-new-version-to-a-versioned-site">Example: Add a New Version to a Versioned Site<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>At some point, your version 2 of the app may be deprecated, too, as you&rsquo;ve released a new version 3.</p>
+<p>The structure from the previous example still applys. Your current version of your site&rsquo;s source files reside in the directory <code>/home/me/mysite</code> on your local disc, the archived version in <code>/home/me/mysite-0.1</code>. The current URL of your site (the value set in <code>baseURL</code> in your <code>hugo.toml</code>) is <code>https://example.com/</code>. When done, the URL of the latest version of your site should not change. The archived version of your site should be available at the URL <code>https://example.com/v2.0/</code>.</p>
+<p>You only need to generate the current and the new archived version of your site (<code>v3.0</code> and <code>v2.0</code>), the former archived version (<code>v1.0</code>) doesn&rsquo;t need to be generated again..</p>
+<ol>
+<li>
+<p>Prepare <code>/home/me/mysite/hugo.toml</code> of the current version for the new archived version.</p>
+<ul>
+<li>add the new archived version to the array of available <code>versions</code></li>
+<li>change information, which of these versions is the latest by setting the <code>isLatest</code> option on <strong>one</strong> item (here onto <code>v3.0</code>) in the <code>versions</code> array</li>
+<li>add information, which of these versions your site actually is, by setting the <code>version</code> option (here to <code>v3.0</code>)</li>
+</ul>
+<p>After the modifications the config file looks like:</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title">/home/me/mysite/hugo.</div>
+    <button
+      aria-controls="R-tab-id-4316fda2bc68db058bd7eaf7b89d0aa9" aria-expanded="true"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+    >
+      <span class="tab-nav-text">toml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-47a6c634bdeb29dbc84a825b81f096c5" aria-expanded="false"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+    >
+      <span class="tab-nav-text">yaml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-f60e9f5628fdff46607c6def5821ccec" aria-expanded="false"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+    >
+      <span class="tab-nav-text">json</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-4316fda2bc68db058bd7eaf7b89d0aa9"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">version</span> <span class="p">=</span> <span class="s1">&#39;v3.0&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">params</span><span class="p">.</span><span class="nx">versions</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">identifier</span> <span class="p">=</span> <span class="s1">&#39;v3.0&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">isLatest</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;Latest&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">params</span><span class="p">.</span><span class="nx">versions</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/v.2.0/&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">identifier</span> <span class="p">=</span> <span class="s1">&#39;v2.0&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;v2.0&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">params</span><span class="p">.</span><span class="nx">versions</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/v1.0/&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">identifier</span> <span class="p">=</span> <span class="s1">&#39;v1.0&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;v1.0&#39;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-47a6c634bdeb29dbc84a825b81f096c5"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l">v3.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">versions</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l">v3.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">isLatest</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/v.2.0/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l">v2.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">v2.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/v1.0/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l">v1.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">v1.0</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-f60e9f5628fdff46607c6def5821ccec"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.com/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;version&#34;</span><span class="p">:</span> <span class="s2">&#34;v3.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;versions&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">         <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.com/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;identifier&#34;</span><span class="p">:</span> <span class="s2">&#34;v3.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;isLatest&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;Latest&#34;</span>
+</span></span><span class="line"><span class="cl">         <span class="p">},</span>
+</span></span><span class="line"><span class="cl">         <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.com/v.2.0/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;identifier&#34;</span><span class="p">:</span> <span class="s2">&#34;v2.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;v2.0&#34;</span>
+</span></span><span class="line"><span class="cl">         <span class="p">},</span>
+</span></span><span class="line"><span class="cl">         <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.com/v1.0/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;identifier&#34;</span><span class="p">:</span> <span class="s2">&#34;v1.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;v1.0&#34;</span>
+</span></span><span class="line"><span class="cl">         <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">]</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<p>Generate the current site with the changed configuration and deploy the resulting directory to <code>baseURL</code> (here to <code>https://example.com/</code>)</p>
+</li>
+<li>
+<p>Copy the source files from <code>/home/me/mysite</code> into a new directory <code>/home/me/mysite-2.0</code> for the archived version</p>
+</li>
+<li>
+<p>Prepare <code>/home/me/mysite-2.0/hugo.toml</code> of the archived version for release.</p>
+<ul>
+<li>change the information, which of the versions your site actually is, by setting the <code>version</code> option (here to <code>v2.0</code>)</li>
+<li>change the top level<code>baseURL</code> to the URL of version 2.0 (here to <code>https://example.com/v2.0/</code>)</li>
+</ul>
+<p>After the modifications the config file looks like:</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title">/home/me/mysite-2.0/hugo.</div>
+    <button
+      aria-controls="R-tab-id-546c613f10b46288c247c83a7d2efe79" aria-expanded="true"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+    >
+      <span class="tab-nav-text">toml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-3c10d6266effaaf9c0cffe44b564c54e" aria-expanded="false"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+    >
+      <span class="tab-nav-text">yaml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-668a11fcc97bf560a0850996d1f82234" aria-expanded="false"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+    >
+      <span class="tab-nav-text">json</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-546c613f10b46288c247c83a7d2efe79"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/v2.0/&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">version</span> <span class="p">=</span> <span class="s1">&#39;v2.0&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">params</span><span class="p">.</span><span class="nx">versions</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">identifier</span> <span class="p">=</span> <span class="s1">&#39;v3.0&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">isLatest</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;Latest&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">params</span><span class="p">.</span><span class="nx">versions</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/v.2.0/&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">identifier</span> <span class="p">=</span> <span class="s1">&#39;v2.0&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;v2.0&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">params</span><span class="p">.</span><span class="nx">versions</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/v1.0/&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">identifier</span> <span class="p">=</span> <span class="s1">&#39;v1.0&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;v1.0&#39;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-3c10d6266effaaf9c0cffe44b564c54e"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/v2.0/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l">v2.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">versions</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l">v3.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">isLatest</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/v.2.0/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l">v2.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">v2.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/v1.0/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l">v1.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">v1.0</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-668a11fcc97bf560a0850996d1f82234"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.com/v2.0/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;version&#34;</span><span class="p">:</span> <span class="s2">&#34;v2.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;versions&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">         <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.com/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;identifier&#34;</span><span class="p">:</span> <span class="s2">&#34;v3.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;isLatest&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;Latest&#34;</span>
+</span></span><span class="line"><span class="cl">         <span class="p">},</span>
+</span></span><span class="line"><span class="cl">         <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.com/v.2.0/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;identifier&#34;</span><span class="p">:</span> <span class="s2">&#34;v2.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;v2.0&#34;</span>
+</span></span><span class="line"><span class="cl">         <span class="p">},</span>
+</span></span><span class="line"><span class="cl">         <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.com/v1.0/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;identifier&#34;</span><span class="p">:</span> <span class="s2">&#34;v1.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;v1.0&#34;</span>
+</span></span><span class="line"><span class="cl">         <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">]</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<p>Generate the archived site with the changed configuration and deploy the resulting directory to <code>baseURL</code> (here to <code>https://example.com/v2.0/</code>)</p>
+</li>
+<li>
+<p>Now you&rsquo;re ready to edit the content of your current version and proceed with your usual workflow.</p>
+</li>
+</ol>
+<p><strong>A few things to note here:</strong></p>
+<ul>
+<li>you <strong>don&rsquo;t need to regenerate version 1</strong> of your site as long as the version marked with <code>isLatest=true</code> hasn&rsquo;t changed its <code>baseURL</code> parameter. The old archived versions will access the version index of the latest site using JavaScript to display all currently available versions in the version switcher</li>
+<li>with each new version, you will need another Hugo server instance to run a complete local test</li>
+</ul>
+<h2 id="example-multilingual-setup">Example: Multilingual Setup<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>If you have a multilingual site <strong>and</strong> you have different <code>baseURL</code> settings for each language, you need to also configure versioning for each language separately!</p>
+<p>To stay with the above example, here&rsquo;s the configuration for your current version:</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title">/home/me/mysite-2.0/hugo.</div>
+    <button
+      aria-controls="R-tab-id-aa751f4c05cf3b76fc97ab47785bcbbc" aria-expanded="true"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+    >
+      <span class="tab-nav-text">toml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-f5cf7ea4cf5d1b78ef8c3ef56bb5b80e" aria-expanded="false"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+    >
+      <span class="tab-nav-text">yaml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-f59a80078f81063171404dcf676d28f1" aria-expanded="false"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+    >
+      <span class="tab-nav-text">json</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-aa751f4c05cf3b76fc97ab47785bcbbc"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">languages</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">contentDir</span> <span class="p">=</span> <span class="s1">&#39;content/en&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">label</span> <span class="p">=</span> <span class="s1">&#39;English&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">locale</span> <span class="p">=</span> <span class="s1">&#39;en&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;My Website&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">version</span> <span class="p">=</span> <span class="s1">&#39;v2.0&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">versions</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">identifier</span> <span class="p">=</span> <span class="s1">&#39;v2.0&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">isLatest</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;Latest&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">versions</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/v1.0/&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">identifier</span> <span class="p">=</span> <span class="s1">&#39;v1.0&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;v1.0&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">pir</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://pir.example.com/&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">contentDir</span> <span class="p">=</span> <span class="s1">&#39;content/pir&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">direction</span> <span class="p">=</span> <span class="s1">&#39;rtl&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">label</span> <span class="p">=</span> <span class="s1">&#39;Pirrratish&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">locale</span> <span class="p">=</span> <span class="s1">&#39;art-x-pir&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;Arrr, my Website&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">pir</span><span class="p">.</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">version</span> <span class="p">=</span> <span class="s1">&#39;v2.0&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">pir</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">versions</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://pir.example.com/&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">identifier</span> <span class="p">=</span> <span class="s1">&#39;v2.0&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">isLatest</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;Latest&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">pir</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">versions</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://pir.example.com/v1.0/&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">identifier</span> <span class="p">=</span> <span class="s1">&#39;v1.0&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;v1.0&#39;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-f5cf7ea4cf5d1b78ef8c3ef56bb5b80e"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">languages</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">en</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">contentDir</span><span class="p">:</span><span class="w"> </span><span class="l">content/en</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">label</span><span class="p">:</span><span class="w"> </span><span class="l">English</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">locale</span><span class="p">:</span><span class="w"> </span><span class="l">en</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l">v2.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">versions</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l">v2.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">isLatest</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/v1.0/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l">v1.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">v1.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">My Website</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">pir</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://pir.example.com/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">contentDir</span><span class="p">:</span><span class="w"> </span><span class="l">content/pir</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">direction</span><span class="p">:</span><span class="w"> </span><span class="l">rtl</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">label</span><span class="p">:</span><span class="w"> </span><span class="l">Pirrratish</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">locale</span><span class="p">:</span><span class="w"> </span><span class="l">art-x-pir</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l">v2.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">versions</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://pir.example.com/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l">v2.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">isLatest</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://pir.example.com/v1.0/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l">v1.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">v1.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Arrr, my Website</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">2</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-f59a80078f81063171404dcf676d28f1"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;languages&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;en&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.com/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;contentDir&#34;</span><span class="p">:</span> <span class="s2">&#34;content/en&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;label&#34;</span><span class="p">:</span> <span class="s2">&#34;English&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;locale&#34;</span><span class="p">:</span> <span class="s2">&#34;en&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;version&#34;</span><span class="p">:</span> <span class="s2">&#34;v2.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;versions&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">               <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                  <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.com/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                  <span class="nt">&#34;identifier&#34;</span><span class="p">:</span> <span class="s2">&#34;v2.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                  <span class="nt">&#34;isLatest&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                  <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;Latest&#34;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">},</span>
+</span></span><span class="line"><span class="cl">               <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                  <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.com/v1.0/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                  <span class="nt">&#34;identifier&#34;</span><span class="p">:</span> <span class="s2">&#34;v1.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                  <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;v1.0&#34;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">]</span>
+</span></span><span class="line"><span class="cl">         <span class="p">},</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;My Website&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;weight&#34;</span><span class="p">:</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">      <span class="p">},</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;pir&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://pir.example.com/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;contentDir&#34;</span><span class="p">:</span> <span class="s2">&#34;content/pir&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;direction&#34;</span><span class="p">:</span> <span class="s2">&#34;rtl&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;label&#34;</span><span class="p">:</span> <span class="s2">&#34;Pirrratish&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;locale&#34;</span><span class="p">:</span> <span class="s2">&#34;art-x-pir&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;version&#34;</span><span class="p">:</span> <span class="s2">&#34;v2.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;versions&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">               <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                  <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://pir.example.com/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                  <span class="nt">&#34;identifier&#34;</span><span class="p">:</span> <span class="s2">&#34;v2.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                  <span class="nt">&#34;isLatest&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                  <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;Latest&#34;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">},</span>
+</span></span><span class="line"><span class="cl">               <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                  <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://pir.example.com/v1.0/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                  <span class="nt">&#34;identifier&#34;</span><span class="p">:</span> <span class="s2">&#34;v1.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                  <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;v1.0&#34;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">]</span>
+</span></span><span class="line"><span class="cl">         <span class="p">},</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;Arrr, my Website&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;weight&#34;</span><span class="p">:</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<h2 id="hiding-the-versioning-warning">Hiding the Versioning Warning<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears"></i></span><span class="badge-content">Option</span></span> If visitors navigate to an archived version of your site, they will see a versioning warning at the top of each page.</p>
+<p>You can disable it be setting the <code>disableVersioningWarning</code> option to <code>true</code> in your <code>hugo.toml</code>.</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title">hugo.</div>
+    <button
+      aria-controls="R-tab-id-9597bc122731ea975c6913ca83fdd2fb" aria-expanded="true"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+    >
+      <span class="tab-nav-text">toml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-48570b3648e4879b714031a77d6858bf" aria-expanded="false"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+    >
+      <span class="tab-nav-text">yaml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-306fc98244f4cf15f2de95c00630bbce" aria-expanded="false"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+    >
+      <span class="tab-nav-text">json</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-9597bc122731ea975c6913ca83fdd2fb"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">disableVersioningWarning</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-48570b3648e4879b714031a77d6858bf"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">disableVersioningWarning</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-306fc98244f4cf15f2de95c00630bbce"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;disableVersioningWarning&#34;</span><span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<h2 id="adjusting-the-versioning-warning">Adjusting the Versioning Warning<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="method-1">Method 1<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>You can adjust the text of the versioning warning by overriding the key <code>Versioning-warning</code> in your i18n files.</p>
+<p>The following parameters are available to be included in the text:</p>
+<ul>
+<li><code>pageVersion</code> - the element of the displayed page&rsquo;s version from your <code>versions</code> array</li>
+<li><code>pageUrl</code> - the URL of the displayed page</li>
+<li><code>latestVersion</code> - the element of the version marked with <code>isLatest</code> from your <code>versions</code> array</li>
+<li><code>latestUrl</code> - the URL of the displayed page mapped to the latest version</li>
+</ul>
+<h3 id="method-2">Method 2<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>You can override <code>layouts/partials/versioning-warning.html</code>. This is called once a version conflict was recognized. So the only thing for you to do is writing the message.</p>
+<p>The following parameters are available in this partial:</p>
+<ul>
+<li><code>page</code> - the current <a href="https://gohugo.io/methods/page/" rel="external" target="_self">Page</a></li>
+<li><code>pageVersion</code> - the element of the displayed page&rsquo;s version from your <code>versions</code> array</li>
+<li><code>pageUrl</code> - the URL of the displayed page</li>
+<li><code>latestVersion</code> - the element of the version marked with <code>isLatest</code> from your <code>versions</code> array</li>
+<li><code>latestUrl</code> - the URL of the displayed page mapped to the latest version</li>
+</ul>
+<h2 id="change-url-of-the-version-index">Change URL of the Version Index<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><span class="badge cstyle cyan badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears"></i></span><span class="badge-content">Option</span></span> The default URL for the version index can be changed with the <code>versionIndexURL</code> parameter</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title">hugo.</div>
+    <button
+      aria-controls="R-tab-id-6970035046fb7df54f2d330c045b5f3d" aria-expanded="true"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+    >
+      <span class="tab-nav-text">toml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-e51c6ece4f2b163c0cf22d1107fc73ed" aria-expanded="false"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+    >
+      <span class="tab-nav-text">yaml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-076c32cd83292eb4fffd9878ba784a2f" aria-expanded="false"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+    >
+      <span class="tab-nav-text">json</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-6970035046fb7df54f2d330c045b5f3d"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">versionIndexURL</span> <span class="p">=</span> <span class="s1">&#39;myversionindex.js&#39;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-e51c6ece4f2b163c0cf22d1107fc73ed"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">versionIndexURL</span><span class="p">:</span><span class="w"> </span><span class="l">myversionindex.js</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-076c32cd83292eb4fffd9878ba784a2f"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;versionIndexURL&#34;</span><span class="p">:</span> <span class="s2">&#34;myversionindex.js&#34;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<details open class="box cstyle notices note">
+  <summary class="box-label" tabindex="-1">
+    <i class="fa-fw fas fa-exclamation-circle"></i> 
+    Note
+  </summary>
+  <div class="box-content">
+<p>You only need to change these if you have other own content created for those URLs.</p>
+<p>Check for duplicate URLs by running <code>hugo --printPathWarnings</code>.</p>
+  </div>
+</details>
+
+  <footer class="footline">
+<div class="R-taxonomy taxonomy-categories cstyle" title="Categories" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/howto/index.html">Howto</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/hugo-theme-relearn/js/perfect-scrollbar/perfect-scrollbar.min.db7463db58ffbf17da815a125672d269b005017f2e343e731f69a22d157b2170.js" defer></script>
+    <script src="/hugo-theme-relearn/js/theme.min.8cf35ce490bb913f2128b8e605cc88803cc70c1f1a2aa37fc44071c57623b811.js" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

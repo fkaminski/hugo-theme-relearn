@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html id="R-html" lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.165.0">
+    <meta name="generator" content="Relearn 9.0.3+cca22eec0fbd822d67073ae1d40be765e061a1e0">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="9.1.0 (XXXX-XX-XX) Hugo 0.165.0 0.165.0 This release requires a newer Hugo version. Change Change Assets are now busted by their content instead of by the time of your build, so a visitor only refetches what actually changed.">
+    <meta name="author" content="Sören Weber">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://fkaminski.github.io/hugo-theme-relearn/images/hero.png">
+    <meta name="twitter:title" content="Version 9.1 :: Hugo Relearn Theme">
+    <meta name="twitter:description" content="9.1.0 (XXXX-XX-XX) Hugo 0.165.0 0.165.0 This release requires a newer Hugo version. Change Change Assets are now busted by their content instead of by the time of your build, so a visitor only refetches what actually changed.">
+    <meta property="og:url" content="https://fkaminski.github.io/hugo-theme-relearn/introduction/releasenotes/9/1/index.html">
+    <meta property="og:site_name" content="Hugo Relearn Theme">
+    <meta property="og:title" content="Version 9.1 :: Hugo Relearn Theme">
+    <meta property="og:description" content="9.1.0 (XXXX-XX-XX) Hugo 0.165.0 0.165.0 This release requires a newer Hugo version. Change Change Assets are now busted by their content instead of by the time of your build, so a visitor only refetches what actually changed.">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Introduction">
+    <meta property="og:image" content="https://fkaminski.github.io/hugo-theme-relearn/images/hero.png">
+    <meta itemprop="name" content="Version 9.1 :: Hugo Relearn Theme">
+    <meta itemprop="description" content="9.1.0 (XXXX-XX-XX) Hugo 0.165.0 0.165.0 This release requires a newer Hugo version. Change Change Assets are now busted by their content instead of by the time of your build, so a visitor only refetches what actually changed.">
+    <meta itemprop="wordCount" content="572">
+    <meta itemprop="image" content="https://fkaminski.github.io/hugo-theme-relearn/images/hero.png">
+    <title>Version 9.1 :: Hugo Relearn Theme</title>
+    <link href="https://fkaminski.github.io/hugo-theme-relearn/introduction/releasenotes/9/1/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://fkaminski.github.io/hugo-theme-relearn/introduction/releasenotes/9/1/index.html" rel="alternate" hreflang="en">
+    <link href="https://fkaminski.github.io/hugo-theme-relearn/pir/introduction/releasenotes/9/1/index.html" rel="alternate" hreflang="art-x-pir">
+    <link href="https://fkaminski.github.io/hugo-theme-relearn/introduction/releasenotes/9/1/index.html" rel="canonical" type="text/html" title="Version 9.1 :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/images/logo.a0d6f24580a63a8065f77e889fdf2ee51c464658dd001245f5e071f2881664de.svg" rel="icon" type="image/svg+xml">
+    <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.78b49c23f59ffb08554285843ed4c841484fe34c489058b2991edc027cdd47fc.css" rel="stylesheet">
+    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.7b340a2a0841d2466dca47e43cbd8c4dfe6a4f77a6c81c984d49ebb60ba2e299.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.9af015a288d1c0d444de2d8fb41fd8fdd679ead7dd60e637608740d50078fdf9.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.c58b508bccda750a48211b66c89002539e69e1ef1f10dbde995b328356a36f14.js" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="../../../../"+"searchindex.en.min.eaeab575b018276d29491338e55a914643666ad680d6b0bca7148f248ea79fb1.js";
+    </script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.multi.min.ffaee7f1e07179595fe8a4b7c469761f90999470e1f04dcb0a94dc2c1cb44f9c.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.en.min.94d0a7cb1f111200e2f5be9dc32699cf266aaa29011e414bdcd36a18ea0fd5ee.js" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
+    <link href="/hugo-theme-relearn/css/perfect-scrollbar/perfect-scrollbar.min.c66b59a97910bc3557f3b388f9b0d6662405c65f245bdc1ede3f339d96b7f30e.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/theme.min.ef8860872a334d7e8e7222371833236e6b7e9465d9926110b99bfd3915e8499b.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/format-print.min.39e0dc30e3ca73e623fcf660fac10bf09db5539b3d13e59e90977cf7137e6aee.css" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.path='\/introduction\/releasenotes\/9\/1\/index.html';
+      window.relearn.relBasePath='..\/..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/fkaminski.github.io\/hugo-theme-relearn';
+      window.relearn.disableInlineCopyToClipboard=true;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'relearn-dark', 'relearn-light', 'relearn-bright', 'zen-auto', 'zen-dark', 'zen-light', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+    <style>
+       
+      #R-body img.bg-white {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body class="mobile-support print" data-origin="/hugo-theme-relearn/introduction/releasenotes/9/1/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#9-1-0">9.1.0 (XXXX-XX-XX)</a>
+      <ul>
+        <li><a href="#hugo-01650">Hugo 0.165.0</a></li>
+        <li><a href="#change">Change</a></li>
+        <li><a href="#new">New</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/index.html"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/introduction/index.html"><span itemprop="name">Introduction</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/introduction/releasenotes/index.html"><span itemprop="name">What&#39;s New</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/introduction/releasenotes/9/index.html"><span itemprop="name">Version 9</span></a><meta itemprop="position" content="4">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Version 9.1</span><meta itemprop="position" content="5"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/introduction/releasenotes/9/1.en.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/introduction/releasenotes/9/1/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/introduction/releasenotes/9/index.html" title="Version 9 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/introduction/releasenotes/7/index.html" title="Version 7 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable releasenotes" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="version-91">Version 9.1</h1>
+
+<ul>
+<li><p><span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank"></i></span><span class="badge-content">0.165.0</span></span> Minimum required Hugo version</p></li>
+<li><p><span class="badge cstyle breaking badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-triangle"></i></span><span class="badge-content">Breaking</span></span> Change requiring action after upgrade</p></li>
+<li><p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Change of behavior, may require action</p></li>
+<li><p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> New behavior, often introducing new options</p></li>
+</ul>
+<hr>
+
+<h2 id="9-1-0">9.1.0 (XXXX-XX-XX)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="hugo-01650">Hugo 0.165.0<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li><span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank"></i></span><span class="badge-content">0.165.0</span></span> This release requires a newer Hugo version.</li>
+</ul>
+<h3 id="change">Change<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Assets are now busted by their content instead of by the time of your build, so a visitor only refetches what actually changed.</p>
+<p>Formerly every build appended a new id to each asset&rsquo;s URL, emptying a visitor&rsquo;s cache on each deployment even when no asset was different. If you referenced assets from your own partials, <code>assetbusting.gotmpl</code> is replaced by <code>asset.gotmpl</code>, which takes a resource and returns it ready to be linked. It is still honored but now issues a deprecation warning and will be removed with a future update of the theme.</p>
+<div class="tab-panel" data-tab-group="R-tabs-f4bf8e026e704eb77f2413a8c0b48fd3">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      aria-controls="R-tab-id-a3a221cdd38b93bff2a66b04eab86b2a" aria-expanded="true"
+      data-tab-item="R-tab-9d4cc6bb0d840c16e06ccc32f8403c2a"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('R-tabs-f4bf8e026e704eb77f2413a8c0b48fd3','R-tab-9d4cc6bb0d840c16e06ccc32f8403c2a')"
+    >
+      <span class="tab-nav-text">layouts/partials/custom-header.html</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-a3a221cdd38b93bff2a66b04eab86b2a"
+      data-tab-item="R-tab-9d4cc6bb0d840c16e06ccc32f8403c2a"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">{{ with resources.Get &#34;/css/mine.css&#34; }}
+</span></span><span class="line"><span class="cl">  {{ with partial &#34;asset.gotmpl&#34; . }}
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .RelPermalink }}&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  {{ end }}
+</span></span><span class="line"><span class="cl">{{ end }}</span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div><p>Below <code>static</code> this only concerns <code>css/custom.css</code>, <code>js/custom.js</code> and the favicon and logo images; everything else there is published as before. Those are published twice, once untouched and once processed - move them to <code>assets</code> to avoid the superfluous copy.</p>
+<p>As a busted name changes with its content, a build no longer overwrites the file its predecessor wrote and both remain. Purge your output directory, e.g. by building with Hugo&rsquo;s <code>--cleanDestinationDir</code>, or it accumulates every version you ever built - which weighs most if you commit what you build, as publishing to a GitHub Pages branch does.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> The <a href="/hugo-theme-relearn/configuration/branding/colors/index.html#parameters">theme variant configuration</a> has a new <code>hidden</code> parameter.</p>
+<p>If set to <code>true</code>, the variant will not be shown in the <a href="/hugo-theme-relearn/configuration/sidebar/menus/index.html">variant switcher</a> but is still usable, e.g. as a sub-variant of an auto mode variant.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> The <a href="/hugo-theme-relearn/configuration/sidebar/menus/index.html#title-for-arbitrary-menus">title above a page sidebar menu</a> is now taken from the root page&rsquo;s <code>linkTitle</code> front matter.</p>
+<p>Formerly this was documented to use the <code>menuTitle</code> front matter, although that was already <a href="/hugo-theme-relearn/introduction/releasenotes/6/index.html#6-0-0">removed in 6.0.0</a> in favor of Hugo&rsquo;s own <code>linkTitle</code>. It is still honored if no <code>linkTitle</code> is set but now issues a deprecation warning and will be removed with a future update of the theme.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Images now carry the dimensions of their resource, so a browser can reserve the space they will take before they have arrived. This avoids page reflows as each image loads. This affects images that resolve to a resource Hugo can measure - a page resource or a file in your <code>assets</code> directory, in one of the common raster formats. An SVG, a remote address or a path in your <code>static</code> directory has no dimensions to give and is unchanged.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> The <a href="https://github.com/MihaiValentin/lunr-languages" rel="external" target="_self">Lunr Languages</a> where updated to 1.21.0.</p>
+<p>Searching with the Lunr adapter now finds terms that consist of digits only, like part or standard numbers.</p>
+</li>
+</ul>
+<h3 id="new">New<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> The <a href="/hugo-theme-relearn/authoring/frontmatter/topbar/index.html#edit-button"><code>editURL</code> option</a> has a new macro <code>${BaseDir}</code>, containing the directory <code>${FilePath}</code> is resolved against.</p>
+<p>Joined, the two are the location of the displayed page on your disk during build, which lets the edit button open your local editor instead of a web service.</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      aria-controls="R-tab-id-712678fc403671486ab9b107119eecbe" aria-expanded="true"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+    >
+      <span class="tab-nav-text">toml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-5f8d5d3b23fb50c11787d3cacb3158cc" aria-expanded="false"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+    >
+      <span class="tab-nav-text">yaml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-73461d0b8ec19d6bc288fc7f290c904f" aria-expanded="false"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+    >
+      <span class="tab-nav-text">json</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-712678fc403671486ab9b107119eecbe"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">editURL</span> <span class="p">=</span> <span class="s1">&#39;vscode://file/${BaseDir}/${FilePath}&#39;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-5f8d5d3b23fb50c11787d3cacb3158cc"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">editURL</span><span class="p">:</span><span class="w"> </span><span class="l">vscode://file/${BaseDir}/${FilePath}</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-73461d0b8ec19d6bc288fc7f290c904f"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;editURL&#34;</span><span class="p">:</span> <span class="s2">&#34;vscode://file/${BaseDir}/${FilePath}&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<p>The macro is written the way a URL writes a path - with forward slashes and without a leading slash - so the same setting works on Windows and on Unix-like systems.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> The <a href="/hugo-theme-relearn/shortcodes/card/index.html#parameters"><code>card</code> shortcode</a> has a new <code>imagealt</code> parameter, giving the card&rsquo;s image a text alternative.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> The theme has updated its Mermaid dependency to 11.17.2. This adds support for <a href="/hugo-theme-relearn/shortcodes/mermaid/index.html#swimlanes">swimlanes</a>, <a href="/hugo-theme-relearn/shortcodes/mermaid/index.html#venn">Venn</a>, <a href="/hugo-theme-relearn/shortcodes/mermaid/index.html#ishikawa">Ishikawa</a>, <a href="/hugo-theme-relearn/shortcodes/mermaid/index.html#wardley">Wardley</a>, <a href="/hugo-theme-relearn/shortcodes/mermaid/index.html#cynefin">Cynefin</a> and <a href="/hugo-theme-relearn/shortcodes/mermaid/index.html#treeview">TreeView</a>.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> The search now supports the Polish language.</p>
+</li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/hugo-theme-relearn/js/perfect-scrollbar/perfect-scrollbar.min.db7463db58ffbf17da815a125672d269b005017f2e343e731f69a22d157b2170.js" defer></script>
+    <script src="/hugo-theme-relearn/js/theme.min.8cf35ce490bb913f2128b8e605cc88803cc70c1f1a2aa37fc44071c57623b811.js" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>
