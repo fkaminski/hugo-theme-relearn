@@ -8,13 +8,6 @@
     <language>art-x-pir</language>
     <atom:link href="https://fkaminski.github.io/hugo-theme-relearn/pir/options/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Option :: AdditionalContentLanguage</title>
-      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/options/additionalcontentlanguage/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/options/additionalcontentlanguage/index.html</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Option :: Alwaysopen</title>
       <link>https://fkaminski.github.io/hugo-theme-relearn/pir/options/alwaysopen/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -54,13 +47,6 @@
       <link>https://fkaminski.github.io/hugo-theme-relearn/pir/options/collapsiblemenu/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/options/collapsiblemenu/index.html</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Option :: CustomMathJaxURL</title>
-      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/options/custommathjaxurl/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/options/custommathjaxurl/index.html</guid>
       <description></description>
     </item>
     <item>
@@ -197,31 +183,10 @@
       <description></description>
     </item>
     <item>
-      <title>Option :: DisableSearch</title>
-      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/options/disablesearch/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/options/disablesearch/index.html</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Option :: DisableSearchHiddenPages</title>
       <link>https://fkaminski.github.io/hugo-theme-relearn/pir/options/disablesearchhiddenpages/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/options/disablesearchhiddenpages/index.html</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Option :: DisableSearchIndex</title>
-      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/options/disablesearchindex/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/options/disablesearchindex/index.html</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Option :: DisableSearchPage</title>
-      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/options/disablesearchpage/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/options/disablesearchpage/index.html</guid>
       <description></description>
     </item>
     <item>
@@ -285,6 +250,13 @@
       <link>https://fkaminski.github.io/hugo-theme-relearn/pir/options/enablelegacylanguagelinks/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/options/enablelegacylanguagelinks/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Option :: EnableSubresourceIntegrity</title>
+      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/options/enablesubresourceintegrity/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/options/enablesubresourceintegrity/index.html</guid>
       <description></description>
     </item>
     <item>
@@ -393,10 +365,10 @@
       <description></description>
     </item>
     <item>
-      <title>Option :: MathJaxInitialize</title>
-      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/options/mathjaxinitialize/index.html</link>
+      <title>Option :: Math.output</title>
+      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/options/math.output/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/options/mathjaxinitialize/index.html</guid>
+      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/options/math.output/index.html</guid>
       <description></description>
     </item>
     <item>
@@ -456,17 +428,45 @@
       <description></description>
     </item>
     <item>
-      <title>Option :: SearchIndexURL</title>
-      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/options/searchindexurl/index.html</link>
+      <title>Option :: Search.adapter.params.additionalContentLanguage</title>
+      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/options/search.adapter.params.additionalcontentlanguage/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/options/searchindexurl/index.html</guid>
+      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/options/search.adapter.params.additionalcontentlanguage/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Option :: SearchPageURL</title>
-      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/options/searchpageurl/index.html</link>
+      <title>Option :: Search.disable</title>
+      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/options/search.disable/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/options/searchpageurl/index.html</guid>
+      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/options/search.disable/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Option :: Search.index.disable</title>
+      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/options/search.index.disable/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/options/search.index.disable/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Option :: Search.index.URL</title>
+      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/options/search.index.url/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/options/search.index.url/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Option :: Search.page.disable</title>
+      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/options/search.page.disable/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/options/search.page.disable/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Option :: Search.page.URL</title>
+      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/options/search.page.url/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/options/search.page.url/index.html</guid>
       <description></description>
     </item>
     <item>

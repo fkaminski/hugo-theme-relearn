@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.165.0">
-    <meta name="generator" content="Relearn 9.0.3+cca22eec0fbd822d67073ae1d40be765e061a1e0">
+    <meta name="generator" content="Hugo 0.166.0">
+    <meta name="generator" content="Relearn 9.1.0+edd32dd46699cf37d4c81be4a1fbeb8bd7112e9e">
     <meta name="description" content="Configure search and the search form">
     <meta name="author" content="Sören Weber">
     <meta name="twitter:card" content="summary_large_image">
@@ -22,82 +22,69 @@
     <meta itemprop="description" content="Configure search and the search form">
     <meta itemprop="wordCount" content="801">
     <meta itemprop="image" content="https://fkaminski.github.io/hugo-theme-relearn/images/hero.png">
-    <meta itemprop="keywords" content="Howto,AdditionalContentLanguage,DisableSearch,DisableSearchIndex,DisableSearchPage,SearchIndexURL,SearchPageURL">
+    <meta itemprop="keywords" content="Howto,Search.adapter.params.additionalContentLanguage,Search.disable,Search.index.disable,Search.index.URL,Search.page.disable,Search.page.URL">
     <title>Search :: Cap&#39;n Hugo Relearrrn Theme</title>
     <link href="https://fkaminski.github.io/hugo-theme-relearn/configuration/sidebar/search/index.html" rel="alternate" hreflang="x-default">
     <link href="https://fkaminski.github.io/hugo-theme-relearn/configuration/sidebar/search/index.html" rel="alternate" hreflang="en">
     <link href="https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sidebar/search/index.html" rel="alternate" hreflang="art-x-pir">
     <link href="https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sidebar/search/index.html" rel="canonical" type="text/html" title="Search :: Cap&#39;n Hugo Relearrrn Theme">
     <link href="/hugo-theme-relearn/pir/configuration/sidebar/search/index.xml" rel="alternate" type="application/rss+xml" title="Search :: Cap&#39;n Hugo Relearrrn Theme">
-    <link href="/hugo-theme-relearn/images/logo.a0d6f24580a63a8065f77e889fdf2ee51c464658dd001245f5e071f2881664de.svg" rel="icon" type="image/svg+xml">
+    <link href="/hugo-theme-relearn/images/logo.d30ab0425821f45713322a73c1eeb192e311689b03371519abbe061a24d1201e.svg" rel="icon" type="image/svg+xml">
     <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.78b49c23f59ffb08554285843ed4c841484fe34c489058b2991edc027cdd47fc.css" rel="stylesheet">
     <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.7b340a2a0841d2466dca47e43cbd8c4dfe6a4f77a6c81c984d49ebb60ba2e299.js" defer></script>
-    <script src="/hugo-theme-relearn/js/search-lunr.min.9af015a288d1c0d444de2d8fb41fd8fdd679ead7dd60e637608740d50078fdf9.js" defer></script>
-    <script src="/hugo-theme-relearn/js/search.min.c58b508bccda750a48211b66c89002539e69e1ef1f10dbde995b328356a36f14.js" defer></script>
-    <script>
-      window.relearn = window.relearn || {};
-      window.relearn.index_js_url="../../../../"+"searchindex.pir.min.02eaece50b9ba27a2e47d48dbb999672eac8f607be89c83e9b5211e60ab7b6de.js";
-    </script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.2e613f0a1ce042c097f61ecc0e3f843d395bf3a42717715f9c08a11dc2f21122.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.373845112980472e938f57e7ec9a00ff9d7b651d7e72cacce2b29211ad5f1924.js" defer></script>
+    <script type="application/json" id="R-search-config">{
+      "indexFile": "searchindex.pir.min.236bf34e230f11bc60ca718bcc3e07adbb46b91291717cb8bce31038c88717bb.js"
+    }</script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.multi.min.ffaee7f1e07179595fe8a4b7c469761f90999470e1f04dcb0a94dc2c1cb44f9c.js" defer></script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.en.min.94d0a7cb1f111200e2f5be9dc32699cf266aaa29011e414bdcd36a18ea0fd5ee.js" defer></script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.art.min.d3a9a00c6a815a619b46177e86e5d73b27b26c3b2a9d99951d359ab00deb7158.js" defer></script>
-    <script>
-      window.relearn = window.relearn || {};
-      window.relearn.contentLangs=['en', 'art'];
-    </script>
-    <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
-    <link href="/hugo-theme-relearn/css/perfect-scrollbar/perfect-scrollbar.min.c66b59a97910bc3557f3b388f9b0d6662405c65f245bdc1ede3f339d96b7f30e.css" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/theme.min.ef8860872a334d7e8e7222371833236e6b7e9465d9926110b99bfd3915e8499b.css" rel="stylesheet">
+    <script type="application/json" id="R-search-lunr-config">{
+      "contentLangs": [
+        "en",
+        "art"
+      ]
+    }</script>
+    <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" class="R-async-style"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
+    <link href="/hugo-theme-relearn/css/theme.min.c5e57f8072c26c3936afb7f1f29896beccceeb26ad977baa337cb1cbf585deea.css" rel="stylesheet">
     <link href="/hugo-theme-relearn/css/format-print.min.39e0dc30e3ca73e623fcf660fac10bf09db5539b3d13e59e90977cf7137e6aee.css" rel="stylesheet" id="R-format-style">
-    <script>
-      window.relearn = window.relearn || {};
-      // configuration
-      window.relearn.path='\/pir\/configuration\/sidebar\/search\/index.html';
-      window.relearn.relBasePath='..\/..\/..\/..';
-      window.relearn.relBaseUri='..\/..\/..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/fkaminski.github.io\/hugo-theme-relearn';
-      window.relearn.disableInlineCopyToClipboard=true;
-      window.relearn.enableBlockCodeWrap=true;
-      // translations
-      window.T_Copy_to_clipboard = `Copy text t' clipboard`;
-      window.T_Copied_to_clipboard = `Text copied t' clipboard!`;
-      window.T_Link_copied_to_clipboard = `Link copied t' clipboard!`;
-      window.T_Reset_view = `Rrreset view`;
-      window.T_View_reset = `View rrreset!`;
-      window.T_No_results_found = `No rrresults found fer "{0}"`;
-      window.T_N_results_found = `{1} rrresults found fer "{0}"`;
-      window.T_Browser_unsupported_feature = `This browserrr doesn't supporrrt this featurrre`;
-      // variant stuff
-      window.relearn.themevariants = [ 'relearn-auto', 'relearn-dark', 'relearn-light', 'relearn-bright', 'zen-auto', 'zen-dark', 'zen-light', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ];
-      window.relearn.customvariantprefix = "my-custom-";
-      window.relearn.changeVariant = function(variant) {
-        var oldVariant = document.documentElement.dataset.rThemeVariant;
-        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
-        document.documentElement.dataset.rThemeVariant = variant;
-        if (oldVariant != variant) {
-          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
-          window.relearn.markVariant();
-        }
+    <script type="application/json" id="R-theme-config">{
+      "absBaseUri": "https://fkaminski.github.io/hugo-theme-relearn",
+      "disableInlineCopyToClipboard": true,
+      "enableBlockCodeWrap": true,
+      "path": "/pir/configuration/sidebar/search/index.html",
+      "relBasePath": "../../../..",
+      "relBaseUri": "../../../../..",
+      "themevariants": [
+        "relearn-auto",
+        "relearn-dark",
+        "relearn-light",
+        "relearn-bright",
+        "zen-auto",
+        "zen-dark",
+        "zen-light",
+        "retro-auto",
+        "neon",
+        "learn",
+        "blue",
+        "green",
+        "red"
+      ],
+      "translations": {
+        "Browser_unsupported_feature": "This browserrr doesn't supporrrt this featurrre",
+        "Copied_to_clipboard": "Text copied t' clipboard!",
+        "Copy_to_clipboard": "Copy text t' clipboard",
+        "Link_copied_to_clipboard": "Link copied t' clipboard!",
+        "N_results_found": "{1} rrresults found fer \"{0}\"",
+        "No_results_found": "No rrresults found fer \"{0}\"",
+        "Reset_view": "Rrreset view",
+        "View_reset": "View rrreset!"
       }
-      window.relearn.markVariant = function() {
-        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
-        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
-      }
-      window.relearn.initVariant = function() {
-        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
-        if( !variant ||
-            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
-            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
-          variant = window.relearn.themevariants[0];
-          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
-        }
-        document.documentElement.dataset.rThemeVariant = variant;
-      }
-      window.relearn.initVariant();
-      window.relearn.markVariant();
-    </script>
+    }</script>
+    <script src="/hugo-theme-relearn/js/theme-head.min.eb092668f5b427260df95861e28028bbd22ff85e2af068b9bfbedf0cbdbea887.js"></script>
     <style>
        
       #R-body img.bg-white {
@@ -113,12 +100,12 @@
           <div class="topbar-sidebar-divider default-animation"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table o&#39; Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table o&#39; Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper">
+                <div class="topbar-content-wrapper" tabindex="-1">
 <nav class="TableOfContents">
   <ul>
     <li><a href="#configure-search">Configure Search</a></li>
@@ -158,9 +145,9 @@
 <span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/pir/configuration/sidebar/menus/index.html" title="Menus (🡐)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
             <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Morrre"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Morrre"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper">
+                <div class="topbar-content-wrapper" tabindex="-1">
                   <div class="topbar-area topbar-area-more" data-area="more">
                   </div>
                 </div>
@@ -206,35 +193,32 @@
   <div class="tab-nav">
     <div class="tab-nav-title">hugo.</div>
     <button
-      aria-controls="R-tab-id-b66440032d02686cb528e94cdf0ce1bc" aria-expanded="true"
+      aria-controls="R-tab-id-efbf0c239c6ce5eb0e80c26316f91fdd" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-295005b3ff11692ad499a6e70e3a1b54" aria-expanded="false"
+      aria-controls="R-tab-id-987a4a96d9e90af607d2eea285a9a7df" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-85bf766a011f9d7d2b6ddeca52198b4f" aria-expanded="false"
+      aria-controls="R-tab-id-2fb65adeb031d01de4c59c1304e9ec6d" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-b66440032d02686cb528e94cdf0ce1bc"
+      id="R-tab-id-efbf0c239c6ce5eb0e80c26316f91fdd"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">search</span><span class="p">]</span>
@@ -248,9 +232,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-295005b3ff11692ad499a6e70e3a1b54"
+      id="R-tab-id-987a4a96d9e90af607d2eea285a9a7df"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">search</span><span class="p">:</span><span class="w">
@@ -262,9 +246,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-85bf766a011f9d7d2b6ddeca52198b4f"
+      id="R-tab-id-2fb65adeb031d01de4c59c1304e9ec6d"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -293,35 +277,32 @@
   <div class="tab-nav">
     <div class="tab-nav-title">hugo.</div>
     <button
-      aria-controls="R-tab-id-f4eeb9bca69d1435f9a8137f97b86db9" aria-expanded="true"
+      aria-controls="R-tab-id-c5a0b508166e51f42c50cc4ac028b6f0" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-aa705e21db0fbbf7abb51665d417c24b" aria-expanded="false"
+      aria-controls="R-tab-id-00e4d79c6f97b75751883fe7398bb7bc" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-58a6411c4c4e56b6342d5073e89106cb" aria-expanded="false"
+      aria-controls="R-tab-id-2250f53181a2647e7393a146bfc1573f" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-f4eeb9bca69d1435f9a8137f97b86db9"
+      id="R-tab-id-c5a0b508166e51f42c50cc4ac028b6f0"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">search</span><span class="p">]</span>
@@ -333,9 +314,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-aa705e21db0fbbf7abb51665d417c24b"
+      id="R-tab-id-00e4d79c6f97b75751883fe7398bb7bc"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">search</span><span class="p">:</span><span class="w">
@@ -346,9 +327,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-58a6411c4c4e56b6342d5073e89106cb"
+      id="R-tab-id-2250f53181a2647e7393a146bfc1573f"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -384,35 +365,32 @@
   <div class="tab-nav">
     <div class="tab-nav-title">hugo.</div>
     <button
-      aria-controls="R-tab-id-abf1e7dc3b9bca2978be43c50ae37b3c" aria-expanded="true"
+      aria-controls="R-tab-id-dddc4f9b49d28a95135e9b80b0a6d131" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-65b92ac6a55b6d064cb3ec361d6064d2" aria-expanded="false"
+      aria-controls="R-tab-id-85d74e27931e34fe86f6e766e076316a" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-f8a38cb99c91989a4f44ad6e425bcded" aria-expanded="false"
+      aria-controls="R-tab-id-aefb3ae2ce33cb241310b646e5dcea32" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-abf1e7dc3b9bca2978be43c50ae37b3c"
+      id="R-tab-id-dddc4f9b49d28a95135e9b80b0a6d131"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">search</span><span class="p">]</span>
@@ -421,9 +399,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-65b92ac6a55b6d064cb3ec361d6064d2"
+      id="R-tab-id-85d74e27931e34fe86f6e766e076316a"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">search</span><span class="p">:</span><span class="w">
@@ -432,9 +410,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-f8a38cb99c91989a4f44ad6e425bcded"
+      id="R-tab-id-aefb3ae2ce33cb241310b646e5dcea32"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -466,35 +444,32 @@
   <div class="tab-nav">
     <div class="tab-nav-title">hugo.</div>
     <button
-      aria-controls="R-tab-id-2b832e4fbb01a10aacca54dc5760fc17" aria-expanded="true"
+      aria-controls="R-tab-id-4d1aaa6c906397d4bc470ba4d1afca9a" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-505d98be18fcbca2fa3294dc6e1dba66" aria-expanded="false"
+      aria-controls="R-tab-id-0eca1bea053a59b8d2f9239299837cc1" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-518ffe1a264c1d725b3e521789763309" aria-expanded="false"
+      aria-controls="R-tab-id-692e4dba9020cdb74a190c5d76f6b83a" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-2b832e4fbb01a10aacca54dc5760fc17"
+      id="R-tab-id-4d1aaa6c906397d4bc470ba4d1afca9a"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">search</span><span class="p">]</span>
@@ -504,9 +479,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-505d98be18fcbca2fa3294dc6e1dba66"
+      id="R-tab-id-0eca1bea053a59b8d2f9239299837cc1"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">search</span><span class="p">:</span><span class="w">
@@ -517,9 +492,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-518ffe1a264c1d725b3e521789763309"
+      id="R-tab-id-692e4dba9020cdb74a190c5d76f6b83a"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -557,35 +532,32 @@
   <div class="tab-nav">
     <div class="tab-nav-title">hugo.</div>
     <button
-      aria-controls="R-tab-id-0dbc6e5f04e34acd2e718c5ada3c0b58" aria-expanded="true"
+      aria-controls="R-tab-id-3886a016abd299446290cd75385e21a1" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-1c2f25835cb3cbc4c2b2b97ff976d973" aria-expanded="false"
+      aria-controls="R-tab-id-47d40ebd9a572ef3e0bfa8d7cffcee7e" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-02484d50f6cde4140e20a488bf8a6ff6" aria-expanded="false"
+      aria-controls="R-tab-id-033be5e374401aa1ea8ade81e66fba50" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-0dbc6e5f04e34acd2e718c5ada3c0b58"
+      id="R-tab-id-3886a016abd299446290cd75385e21a1"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">search</span><span class="p">]</span>
@@ -594,9 +566,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-1c2f25835cb3cbc4c2b2b97ff976d973"
+      id="R-tab-id-47d40ebd9a572ef3e0bfa8d7cffcee7e"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">search</span><span class="p">:</span><span class="w">
@@ -605,9 +577,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-02484d50f6cde4140e20a488bf8a6ff6"
+      id="R-tab-id-033be5e374401aa1ea8ade81e66fba50"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -631,35 +603,32 @@
   <div class="tab-nav">
     <div class="tab-nav-title">hugo.</div>
     <button
-      aria-controls="R-tab-id-4d68478683bcafea01f7b7ce8d15fba1" aria-expanded="true"
+      aria-controls="R-tab-id-ee69852e75d44b8ff88d5bd6f00e3ef3" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-162e6819a94577cea870a57b8501de9d" aria-expanded="false"
+      aria-controls="R-tab-id-a33dde92b0ac6fa7dd280baa99cb5e23" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-630755664bfa2a82a082d02d49af8e12" aria-expanded="false"
+      aria-controls="R-tab-id-f3a8b0019c0343fe64a7c1866d590c72" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-4d68478683bcafea01f7b7ce8d15fba1"
+      id="R-tab-id-ee69852e75d44b8ff88d5bd6f00e3ef3"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">search</span><span class="p">]</span>
@@ -668,9 +637,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-162e6819a94577cea870a57b8501de9d"
+      id="R-tab-id-a33dde92b0ac6fa7dd280baa99cb5e23"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">search</span><span class="p">:</span><span class="w">
@@ -679,9 +648,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-630755664bfa2a82a082d02d49af8e12"
+      id="R-tab-id-f3a8b0019c0343fe64a7c1866d590c72"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -704,43 +673,43 @@
 <p>If you&rsquo;re updat'n from an older version, here&rsquo;s how t' migrate yer search configurat'n:</p>
 <h3 id="migration-table">Migrat'n T'ble<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <table>
-	<thead>
-			<tr>
-					<th>Legacy Parameter</th>
-					<th>New Parameter</th>
-			</tr>
-	</thead>
-	<tbody>
-			<tr>
-					<td><code>disableSearch</code></td>
-					<td><code>search.dis'ble</code></td>
-			</tr>
-			<tr>
-					<td><code>disableSearchIndex</code></td>
-					<td><code>search.index.dis'ble</code></td>
-			</tr>
-			<tr>
-					<td><code>disableSearchPage</code></td>
-					<td><code>search.page.dis'ble</code></td>
-			</tr>
-			<tr>
-					<td><code>searchIndexURL</code></td>
-					<td><code>search.index.URL</code></td>
-			</tr>
-			<tr>
-					<td><code>searchPageURL</code></td>
-					<td><code>search.page.URL</code></td>
-			</tr>
-			<tr>
-					<td><code>additionalContentLanguage</code></td>
-					<td><code>search.adapter.params.additionalContentLanguage</code></td>
-			</tr>
-	</tbody>
+  <thead>
+    <tr>
+      <th>Legacy Parameter</th>
+      <th>New Parameter</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>disableSearch</code></td>
+      <td><code>search.dis'ble</code></td>
+    </tr>
+    <tr>
+      <td><code>disableSearchIndex</code></td>
+      <td><code>search.index.dis'ble</code></td>
+    </tr>
+    <tr>
+      <td><code>disableSearchPage</code></td>
+      <td><code>search.page.dis'ble</code></td>
+    </tr>
+    <tr>
+      <td><code>searchIndexURL</code></td>
+      <td><code>search.index.URL</code></td>
+    </tr>
+    <tr>
+      <td><code>searchPageURL</code></td>
+      <td><code>search.page.URL</code></td>
+    </tr>
+    <tr>
+      <td><code>additionalContentLanguage</code></td>
+      <td><code>search.adapter.params.additionalContentLanguage</code></td>
+    </tr>
+  </tbody>
 </table>
  
 
   <footer class="footline">
-<div class="R-taxonomy taxonomy-categories cstyle" title="Categorrries" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+<div class="R-taxonomy taxonomy-categories" title="Categorrries">
   <i class="fa-fw fas fa-layer-group"></i>
   <ul>
     <li><a class="term-link" href="/hugo-theme-relearn/pir/categories/howto/index.html">Howto</a></li>
@@ -751,8 +720,7 @@
         </div>
       </main>
     </div>
-    <script src="/hugo-theme-relearn/js/perfect-scrollbar/perfect-scrollbar.min.db7463db58ffbf17da815a125672d269b005017f2e343e731f69a22d157b2170.js" defer></script>
-    <script src="/hugo-theme-relearn/js/theme.min.8cf35ce490bb913f2128b8e605cc88803cc70c1f1a2aa37fc44071c57623b811.js" defer></script>
+    <script src="/hugo-theme-relearn/js/theme.min.5e81b78e5900bce96f55e277df01b5b477b164c8094c7fc0a689ccfd86eeb4b3.js" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

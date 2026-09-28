@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.165.0">
-    <meta name="generator" content="Relearn 9.0.3+cca22eec0fbd822d67073ae1d40be765e061a1e0">
+    <meta name="generator" content="Hugo 0.166.0">
+    <meta name="generator" content="Relearn 9.1.0+edd32dd46699cf37d4c81be4a1fbeb8bd7112e9e">
     <meta name="description" content="Configure all things menus">
     <meta name="author" content="Sören Weber">
     <meta name="twitter:card" content="summary_large_image">
@@ -20,7 +20,7 @@
     <meta property="og:image" content="https://fkaminski.github.io/hugo-theme-relearn/images/hero.png">
     <meta itemprop="name" content="Menus :: Hugo Relearn Theme">
     <meta itemprop="description" content="Configure all things menus">
-    <meta itemprop="wordCount" content="3236">
+    <meta itemprop="wordCount" content="3240">
     <meta itemprop="image" content="https://fkaminski.github.io/hugo-theme-relearn/images/hero.png">
     <meta itemprop="keywords" content="Howto,Alwaysopen,CollapsibleMenu,LinkTitle,MenuPageRef,MenuPost,MenuPre,MenuUrl,Ordersectionsby,Sidebarfootermenus,Sidebarheadermenus,Sidebarmenus,Alwaysopen,CollapsibleMenu,DisableShortcutsTitle,Ordersectionsby,Sidebarfootermenus,Sidebarheadermenus,Sidebarmenus">
     <title>Menus :: Hugo Relearn Theme</title>
@@ -29,74 +29,60 @@
     <link href="https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sidebar/menus/index.html" rel="alternate" hreflang="art-x-pir">
     <link href="https://fkaminski.github.io/hugo-theme-relearn/configuration/sidebar/menus/index.html" rel="canonical" type="text/html" title="Menus :: Hugo Relearn Theme">
     <link href="/hugo-theme-relearn/configuration/sidebar/menus/index.xml" rel="alternate" type="application/rss+xml" title="Menus :: Hugo Relearn Theme">
-    <link href="/hugo-theme-relearn/images/logo.a0d6f24580a63a8065f77e889fdf2ee51c464658dd001245f5e071f2881664de.svg" rel="icon" type="image/svg+xml">
+    <link href="/hugo-theme-relearn/images/logo.d30ab0425821f45713322a73c1eeb192e311689b03371519abbe061a24d1201e.svg" rel="icon" type="image/svg+xml">
     <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.78b49c23f59ffb08554285843ed4c841484fe34c489058b2991edc027cdd47fc.css" rel="stylesheet">
     <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.7b340a2a0841d2466dca47e43cbd8c4dfe6a4f77a6c81c984d49ebb60ba2e299.js" defer></script>
-    <script src="/hugo-theme-relearn/js/search-lunr.min.9af015a288d1c0d444de2d8fb41fd8fdd679ead7dd60e637608740d50078fdf9.js" defer></script>
-    <script src="/hugo-theme-relearn/js/search.min.c58b508bccda750a48211b66c89002539e69e1ef1f10dbde995b328356a36f14.js" defer></script>
-    <script>
-      window.relearn = window.relearn || {};
-      window.relearn.index_js_url="../../../"+"searchindex.en.min.eaeab575b018276d29491338e55a914643666ad680d6b0bca7148f248ea79fb1.js";
-    </script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.2e613f0a1ce042c097f61ecc0e3f843d395bf3a42717715f9c08a11dc2f21122.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.373845112980472e938f57e7ec9a00ff9d7b651d7e72cacce2b29211ad5f1924.js" defer></script>
+    <script type="application/json" id="R-search-config">{
+      "indexFile": "searchindex.en.min.00b99188351628699a21cf5dfc96dcbfb52e0b985835ac4b1c8faf03933fbfa8.js"
+    }</script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.multi.min.ffaee7f1e07179595fe8a4b7c469761f90999470e1f04dcb0a94dc2c1cb44f9c.js" defer></script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.en.min.94d0a7cb1f111200e2f5be9dc32699cf266aaa29011e414bdcd36a18ea0fd5ee.js" defer></script>
-    <script>
-      window.relearn = window.relearn || {};
-      window.relearn.contentLangs=['en'];
-    </script>
-    <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
-    <link href="/hugo-theme-relearn/css/perfect-scrollbar/perfect-scrollbar.min.c66b59a97910bc3557f3b388f9b0d6662405c65f245bdc1ede3f339d96b7f30e.css" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/theme.min.ef8860872a334d7e8e7222371833236e6b7e9465d9926110b99bfd3915e8499b.css" rel="stylesheet">
+    <script type="application/json" id="R-search-lunr-config">{
+      "contentLangs": [
+        "en"
+      ]
+    }</script>
+    <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" class="R-async-style"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
+    <link href="/hugo-theme-relearn/css/theme.min.c5e57f8072c26c3936afb7f1f29896beccceeb26ad977baa337cb1cbf585deea.css" rel="stylesheet">
     <link href="/hugo-theme-relearn/css/format-print.min.39e0dc30e3ca73e623fcf660fac10bf09db5539b3d13e59e90977cf7137e6aee.css" rel="stylesheet" id="R-format-style">
-    <script>
-      window.relearn = window.relearn || {};
-      // configuration
-      window.relearn.path='\/configuration\/sidebar\/menus\/index.html';
-      window.relearn.relBasePath='..\/..\/..';
-      window.relearn.relBaseUri='..\/..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/fkaminski.github.io\/hugo-theme-relearn';
-      window.relearn.disableInlineCopyToClipboard=true;
-      window.relearn.enableBlockCodeWrap=true;
-      // translations
-      window.T_Copy_to_clipboard = `Copy text to clipboard`;
-      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
-      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
-      window.T_Reset_view = `Reset view`;
-      window.T_View_reset = `View reset!`;
-      window.T_No_results_found = `No results found for "{0}"`;
-      window.T_N_results_found = `{1} results found for "{0}"`;
-      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
-      // variant stuff
-      window.relearn.themevariants = [ 'relearn-auto', 'relearn-dark', 'relearn-light', 'relearn-bright', 'zen-auto', 'zen-dark', 'zen-light', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ];
-      window.relearn.customvariantprefix = "my-custom-";
-      window.relearn.changeVariant = function(variant) {
-        var oldVariant = document.documentElement.dataset.rThemeVariant;
-        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
-        document.documentElement.dataset.rThemeVariant = variant;
-        if (oldVariant != variant) {
-          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
-          window.relearn.markVariant();
-        }
+    <script type="application/json" id="R-theme-config">{
+      "absBaseUri": "https://fkaminski.github.io/hugo-theme-relearn",
+      "disableInlineCopyToClipboard": true,
+      "enableBlockCodeWrap": true,
+      "path": "/configuration/sidebar/menus/index.html",
+      "relBasePath": "../../..",
+      "relBaseUri": "../../../..",
+      "themevariants": [
+        "relearn-auto",
+        "relearn-dark",
+        "relearn-light",
+        "relearn-bright",
+        "zen-auto",
+        "zen-dark",
+        "zen-light",
+        "retro-auto",
+        "neon",
+        "learn",
+        "blue",
+        "green",
+        "red"
+      ],
+      "translations": {
+        "Browser_unsupported_feature": "This browser doesn't support this feature",
+        "Copied_to_clipboard": "Text copied to clipboard!",
+        "Copy_to_clipboard": "Copy text to clipboard",
+        "Link_copied_to_clipboard": "Link copied to clipboard!",
+        "N_results_found": "{1} results found for \"{0}\"",
+        "No_results_found": "No results found for \"{0}\"",
+        "Reset_view": "Reset view",
+        "View_reset": "View reset!"
       }
-      window.relearn.markVariant = function() {
-        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
-        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
-      }
-      window.relearn.initVariant = function() {
-        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
-        if( !variant ||
-            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
-            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
-          variant = window.relearn.themevariants[0];
-          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
-        }
-        document.documentElement.dataset.rThemeVariant = variant;
-      }
-      window.relearn.initVariant();
-      window.relearn.markVariant();
-    </script>
+    }</script>
+    <script src="/hugo-theme-relearn/js/theme-head.min.eb092668f5b427260df95861e28028bbd22ff85e2af068b9bfbedf0cbdbea887.js"></script>
     <style>
        
       #R-body img.bg-white {
@@ -112,12 +98,12 @@
           <div class="topbar-sidebar-divider default-animation"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper">
+                <div class="topbar-content-wrapper" tabindex="-1">
 <nav class="TableOfContents">
   <ul>
     <li><a href="#expand-state-of-submenus">Expand State of Submenus</a></li>
@@ -174,9 +160,9 @@
 <span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/configuration/content/index.html" title="Content (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
             <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper">
+                <div class="topbar-content-wrapper" tabindex="-1">
                   <div class="topbar-area topbar-area-more" data-area="more">
                   </div>
                 </div>
@@ -225,53 +211,50 @@
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
     <button
-      aria-controls="R-tab-id-0362ccec600ea0d9a16aabee3efa80f6" aria-expanded="true"
+      aria-controls="R-tab-id-5da34d4981ab66e769bb6a28daff65dd" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-b12a7a348366acea1256129ad7a7a9bf" aria-expanded="false"
+      aria-controls="R-tab-id-977a8401254096888a6a34d2e814f935" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-0657db840563eddcd78ad3ef86aa71f6" aria-expanded="false"
+      aria-controls="R-tab-id-ecde4ff91e0f03e7d59b4a4d4173c232" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-0362ccec600ea0d9a16aabee3efa80f6"
+      id="R-tab-id-5da34d4981ab66e769bb6a28daff65dd"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">alwaysopen</span> <span class="p">=</span> <span class="kc">false</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-b12a7a348366acea1256129ad7a7a9bf"
+      id="R-tab-id-977a8401254096888a6a34d2e814f935"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">alwaysopen</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-0657db840563eddcd78ad3ef86aa71f6"
+      id="R-tab-id-ecde4ff91e0f03e7d59b4a4d4173c232"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -289,53 +272,50 @@
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
     <button
-      aria-controls="R-tab-id-d95dd691da92e29c99748cd76595e20b" aria-expanded="true"
+      aria-controls="R-tab-id-30455641c70f240da4966705c0610e16" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-c367312ba4cd1ec2bd2d461076cb444b" aria-expanded="false"
+      aria-controls="R-tab-id-a06435b5786c55a71d68ea6ae3a1c129" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-cc1fa18dae91f7733eb3aad0ede69f6e" aria-expanded="false"
+      aria-controls="R-tab-id-f0d8763d5797ed0b8336aa31e41f33b6" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-d95dd691da92e29c99748cd76595e20b"
+      id="R-tab-id-30455641c70f240da4966705c0610e16"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">collapsibleMenu</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-c367312ba4cd1ec2bd2d461076cb444b"
+      id="R-tab-id-a06435b5786c55a71d68ea6ae3a1c129"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">collapsibleMenu</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-cc1fa18dae91f7733eb3aad0ede69f6e"
+      id="R-tab-id-f0d8763d5797ed0b8336aa31e41f33b6"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -367,51 +347,48 @@
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
     <button
-      aria-controls="R-tab-id-9fe8dda037d65691957c3a66eafa79b1" aria-expanded="true"
+      aria-controls="R-tab-id-9f65ff46a09ab2210eb42a090ba93baa" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-bb58d17d976830f2b5e8dc9787215fb3" aria-expanded="false"
+      aria-controls="R-tab-id-f6472ede3507211709209d20405d8938" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-8d65ca17556868974c9029aaf99fbd0a" aria-expanded="false"
+      aria-controls="R-tab-id-f9c8fdc03f1a9f8e318e175f73c12f74" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-9fe8dda037d65691957c3a66eafa79b1"
+      id="R-tab-id-9f65ff46a09ab2210eb42a090ba93baa"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">weight</span> <span class="p">=</span> <span class="mi">5</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-bb58d17d976830f2b5e8dc9787215fb3"
+      id="R-tab-id-f6472ede3507211709209d20405d8938"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">5</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-8d65ca17556868974c9029aaf99fbd0a"
+      id="R-tab-id-f9c8fdc03f1a9f8e318e175f73c12f74"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;weight&#34;</span><span class="p">:</span> <span class="mi">5</span>
@@ -426,53 +403,50 @@
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
     <button
-      aria-controls="R-tab-id-5f5bc17345d866fa9fe9ebb1b4a8c4ef" aria-expanded="true"
+      aria-controls="R-tab-id-349ac8213a65bd48902fc3dc5fc3ff23" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-f069351f62403f95af808d4b02b25ed1" aria-expanded="false"
+      aria-controls="R-tab-id-0da61854ea675cc325c7c6f036b8d537" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-5d1657d41b34c441bf063eaab09ffd62" aria-expanded="false"
+      aria-controls="R-tab-id-a68186bb3b83e4b5d4adb97512724c21" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-5f5bc17345d866fa9fe9ebb1b4a8c4ef"
+      id="R-tab-id-349ac8213a65bd48902fc3dc5fc3ff23"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">ordersectionsby</span> <span class="p">=</span> <span class="s1">&#39;linktitle&#39;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-f069351f62403f95af808d4b02b25ed1"
+      id="R-tab-id-0da61854ea675cc325c7c6f036b8d537"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ordersectionsby</span><span class="p">:</span><span class="w"> </span><span class="l">linktitle</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-5d1657d41b34c441bf063eaab09ffd62"
+      id="R-tab-id-a68186bb3b83e4b5d4adb97512724c21"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -489,37 +463,34 @@
 <p>For example for a page named <code>install/linux.md</code></p>
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
-    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-title">install/linux.md</div>
     <button
-      aria-controls="R-tab-id-dd42c9cb7792765a389b97a10f89ad46" aria-expanded="true"
+      aria-controls="R-tab-id-140a4dd0a5bd7e620485b740224edd03" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-03f5621563d812447b733b0dc757c8ef" aria-expanded="false"
+      aria-controls="R-tab-id-dbac9a65b5f1d0ee50ed4db2731e3d3c" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-8942769c0c6b8c233f1e8df0040b6ec1" aria-expanded="false"
+      aria-controls="R-tab-id-71e50a70478eac5f0f3e2b466665be44" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-dd42c9cb7792765a389b97a10f89ad46"
+      id="R-tab-id-140a4dd0a5bd7e620485b740224edd03"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="err">+++</span>
 </span></span><span class="line"><span class="cl"><span class="nx">linkTitle</span> <span class="p">=</span> <span class="s1">&#39;Linux&#39;</span>
@@ -528,9 +499,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-03f5621563d812447b733b0dc757c8ef"
+      id="R-tab-id-dbac9a65b5f1d0ee50ed4db2731e3d3c"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nt">linkTitle</span><span class="p">:</span><span class="w"> </span><span class="l">Linux</span><span class="w">
@@ -539,9 +510,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-8942769c0c6b8c233f1e8df0040b6ec1"
+      id="R-tab-id-71e50a70478eac5f0f3e2b466665be44"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;linkTitle&#34;</span><span class="p">:</span> <span class="s2">&#34;Linux&#34;</span><span class="p">,</span>
@@ -560,35 +531,32 @@
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
     <button
-      aria-controls="R-tab-id-4472c9ab6e29124b776f6aa2187cd5a4" aria-expanded="true"
+      aria-controls="R-tab-id-55ee9b1911fc72d5c5c9cb4a60485f3a" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-1b58e2d0e2f12c0a9c48bb8f9c36fb51" aria-expanded="false"
+      aria-controls="R-tab-id-287233808293386090b8da46307781aa" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-997e72f9d0ec90858bf9eb09c3fd1748" aria-expanded="false"
+      aria-controls="R-tab-id-b4d455009ca0025be5488b28a4278c3b" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-4472c9ab6e29124b776f6aa2187cd5a4"
+      id="R-tab-id-55ee9b1911fc72d5c5c9cb4a60485f3a"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="err">+++</span>
 </span></span><span class="line"><span class="cl"><span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;GitHub Repo&#39;</span>
@@ -599,9 +567,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-1b58e2d0e2f12c0a9c48bb8f9c36fb51"
+      id="R-tab-id-287233808293386090b8da46307781aa"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
@@ -611,9 +579,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-997e72f9d0ec90858bf9eb09c3fd1748"
+      id="R-tab-id-b4d455009ca0025be5488b28a4278c3b"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -632,37 +600,34 @@
 <p>For this, open <code>content/log/first-day/_index.md</code> and add the following front matter</p>
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
-    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-title">content/log/first-day/_index.md</div>
     <button
-      aria-controls="R-tab-id-ef6d43f06f9fc21f84f25a912efc92ea" aria-expanded="true"
+      aria-controls="R-tab-id-3744d35c5b03ba52ff9e8452eeeb2e83" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-e813396a9e85fa683ac31938c99913fd" aria-expanded="false"
+      aria-controls="R-tab-id-38122f01415c51046058309cff983ac6" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-fde2ce90dee5e59a5625009687a50050" aria-expanded="false"
+      aria-controls="R-tab-id-a36f28f9e409acc3d9a7bcd4dce9eeed" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-ef6d43f06f9fc21f84f25a912efc92ea"
+      id="R-tab-id-3744d35c5b03ba52ff9e8452eeeb2e83"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="err">+++</span>
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">build</span><span class="p">]</span>
@@ -671,9 +636,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-e813396a9e85fa683ac31938c99913fd"
+      id="R-tab-id-38122f01415c51046058309cff983ac6"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nt">build</span><span class="p">:</span><span class="w">
@@ -682,9 +647,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-fde2ce90dee5e59a5625009687a50050"
+      id="R-tab-id-a36f28f9e409acc3d9a7bcd4dce9eeed"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;build&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -701,40 +666,36 @@
 <p>The following example will not generate clickable menu entries for the <code>Parent 1</code> and <code>Parent 2</code> menu entries.</p>
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
-    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-title">hugo.</div>
     <button
-      aria-controls="R-tab-id-ccdc15f5f510cc88472a4c138c8fa648" aria-expanded="true"
+      aria-controls="R-tab-id-6274d3a2e8902c98c6a8a8970b7ceda9" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-4608058d7c8dd5fc0e5ae783b73ab05f" aria-expanded="false"
+      aria-controls="R-tab-id-6e49256f9520bc0c2db102cc90cce188" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-b8d95eff74bdf3d04d36e3f068f62e2b" aria-expanded="false"
+      aria-controls="R-tab-id-0d75c443ca05e1668ea45c356539ded2" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-ccdc15f5f510cc88472a4c138c8fa648"
+      id="R-tab-id-6274d3a2e8902c98c6a8a8970b7ceda9"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="err">+++</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">menu</span><span class="p">]</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">menu</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">shortcuts</span><span class="p">]]</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">name</span> <span class="p">=</span> <span class="s1">&#39;Parent 1&#39;</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
@@ -751,17 +712,15 @@
 </span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">shortcuts</span><span class="p">]]</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">name</span> <span class="p">=</span> <span class="s1">&#39;Child 2&#39;</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">parent</span> <span class="p">=</span> <span class="s1">&#39;Parent 2&#39;</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">url</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/2&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="err">+++</span></span></span></code></pre></div>
+</span></span><span class="line"><span class="cl">    <span class="nx">url</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/2&#39;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-4608058d7c8dd5fc0e5ae783b73ab05f"
+      id="R-tab-id-6e49256f9520bc0c2db102cc90cce188"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="nt">menu</span><span class="p">:</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">menu</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">shortcuts</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Parent 1</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
@@ -772,14 +731,13 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Child 2</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l">Parent 2</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/2</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="nn">---</span></span></span></code></pre></div>
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/2</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-b8d95eff74bdf3d04d36e3f068f62e2b"
+      id="R-tab-id-0d75c443ca05e1668ea45c356539ded2"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;menu&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -813,65 +771,58 @@
 <p>By default, the theme supports one additional Hugo menu below the page menu in the sidebar named <code>shortcuts</code>. You only need to configure it in your <code>hugo.toml</code> to appear in your sidebar. For example:</p>
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
-    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-title">hugo.</div>
     <button
-      aria-controls="R-tab-id-b063106c3296a24b692fb7d649f2f3a8" aria-expanded="true"
+      aria-controls="R-tab-id-380424d1d8960312612505cf878f51cf" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-35c8d1ee3aa4c624419214939d0f365b" aria-expanded="false"
+      aria-controls="R-tab-id-e01126d89dbb4dad00f02072daedce8b" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-a1d7a74f5ddb7f1f52e4d580a337c0f4" aria-expanded="false"
+      aria-controls="R-tab-id-08a22c18f770a426e7e2f58a57d7176d" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-b063106c3296a24b692fb7d649f2f3a8"
+      id="R-tab-id-380424d1d8960312612505cf878f51cf"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="err">+++</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">menu</span><span class="p">]</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">menu</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">shortcuts</span><span class="p">]]</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">name</span> <span class="p">=</span> <span class="s1">&#39;Example Entry&#39;</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">url</span> <span class="p">=</span> <span class="s1">&#39;https://example.com&#39;</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl"><span class="err">+++</span></span></span></code></pre></div>
+</span></span><span class="line"><span class="cl">    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-35c8d1ee3aa4c624419214939d0f365b"
+      id="R-tab-id-e01126d89dbb4dad00f02072daedce8b"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="nt">menu</span><span class="p">:</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">menu</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">shortcuts</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Example Entry</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="nn">---</span></span></span></code></pre></div>
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">1</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-a1d7a74f5ddb7f1f52e4d580a337c0f4"
+      id="R-tab-id-08a22c18f770a426e7e2f58a57d7176d"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;menu&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -895,53 +846,50 @@
   <div class="tab-nav">
     <div class="tab-nav-title">hugo.</div>
     <button
-      aria-controls="R-tab-id-0a24336cd08776646ef0487a35a6e22c" aria-expanded="true"
+      aria-controls="R-tab-id-fc80336cd372916cde9dba95efd73afc" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-fe97d4df605b10facf2d08b838defffa" aria-expanded="false"
+      aria-controls="R-tab-id-7853999c3a1179248d07abf71d0e8d64" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-ff35e08852e4be6619a8705424ce65d3" aria-expanded="false"
+      aria-controls="R-tab-id-789ed8dde5f301cee8147d9815007a44" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-0a24336cd08776646ef0487a35a6e22c"
+      id="R-tab-id-fc80336cd372916cde9dba95efd73afc"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">disableShortcutsTitle</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-fe97d4df605b10facf2d08b838defffa"
+      id="R-tab-id-7853999c3a1179248d07abf71d0e8d64"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">disableShortcutsTitle</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-ff35e08852e4be6619a8705424ce65d3"
+      id="R-tab-id-789ed8dde5f301cee8147d9815007a44"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -953,30 +901,65 @@
   </div>
 </div>
 <p>To change the title, override your translation file.</p>
-<div class="tab-panel" data-tab-group="R-tabs-071a497790517a1c2cc08e2160159f95">
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
-    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-title">i18n/en.</div>
     <button
-      aria-controls="R-tab-id-cccb1c82f4b4792f0f77b1b1a1fe46db" aria-expanded="true"
-      data-tab-item="R-tab-37fb0a88b36c36c1795ae48027e1edf3"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-071a497790517a1c2cc08e2160159f95','R-tab-37fb0a88b36c36c1795ae48027e1edf3')"
+      aria-controls="R-tab-id-02b4b39ee8db8d7e6b19d33fb37d49ba" aria-expanded="true"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
-      <span class="tab-nav-text">i18n/en.toml</span>
+      <span class="tab-nav-text">toml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-fd749f86ac0e961ae0562083269ab322" aria-expanded="false"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">yaml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-38e07deb04d1107aa4569e525dbf8231" aria-expanded="false"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-cccb1c82f4b4792f0f77b1b1a1fe46db"
-      data-tab-item="R-tab-37fb0a88b36c36c1795ae48027e1edf3"
-      class="tab-content tab-panel-style cstyle initial active">
+      id="R-tab-id-02b4b39ee8db8d7e6b19d33fb37d49ba"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">shortcuts-menuTitle</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;Other Great Stuff&#34;</span></span></span></code></pre></div>
+</span></span><span class="line"><span class="cl">  <span class="nx">other</span> <span class="p">=</span> <span class="s1">&#39;Other Great Stuff&#39;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-fd749f86ac0e961ae0562083269ab322"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">shortcuts-menuTitle</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">other</span><span class="p">:</span><span class="w"> </span><span class="l">Other Great Stuff</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-38e07deb04d1107aa4569e525dbf8231"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;shortcuts-menuTitle&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;other&#34;</span><span class="p">:</span> <span class="s2">&#34;Other Great Stuff&#34;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
       </div>
     </div>
   </div>
-</div><h2 id="title-for-arbitrary-menus">Title for Arbitrary Menus<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+</div>
+<h2 id="title-for-arbitrary-menus">Title for Arbitrary Menus<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Each menu may have an optional title above its tree. This must be activated for each <a href="/hugo-theme-relearn/configuration/sidebar/menus/index.html#defining-sidebar-menus">menu by setting <code>disableTitle=false</code> for each sidebar menu configuration</a>.</p>
 <p><span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown"></i></span><span class="badge-content">Front Matter</span></span> For page menus, set the <code>linkTitle</code> front matter for the root page of the menu. For example in the home page for the default sidebar menu. If no <code>linkTitle</code> was set, the title will be taken from your translation files by the key <code>&lt;identifier&gt;-menuTitle</code>, where <code>&lt;identifier&gt;</code> is the identifier of your sidebar menu configuration.</p>
 <p><span class="badge cstyle hugomenu badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-bars"></i></span><span class="badge-content">Menu</span></span> For Hugo menus, the title will be taken from your translation files by the key <code>&lt;identifier&gt;-menuTitle</code>, where <code>&lt;identifier&gt;</code> is the identifier of your sidebar menu configuration.</p>
@@ -985,40 +968,36 @@
 <p>If you want to learn how to configure different Hugo menus for each language, <a href="https://gohugo.io/content-management/multilingual/#menus" rel="external" target="_self">see here</a>.</p>
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
-    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-title">hugo.</div>
     <button
-      aria-controls="R-tab-id-5bf901421582df78db41a6d9452ee20d" aria-expanded="true"
+      aria-controls="R-tab-id-cd1c185c4ef290d73362b100314ba8cf" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-fef903eca4bb48cffd5005750feae2f7" aria-expanded="false"
+      aria-controls="R-tab-id-a1b3cbb6acb1e5478a2ca4524561669b" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-ef09c7a43d1825689fb0cfc48997f886" aria-expanded="false"
+      aria-controls="R-tab-id-ab398e43fb2ee357c24e66a6aa051440" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-5bf901421582df78db41a6d9452ee20d"
+      id="R-tab-id-cd1c185c4ef290d73362b100314ba8cf"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="err">+++</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">menu</span><span class="p">]</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">menu</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">addendum</span><span class="p">]]</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">identifier</span> <span class="p">=</span> <span class="s1">&#39;addendum-top&#39;</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">name</span> <span class="p">=</span> <span class="s1">&#39;A Menu Title for the Whole Menu&#39;</span>
@@ -1033,17 +1012,15 @@
 </span></span><span class="line"><span class="cl">    <span class="nx">name</span> <span class="p">=</span> <span class="s1">&#39;A Menu Entry Title for Child 2&#39;</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">parent</span> <span class="p">=</span> <span class="s1">&#39;addendum-top&#39;</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">url</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/2&#39;</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
-</span></span><span class="line"><span class="cl"><span class="err">+++</span></span></span></code></pre></div>
+</span></span><span class="line"><span class="cl">    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-fef903eca4bb48cffd5005750feae2f7"
+      id="R-tab-id-a1b3cbb6acb1e5478a2ca4524561669b"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="nt">menu</span><span class="p">:</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">menu</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">addendum</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l">addendum-top</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">A Menu Title for the Whole Menu</span><span class="w">
@@ -1054,14 +1031,13 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">A Menu Entry Title for Child 2</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l">addendum-top</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/2</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="nn">---</span></span></span></code></pre></div>
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">2</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-ef09c7a43d1825689fb0cfc48997f886"
+      id="R-tab-id-ab398e43fb2ee357c24e66a6aa051440"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;menu&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -1128,35 +1104,32 @@
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
     <button
-      aria-controls="R-tab-id-073e840752e7c7d5249966a43f855959" aria-expanded="true"
+      aria-controls="R-tab-id-de2b7103927eafcafd85a5c0ecd2b471" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-65551de5abcd697756fa1707844a5e20" aria-expanded="false"
+      aria-controls="R-tab-id-52b15166fc76a04ad3afdc6d2bd90ae3" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-15c15e05cd2b8c796fce7c5ee748e52a" aria-expanded="false"
+      aria-controls="R-tab-id-dccea285e39dd94d94b6340fccc3c2bc" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-073e840752e7c7d5249966a43f855959"
+      id="R-tab-id-de2b7103927eafcafd85a5c0ecd2b471"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">params</span><span class="p">.</span><span class="nx">sidebarfootermenus</span><span class="p">]]</span>
@@ -1207,9 +1180,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-65551de5abcd697756fa1707844a5e20"
+      id="R-tab-id-52b15166fc76a04ad3afdc6d2bd90ae3"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">sidebarfootermenus</span><span class="p">:</span><span class="w">
@@ -1240,9 +1213,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-15c15e05cd2b8c796fce7c5ee748e52a"
+      id="R-tab-id-dccea285e39dd94d94b6340fccc3c2bc"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -1486,35 +1459,32 @@
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
     <button
-      aria-controls="R-tab-id-441f671228ac760e1999d37e7ab5b6a3" aria-expanded="true"
+      aria-controls="R-tab-id-c6de4d26f01a9914f5a3154d923af808" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-29e6a4d04c0b7e01e98a45c6c89db163" aria-expanded="false"
+      aria-controls="R-tab-id-24e7e4507e3bddb045e729a7a7fcf48e" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-31384704163329f99c5c93378369a9b4" aria-expanded="false"
+      aria-controls="R-tab-id-f40992aadec3fdb82a7d522626b0c926" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-441f671228ac760e1999d37e7ab5b6a3"
+      id="R-tab-id-c6de4d26f01a9914f5a3154d923af808"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">sidebarfootermenus</span> <span class="p">=</span> <span class="p">[]</span>
@@ -1537,9 +1507,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-29e6a4d04c0b7e01e98a45c6c89db163"
+      id="R-tab-id-24e7e4507e3bddb045e729a7a7fcf48e"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">sidebarfootermenus</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
@@ -1555,9 +1525,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-31384704163329f99c5c93378369a9b4"
+      id="R-tab-id-f40992aadec3fdb82a7d522626b0c926"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -1622,35 +1592,32 @@
   <div class="tab-nav">
     <div class="tab-nav-title">log/_index.md</div>
     <button
-      aria-controls="R-tab-id-de265d0aa915cd4d5a8f72332fef6c39" aria-expanded="true"
+      aria-controls="R-tab-id-f17bbd656ed31988203e3ccc8a05b8f5" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-ed0b5b697cb91225b0e91b949a023397" aria-expanded="false"
+      aria-controls="R-tab-id-8905f88a2a8909f1ba91f92559dfa5e8" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-0e9a7dd051297128a2bf985075297baf" aria-expanded="false"
+      aria-controls="R-tab-id-a99c3d6ada01c832352e73b6ac77b37b" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-de265d0aa915cd4d5a8f72332fef6c39"
+      id="R-tab-id-f17bbd656ed31988203e3ccc8a05b8f5"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="err">+++</span>
 </span></span><span class="line"><span class="cl"><span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;Captain&#39;s Log&#34;</span>
@@ -1669,9 +1636,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-ed0b5b697cb91225b0e91b949a023397"
+      id="R-tab-id-8905f88a2a8909f1ba91f92559dfa5e8"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nt">cascade</span><span class="p">:</span><span class="w">
@@ -1687,9 +1654,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-0e9a7dd051297128a2bf985075297baf"
+      id="R-tab-id-a99c3d6ada01c832352e73b6ac77b37b"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;cascade&#34;</span><span class="p">:</span> <span class="p">[</span>
@@ -1719,35 +1686,32 @@
   <div class="tab-nav">
     <div class="tab-nav-title">ship/_index.md</div>
     <button
-      aria-controls="R-tab-id-524967b1d48ac4586f7de4522ca033ff" aria-expanded="true"
+      aria-controls="R-tab-id-eaac3182e1cbd4ef881077412c6e5512" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-65a50c0bcd42f1028d4b41aa47ed7509" aria-expanded="false"
+      aria-controls="R-tab-id-21c4e7e8f702581e73df8e021dcdc1fd" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-8d226f45e84c411d37e1b50f29d596c3" aria-expanded="false"
+      aria-controls="R-tab-id-0f10b1b6243dc02a2f6724802df6c807" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-524967b1d48ac4586f7de4522ca033ff"
+      id="R-tab-id-eaac3182e1cbd4ef881077412c6e5512"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="err">+++</span>
 </span></span><span class="line"><span class="cl"><span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;The Ship&#39;</span>
@@ -1766,9 +1730,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-65a50c0bcd42f1028d4b41aa47ed7509"
+      id="R-tab-id-21c4e7e8f702581e73df8e021dcdc1fd"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nt">cascade</span><span class="p">:</span><span class="w">
@@ -1784,9 +1748,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-8d226f45e84c411d37e1b50f29d596c3"
+      id="R-tab-id-0f10b1b6243dc02a2f6724802df6c807"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;cascade&#34;</span><span class="p">:</span> <span class="p">[</span>
@@ -1837,35 +1801,32 @@
   <div class="tab-nav">
     <div class="tab-nav-title">content/crows-nest-incident.md</div>
     <button
-      aria-controls="R-tab-id-caa2cffc3102472a53f948021a20102a" aria-expanded="true"
+      aria-controls="R-tab-id-e4da02c327c0fb97ab8bda264623d890" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-db2873b1607813a80912b9b8b4492b72" aria-expanded="false"
+      aria-controls="R-tab-id-32330807a62d37eb93a26bfc8dc8db5c" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-a871946e993df5175ecce3a6f75445c0" aria-expanded="false"
+      aria-controls="R-tab-id-fb6df1564e79699ec7d9ceb1792b9c8b" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-caa2cffc3102472a53f948021a20102a"
+      id="R-tab-id-e4da02c327c0fb97ab8bda264623d890"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="err">+++</span>
 </span></span><span class="line"><span class="cl"><span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;The Crow&#39;s Nest Incident&#34;</span>
@@ -1876,9 +1837,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-db2873b1607813a80912b9b8b4492b72"
+      id="R-tab-id-32330807a62d37eb93a26bfc8dc8db5c"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
@@ -1888,9 +1849,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-a871946e993df5175ecce3a6f75445c0"
+      id="R-tab-id-fb6df1564e79699ec7d9ceb1792b9c8b"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -1915,35 +1876,32 @@
   <div class="tab-nav">
     <div class="tab-nav-title">content/showcase/_index.en.md</div>
     <button
-      aria-controls="R-tab-id-574f819b434de9d0342cd6b8380575a4" aria-expanded="true"
+      aria-controls="R-tab-id-7e88723e9af0acd004ec87dbe8638707" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-db97b5f4592eeeaf910453fd9f1f494a" aria-expanded="false"
+      aria-controls="R-tab-id-4a4d0e91cf90b396eb46c3f4445fdb74" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-494f5d4b15d05af5a257e4c97ce0e50c" aria-expanded="false"
+      aria-controls="R-tab-id-9ec4c3084c3038e8541b150c35460f27" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-574f819b434de9d0342cd6b8380575a4"
+      id="R-tab-id-7e88723e9af0acd004ec87dbe8638707"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="err">+++</span>
 </span></span><span class="line"><span class="cl"><span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;Showcase&#39;</span>
@@ -1956,9 +1914,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-db97b5f4592eeeaf910453fd9f1f494a"
+      id="R-tab-id-4a4d0e91cf90b396eb46c3f4445fdb74"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nt">build</span><span class="p">:</span><span class="w">
@@ -1970,9 +1928,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-494f5d4b15d05af5a257e4c97ce0e50c"
+      id="R-tab-id-9ec4c3084c3038e8541b150c35460f27"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;build&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -1993,35 +1951,32 @@
   <div class="tab-nav">
     <div class="tab-nav-title">content/more/_index.en.md</div>
     <button
-      aria-controls="R-tab-id-a19a73634903e2310f3dc964eb0a7d73" aria-expanded="true"
+      aria-controls="R-tab-id-6c69fc0f67b28700fef97fad8335acf5" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-463c50a898bd3858e7109ab97b2f6037" aria-expanded="false"
+      aria-controls="R-tab-id-d6397f965b15ea00ca9ab95717630d96" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-06714215304f71aa879f3a73ecc01926" aria-expanded="false"
+      aria-controls="R-tab-id-cd9e7e36a0c299652d40c9b89c70c087" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-a19a73634903e2310f3dc964eb0a7d73"
+      id="R-tab-id-6c69fc0f67b28700fef97fad8335acf5"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="err">+++</span>
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">build</span><span class="p">]</span>
@@ -2032,9 +1987,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-463c50a898bd3858e7109ab97b2f6037"
+      id="R-tab-id-d6397f965b15ea00ca9ab95717630d96"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nt">build</span><span class="p">:</span><span class="w">
@@ -2045,9 +2000,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-06714215304f71aa879f3a73ecc01926"
+      id="R-tab-id-cd9e7e36a0c299652d40c9b89c70c087"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;build&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -2063,37 +2018,34 @@
 <p>The child page can be any type of content.</p>
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
-    <div class="tab-nav-title">content/more/credits_index.en.md</div>
+    <div class="tab-nav-title">content/more/credits/_index.en.md</div>
     <button
-      aria-controls="R-tab-id-27826ec8fb6adbe171f12578452fb58f" aria-expanded="true"
+      aria-controls="R-tab-id-33dffd601606d5a065143cd8f2876064" aria-expanded="true"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-ec18ad9a83c312380533fa93ac6fc61c')"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
       <span class="tab-nav-text">toml</span>
     </button>
     <button
-      aria-controls="R-tab-id-82ec7ef4fcb6df911890064f4e9fae63" aria-expanded="false"
+      aria-controls="R-tab-id-9ed7f3ee4b739c21c89a27b8ea516546" aria-expanded="false"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-6eedc03a68a69933c763e674f2d7c42f')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">yaml</span>
     </button>
     <button
-      aria-controls="R-tab-id-5e961ae2bd056df6d200cc18494a8eab" aria-expanded="false"
+      aria-controls="R-tab-id-477369cb9bd2533e16393fe7d44ca526" aria-expanded="false"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9','R-tab-466deec76ecdf5fca6d38571f6324d54')"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
       <span class="tab-nav-text">json</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-27826ec8fb6adbe171f12578452fb58f"
+      id="R-tab-id-33dffd601606d5a065143cd8f2876064"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-content tab-panel-style cstyle initial active">
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="err">+++</span>
 </span></span><span class="line"><span class="cl"><span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;Credits&#39;</span>
@@ -2101,9 +2053,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-82ec7ef4fcb6df911890064f4e9fae63"
+      id="R-tab-id-9ed7f3ee4b739c21c89a27b8ea516546"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Credits</span><span class="w">
@@ -2111,9 +2063,9 @@
       </div>
     </div>
     <div
-      id="R-tab-id-5e961ae2bd056df6d200cc18494a8eab"
+      id="R-tab-id-477369cb9bd2533e16393fe7d44ca526"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-content tab-panel-style cstyle initial">
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;Credits&#34;</span>
@@ -2126,7 +2078,7 @@
 </ol>
 
   <footer class="footline">
-<div class="R-taxonomy taxonomy-categories cstyle" title="Categories" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+<div class="R-taxonomy taxonomy-categories" title="Categories">
   <i class="fa-fw fas fa-layer-group"></i>
   <ul>
     <li><a class="term-link" href="/hugo-theme-relearn/categories/howto/index.html">Howto</a></li>
@@ -2137,8 +2089,7 @@
         </div>
       </main>
     </div>
-    <script src="/hugo-theme-relearn/js/perfect-scrollbar/perfect-scrollbar.min.db7463db58ffbf17da815a125672d269b005017f2e343e731f69a22d157b2170.js" defer></script>
-    <script src="/hugo-theme-relearn/js/theme.min.8cf35ce490bb913f2128b8e605cc88803cc70c1f1a2aa37fc44071c57623b811.js" defer></script>
+    <script src="/hugo-theme-relearn/js/theme.min.5e81b78e5900bce96f55e277df01b5b477b164c8094c7fc0a689ccfd86eeb4b3.js" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>
