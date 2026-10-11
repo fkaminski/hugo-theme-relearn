@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.166.0">
-    <meta name="generator" content="Relearn 9.1.0+edd32dd46699cf37d4c81be4a1fbeb8bd7112e9e">
+    <meta name="generator" content="Hugo 0.167.0">
+    <meta name="generator" content="Relearn 9.2.0+a9b397c5d13bccbd206ef42c15e37966e99cda51">
     <meta name="description" content="Beautiful math and chemical formulae">
     <meta name="author" content="Sören Weber">
     <meta name="twitter:card" content="summary_large_image">
@@ -29,13 +29,15 @@
     <link href="https://fkaminski.github.io/hugo-theme-relearn/pir/shortcodes/math/index.html" rel="alternate" hreflang="art-x-pir">
     <link href="https://fkaminski.github.io/hugo-theme-relearn/shortcodes/math/index.html" rel="canonical" type="text/html" title="Math :: Hugo Relearn Theme">
     <link href="/hugo-theme-relearn/shortcodes/math/index.xml" rel="alternate" type="application/rss+xml" title="Math :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/shortcodes/math/index.md" rel="alternate" type="text/markdown" title="Math :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/shortcodes/math/index.source.md" rel="alternate" type="text/markdown" title="Math :: Hugo Relearn Theme">
     <link href="/hugo-theme-relearn/images/logo.d30ab0425821f45713322a73c1eeb192e311689b03371519abbe061a24d1201e.svg" rel="icon" type="image/svg+xml">
     <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.78b49c23f59ffb08554285843ed4c841484fe34c489058b2991edc027cdd47fc.css" rel="stylesheet">
-    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.7b340a2a0841d2466dca47e43cbd8c4dfe6a4f77a6c81c984d49ebb60ba2e299.js" defer></script>
-    <script src="/hugo-theme-relearn/js/search-lunr.min.2e613f0a1ce042c097f61ecc0e3f843d395bf3a42717715f9c08a11dc2f21122.js" defer></script>
-    <script src="/hugo-theme-relearn/js/search.min.373845112980472e938f57e7ec9a00ff9d7b651d7e72cacce2b29211ad5f1924.js" defer></script>
+    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.9657edd589a1ca6962a3cf03df5aa17f16f2c67350aea0a84dddbd8d5698316f.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.9897ffe790e716e8b90e4a9e200dce63c2603e69a9eec9bbdce6a483811ea180.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.4bcf60afa00d9f5c3adf08ff55811ce4cc679bd6d4b5747d674667994ee1debb.js" defer></script>
     <script type="application/json" id="R-search-config">{
-      "indexFile": "searchindex.en.min.00b99188351628699a21cf5dfc96dcbfb52e0b985835ac4b1c8faf03933fbfa8.js"
+      "indexFile": "searchindex.en.min.c4f041a00cc99840cf39073ec5ee0c85a4b4738e5a58acbd24b4ecb2e0d4600e.js"
     }</script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
@@ -47,10 +49,9 @@
       ]
     }</script>
     <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" class="R-async-style"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
-    <link href="/hugo-theme-relearn/css/theme.min.c5e57f8072c26c3936afb7f1f29896beccceeb26ad977baa337cb1cbf585deea.css" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/format-print.min.39e0dc30e3ca73e623fcf660fac10bf09db5539b3d13e59e90977cf7137e6aee.css" rel="stylesheet" id="R-format-style">
+    <link href="/hugo-theme-relearn/css/theme.min.8cd3fb0d94b35d653c73be5b6192808bb4d4b49792cbf9c092307d30edc9487f.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/format-print.min.fde31a3bc19a193360c646fd67b62d0fb98ae684449d1922b5ac0ed941277607.css" rel="stylesheet" id="R-format-style">
     <script type="application/json" id="R-theme-config">{
-      "absBaseUri": "https://fkaminski.github.io/hugo-theme-relearn",
       "disableInlineCopyToClipboard": true,
       "enableBlockCodeWrap": true,
       "path": "/shortcodes/math/index.html",
@@ -64,6 +65,9 @@
         "zen-auto",
         "zen-dark",
         "zen-light",
+        "contrast-auto",
+        "contrast-dark",
+        "contrast-light",
         "retro-auto",
         "neon",
         "learn",
@@ -73,16 +77,24 @@
       ],
       "translations": {
         "Browser_unsupported_feature": "This browser doesn't support this feature",
+        "Close_graph": "Close enlarged graph",
         "Copied_to_clipboard": "Text copied to clipboard!",
         "Copy_to_clipboard": "Copy text to clipboard",
+        "Deleted_text_end": "End of deleted text",
+        "Deleted_text_start": "Start of deleted text",
+        "Enlarge_graph": "Enlarge graph",
+        "History_cleared": "History cleared",
+        "Inserted_text_end": "End of inserted text",
+        "Inserted_text_start": "Start of inserted text",
         "Link_copied_to_clipboard": "Link copied to clipboard!",
+        "N_matches_on_page": "{1} matches for \"{0}\" on this page",
         "N_results_found": "{1} results found for \"{0}\"",
         "No_results_found": "No results found for \"{0}\"",
         "Reset_view": "Reset view",
         "View_reset": "View reset!"
       }
     }</script>
-    <script src="/hugo-theme-relearn/js/theme-head.min.eb092668f5b427260df95861e28028bbd22ff85e2af068b9bfbedf0cbdbea887.js"></script>
+    <script src="/hugo-theme-relearn/js/theme-head.min.8c8c3bb99b655d91386ff7fefb5fceeb088bff4bb82bcde54fbef7dacb3388cc.js"></script>
     <style>
        
       #R-body img.bg-white {
@@ -91,20 +103,21 @@
     </style>
   </head>
   <body class="mobile-support print" data-origin="/hugo-theme-relearn/shortcodes/math/index.html">
+    <a id="R-skip-link" href="#R-body-inner">Skip to main content</a>
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
-      <nav id="R-topbar" class="default-animation">
+      <header id="R-topbar" class="default-animation">
         <div class="topbar-wrapper default-animation">
           <div class="topbar-sidebar-divider default-animation"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)" aria-label="Menu (CTRL&#43;ALT&#43;n)" aria-expanded="false"><i class="fa-fw fas fa-bars" aria-hidden="true"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)" aria-label="Table of Contents (CTRL&#43;ALT&#43;t)" aria-expanded="false"><i class="fa-fw fas fa-table-list" aria-hidden="true"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper" tabindex="-1">
-<nav class="TableOfContents">
+<nav class="TableOfContents" aria-label="Table of Contents">
   <ul>
     <li><a href="#usage">Usage</a>
       <ul>
@@ -133,33 +146,43 @@
               </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/index.html"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/shortcodes/index.html"><span itemprop="name">Shortcodes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Math</span><meta itemprop="position" content="3"></li>
-          </ol>
+          <div class="topbar-area topbar-area-middle" data-area="middle">
+            <nav class="topbar-breadcrumbs breadcrumbs highlightable" aria-label="Breadcrumbs" data-overflow-title="Shortcodes &gt; Math">
+              <ol itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/index.html" tabindex="-1"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/shortcodes/index.html"><span itemprop="name">Shortcodes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="" aria-current="page"><span itemprop="name">Math</span><meta itemprop="position" content="3"></li>
+              </ol>
+            </nav>
+          </div>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/shortcodes/math/_index.en.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen"></i></a></span>
-            </div>
-            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/shortcodes/math/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
             <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/shortcodes/include/index.html" title="Include (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Include (🡐)" href="/hugo-theme-relearn/shortcodes/include/index.html" title="Include (🡐)"><i class="fa-fw fas fa-chevron-left" aria-hidden="true"></i></a></span>
             </div>
             <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/shortcodes/mermaid/index.html" title="Mermaid (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Mermaid (🡒)" href="/hugo-theme-relearn/shortcodes/mermaid/index.html" title="Mermaid (🡒)"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i></a></span>
             </div>
             <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="More" aria-label="More" aria-expanded="false"><i class="fa-fw fas fa-ellipsis-v" aria-hidden="true"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper" tabindex="-1">
                   <div class="topbar-area topbar-area-more" data-area="more">
+            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Edit (CTRL+ALT+w)" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/shortcodes/math/_index.en.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-source default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Show source code" href="/hugo-theme-relearn/shortcodes/math/index.source.md" title="Show source code"><i class="fa-fw fas fa-code" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-markdown default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Show Markdown" href="/hugo-theme-relearn/shortcodes/math/index.md" title="Show Markdown"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Print whole chapter (CTRL+ALT+p)" href="/hugo-theme-relearn/shortcodes/math/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print" aria-hidden="true"></i></a></span>
+            </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </nav>
+      </header>
       <div id="R-main-overlay"></div>
       <main id="R-body-inner" class="highlightable shortcodes" tabindex="-1">
         <div class="flex-block-wrapper">
@@ -172,75 +195,77 @@
 <p>The <code>math</code> shortcode renders complex math and chemical formulae using <a href="https://gohugo.io/functions/transform/tomath/" rel="external" target="_self">Hugo&rsquo;s built-in KaTeX</a>.</p>
 
 <span class="math align-center"><span class="math"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mrow><mo fence="true">(</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>a</mi><mi>k</mi></msub><msub><mi>b</mi><mi>k</mi></msub><mo fence="true">)</mo></mrow><mn>2</mn></msup><mo>≤</mo><mrow><mo fence="true">(</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msubsup><mi>a</mi><mi>k</mi><mn>2</mn></msubsup><mo fence="true">)</mo></mrow><mrow><mo fence="true">(</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msubsup><mi>b</mi><mi>k</mi><mn>2</mn></msubsup><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)</annotation></semantics></math></span></span></span>
-<h2 id="usage">Usage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="usage">Usage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-43e09ae24debb6a5d1a056cbcf7fd6f8" aria-expanded="true"
-      data-tab-item="R-tab-f6124225f7555a9190621c9886890973"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Passthrough</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-b7d42e7827409f2fd472dc718ee26c7e" aria-expanded="false"
-      data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Markdown</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-2663d691e2105f622112e96292b00977" aria-expanded="false"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-9ce522be95065afba7e958086a4be266" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-435f03055aca228e70d071b634da72d2-tab" aria-controls="R-tab-id-435f03055aca228e70d071b634da72d2" aria-selected="true"
+        data-tab-item="R-tab-f6124225f7555a9190621c9886890973"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Passthrough</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-4ba84786bff3df5317267925bf4b1e46-tab" aria-controls="R-tab-id-4ba84786bff3df5317267925bf4b1e46" aria-selected="false"
+        data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Markdown</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-35c9d3c5c6cec33fb7b1b1d78a4334cb-tab" aria-controls="R-tab-id-35c9d3c5c6cec33fb7b1b1d78a4334cb" aria-selected="false"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-af317671ea694e0527bfc5be38f06a1c-tab" aria-controls="R-tab-id-af317671ea694e0527bfc5be38f06a1c" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-43e09ae24debb6a5d1a056cbcf7fd6f8"
+      id="R-tab-id-435f03055aca228e70d071b634da72d2" role="tabpanel" aria-labelledby="R-tab-id-435f03055aca228e70d071b634da72d2-tab"
       data-tab-item="R-tab-f6124225f7555a9190621c9886890973"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="err">$$\</span><span class="nf">left</span><span class="p">(</span><span class="w"> </span><span class="err">\</span><span class="nx">sum_</span><span class="p">{</span><span class="nx">k</span><span class="p">=</span><span class="mi">1</span><span class="p">}^</span><span class="nx">n</span><span class="w"> </span><span class="nx">a_k</span><span class="w"> </span><span class="nx">b_k</span><span class="w"> </span><span class="err">\</span><span class="nx">right</span><span class="p">)^</span><span class="mi">2</span><span class="w"> </span><span class="err">\</span><span class="nx">leq</span><span class="w"> </span><span class="err">\</span><span class="nf">left</span><span class="p">(</span><span class="w"> </span><span class="err">\</span><span class="nx">sum_</span><span class="p">{</span><span class="nx">k</span><span class="p">=</span><span class="mi">1</span><span class="p">}^</span><span class="nx">n</span><span class="w"> </span><span class="nx">a_k</span><span class="p">^</span><span class="mi">2</span><span class="w"> </span><span class="err">\</span><span class="nx">right</span><span class="p">)</span><span class="w"> </span><span class="err">\</span><span class="nf">left</span><span class="p">(</span><span class="w"> </span><span class="err">\</span><span class="nx">sum_</span><span class="p">{</span><span class="nx">k</span><span class="p">=</span><span class="mi">1</span><span class="p">}^</span><span class="nx">n</span><span class="w"> </span><span class="nx">b_k</span><span class="p">^</span><span class="mi">2</span><span class="w"> </span><span class="err">\</span><span class="nx">right</span><span class="p">)</span><span class="err">$$</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="err">$$\</span><span class="nf">left</span><span class="p">(</span><span class="w"> </span><span class="err">\</span><span class="nx">sum_</span><span class="p">{</span><span class="nx">k</span><span class="p">=</span><span class="mi">1</span><span class="p">}^</span><span class="nx">n</span><span class="w"> </span><span class="nx">a_k</span><span class="w"> </span><span class="nx">b_k</span><span class="w"> </span><span class="err">\</span><span class="nx">right</span><span class="p">)^</span><span class="mi">2</span><span class="w"> </span><span class="err">\</span><span class="nx">leq</span><span class="w"> </span><span class="err">\</span><span class="nf">left</span><span class="p">(</span><span class="w"> </span><span class="err">\</span><span class="nx">sum_</span><span class="p">{</span><span class="nx">k</span><span class="p">=</span><span class="mi">1</span><span class="p">}^</span><span class="nx">n</span><span class="w"> </span><span class="nx">a_k</span><span class="p">^</span><span class="mi">2</span><span class="w"> </span><span class="err">\</span><span class="nx">right</span><span class="p">)</span><span class="w"> </span><span class="err">\</span><span class="nf">left</span><span class="p">(</span><span class="w"> </span><span class="err">\</span><span class="nx">sum_</span><span class="p">{</span><span class="nx">k</span><span class="p">=</span><span class="mi">1</span><span class="p">}^</span><span class="nx">n</span><span class="w"> </span><span class="nx">b_k</span><span class="p">^</span><span class="mi">2</span><span class="w"> </span><span class="err">\</span><span class="nx">right</span><span class="p">)</span><span class="err">$$</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-b7d42e7827409f2fd472dc718ee26c7e"
+      id="R-tab-id-4ba84786bff3df5317267925bf4b1e46" role="tabpanel" aria-labelledby="R-tab-id-4ba84786bff3df5317267925bf4b1e46-tab"
       data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```math {align=&#34;center&#34;}
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```math {align=&#34;center&#34;}
 </span></span></span><span class="line"><span class="cl"><span class="s">$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 </span></span></span><span class="line"><span class="cl"><span class="s">```</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-2663d691e2105f622112e96292b00977"
+      id="R-tab-id-35c9d3c5c6cec33fb7b1b1d78a4334cb" role="tabpanel" aria-labelledby="R-tab-id-35c9d3c5c6cec33fb7b1b1d78a4334cb-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">math</span><span class="w"> </span><span class="nx">align</span><span class="p">=</span><span class="s">&#34;center&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">math</span><span class="w"> </span><span class="nx">align</span><span class="p">=</span><span class="s">&#34;center&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="err">$$\</span><span class="nf">left</span><span class="p">(</span><span class="w"> </span><span class="err">\</span><span class="nx">sum_</span><span class="p">{</span><span class="nx">k</span><span class="p">=</span><span class="mi">1</span><span class="p">}^</span><span class="nx">n</span><span class="w"> </span><span class="nx">a_k</span><span class="w"> </span><span class="nx">b_k</span><span class="w"> </span><span class="err">\</span><span class="nx">right</span><span class="p">)^</span><span class="mi">2</span><span class="w"> </span><span class="err">\</span><span class="nx">leq</span><span class="w"> </span><span class="err">\</span><span class="nf">left</span><span class="p">(</span><span class="w"> </span><span class="err">\</span><span class="nx">sum_</span><span class="p">{</span><span class="nx">k</span><span class="p">=</span><span class="mi">1</span><span class="p">}^</span><span class="nx">n</span><span class="w"> </span><span class="nx">a_k</span><span class="p">^</span><span class="mi">2</span><span class="w"> </span><span class="err">\</span><span class="nx">right</span><span class="p">)</span><span class="w"> </span><span class="err">\</span><span class="nf">left</span><span class="p">(</span><span class="w"> </span><span class="err">\</span><span class="nx">sum_</span><span class="p">{</span><span class="nx">k</span><span class="p">=</span><span class="mi">1</span><span class="p">}^</span><span class="nx">n</span><span class="w"> </span><span class="nx">b_k</span><span class="p">^</span><span class="mi">2</span><span class="w"> </span><span class="err">\</span><span class="nx">right</span><span class="p">)</span><span class="err">$$</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">math</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-9ce522be95065afba7e958086a4be266"
+      id="R-tab-id-af317671ea694e0527bfc5be38f06a1c" role="tabpanel" aria-labelledby="R-tab-id-af317671ea694e0527bfc5be38f06a1c-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/math.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/math.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;align&#34;</span><span class="w"> </span><span class="s">&#34;center&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;$$\\left( \\sum_{k=1}^n a_k b_k \\right)^2 \\leq \\left( \\sum_{k=1}^n a_k^2 \\right) \\left( \\sum_{k=1}^n b_k^2 \\right)$$&#34;</span><span class="w">
@@ -251,84 +276,86 @@
 </div>
 <p>You can also use <a href="/hugo-theme-relearn/authoring/markdown/index.html#subscript-and-superscript">pure Markdown</a> for writing simple math expressions.</p>
 <p>Delimiters around your formulae require the <a href="/hugo-theme-relearn/shortcodes/math/index.html#passthrough-configuration">Passthrough configuration</a>, as the theme finds your formulae by them. Passthrough syntax itself has limited features as it does not provide any of the below parameters besides <strong>content</strong>. Nevertheless, it is widely available in other Markdown parsers like GitHub and therefore is the recommended syntax for generating portable Markdown.</p>
-<h3 id="parameters">Parameters<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="parameters">Parameters<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
 <table>
-	<thead>
-			<tr>
-					<th>Name</th>
-					<th>Default</th>
-					<th>Notes</th>
-			</tr>
-	</thead>
-	<tbody>
-			<tr>
-					<td><strong>align</strong></td>
-					<td><code>center</code></td>
-					<td>The vertical alignment.<br><br>Allowed values are <code>left</code>, <code>center</code> or <code>right</code>.</td>
-			</tr>
-			<tr>
-					<td><em><strong>&lt;content&gt;</strong></em></td>
-					<td><em>&lt;empty&gt;</em></td>
-					<td>Your formulae.<br><br>Enclose each formula in the block or inline delimiters of your <a href="/hugo-theme-relearn/shortcodes/math/index.html#passthrough-configuration">Passthrough configuration</a>. Text outside of them is written as Markdown.<br><br>Without any delimiters, the whole content is one formula displayed as a block.</td>
-			</tr>
-	</tbody>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Default</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>align</strong></td>
+      <td><code>center</code></td>
+      <td>The vertical alignment.<br><br>Allowed values are <code>left</code>, <code>center</code> or <code>right</code>.</td>
+    </tr>
+    <tr>
+      <td><em><strong>&lt;content&gt;</strong></em></td>
+      <td><em>&lt;empty&gt;</em></td>
+      <td>Your formulae.<br><br>Enclose each formula in the block or inline delimiters of your <a href="/hugo-theme-relearn/shortcodes/math/index.html#passthrough-configuration">Passthrough configuration</a>. Text outside of them is written as Markdown.<br><br>Without any delimiters, the whole content is one formula displayed as a block.</td>
+    </tr>
+  </tbody>
 </table>
-<h2 id="settings">Settings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<h3 id="output-of-the-formulae">Output of the Formulae<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears"></i></span><span class="badge-content">Option</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown"></i></span><span class="badge-content">Front Matter</span></span> By default, formulae are written as <a href="https://developer.mozilla.org/docs/Web/MathML" rel="external" target="_self">MathML</a>, which every current browser displays without any stylesheet or font of the theme. The display quality depends on the browser and the math fonts installed on your reader&rsquo;s system.</p>
+<h2 id="settings">Settings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<h3 id="output-of-the-formulae">Output of the Formulae<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears" aria-hidden="true"></i></span><span class="badge-content">Option</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></span><span class="badge-content">Front Matter</span></span> By default, formulae are written as <a href="https://developer.mozilla.org/docs/Web/MathML" rel="external" target="_self">MathML</a>, which every current browser displays without any stylesheet or font of the theme. The display quality depends on the browser and the math fonts installed on your reader&rsquo;s system.</p>
 <p>If you want your formulae to look the same in every browser, set <code>math.output</code> to <code>htmlAndMathml</code>. The theme then links the KaTeX stylesheet and fonts to every page containing math. The MathML is kept for screen readers. The value <code>html</code> omits it.</p>
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-afdae135048160d6ae92c517e6ccf7c8" aria-expanded="true"
-      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">toml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-641dfdc0082b125d54ba1b6ad8742062" aria-expanded="false"
-      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">yaml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-4bc9ad0a2931ad653a5b6b7fe317846c" aria-expanded="false"
-      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">json</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-d1be2194cdd419c15293c49deb35feae-tab" aria-controls="R-tab-id-d1be2194cdd419c15293c49deb35feae" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-0fe5fc8d46c749acbebd10ad141944e4-tab" aria-controls="R-tab-id-0fe5fc8d46c749acbebd10ad141944e4" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-106fc494745a0d893314c0173744604f-tab" aria-controls="R-tab-id-106fc494745a0d893314c0173744604f" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-afdae135048160d6ae92c517e6ccf7c8"
+      id="R-tab-id-d1be2194cdd419c15293c49deb35feae" role="tabpanel" aria-labelledby="R-tab-id-d1be2194cdd419c15293c49deb35feae-tab"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">math</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">output</span> <span class="p">=</span> <span class="s1">&#39;htmlAndMathml&#39;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-641dfdc0082b125d54ba1b6ad8742062"
+      id="R-tab-id-0fe5fc8d46c749acbebd10ad141944e4" role="tabpanel" aria-labelledby="R-tab-id-0fe5fc8d46c749acbebd10ad141944e4-tab"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">math</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">output</span><span class="p">:</span><span class="w"> </span><span class="l">htmlAndMathml</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-4bc9ad0a2931ad653a5b6b7fe317846c"
+      id="R-tab-id-106fc494745a0d893314c0173744604f" role="tabpanel" aria-labelledby="R-tab-id-106fc494745a0d893314c0173744604f-tab"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">      <span class="nt">&#34;math&#34;</span><span class="p">:</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">         <span class="nt">&#34;output&#34;</span><span class="p">:</span> <span class="s2">&#34;htmlAndMathml&#34;</span>
@@ -339,41 +366,43 @@
     </div>
   </div>
 </div>
-<h3 id="providing-options-for-katex">Providing Options for KaTeX<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears"></i></span><span class="badge-content">Option</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown"></i></span><span class="badge-content">Front Matter</span></span> Besides <code>output</code>, you can set every option of <a href="https://gohugo.io/functions/transform/tomath/#options" rel="external" target="_self">Hugo&rsquo;s <code>transform.ToMath</code> function</a> in <code>math</code>, for example your own macros.</p>
+<h3 id="providing-options-for-katex">Providing Options for KaTeX<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears" aria-hidden="true"></i></span><span class="badge-content">Option</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></span><span class="badge-content">Front Matter</span></span> Besides <code>output</code>, you can set every option of <a href="https://gohugo.io/functions/transform/tomath/#options" rel="external" target="_self">Hugo&rsquo;s <code>transform.ToMath</code> function</a> in <code>math</code>, for example your own macros.</p>
 <p>Each option of your page&rsquo;s front matter overwrites the option of the same name of your configuration options.</p>
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-94ec0a1b03594554f7e6c0a26c70bbb8" aria-expanded="true"
-      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">toml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-6ee1c497af083e2188567529832a6f4d" aria-expanded="false"
-      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">yaml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-3becd37c3589e5ca2ec5eca9c3399536" aria-expanded="false"
-      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">json</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-30cc447e7c66d0cdf2cbd8a68245f44f-tab" aria-controls="R-tab-id-30cc447e7c66d0cdf2cbd8a68245f44f" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-fe4ed56de1a0e377656e317d21f0887b-tab" aria-controls="R-tab-id-fe4ed56de1a0e377656e317d21f0887b" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-9e5cbfd8a6d8194c82339b040699ae34-tab" aria-controls="R-tab-id-9e5cbfd8a6d8194c82339b040699ae34" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-94ec0a1b03594554f7e6c0a26c70bbb8"
+      id="R-tab-id-30cc447e7c66d0cdf2cbd8a68245f44f" role="tabpanel" aria-labelledby="R-tab-id-30cc447e7c66d0cdf2cbd8a68245f44f-tab"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">math</span><span class="p">]</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">math</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">math</span><span class="p">.</span><span class="nx">macros</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">    <span class="s1">&#39;\R&#39;</span> <span class="p">=</span> <span class="s1">&#39;\mathbb{R}&#39;</span>
 </span></span><span class="line"><span class="cl">
@@ -381,22 +410,22 @@
       </div>
     </div>
     <div
-      id="R-tab-id-6ee1c497af083e2188567529832a6f4d"
+      id="R-tab-id-fe4ed56de1a0e377656e317d21f0887b" role="tabpanel" aria-labelledby="R-tab-id-fe4ed56de1a0e377656e317d21f0887b-tab"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">math</span><span class="p">:</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">math</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">macros</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">&#39;\R&#39;</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;\mathbb{R}&#39;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w"> </span>{}</span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-3becd37c3589e5ca2ec5eca9c3399536"
+      id="R-tab-id-9e5cbfd8a6d8194c82339b040699ae34" role="tabpanel" aria-labelledby="R-tab-id-9e5cbfd8a6d8194c82339b040699ae34-tab"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;math&#34;</span><span class="p">:</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">      <span class="nt">&#34;macros&#34;</span><span class="p">:</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">         <span class="nt">&#34;\\R&#34;</span><span class="p">:</span> <span class="s2">&#34;\\mathbb{R}&#34;</span>
@@ -409,62 +438,64 @@
   </div>
 </div>
 <p>A formula that KaTeX can not render is written as its source and reported as a warning in your build.</p>
-<h3 id="force-loading-of-the-katex-stylesheet">Force Loading of the KaTeX Stylesheet<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears"></i></span><span class="badge-content">Option</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown"></i></span><span class="badge-content">Front Matter</span></span> If your <a href="/hugo-theme-relearn/shortcodes/math/index.html#output-of-the-formulae">output</a> needs the KaTeX stylesheet, it will be linked to your page if the page contains a <code>math</code> shortcode, Markdown codefence, Passthrough syntax or the partial is called from your templates.</p>
+<h3 id="force-loading-of-the-katex-stylesheet">Force Loading of the KaTeX Stylesheet<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears" aria-hidden="true"></i></span><span class="badge-content">Option</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></span><span class="badge-content">Front Matter</span></span> If your <a href="/hugo-theme-relearn/shortcodes/math/index.html#output-of-the-formulae">output</a> needs the KaTeX stylesheet, it will be linked to your page if the page contains a <code>math</code> shortcode, Markdown codefence, Passthrough syntax or the partial is called from your templates.</p>
 <p>If you write KaTeX&rsquo;s HTML by other means, you can force linking the stylesheet by setting <code>math.force=true</code>. If a formula was rendered, the option has no effect.</p>
 <p><code>math=true</code> does the same but can&rsquo;t be combined with other <code>math.*</code> options.</p>
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-b5718c8a0dca0a45d64ae7b040c8d2f6" aria-expanded="true"
-      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">toml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-bbb8c6bc06536af3c12b0f4918dccf2f" aria-expanded="false"
-      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">yaml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-eaf411d745a68ed6702baedcb45afd1a" aria-expanded="false"
-      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">json</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-5b396351bb7e6506dd2daa9092fc9f14-tab" aria-controls="R-tab-id-5b396351bb7e6506dd2daa9092fc9f14" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-656e0b25293705055d5ce82386d6cd04-tab" aria-controls="R-tab-id-656e0b25293705055d5ce82386d6cd04" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-dbf1aa9efe544a657fb04e812b312880-tab" aria-controls="R-tab-id-dbf1aa9efe544a657fb04e812b312880" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-b5718c8a0dca0a45d64ae7b040c8d2f6"
+      id="R-tab-id-5b396351bb7e6506dd2daa9092fc9f14" role="tabpanel" aria-labelledby="R-tab-id-5b396351bb7e6506dd2daa9092fc9f14-tab"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">math</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">force</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-bbb8c6bc06536af3c12b0f4918dccf2f"
+      id="R-tab-id-656e0b25293705055d5ce82386d6cd04" role="tabpanel" aria-labelledby="R-tab-id-656e0b25293705055d5ce82386d6cd04-tab"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">math</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">force</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-eaf411d745a68ed6702baedcb45afd1a"
+      id="R-tab-id-dbf1aa9efe544a657fb04e812b312880" role="tabpanel" aria-labelledby="R-tab-id-dbf1aa9efe544a657fb04e812b312880-tab"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">      <span class="nt">&#34;math&#34;</span><span class="p">:</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">         <span class="nt">&#34;force&#34;</span><span class="p">:</span> <span class="kc">true</span>
@@ -475,40 +506,42 @@
     </div>
   </div>
 </div>
-<h3 id="passthrough-configuration">Passthrough Configuration<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="passthrough-configuration">Passthrough Configuration<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
 <p>The theme finds your formulae by the delimiters of Hugo&rsquo;s <a href="https://gohugo.io/content-management/mathematics/#step-1" rel="external" target="_self">Passthrough configuration</a>, so it is required if you use delimiters in any syntax. It also lets you write math without enclosing it in a shortcode or Markdown codefence.</p>
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
-    <div class="tab-nav-title">hugo.</div>
-    <button
-      aria-controls="R-tab-id-cbf5807e9e42d29b538a2b74df0676ef" aria-expanded="true"
-      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">toml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-c1cd0c6ba014be42816ed7aede07f85c" aria-expanded="false"
-      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">yaml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-ed6e2d6c8999d6fb1151192d4a867575" aria-expanded="false"
-      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">json</span>
-    </button>
+    <div class="tab-nav-title" id="R-tabs-title-746f3242a72c97f8e249615457f8c417">hugo.</div>
+    <div class="tab-nav-list" role="tablist" aria-labelledby="R-tabs-title-746f3242a72c97f8e249615457f8c417">
+      <button
+        role="tab" id="R-tab-id-a189692e51a151a5a1707b065fe1573f-tab" aria-controls="R-tab-id-a189692e51a151a5a1707b065fe1573f" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-f2aaa86b9dad5d0acae81212e93b199b-tab" aria-controls="R-tab-id-f2aaa86b9dad5d0acae81212e93b199b" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-f50c17ba67ac4dfdfc0f4aea5079b3a4-tab" aria-controls="R-tab-id-f50c17ba67ac4dfdfc0f4aea5079b3a4" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-cbf5807e9e42d29b538a2b74df0676ef"
+      id="R-tab-id-a189692e51a151a5a1707b065fe1573f" role="tabpanel" aria-labelledby="R-tab-id-a189692e51a151a5a1707b065fe1573f-tab"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">]</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">.</span><span class="nx">extensions</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">      <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">.</span><span class="nx">extensions</span><span class="p">.</span><span class="nx">passthrough</span><span class="p">]</span>
@@ -520,11 +553,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-c1cd0c6ba014be42816ed7aede07f85c"
+      id="R-tab-id-f2aaa86b9dad5d0acae81212e93b199b" role="tabpanel" aria-labelledby="R-tab-id-f2aaa86b9dad5d0acae81212e93b199b-tab"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">markup</span><span class="p">:</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">markup</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">goldmark</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">extensions</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">passthrough</span><span class="p">:</span><span class="w">
@@ -543,11 +576,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-ed6e2d6c8999d6fb1151192d4a867575"
+      id="R-tab-id-f50c17ba67ac4dfdfc0f4aea5079b3a4" role="tabpanel" aria-labelledby="R-tab-id-f50c17ba67ac4dfdfc0f4aea5079b3a4-tab"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;markup&#34;</span><span class="p">:</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">      <span class="nt">&#34;goldmark&#34;</span><span class="p">:</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">         <span class="nt">&#34;extensions&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -585,49 +618,51 @@
   </div>
 </div>
 <p><a href="/hugo-theme-relearn/shortcodes/math/index.html#examples">See the example</a> on how a Passthrough configurations makes using math really easy.</p>
-<h2 id="examples">Examples<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<h3 id="block-math">Block Math<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h2 id="examples">Examples<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<h3 id="block-math">Block Math<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
 <p>In Passthrough default configuration, block math is generated if you use two consecutive <code>$$</code> as a delimiter around your formulae.</p>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-6b05829b6af185a17ee41fb4c504c360" aria-expanded="true"
-      data-tab-item="R-tab-f6124225f7555a9190621c9886890973"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Passthrough</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-09d3d52005f79b1660a056bbf584cf2a" aria-expanded="false"
-      data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Markdown</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-517922cae3f7d26bc66364fd675aab0c" aria-expanded="false"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-6fe3f12f29f67f346f9b4de51bfaeeed" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-f2675005935c20e212484bb3bfcf8910-tab" aria-controls="R-tab-id-f2675005935c20e212484bb3bfcf8910" aria-selected="true"
+        data-tab-item="R-tab-f6124225f7555a9190621c9886890973"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Passthrough</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-5420f9347b48d1aa7e1eb70a68a68bf6-tab" aria-controls="R-tab-id-5420f9347b48d1aa7e1eb70a68a68bf6" aria-selected="false"
+        data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Markdown</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-e8fb145c9e6346eb6b5aa617dba2aa69-tab" aria-controls="R-tab-id-e8fb145c9e6346eb6b5aa617dba2aa69" aria-selected="false"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-f7c84179fe7423d3209c3a890d9a434d-tab" aria-controls="R-tab-id-f7c84179fe7423d3209c3a890d9a434d" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-6b05829b6af185a17ee41fb4c504c360"
+      id="R-tab-id-f2675005935c20e212484bb3bfcf8910" role="tabpanel" aria-labelledby="R-tab-id-f2675005935c20e212484bb3bfcf8910-tab"
       data-tab-item="R-tab-f6124225f7555a9190621c9886890973"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="err">$$\</span><span class="nx">left</span><span class="p">|</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="err">$$\</span><span class="nx">left</span><span class="p">|</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="err">\</span><span class="nx">begin</span><span class="p">{</span><span class="nx">array</span><span class="p">}{</span><span class="nx">cc</span><span class="p">}</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nx">a</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="err">\\</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nx">c</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="nx">d</span><span class="w">
@@ -635,11 +670,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-09d3d52005f79b1660a056bbf584cf2a"
+      id="R-tab-id-5420f9347b48d1aa7e1eb70a68a68bf6" role="tabpanel" aria-labelledby="R-tab-id-5420f9347b48d1aa7e1eb70a68a68bf6-tab"
       data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```math
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```math
 </span></span></span><span class="line"><span class="cl"><span class="s">$$\left|
 </span></span></span><span class="line"><span class="cl"><span class="s">\begin{array}{cc}
 </span></span></span><span class="line"><span class="cl"><span class="s">a &amp; b \\
@@ -649,11 +684,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-517922cae3f7d26bc66364fd675aab0c"
+      id="R-tab-id-e8fb145c9e6346eb6b5aa617dba2aa69" role="tabpanel" aria-labelledby="R-tab-id-e8fb145c9e6346eb6b5aa617dba2aa69-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">math</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">math</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="err">$$\</span><span class="nx">left</span><span class="p">|</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="err">\</span><span class="nx">begin</span><span class="p">{</span><span class="nx">array</span><span class="p">}{</span><span class="nx">cc</span><span class="p">}</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nx">a</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="err">\\</span><span class="w">
@@ -663,11 +698,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-6fe3f12f29f67f346f9b4de51bfaeeed"
+      id="R-tab-id-f7c84179fe7423d3209c3a890d9a434d" role="tabpanel" aria-labelledby="R-tab-id-f7c84179fe7423d3209c3a890d9a434d-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/math.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/math.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;$$\\left|\n\\begin{array}{cc}\na &amp; b \\\\\nc &amp; d\n\\end{array}\\right|$$&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
@@ -680,57 +715,59 @@
 a &amp; b \\
 c &amp; d
 \end{array}\right|</annotation></semantics></math></span></span></span>
-<h3 id="inline-math">Inline Math<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="inline-math">Inline Math<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
 <p>In Passthrough default configuration, inline math is generated if you use a single <code>$</code> as a delimiter around your formulae.</p>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-a639832ed3c87d20e9dc79b4897f07f0" aria-expanded="true"
-      data-tab-item="R-tab-f6124225f7555a9190621c9886890973"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Passthrough</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-363f9728d0a74f2f1a32f8d36662d4bc" aria-expanded="false"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-b42a780555aeb72bd2adb2a70307b77f" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-69143c4b6336e79704734bccdd46279f-tab" aria-controls="R-tab-id-69143c4b6336e79704734bccdd46279f" aria-selected="true"
+        data-tab-item="R-tab-f6124225f7555a9190621c9886890973"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Passthrough</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-e361039187f161112ab573f6a1013948-tab" aria-controls="R-tab-id-e361039187f161112ab573f6a1013948" aria-selected="false"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-ce62e9319b64fd0c090eece5bd43ddfb-tab" aria-controls="R-tab-id-ce62e9319b64fd0c090eece5bd43ddfb" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-a639832ed3c87d20e9dc79b4897f07f0"
+      id="R-tab-id-69143c4b6336e79704734bccdd46279f" role="tabpanel" aria-labelledby="R-tab-id-69143c4b6336e79704734bccdd46279f-tab"
       data-tab-item="R-tab-f6124225f7555a9190621c9886890973"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">Euclid</span><span class="w"> </span><span class="nx">already</span><span class="w"> </span><span class="nx">knew</span><span class="p">,</span><span class="w"> </span><span class="err">$\</span><span class="nx">sqrt</span><span class="p">{</span><span class="mi">2</span><span class="p">}</span><span class="err">$</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">irrational</span><span class="p">.</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">Euclid</span><span class="w"> </span><span class="nx">already</span><span class="w"> </span><span class="nx">knew</span><span class="p">,</span><span class="w"> </span><span class="err">$\</span><span class="nx">sqrt</span><span class="p">{</span><span class="mi">2</span><span class="p">}</span><span class="err">$</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">irrational</span><span class="p">.</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-363f9728d0a74f2f1a32f8d36662d4bc"
+      id="R-tab-id-e361039187f161112ab573f6a1013948" role="tabpanel" aria-labelledby="R-tab-id-e361039187f161112ab573f6a1013948-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">Euclid</span><span class="w"> </span><span class="nx">already</span><span class="w"> </span><span class="nx">knew</span><span class="p">,</span><span class="w"> </span><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">math</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="err">$\</span><span class="nx">sqrt</span><span class="p">{</span><span class="mi">2</span><span class="p">}</span><span class="err">$</span><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">math</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">irrational</span><span class="p">.</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">Euclid</span><span class="w"> </span><span class="nx">already</span><span class="w"> </span><span class="nx">knew</span><span class="p">,</span><span class="w"> </span><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">math</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="err">$\</span><span class="nx">sqrt</span><span class="p">{</span><span class="mi">2</span><span class="p">}</span><span class="err">$</span><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">math</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">irrational</span><span class="p">.</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-b42a780555aeb72bd2adb2a70307b77f"
+      id="R-tab-id-ce62e9319b64fd0c090eece5bd43ddfb" role="tabpanel" aria-labelledby="R-tab-id-ce62e9319b64fd0c090eece5bd43ddfb-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">Euclid</span><span class="w"> </span><span class="nx">already</span><span class="w"> </span><span class="nx">knew</span><span class="p">,</span><span class="w"> </span><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/math.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">Euclid</span><span class="w"> </span><span class="nx">already</span><span class="w"> </span><span class="nx">knew</span><span class="p">,</span><span class="w"> </span><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/math.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;$\\sqrt{2}$&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">irrational</span><span class="p">.</span></span></span></code></pre></div>
@@ -739,76 +776,78 @@ c &amp; d
   </div>
 </div>
 Euclid already knew, <span class="math"><span class="math"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mn>2</mn></msqrt></mrow><annotation encoding="application/x-tex">\sqrt{2}</annotation></semantics></math></span></span></span> is irrational.
-<h3 id="block-math-with-right-alignment">Block Math with Right Alignment<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="block-math-with-right-alignment">Block Math with Right Alignment<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
 <p>With Passthrough syntax, only the <a href="/hugo-theme-relearn/shortcodes/math/index.html#parameters"><strong>content</strong> parameter</a> is available.</p>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-00a6bee233cf2fa80498101e8a8a0ff7" aria-expanded="true"
-      data-tab-item="R-tab-f6124225f7555a9190621c9886890973"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Passthrough</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-3990ed44dea0435c0c5d7174b1e510d5" aria-expanded="false"
-      data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Markdown</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-f8e84cfede52cb34330e6f8b64391601" aria-expanded="false"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-43efa8be2c691278e25f4b34688961bd" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-bb75e68c17db03a459a9198ef99c0a14-tab" aria-controls="R-tab-id-bb75e68c17db03a459a9198ef99c0a14" aria-selected="true"
+        data-tab-item="R-tab-f6124225f7555a9190621c9886890973"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Passthrough</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-d4d37756f1d7470976eaa6261fe939c0-tab" aria-controls="R-tab-id-d4d37756f1d7470976eaa6261fe939c0" aria-selected="false"
+        data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Markdown</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-badb9a831c64caf8d3155f5d95a07c7d-tab" aria-controls="R-tab-id-badb9a831c64caf8d3155f5d95a07c7d" aria-selected="false"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-1cf73907d70fa373d7fd5cf7182c5cdc-tab" aria-controls="R-tab-id-1cf73907d70fa373d7fd5cf7182c5cdc" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-00a6bee233cf2fa80498101e8a8a0ff7"
+      id="R-tab-id-bb75e68c17db03a459a9198ef99c0a14" role="tabpanel" aria-labelledby="R-tab-id-bb75e68c17db03a459a9198ef99c0a14-tab"
       data-tab-item="R-tab-f6124225f7555a9190621c9886890973"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="err">$$\</span><span class="nf">left</span><span class="p">(</span><span class="w"> </span><span class="err">\</span><span class="nx">sum_</span><span class="p">{</span><span class="nx">k</span><span class="p">=</span><span class="mi">1</span><span class="p">}^</span><span class="nx">n</span><span class="w"> </span><span class="nx">a_k</span><span class="w"> </span><span class="nx">b_k</span><span class="w"> </span><span class="err">\</span><span class="nx">right</span><span class="p">)^</span><span class="mi">2</span><span class="w"> </span><span class="err">\</span><span class="nx">leq</span><span class="w"> </span><span class="err">\</span><span class="nf">left</span><span class="p">(</span><span class="w"> </span><span class="err">\</span><span class="nx">sum_</span><span class="p">{</span><span class="nx">k</span><span class="p">=</span><span class="mi">1</span><span class="p">}^</span><span class="nx">n</span><span class="w"> </span><span class="nx">a_k</span><span class="p">^</span><span class="mi">2</span><span class="w"> </span><span class="err">\</span><span class="nx">right</span><span class="p">)</span><span class="w"> </span><span class="err">\</span><span class="nf">left</span><span class="p">(</span><span class="w"> </span><span class="err">\</span><span class="nx">sum_</span><span class="p">{</span><span class="nx">k</span><span class="p">=</span><span class="mi">1</span><span class="p">}^</span><span class="nx">n</span><span class="w"> </span><span class="nx">b_k</span><span class="p">^</span><span class="mi">2</span><span class="w"> </span><span class="err">\</span><span class="nx">right</span><span class="p">)</span><span class="err">$$</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="err">$$\</span><span class="nf">left</span><span class="p">(</span><span class="w"> </span><span class="err">\</span><span class="nx">sum_</span><span class="p">{</span><span class="nx">k</span><span class="p">=</span><span class="mi">1</span><span class="p">}^</span><span class="nx">n</span><span class="w"> </span><span class="nx">a_k</span><span class="w"> </span><span class="nx">b_k</span><span class="w"> </span><span class="err">\</span><span class="nx">right</span><span class="p">)^</span><span class="mi">2</span><span class="w"> </span><span class="err">\</span><span class="nx">leq</span><span class="w"> </span><span class="err">\</span><span class="nf">left</span><span class="p">(</span><span class="w"> </span><span class="err">\</span><span class="nx">sum_</span><span class="p">{</span><span class="nx">k</span><span class="p">=</span><span class="mi">1</span><span class="p">}^</span><span class="nx">n</span><span class="w"> </span><span class="nx">a_k</span><span class="p">^</span><span class="mi">2</span><span class="w"> </span><span class="err">\</span><span class="nx">right</span><span class="p">)</span><span class="w"> </span><span class="err">\</span><span class="nf">left</span><span class="p">(</span><span class="w"> </span><span class="err">\</span><span class="nx">sum_</span><span class="p">{</span><span class="nx">k</span><span class="p">=</span><span class="mi">1</span><span class="p">}^</span><span class="nx">n</span><span class="w"> </span><span class="nx">b_k</span><span class="p">^</span><span class="mi">2</span><span class="w"> </span><span class="err">\</span><span class="nx">right</span><span class="p">)</span><span class="err">$$</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-3990ed44dea0435c0c5d7174b1e510d5"
+      id="R-tab-id-d4d37756f1d7470976eaa6261fe939c0" role="tabpanel" aria-labelledby="R-tab-id-d4d37756f1d7470976eaa6261fe939c0-tab"
       data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```math {align=&#34;right&#34;}
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```math {align=&#34;right&#34;}
 </span></span></span><span class="line"><span class="cl"><span class="s">$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 </span></span></span><span class="line"><span class="cl"><span class="s">```</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-f8e84cfede52cb34330e6f8b64391601"
+      id="R-tab-id-badb9a831c64caf8d3155f5d95a07c7d" role="tabpanel" aria-labelledby="R-tab-id-badb9a831c64caf8d3155f5d95a07c7d-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">math</span><span class="w"> </span><span class="nx">align</span><span class="p">=</span><span class="s">&#34;right&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">math</span><span class="w"> </span><span class="nx">align</span><span class="p">=</span><span class="s">&#34;right&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="err">$$\</span><span class="nf">left</span><span class="p">(</span><span class="w"> </span><span class="err">\</span><span class="nx">sum_</span><span class="p">{</span><span class="nx">k</span><span class="p">=</span><span class="mi">1</span><span class="p">}^</span><span class="nx">n</span><span class="w"> </span><span class="nx">a_k</span><span class="w"> </span><span class="nx">b_k</span><span class="w"> </span><span class="err">\</span><span class="nx">right</span><span class="p">)^</span><span class="mi">2</span><span class="w"> </span><span class="err">\</span><span class="nx">leq</span><span class="w"> </span><span class="err">\</span><span class="nf">left</span><span class="p">(</span><span class="w"> </span><span class="err">\</span><span class="nx">sum_</span><span class="p">{</span><span class="nx">k</span><span class="p">=</span><span class="mi">1</span><span class="p">}^</span><span class="nx">n</span><span class="w"> </span><span class="nx">a_k</span><span class="p">^</span><span class="mi">2</span><span class="w"> </span><span class="err">\</span><span class="nx">right</span><span class="p">)</span><span class="w"> </span><span class="err">\</span><span class="nf">left</span><span class="p">(</span><span class="w"> </span><span class="err">\</span><span class="nx">sum_</span><span class="p">{</span><span class="nx">k</span><span class="p">=</span><span class="mi">1</span><span class="p">}^</span><span class="nx">n</span><span class="w"> </span><span class="nx">b_k</span><span class="p">^</span><span class="mi">2</span><span class="w"> </span><span class="err">\</span><span class="nx">right</span><span class="p">)</span><span class="err">$$</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">math</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-43efa8be2c691278e25f4b34688961bd"
+      id="R-tab-id-1cf73907d70fa373d7fd5cf7182c5cdc" role="tabpanel" aria-labelledby="R-tab-id-1cf73907d70fa373d7fd5cf7182c5cdc-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/math.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/math.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;align&#34;</span><span class="w"> </span><span class="s">&#34;right&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;$$\\left( \\sum_{k=1}^n a_k b_k \\right)^2 \\leq \\left( \\sum_{k=1}^n a_k^2 \\right) \\left( \\sum_{k=1}^n b_k^2 \\right)$$&#34;</span><span class="w">
@@ -818,76 +857,78 @@ Euclid already knew, <span class="math"><span class="math"><span class="katex"><
   </div>
 </div>
 <span class="math align-right"><span class="math"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mrow><mo fence="true">(</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>a</mi><mi>k</mi></msub><msub><mi>b</mi><mi>k</mi></msub><mo fence="true">)</mo></mrow><mn>2</mn></msup><mo>≤</mo><mrow><mo fence="true">(</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msubsup><mi>a</mi><mi>k</mi><mn>2</mn></msubsup><mo fence="true">)</mo></mrow><mrow><mo fence="true">(</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msubsup><mi>b</mi><mi>k</mi><mn>2</mn></msubsup><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)</annotation></semantics></math></span></span></span>
-<h3 id="chemical-formulae">Chemical Formulae<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="chemical-formulae">Chemical Formulae<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
 <p>KaTeX can also render chemical formulae.</p>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-ead4f87951634fc8d054d433cba814f5" aria-expanded="true"
-      data-tab-item="R-tab-f6124225f7555a9190621c9886890973"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Passthrough</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-4f72f5840a5aa848f221df373b38db97" aria-expanded="false"
-      data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Markdown</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-7de526d0d6507bec363b5f6570d3292e" aria-expanded="false"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-4574d3620122128da3bd361f0750586d" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-c090bb355bd787d32d1685efafe5f550-tab" aria-controls="R-tab-id-c090bb355bd787d32d1685efafe5f550" aria-selected="true"
+        data-tab-item="R-tab-f6124225f7555a9190621c9886890973"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Passthrough</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-59b0c9ae24241bf5643d4c07cf7a80d7-tab" aria-controls="R-tab-id-59b0c9ae24241bf5643d4c07cf7a80d7" aria-selected="false"
+        data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Markdown</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-694c140c36c8f7b197463290db0a5746-tab" aria-controls="R-tab-id-694c140c36c8f7b197463290db0a5746" aria-selected="false"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-febe9c69df642c227956802db57e194b-tab" aria-controls="R-tab-id-febe9c69df642c227956802db57e194b" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-ead4f87951634fc8d054d433cba814f5"
+      id="R-tab-id-c090bb355bd787d32d1685efafe5f550" role="tabpanel" aria-labelledby="R-tab-id-c090bb355bd787d32d1685efafe5f550-tab"
       data-tab-item="R-tab-f6124225f7555a9190621c9886890973"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="err">$$\</span><span class="nx">ce</span><span class="p">{</span><span class="nx">Hg</span><span class="p">^</span><span class="mi">2</span><span class="o">+</span><span class="w"> </span><span class="o">-</span><span class="p">&gt;[</span><span class="nx">I</span><span class="o">-</span><span class="p">]</span><span class="w"> </span><span class="nx">HgI2</span><span class="w"> </span><span class="o">-</span><span class="p">&gt;[</span><span class="nx">I</span><span class="o">-</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="nx">Hg</span><span class="p">^{</span><span class="nx">II</span><span class="p">}</span><span class="nx">I4</span><span class="p">]^</span><span class="mi">2</span><span class="o">-</span><span class="p">}</span><span class="err">$$</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="err">$$\</span><span class="nx">ce</span><span class="p">{</span><span class="nx">Hg</span><span class="p">^</span><span class="mi">2</span><span class="o">+</span><span class="w"> </span><span class="o">-</span><span class="p">&gt;[</span><span class="nx">I</span><span class="o">-</span><span class="p">]</span><span class="w"> </span><span class="nx">HgI2</span><span class="w"> </span><span class="o">-</span><span class="p">&gt;[</span><span class="nx">I</span><span class="o">-</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="nx">Hg</span><span class="p">^{</span><span class="nx">II</span><span class="p">}</span><span class="nx">I4</span><span class="p">]^</span><span class="mi">2</span><span class="o">-</span><span class="p">}</span><span class="err">$$</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-4f72f5840a5aa848f221df373b38db97"
+      id="R-tab-id-59b0c9ae24241bf5643d4c07cf7a80d7" role="tabpanel" aria-labelledby="R-tab-id-59b0c9ae24241bf5643d4c07cf7a80d7-tab"
       data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```math
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```math
 </span></span></span><span class="line"><span class="cl"><span class="s">$$\ce{Hg^2+ -&gt;[I-] HgI2 -&gt;[I-] [Hg^{II}I4]^2-}$$
 </span></span></span><span class="line"><span class="cl"><span class="s">```</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-7de526d0d6507bec363b5f6570d3292e"
+      id="R-tab-id-694c140c36c8f7b197463290db0a5746" role="tabpanel" aria-labelledby="R-tab-id-694c140c36c8f7b197463290db0a5746-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">math</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">math</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="err">$$\</span><span class="nx">ce</span><span class="p">{</span><span class="nx">Hg</span><span class="p">^</span><span class="mi">2</span><span class="o">+</span><span class="w"> </span><span class="o">-</span><span class="p">&gt;[</span><span class="nx">I</span><span class="o">-</span><span class="p">]</span><span class="w"> </span><span class="nx">HgI2</span><span class="w"> </span><span class="o">-</span><span class="p">&gt;[</span><span class="nx">I</span><span class="o">-</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="nx">Hg</span><span class="p">^{</span><span class="nx">II</span><span class="p">}</span><span class="nx">I4</span><span class="p">]^</span><span class="mi">2</span><span class="o">-</span><span class="p">}</span><span class="err">$$</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">math</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-4574d3620122128da3bd361f0750586d"
+      id="R-tab-id-febe9c69df642c227956802db57e194b" role="tabpanel" aria-labelledby="R-tab-id-febe9c69df642c227956802db57e194b-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/math.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/math.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;$$\\ce{Hg^2+ -&gt;[I-] HgI2 -&gt;[I-] [Hg^{II}I4]^2-}$$&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
@@ -899,7 +940,7 @@ Euclid already knew, <span class="math"><span class="math"><span class="katex"><
 
   <footer class="footline">
 <div class="R-taxonomy taxonomy-categories" title="Categories">
-  <i class="fa-fw fas fa-layer-group"></i>
+  <i class="fa-fw fas fa-layer-group" aria-hidden="true"></i>
   <ul>
     <li><a class="term-link" href="/hugo-theme-relearn/categories/howto/index.html">Howto</a></li>
     <li><a class="term-link" href="/hugo-theme-relearn/categories/reference/index.html">Reference</a></li>
@@ -910,7 +951,7 @@ Euclid already knew, <span class="math"><span class="math"><span class="katex"><
         </div>
       </main>
     </div>
-    <script src="/hugo-theme-relearn/js/theme.min.5e81b78e5900bce96f55e277df01b5b477b164c8094c7fc0a689ccfd86eeb4b3.js" defer></script>
+    <script src="/hugo-theme-relearn/js/theme.min.f66b851115ea46f239f782bd19e65c09786103c8cb054f72664b912bc561d1c8.js" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

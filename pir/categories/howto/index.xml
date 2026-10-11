@@ -3,10 +3,18 @@
   <channel>
     <title>Howto :: Categorrry :: Cap&#39;n Hugo Relearrrn Theme</title>
     <link>https://fkaminski.github.io/hugo-theme-relearn/pir/categories/howto/index.html</link>
-    <description></description>
+    <description>How-to guides show ye th&#39; steps t&#39; solve a specific task ye already have &#39;n mind.</description>
     <generator>Hugo</generator>
     <language>art-x-pir</language>
+    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://fkaminski.github.io/hugo-theme-relearn/pir/categories/howto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Accessibility</title>
+      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/publishing/accessibility/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/publishing/accessibility/index.html</guid>
+      <description>What the theme does to be usable by everyone</description>
+    </item>
     <item>
       <title>Logo &amp; Title</title>
       <link>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/branding/logo/index.html</link>
@@ -48,6 +56,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/branding/colors/index.html</guid>
       <description>Learn how to customize your site&#39;s colors</description>
+    </item>
+    <item>
+      <title>Deployment Scenarios</title>
+      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/publishing/deployment/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/publishing/deployment/index.html</guid>
+      <description>Options for specific deployment needs</description>
     </item>
     <item>
       <title>Header &amp; Footer</title>
@@ -113,13 +128,6 @@
       <description>Configure search and the search form</description>
     </item>
     <item>
-      <title>Tool Integration</title>
-      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/introduction/tools/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/introduction/tools/index.html</guid>
-      <description>All about supported 3rd party tools</description>
-    </item>
-    <item>
       <title>Versioning</title>
       <link>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sitemanagement/versioning/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -162,6 +170,13 @@
       <description>What site-wide meta information can be set</description>
     </item>
     <item>
+      <title>Stable Output</title>
+      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/publishing/stableoutput/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/publishing/stableoutput/index.html</guid>
+      <description>How to make your generated HTML output stable</description>
+    </item>
+    <item>
       <title>Topbarrr</title>
       <link>https://fkaminski.github.io/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -169,11 +184,11 @@
       <description>Configure the topbar</description>
     </item>
     <item>
-      <title>Deployment Scenarios</title>
-      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sitemanagement/deployment/index.html</link>
+      <title>Available Output Formats</title>
+      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sitemanagement/outputformats/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sitemanagement/deployment/index.html</guid>
-      <description>Options for specific deployment needs</description>
+      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sitemanagement/outputformats/index.html</guid>
+      <description>What formats can a page be displayed in</description>
     </item>
     <item>
       <title>Linking</title>
@@ -181,6 +196,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/content/linking/index.html</guid>
       <description>What options are available for links and images</description>
+    </item>
+    <item>
+      <title>SBOM</title>
+      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/publishing/sbom/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/publishing/sbom/index.html</guid>
+      <description>What the theme publishes with your site, as a CycloneDX SBOM</description>
+    </item>
+    <item>
+      <title>Content Security Policy</title>
+      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/publishing/csp/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/publishing/csp/index.html</guid>
+      <description>Serving your site with a strict Content Security Policy</description>
     </item>
     <item>
       <title>Hidden Pages</title>
@@ -204,13 +233,6 @@
       <description>How to adjust taxonomy and term pages</description>
     </item>
     <item>
-      <title>Available Output Formats</title>
-      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sitemanagement/outputformats/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sitemanagement/outputformats/index.html</guid>
-      <description>What formats can a page be displayed in</description>
-    </item>
-    <item>
       <title>Output Formats</title>
       <link>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/customization/outputformats/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -218,11 +240,11 @@
       <description>Adding Custom Output Formats</description>
     </item>
     <item>
-      <title>Stable Output</title>
-      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sitemanagement/stableoutput/index.html</link>
+      <title>VS Code Front Matter CMS</title>
+      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/publishing/frontmattercms/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sitemanagement/stableoutput/index.html</guid>
-      <description>How to make your generated HTML output stable</description>
+      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/publishing/frontmattercms/index.html</guid>
+      <description>Use the shortcodes from inside the VS Code Front Matter CMS extension</description>
     </item>
     <item>
       <title>Taxonomies</title>
@@ -232,18 +254,11 @@
       <description>How to display custom taxonomies on your pages</description>
     </item>
     <item>
-      <title>SBOM</title>
-      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sitemanagement/sbom/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sitemanagement/sbom/index.html</guid>
-      <description>What the theme publishes with your site, as a CycloneDX SBOM</description>
-    </item>
-    <item>
-      <title>Content Security Policy</title>
-      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sitemanagement/csp/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sitemanagement/csp/index.html</guid>
-      <description>Serving your site with a strict Content Security Policy</description>
+      <title>Pages</title>
+      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/shortcodes/pages/index.html</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/shortcodes/pages/index.html</guid>
+      <description>Group, order &#39;n list th&#39; planks o&#39; yer ship</description>
     </item>
     <item>
       <title>Badge</title>
@@ -260,6 +275,13 @@
       <description>Clickable buttons</description>
     </item>
     <item>
+      <title>Callout</title>
+      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/shortcodes/callout/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/shortcodes/callout/index.html</guid>
+      <description>Boxes to help you structure your page</description>
+    </item>
+    <item>
       <title>Cards</title>
       <link>https://fkaminski.github.io/hugo-theme-relearn/pir/shortcodes/cards/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -267,17 +289,10 @@
       <description>Show rrrambl&#39;n &#39;n carrrds</description>
     </item>
     <item>
-      <title>Children</title>
-      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/shortcodes/children/index.html</link>
+      <title>Details</title>
+      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/shortcodes/details/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/shortcodes/children/index.html</guid>
-      <description>List th&#39; child planks on a plank</description>
-    </item>
-    <item>
-      <title>Expand</title>
-      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/shortcodes/expand/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/shortcodes/expand/index.html</guid>
+      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/shortcodes/details/index.html</guid>
       <description>Expand&#39;ble/collaps&#39;ble sections of text</description>
     </item>
     <item>
@@ -314,13 +329,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/shortcodes/mermaid/index.html</guid>
       <description>Generrrat&#39;n o&#39; diagrrram an&#39; flowcharrrt frrrom text</description>
-    </item>
-    <item>
-      <title>Notice</title>
-      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/shortcodes/notice/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/shortcodes/notice/index.html</guid>
-      <description>Boxes to help you structure your page</description>
     </item>
     <item>
       <title>OpenAPI</title>

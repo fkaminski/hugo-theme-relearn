@@ -3,7 +3,6 @@ categories = ['howto']
 description = 'Configure the topbar'
 frontmatter = ['disableBreadcrumb', 'disableNextPrev', 'disableMarkdownButton', 'disableSourceButton', 'disablePrintButton', 'disableToc', 'editURL']
 options = ['disableBreadcrumb', 'disableNextPrev', 'disableMarkdownButton', 'disableSourceButton', 'disablePrintButton', 'disableToc', 'editURL']
-outputs = ['html', 'rss', 'print', 'markdown', 'source']
 title = 'Topbar'
 weight = 4
 +++
@@ -61,9 +60,8 @@ This is how you send the edit button to your local editor instead of a web servi
 editURL = 'vscode://file/${BaseDir}/${FilePath}'
 {{< /multiconfig >}}
 
-{{% notice note %}}
-An editor URL only works on the machine your site was built on, as it names a path in your file system. Don't set one for a site you deploy.
-{{% /notice %}}
+> [!note]
+> An editor URL only works on the machine your site was built on, as it names a path in your file system. Don't set one for a site you deploy.
 
 ## Markdown Button
 

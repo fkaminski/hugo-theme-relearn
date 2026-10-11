@@ -3,25 +3,49 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.166.0">
-    <meta name="generator" content="Relearn 9.1.0+edd32dd46699cf37d4c81be4a1fbeb8bd7112e9e">
+    <meta name="generator" content="Hugo 0.167.0">
+    <meta name="generator" content="Relearn 9.2.0+a9b397c5d13bccbd206ef42c15e37966e99cda51">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
-    <meta name="description" content="5.9.0 (2022-12-23) Breaking Breaking With this version it is now possible to not only have sections on the first menu level but also pages.">
+    <meta name="description" content="5.9.0 (2022-12-23) Breaking Breaking With this version it is now possible to not only have sections on the first menu level but also pages.
+It was later discovered, that this causes pages only meant to be displayed in the More section of the menu and stored directly inside your content directory to now show up in the menu as well.
+To get rid of this undesired behavior you have two choices:
+Make the page file a headless branch bundle (contained in its own subdirectory and called _index.md) and add the following front matter configuration to the file (see docs content/showcase/_index.en.md). This causes its content to not be ontained in the sitemap.
+​ toml yaml json &#43;&#43;&#43; title = &#39;Showcase&#39; [build] list = &#39;never&#39; publishResources = true render = &#39;always&#39; &#43;&#43;&#43; --- build: list: never publishResources: true render: always title: Showcase --- { &#34;build&#34;: { &#34;list&#34;: &#34;never&#34;, &#34;publishResources&#34;: true, &#34;render&#34;: &#34;always&#34; }, &#34;title&#34;: &#34;Showcase&#34; } Store the page file for below a parent headless branch bundle and add the following front matter to he parent (see docs content/more/_index.en.md). Don’t give this page a title as this will cause it to be shown in the breadcrumbs - a thing you most likely don’t want.
+​ toml yaml json &#43;&#43;&#43; [build] list = &#39;never&#39; publishResources = false render = &#39;never&#39; &#43;&#43;&#43; --- build: list: never publishResources: false render: never --- { &#34;build&#34;: { &#34;list&#34;: &#34;never&#34;, &#34;publishResources&#34;: false, &#34;render&#34;: &#34;never&#34; } } In this case, the file itself can be a branch bundle, leaf bundle or simple page (see docs content/more/credits.en.md). This causes its content to be contained in the sitemap.
+​ toml yaml json &#43;&#43;&#43; title = &#39;Credits&#39; &#43;&#43;&#43; --- title: Credits --- { &#34;title&#34;: &#34;Credits&#34; }">
     <meta name="author" content="Sören Weber">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://fkaminski.github.io/hugo-theme-relearn/images/hero.png">
     <meta name="twitter:title" content="Version 5.9 :: Hugo Relearn Theme">
-    <meta name="twitter:description" content="5.9.0 (2022-12-23) Breaking Breaking With this version it is now possible to not only have sections on the first menu level but also pages.">
+    <meta name="twitter:description" content="5.9.0 (2022-12-23) Breaking Breaking With this version it is now possible to not only have sections on the first menu level but also pages.
+It was later discovered, that this causes pages only meant to be displayed in the More section of the menu and stored directly inside your content directory to now show up in the menu as well.
+To get rid of this undesired behavior you have two choices:
+Make the page file a headless branch bundle (contained in its own subdirectory and called _index.md) and add the following front matter configuration to the file (see docs content/showcase/_index.en.md). This causes its content to not be ontained in the sitemap.
+​ toml yaml json &#43;&#43;&#43; title = &#39;Showcase&#39; [build] list = &#39;never&#39; publishResources = true render = &#39;always&#39; &#43;&#43;&#43; --- build: list: never publishResources: true render: always title: Showcase --- { &#34;build&#34;: { &#34;list&#34;: &#34;never&#34;, &#34;publishResources&#34;: true, &#34;render&#34;: &#34;always&#34; }, &#34;title&#34;: &#34;Showcase&#34; } Store the page file for below a parent headless branch bundle and add the following front matter to he parent (see docs content/more/_index.en.md). Don’t give this page a title as this will cause it to be shown in the breadcrumbs - a thing you most likely don’t want.
+​ toml yaml json &#43;&#43;&#43; [build] list = &#39;never&#39; publishResources = false render = &#39;never&#39; &#43;&#43;&#43; --- build: list: never publishResources: false render: never --- { &#34;build&#34;: { &#34;list&#34;: &#34;never&#34;, &#34;publishResources&#34;: false, &#34;render&#34;: &#34;never&#34; } } In this case, the file itself can be a branch bundle, leaf bundle or simple page (see docs content/more/credits.en.md). This causes its content to be contained in the sitemap.
+​ toml yaml json &#43;&#43;&#43; title = &#39;Credits&#39; &#43;&#43;&#43; --- title: Credits --- { &#34;title&#34;: &#34;Credits&#34; }">
     <meta property="og:url" content="https://fkaminski.github.io/hugo-theme-relearn/introduction/releasenotes/5/9/index.html">
     <meta property="og:site_name" content="Hugo Relearn Theme">
     <meta property="og:title" content="Version 5.9 :: Hugo Relearn Theme">
-    <meta property="og:description" content="5.9.0 (2022-12-23) Breaking Breaking With this version it is now possible to not only have sections on the first menu level but also pages.">
+    <meta property="og:description" content="5.9.0 (2022-12-23) Breaking Breaking With this version it is now possible to not only have sections on the first menu level but also pages.
+It was later discovered, that this causes pages only meant to be displayed in the More section of the menu and stored directly inside your content directory to now show up in the menu as well.
+To get rid of this undesired behavior you have two choices:
+Make the page file a headless branch bundle (contained in its own subdirectory and called _index.md) and add the following front matter configuration to the file (see docs content/showcase/_index.en.md). This causes its content to not be ontained in the sitemap.
+​ toml yaml json &#43;&#43;&#43; title = &#39;Showcase&#39; [build] list = &#39;never&#39; publishResources = true render = &#39;always&#39; &#43;&#43;&#43; --- build: list: never publishResources: true render: always title: Showcase --- { &#34;build&#34;: { &#34;list&#34;: &#34;never&#34;, &#34;publishResources&#34;: true, &#34;render&#34;: &#34;always&#34; }, &#34;title&#34;: &#34;Showcase&#34; } Store the page file for below a parent headless branch bundle and add the following front matter to he parent (see docs content/more/_index.en.md). Don’t give this page a title as this will cause it to be shown in the breadcrumbs - a thing you most likely don’t want.
+​ toml yaml json &#43;&#43;&#43; [build] list = &#39;never&#39; publishResources = false render = &#39;never&#39; &#43;&#43;&#43; --- build: list: never publishResources: false render: never --- { &#34;build&#34;: { &#34;list&#34;: &#34;never&#34;, &#34;publishResources&#34;: false, &#34;render&#34;: &#34;never&#34; } } In this case, the file itself can be a branch bundle, leaf bundle or simple page (see docs content/more/credits.en.md). This causes its content to be contained in the sitemap.
+​ toml yaml json &#43;&#43;&#43; title = &#39;Credits&#39; &#43;&#43;&#43; --- title: Credits --- { &#34;title&#34;: &#34;Credits&#34; }">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Introduction">
     <meta property="og:image" content="https://fkaminski.github.io/hugo-theme-relearn/images/hero.png">
     <meta itemprop="name" content="Version 5.9 :: Hugo Relearn Theme">
-    <meta itemprop="description" content="5.9.0 (2022-12-23) Breaking Breaking With this version it is now possible to not only have sections on the first menu level but also pages.">
+    <meta itemprop="description" content="5.9.0 (2022-12-23) Breaking Breaking With this version it is now possible to not only have sections on the first menu level but also pages.
+It was later discovered, that this causes pages only meant to be displayed in the More section of the menu and stored directly inside your content directory to now show up in the menu as well.
+To get rid of this undesired behavior you have two choices:
+Make the page file a headless branch bundle (contained in its own subdirectory and called _index.md) and add the following front matter configuration to the file (see docs content/showcase/_index.en.md). This causes its content to not be ontained in the sitemap.
+​ toml yaml json &#43;&#43;&#43; title = &#39;Showcase&#39; [build] list = &#39;never&#39; publishResources = true render = &#39;always&#39; &#43;&#43;&#43; --- build: list: never publishResources: true render: always title: Showcase --- { &#34;build&#34;: { &#34;list&#34;: &#34;never&#34;, &#34;publishResources&#34;: true, &#34;render&#34;: &#34;always&#34; }, &#34;title&#34;: &#34;Showcase&#34; } Store the page file for below a parent headless branch bundle and add the following front matter to he parent (see docs content/more/_index.en.md). Don’t give this page a title as this will cause it to be shown in the breadcrumbs - a thing you most likely don’t want.
+​ toml yaml json &#43;&#43;&#43; [build] list = &#39;never&#39; publishResources = false render = &#39;never&#39; &#43;&#43;&#43; --- build: list: never publishResources: false render: never --- { &#34;build&#34;: { &#34;list&#34;: &#34;never&#34;, &#34;publishResources&#34;: false, &#34;render&#34;: &#34;never&#34; } } In this case, the file itself can be a branch bundle, leaf bundle or simple page (see docs content/more/credits.en.md). This causes its content to be contained in the sitemap.
+​ toml yaml json &#43;&#43;&#43; title = &#39;Credits&#39; &#43;&#43;&#43; --- title: Credits --- { &#34;title&#34;: &#34;Credits&#34; }">
     <meta itemprop="wordCount" content="424">
     <meta itemprop="image" content="https://fkaminski.github.io/hugo-theme-relearn/images/hero.png">
     <title>Version 5.9 :: Hugo Relearn Theme</title>
@@ -29,13 +53,15 @@
     <link href="https://fkaminski.github.io/hugo-theme-relearn/introduction/releasenotes/5/9/index.html" rel="alternate" hreflang="en">
     <link href="https://fkaminski.github.io/hugo-theme-relearn/pir/introduction/releasenotes/5/9/index.html" rel="alternate" hreflang="art-x-pir">
     <link href="https://fkaminski.github.io/hugo-theme-relearn/introduction/releasenotes/5/9/index.html" rel="canonical" type="text/html" title="Version 5.9 :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/introduction/releasenotes/5/9/index.md" rel="alternate" type="text/markdown" title="Version 5.9 :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/introduction/releasenotes/5/9/index.source.md" rel="alternate" type="text/markdown" title="Version 5.9 :: Hugo Relearn Theme">
     <link href="/hugo-theme-relearn/images/logo.d30ab0425821f45713322a73c1eeb192e311689b03371519abbe061a24d1201e.svg" rel="icon" type="image/svg+xml">
     <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.78b49c23f59ffb08554285843ed4c841484fe34c489058b2991edc027cdd47fc.css" rel="stylesheet">
-    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.7b340a2a0841d2466dca47e43cbd8c4dfe6a4f77a6c81c984d49ebb60ba2e299.js" defer></script>
-    <script src="/hugo-theme-relearn/js/search-lunr.min.2e613f0a1ce042c097f61ecc0e3f843d395bf3a42717715f9c08a11dc2f21122.js" defer></script>
-    <script src="/hugo-theme-relearn/js/search.min.373845112980472e938f57e7ec9a00ff9d7b651d7e72cacce2b29211ad5f1924.js" defer></script>
+    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.9657edd589a1ca6962a3cf03df5aa17f16f2c67350aea0a84dddbd8d5698316f.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.9897ffe790e716e8b90e4a9e200dce63c2603e69a9eec9bbdce6a483811ea180.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.4bcf60afa00d9f5c3adf08ff55811ce4cc679bd6d4b5747d674667994ee1debb.js" defer></script>
     <script type="application/json" id="R-search-config">{
-      "indexFile": "searchindex.en.min.00b99188351628699a21cf5dfc96dcbfb52e0b985835ac4b1c8faf03933fbfa8.js"
+      "indexFile": "searchindex.en.min.c4f041a00cc99840cf39073ec5ee0c85a4b4738e5a58acbd24b4ecb2e0d4600e.js"
     }</script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
@@ -47,10 +73,9 @@
       ]
     }</script>
     <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" class="R-async-style"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
-    <link href="/hugo-theme-relearn/css/theme.min.c5e57f8072c26c3936afb7f1f29896beccceeb26ad977baa337cb1cbf585deea.css" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/format-print.min.39e0dc30e3ca73e623fcf660fac10bf09db5539b3d13e59e90977cf7137e6aee.css" rel="stylesheet" id="R-format-style">
+    <link href="/hugo-theme-relearn/css/theme.min.8cd3fb0d94b35d653c73be5b6192808bb4d4b49792cbf9c092307d30edc9487f.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/format-print.min.fde31a3bc19a193360c646fd67b62d0fb98ae684449d1922b5ac0ed941277607.css" rel="stylesheet" id="R-format-style">
     <script type="application/json" id="R-theme-config">{
-      "absBaseUri": "https://fkaminski.github.io/hugo-theme-relearn",
       "disableInlineCopyToClipboard": true,
       "enableBlockCodeWrap": true,
       "path": "/introduction/releasenotes/5/9/index.html",
@@ -64,6 +89,9 @@
         "zen-auto",
         "zen-dark",
         "zen-light",
+        "contrast-auto",
+        "contrast-dark",
+        "contrast-light",
         "retro-auto",
         "neon",
         "learn",
@@ -73,16 +101,24 @@
       ],
       "translations": {
         "Browser_unsupported_feature": "This browser doesn't support this feature",
+        "Close_graph": "Close enlarged graph",
         "Copied_to_clipboard": "Text copied to clipboard!",
         "Copy_to_clipboard": "Copy text to clipboard",
+        "Deleted_text_end": "End of deleted text",
+        "Deleted_text_start": "Start of deleted text",
+        "Enlarge_graph": "Enlarge graph",
+        "History_cleared": "History cleared",
+        "Inserted_text_end": "End of inserted text",
+        "Inserted_text_start": "Start of inserted text",
         "Link_copied_to_clipboard": "Link copied to clipboard!",
+        "N_matches_on_page": "{1} matches for \"{0}\" on this page",
         "N_results_found": "{1} results found for \"{0}\"",
         "No_results_found": "No results found for \"{0}\"",
         "Reset_view": "Reset view",
         "View_reset": "View reset!"
       }
     }</script>
-    <script src="/hugo-theme-relearn/js/theme-head.min.eb092668f5b427260df95861e28028bbd22ff85e2af068b9bfbedf0cbdbea887.js"></script>
+    <script src="/hugo-theme-relearn/js/theme-head.min.8c8c3bb99b655d91386ff7fefb5fceeb088bff4bb82bcde54fbef7dacb3388cc.js"></script>
     <style>
        
       #R-body img.bg-white {
@@ -91,20 +127,21 @@
     </style>
   </head>
   <body class="mobile-support print" data-origin="/hugo-theme-relearn/introduction/releasenotes/5/9/index.html">
+    <a id="R-skip-link" href="#R-body-inner">Skip to main content</a>
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
-      <nav id="R-topbar" class="default-animation">
+      <header id="R-topbar" class="default-animation">
         <div class="topbar-wrapper default-animation">
           <div class="topbar-sidebar-divider default-animation"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)" aria-label="Menu (CTRL&#43;ALT&#43;n)" aria-expanded="false"><i class="fa-fw fas fa-bars" aria-hidden="true"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)" aria-label="Table of Contents (CTRL&#43;ALT&#43;t)" aria-expanded="false"><i class="fa-fw fas fa-table-list" aria-hidden="true"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper" tabindex="-1">
-<nav class="TableOfContents">
+<nav class="TableOfContents" aria-label="Table of Contents">
   <ul>
     <li><a href="#5-9-0">5.9.0 (2022-12-23)</a>
       <ul>
@@ -119,33 +156,43 @@
               </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/index.html"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/introduction/index.html"><span itemprop="name">Introduction</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/introduction/releasenotes/index.html"><span itemprop="name">What&#39;s New</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/introduction/releasenotes/5/index.html"><span itemprop="name">Version 5</span></a><meta itemprop="position" content="4">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Version 5.9</span><meta itemprop="position" content="5"></li>
-          </ol>
+          <div class="topbar-area topbar-area-middle" data-area="middle">
+            <nav class="topbar-breadcrumbs breadcrumbs highlightable" aria-label="Breadcrumbs" data-overflow-title="Introduction &gt; What&#39;s New &gt; Version 5 &gt; Version 5.9">
+              <ol itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/index.html" tabindex="-1"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/introduction/index.html"><span itemprop="name">Introduction</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/introduction/releasenotes/index.html"><span itemprop="name">What&#39;s New</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/introduction/releasenotes/5/index.html"><span itemprop="name">Version 5</span></a><meta itemprop="position" content="4">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="" aria-current="page"><span itemprop="name">Version 5.9</span><meta itemprop="position" content="5"></li>
+              </ol>
+            </nav>
+          </div>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/introduction/releasenotes/5/9.en.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen"></i></a></span>
-            </div>
-            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/introduction/releasenotes/5/9/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
             <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/introduction/releasenotes/5/index.html" title="Version 5 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Version 5 (🡐)" href="/hugo-theme-relearn/introduction/releasenotes/5/index.html" title="Version 5 (🡐)"><i class="fa-fw fas fa-chevron-left" aria-hidden="true"></i></a></span>
             </div>
             <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/introduction/releasenotes/4/index.html" title="Version 4 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Version 4 (🡒)" href="/hugo-theme-relearn/introduction/releasenotes/4/index.html" title="Version 4 (🡒)"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i></a></span>
             </div>
             <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="More" aria-label="More" aria-expanded="false"><i class="fa-fw fas fa-ellipsis-v" aria-hidden="true"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper" tabindex="-1">
                   <div class="topbar-area topbar-area-more" data-area="more">
+            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Edit (CTRL+ALT+w)" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/introduction/releasenotes/5/9.en.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-source default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Show source code" href="/hugo-theme-relearn/introduction/releasenotes/5/9/index.source.md" title="Show source code"><i class="fa-fw fas fa-code" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-markdown default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Show Markdown" href="/hugo-theme-relearn/introduction/releasenotes/5/9/index.md" title="Show Markdown"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Print whole chapter (CTRL+ALT+p)" href="/hugo-theme-relearn/introduction/releasenotes/5/9/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print" aria-hidden="true"></i></a></span>
+            </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </nav>
+      </header>
       <div id="R-main-overlay"></div>
       <main id="R-body-inner" class="highlightable releasenotes" tabindex="-1">
         <div class="flex-block-wrapper">
@@ -158,18 +205,18 @@ See the <a href="/hugo-theme-relearn/introduction/changelog/5/9/index.html">chan
 <hr>
 
 <ul>
-<li><p><span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank"></i></span><span class="badge-content">0.95.0</span></span> Minimum required Hugo version</p></li>
-<li><p><span class="badge cstyle breaking badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-triangle"></i></span><span class="badge-content">Breaking</span></span> Change requiring action after upgrade</p></li>
-<li><p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Change of behavior, may require action</p></li>
-<li><p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> New behavior, often introducing new options</p></li>
+<li><p><span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank" aria-hidden="true"></i></span><span class="badge-content">0.95.0</span></span> Minimum required Hugo version</p></li>
+<li><p><span class="badge cstyle breaking badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-triangle" aria-hidden="true"></i></span><span class="badge-content">Breaking</span></span> Change requiring action after upgrade</p></li>
+<li><p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Change of behavior, may require action</p></li>
+<li><p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> New behavior, often introducing new options</p></li>
 </ul>
 <hr>
 
-<h2 id="5-9-0">5.9.0 (2022-12-23)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<h3 id="breaking">Breaking<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h2 id="5-9-0">5.9.0 (2022-12-23)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<h3 id="breaking">Breaking<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
 <ul>
 <li>
-<p><span class="badge cstyle breaking badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-triangle"></i></span><span class="badge-content">Breaking</span></span> With this version it is now possible to not only have sections on the first menu level but also pages.</p>
+<p><span class="badge cstyle breaking badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-triangle" aria-hidden="true"></i></span><span class="badge-content">Breaking</span></span> With this version it is now possible to not only have sections on the first menu level but also pages.</p>
 <p>It was later discovered, that this causes pages only meant to be displayed in the <code>More</code> section of the menu and stored directly inside your <code>content</code> directory to now show up in the menu as well.</p>
 <p>To <a href="/hugo-theme-relearn/configuration/sidebar/menus/index.html#displaying-pages-exclusively-in-a-hugo-menu">get rid</a> of this undesired behavior you have two choices:</p>
 <ol>
@@ -178,35 +225,37 @@ See the <a href="/hugo-theme-relearn/introduction/changelog/5/9/index.html">chan
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-ae04ca4f1d9e1d218acf50a8d4c78584" aria-expanded="true"
-      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">toml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-d0ef265f17004a546439a02fe32bd6d9" aria-expanded="false"
-      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">yaml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-6337d2000466a45f82d538fb1dadc5ac" aria-expanded="false"
-      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">json</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-1e0ba762a1c87716837648b651ab7bfa-tab" aria-controls="R-tab-id-1e0ba762a1c87716837648b651ab7bfa" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-767200185efd24c2f8671df242e0ad7e-tab" aria-controls="R-tab-id-767200185efd24c2f8671df242e0ad7e" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-1a06d8534421669b4a1a1ef104010851-tab" aria-controls="R-tab-id-1a06d8534421669b4a1a1ef104010851" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-ae04ca4f1d9e1d218acf50a8d4c78584"
+      id="R-tab-id-1e0ba762a1c87716837648b651ab7bfa" role="tabpanel" aria-labelledby="R-tab-id-1e0ba762a1c87716837648b651ab7bfa-tab"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="err">+++</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="err">+++</span>
 </span></span><span class="line"><span class="cl"><span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;Showcase&#39;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">build</span><span class="p">]</span>
@@ -217,11 +266,11 @@ See the <a href="/hugo-theme-relearn/introduction/changelog/5/9/index.html">chan
       </div>
     </div>
     <div
-      id="R-tab-id-d0ef265f17004a546439a02fe32bd6d9"
+      id="R-tab-id-767200185efd24c2f8671df242e0ad7e" role="tabpanel" aria-labelledby="R-tab-id-767200185efd24c2f8671df242e0ad7e-tab"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nt">build</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">list</span><span class="p">:</span><span class="w"> </span><span class="l">never</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">publishResources</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
@@ -231,11 +280,11 @@ See the <a href="/hugo-theme-relearn/introduction/changelog/5/9/index.html">chan
       </div>
     </div>
     <div
-      id="R-tab-id-6337d2000466a45f82d538fb1dadc5ac"
+      id="R-tab-id-1a06d8534421669b4a1a1ef104010851" role="tabpanel" aria-labelledby="R-tab-id-1a06d8534421669b4a1a1ef104010851-tab"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;build&#34;</span><span class="p">:</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">      <span class="nt">&#34;list&#34;</span><span class="p">:</span> <span class="s2">&#34;never&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">      <span class="nt">&#34;publishResources&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
@@ -253,35 +302,37 @@ See the <a href="/hugo-theme-relearn/introduction/changelog/5/9/index.html">chan
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-2daf578f79e9e5a999b2a60ad98ef7c9" aria-expanded="true"
-      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">toml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-ea4e71c2d7aa8405cdc97c0011dd6111" aria-expanded="false"
-      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">yaml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-b90ed6045a5454918fc151dd7b6b0f59" aria-expanded="false"
-      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">json</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-484aa73109804be9e0212343a1e97027-tab" aria-controls="R-tab-id-484aa73109804be9e0212343a1e97027" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-f84bcdeb3b2fd0d5bb6fa71ef99b4a5b-tab" aria-controls="R-tab-id-f84bcdeb3b2fd0d5bb6fa71ef99b4a5b" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-6779af83ff4d4fc82baf9d0976ceac59-tab" aria-controls="R-tab-id-6779af83ff4d4fc82baf9d0976ceac59" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-2daf578f79e9e5a999b2a60ad98ef7c9"
+      id="R-tab-id-484aa73109804be9e0212343a1e97027" role="tabpanel" aria-labelledby="R-tab-id-484aa73109804be9e0212343a1e97027-tab"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="err">+++</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="err">+++</span>
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">build</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">list</span> <span class="p">=</span> <span class="s1">&#39;never&#39;</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">publishResources</span> <span class="p">=</span> <span class="kc">false</span>
@@ -290,11 +341,11 @@ See the <a href="/hugo-theme-relearn/introduction/changelog/5/9/index.html">chan
       </div>
     </div>
     <div
-      id="R-tab-id-ea4e71c2d7aa8405cdc97c0011dd6111"
+      id="R-tab-id-f84bcdeb3b2fd0d5bb6fa71ef99b4a5b" role="tabpanel" aria-labelledby="R-tab-id-f84bcdeb3b2fd0d5bb6fa71ef99b4a5b-tab"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nt">build</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">list</span><span class="p">:</span><span class="w"> </span><span class="l">never</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">publishResources</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
@@ -303,11 +354,11 @@ See the <a href="/hugo-theme-relearn/introduction/changelog/5/9/index.html">chan
       </div>
     </div>
     <div
-      id="R-tab-id-b90ed6045a5454918fc151dd7b6b0f59"
+      id="R-tab-id-6779af83ff4d4fc82baf9d0976ceac59" role="tabpanel" aria-labelledby="R-tab-id-6779af83ff4d4fc82baf9d0976ceac59-tab"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;build&#34;</span><span class="p">:</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">      <span class="nt">&#34;list&#34;</span><span class="p">:</span> <span class="s2">&#34;never&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">      <span class="nt">&#34;publishResources&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
@@ -322,55 +373,57 @@ See the <a href="/hugo-theme-relearn/introduction/changelog/5/9/index.html">chan
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-888314f792f001324904639fb18754b5" aria-expanded="true"
-      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">toml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-1246dcbe4a25d8acd260fb44bd6dfd90" aria-expanded="false"
-      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">yaml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-53b68308cbe1ff120fcd4604948ebc12" aria-expanded="false"
-      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">json</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-dcea53e621c22420da154aacd81a79b0-tab" aria-controls="R-tab-id-dcea53e621c22420da154aacd81a79b0" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-c2f223bf613ef5b5e464e72350ca2123-tab" aria-controls="R-tab-id-c2f223bf613ef5b5e464e72350ca2123" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-cd98977491871299b9b45006a59d19d6-tab" aria-controls="R-tab-id-cd98977491871299b9b45006a59d19d6" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-888314f792f001324904639fb18754b5"
+      id="R-tab-id-dcea53e621c22420da154aacd81a79b0" role="tabpanel" aria-labelledby="R-tab-id-dcea53e621c22420da154aacd81a79b0-tab"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="err">+++</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="err">+++</span>
 </span></span><span class="line"><span class="cl"><span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;Credits&#39;</span>
 </span></span><span class="line"><span class="cl"><span class="err">+++</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-1246dcbe4a25d8acd260fb44bd6dfd90"
+      id="R-tab-id-c2f223bf613ef5b5e464e72350ca2123" role="tabpanel" aria-labelledby="R-tab-id-c2f223bf613ef5b5e464e72350ca2123-tab"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Credits</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nn">---</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-53b68308cbe1ff120fcd4604948ebc12"
+      id="R-tab-id-cd98977491871299b9b45006a59d19d6" role="tabpanel" aria-labelledby="R-tab-id-cd98977491871299b9b45006a59d19d6-tab"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;Credits&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
       </div>
@@ -381,21 +434,21 @@ See the <a href="/hugo-theme-relearn/introduction/changelog/5/9/index.html">chan
 </ol>
 </li>
 </ul>
-<h3 id="change">Change<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="change">Change<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
 <ul>
 <li>
-<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> The required directory name for the <a href="/hugo-theme-relearn/shortcodes/attachments/index.html"><code>attachments</code> shortcode</a> was changed for leaf bundles.</p>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> The required directory name for the <a href="/hugo-theme-relearn/shortcodes/attachments/index.html"><code>attachments</code> shortcode</a> was changed for leaf bundles.</p>
 <p>Previously, the attachments for leaf bundles in non-multilang setups were required to be in a <code>files</code> subdirectory. For page bundles and leaf bundles in multilang setups they were always required to be in a <code>_index.&lt;LANGCODE&gt;.files</code> or <code>index.&lt;LANGCODE&gt;.files</code> subdirectory accordingly.</p>
 <p>This added unnecessary complexity. So attachments for leaf bundles in non-multilang setups can now also reside in a <code>index.files</code> directory. Although the old <code>files</code> directory is now deprecated, if both directories are present, only the old <code>files</code> directory will be used for compatibility.</p>
 </li>
 <li>
-<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Absolute links prefixed with <code>http://</code> or <code>https://</code> are now opened in a separate browser tab.</p>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Absolute links prefixed with <code>http://</code> or <code>https://</code> are now opened in a separate browser tab.</p>
 <p>You can revert back to the old behavior by defining <code>externalLinkTarget=&quot;_self&quot;</code> in the <code>params</code> section of your <code>hugo.toml</code>.</p>
 </li>
 </ul>
-<h3 id="new">New<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="new">New<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
 <ul>
-<li><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> The theme now supports <a href="https://gohugo.io/hugo-modules/" rel="external" target="_self">Hugo&rsquo;s module system</a>.</li>
+<li><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> The theme now supports <a href="https://gohugo.io/hugo-modules/" rel="external" target="_self">Hugo&rsquo;s module system</a>.</li>
 </ul>
 
   <footer class="footline">
@@ -404,7 +457,7 @@ See the <a href="/hugo-theme-relearn/introduction/changelog/5/9/index.html">chan
         </div>
       </main>
     </div>
-    <script src="/hugo-theme-relearn/js/theme.min.5e81b78e5900bce96f55e277df01b5b477b164c8094c7fc0a689ccfd86eeb4b3.js" defer></script>
+    <script src="/hugo-theme-relearn/js/theme.min.f66b851115ea46f239f782bd19e65c09786103c8cb054f72664b912bc561d1c8.js" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

@@ -1,9 +1,8 @@
 +++
 categories = ['howto']
 description = 'What formats can a page be displayed in'
-outputs = ['html', 'rss', 'print', 'markdown', 'source']
 title = 'Available Output Formats'
-weight = 7
+weight = 5
 +++
 
 The Relearn theme by default comes with templates for HTML and RSS for each page.
@@ -22,6 +21,16 @@ Enable print support to print entire chapters or the whole site. Add the `print`
   section = ['html', 'rss', 'print']
   page = ['html', 'print']
 {{< /multiconfig >}}
+
+If you want to print the lists of your taxonomies and their terms as well, add it to these, too:
+
+{{< multiconfig file=hugo >}}
+[outputs]
+  taxonomy = ['html', 'rss', 'print']
+  term = ['html', 'rss', 'print']
+{{< /multiconfig >}}
+
+The results of the dedicated search page [can be printed](configuration/sidebar/search#printing-the-search-results) if your home page can.
 
 By default this adds a printer icon in the topbar but [can be deactived](authoring/frontmatter/topbar/#print-button). Clicking it switches to print preview, showing the page and its [visible subpages](configuration/content/hidden) in a printer-friendly format. Use your browser's print function to print or save as PDF.
 

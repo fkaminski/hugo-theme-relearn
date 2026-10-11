@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html id="R-html" lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.167.0">
+    <meta name="generator" content="Relearn 9.2.0+a9b397c5d13bccbd206ef42c15e37966e99cda51">
+    <meta name="description" content="Serve your site to your readers">
+    <meta name="author" content="Sören Weber">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://fkaminski.github.io/hugo-theme-relearn/images/hero.png">
+    <meta name="twitter:title" content="Publishing :: Hugo Relearn Theme">
+    <meta name="twitter:description" content="Serve your site to your readers">
+    <meta property="og:url" content="https://fkaminski.github.io/hugo-theme-relearn/configuration/publishing/index.html">
+    <meta property="og:site_name" content="Hugo Relearn Theme">
+    <meta property="og:title" content="Publishing :: Hugo Relearn Theme">
+    <meta property="og:description" content="Serve your site to your readers">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://fkaminski.github.io/hugo-theme-relearn/images/hero.png">
+    <meta itemprop="name" content="Publishing :: Hugo Relearn Theme">
+    <meta itemprop="description" content="Serve your site to your readers">
+    <meta itemprop="wordCount" content="91">
+    <meta itemprop="image" content="https://fkaminski.github.io/hugo-theme-relearn/images/hero.png">
+    <meta itemprop="keywords" content="Reference">
+    <title>Publishing :: Hugo Relearn Theme</title>
+    <link href="https://fkaminski.github.io/hugo-theme-relearn/configuration/publishing/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://fkaminski.github.io/hugo-theme-relearn/configuration/publishing/index.html" rel="alternate" hreflang="en">
+    <link href="https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/publishing/index.html" rel="alternate" hreflang="art-x-pir">
+    <link href="https://fkaminski.github.io/hugo-theme-relearn/configuration/publishing/index.html" rel="canonical" type="text/html" title="Publishing :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/configuration/publishing/index.xml" rel="alternate" type="application/rss+xml" title="Publishing :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/configuration/publishing/index.md" rel="alternate" type="text/markdown" title="Publishing :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/configuration/publishing/index.source.md" rel="alternate" type="text/markdown" title="Publishing :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/images/logo.d30ab0425821f45713322a73c1eeb192e311689b03371519abbe061a24d1201e.svg" rel="icon" type="image/svg+xml">
+    <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.78b49c23f59ffb08554285843ed4c841484fe34c489058b2991edc027cdd47fc.css" rel="stylesheet">
+    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.9657edd589a1ca6962a3cf03df5aa17f16f2c67350aea0a84dddbd8d5698316f.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.9897ffe790e716e8b90e4a9e200dce63c2603e69a9eec9bbdce6a483811ea180.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.4bcf60afa00d9f5c3adf08ff55811ce4cc679bd6d4b5747d674667994ee1debb.js" defer></script>
+    <script type="application/json" id="R-search-config">{
+      "indexFile": "searchindex.en.min.c4f041a00cc99840cf39073ec5ee0c85a4b4738e5a58acbd24b4ecb2e0d4600e.js"
+    }</script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.multi.min.ffaee7f1e07179595fe8a4b7c469761f90999470e1f04dcb0a94dc2c1cb44f9c.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.en.min.94d0a7cb1f111200e2f5be9dc32699cf266aaa29011e414bdcd36a18ea0fd5ee.js" defer></script>
+    <script type="application/json" id="R-search-lunr-config">{
+      "contentLangs": [
+        "en"
+      ]
+    }</script>
+    <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" class="R-async-style"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
+    <link href="/hugo-theme-relearn/css/theme.min.8cd3fb0d94b35d653c73be5b6192808bb4d4b49792cbf9c092307d30edc9487f.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/format-print.min.fde31a3bc19a193360c646fd67b62d0fb98ae684449d1922b5ac0ed941277607.css" rel="stylesheet" id="R-format-style">
+    <script type="application/json" id="R-theme-config">{
+      "disableInlineCopyToClipboard": true,
+      "enableBlockCodeWrap": true,
+      "path": "/configuration/publishing/index.html",
+      "relBasePath": "../..",
+      "relBaseUri": "../../..",
+      "themevariants": [
+        "relearn-auto",
+        "relearn-dark",
+        "relearn-light",
+        "relearn-bright",
+        "zen-auto",
+        "zen-dark",
+        "zen-light",
+        "contrast-auto",
+        "contrast-dark",
+        "contrast-light",
+        "retro-auto",
+        "neon",
+        "learn",
+        "blue",
+        "green",
+        "red"
+      ],
+      "translations": {
+        "Browser_unsupported_feature": "This browser doesn't support this feature",
+        "Close_graph": "Close enlarged graph",
+        "Copied_to_clipboard": "Text copied to clipboard!",
+        "Copy_to_clipboard": "Copy text to clipboard",
+        "Deleted_text_end": "End of deleted text",
+        "Deleted_text_start": "Start of deleted text",
+        "Enlarge_graph": "Enlarge graph",
+        "History_cleared": "History cleared",
+        "Inserted_text_end": "End of inserted text",
+        "Inserted_text_start": "Start of inserted text",
+        "Link_copied_to_clipboard": "Link copied to clipboard!",
+        "N_matches_on_page": "{1} matches for \"{0}\" on this page",
+        "N_results_found": "{1} results found for \"{0}\"",
+        "No_results_found": "No results found for \"{0}\"",
+        "Reset_view": "Reset view",
+        "View_reset": "View reset!"
+      }
+    }</script>
+    <script src="/hugo-theme-relearn/js/theme-head.min.8c8c3bb99b655d91386ff7fefb5fceeb088bff4bb82bcde54fbef7dacb3388cc.js"></script>
+    <style>
+       
+      #R-body img.bg-white {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body class="mobile-support print" data-origin="/hugo-theme-relearn/configuration/publishing/index.html">
+    <a id="R-skip-link" href="#R-body-inner">Skip to main content</a>
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <header id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)" aria-label="Menu (CTRL&#43;ALT&#43;n)" aria-expanded="false"><i class="fa-fw fas fa-bars" aria-hidden="true"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)" aria-label="Table of Contents (CTRL&#43;ALT&#43;t)" aria-expanded="false"><i class="fa-fw fas fa-table-list" aria-hidden="true"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+<nav class="TableOfContents" aria-label="Table of Contents">
+  <ul>
+    <li><a href="#accessibility">Accessibility</a></li>
+    <li><a href="#deployment-scenarios">Deployment Scenarios</a></li>
+    <li><a href="#gdpr--cookie-consent">GDPR &amp; Cookie Consent</a></li>
+    <li><a href="#stable-output">Stable Output</a></li>
+    <li><a href="#sbom">SBOM</a></li>
+    <li><a href="#content-security-policy">Content Security Policy</a></li>
+    <li><a href="#vs-code-front-matter-cms">VS Code Front Matter CMS</a></li>
+    <li><a href="#keyboard-shortcuts">Keyboard Shortcuts</a></li>
+  </ul>
+</nav> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="topbar-area topbar-area-middle" data-area="middle">
+            <nav class="topbar-breadcrumbs breadcrumbs highlightable" aria-label="Breadcrumbs" data-overflow-title="Configuration &gt; Publishing">
+              <ol itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/index.html" tabindex="-1"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/configuration/index.html"><span itemprop="name">Configuration</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="" aria-current="page"><span itemprop="name">Publishing</span><meta itemprop="position" content="3"></li>
+              </ol>
+            </nav>
+          </div>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Taxonomies (🡐)" href="/hugo-theme-relearn/configuration/customization/taxonomy/index.html" title="Taxonomies (🡐)"><i class="fa-fw fas fa-chevron-left" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Accessibility (🡒)" href="/hugo-theme-relearn/configuration/publishing/accessibility/index.html" title="Accessibility (🡒)"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="More" aria-label="More" aria-expanded="false"><i class="fa-fw fas fa-ellipsis-v" aria-hidden="true"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Edit (CTRL+ALT+w)" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/configuration/publishing/_index.en.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-source default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Show source code" href="/hugo-theme-relearn/configuration/publishing/index.source.md" title="Show source code"><i class="fa-fw fas fa-code" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-markdown default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Show Markdown" href="/hugo-theme-relearn/configuration/publishing/index.md" title="Show Markdown"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Print whole chapter (CTRL+ALT+p)" href="/hugo-theme-relearn/configuration/publishing/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print" aria-hidden="true"></i></a></span>
+            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable configuration" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="publishing">Publishing</h1>
+
+<ul class="pages pages-headings">
+<li>
+<h2 id="accessibility"><a href="/hugo-theme-relearn/configuration/publishing/accessibility/index.html">Accessibility</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>What the theme does to be usable by everyone</p>
+</li>
+<li>
+<h2 id="deployment-scenarios"><a href="/hugo-theme-relearn/configuration/publishing/deployment/index.html">Deployment Scenarios</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>Options for specific deployment needs</p>
+</li>
+<li>
+<h2 id="gdpr--cookie-consent"><a href="/hugo-theme-relearn/configuration/publishing/storedinformation/index.html">GDPR &amp; Cookie Consent</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>Information on what's stored on the reader's side</p>
+</li>
+<li>
+<h2 id="stable-output"><a href="/hugo-theme-relearn/configuration/publishing/stableoutput/index.html">Stable Output</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>How to make your generated HTML output stable</p>
+</li>
+<li>
+<h2 id="sbom"><a href="/hugo-theme-relearn/configuration/publishing/sbom/index.html">SBOM</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>What the theme publishes with your site, as a CycloneDX SBOM</p>
+</li>
+<li>
+<h2 id="content-security-policy"><a href="/hugo-theme-relearn/configuration/publishing/csp/index.html">Content Security Policy</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>Serving your site with a strict Content Security Policy</p>
+</li>
+<li>
+<h2 id="vs-code-front-matter-cms"><a href="/hugo-theme-relearn/configuration/publishing/frontmattercms/index.html">VS Code Front Matter CMS</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>Use the shortcodes from inside the VS Code Front Matter CMS extension</p>
+</li>
+<li>
+<h2 id="keyboard-shortcuts"><a href="/hugo-theme-relearn/configuration/publishing/shortcuts/index.html">Keyboard Shortcuts</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>The keys your readers can use on your site</p>
+</li>
+</ul>
+
+  <footer class="footline">
+<div class="R-taxonomy taxonomy-categories" title="Categories">
+  <i class="fa-fw fas fa-layer-group" aria-hidden="true"></i>
+  <ul>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/reference/index.html">Reference</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+          <section>
+            <h1 class="a11y-only">Subsections of Publishing</h1>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="accessibility">Accessibility</h1>
+
+<div class="include hide-first-heading">
+<h1 id="accessibility">Accessibility<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h1>
+<p>The theme wants your documentation to be usable by everyone, whether they read it with their eyes, a screen reader or a magnifier, and whether they move through it with a mouse, a keyboard or by touch. Accessibility is a supported feature of the theme: what doesn&rsquo;t work for you or your readers is a bug.</p>
+<p>This document tells what the theme aims for, what remains up to the author of a site, what is expected from contributors and how to report a barrier.</p>
+<h2 id="priorities">Priorities<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<ul>
+<li><strong>Accessibility target</strong>: The theme works toward level AA of the <a href="https://www.w3.org/TR/WCAG22/" rel="external" target="_self">Web Content Accessibility Guidelines 2.2</a>. This target guides the work but is not a claim of verified conformance. The theme is checked by its maintainer and was not audited by an independent party.</li>
+<li><strong>Structure</strong>: Each page has a link to skip to its content, landmarks for the menu, the topbar, the breadcrumbs and the content, and one heading hierarchy starting with the title of the page.</li>
+<li><strong>Keyboard</strong>: Everything the theme offers can be reached and operated by keyboard and shows where the focus is. What is used often has a <a href="/hugo-theme-relearn/configuration/publishing/shortcuts/index.html">keyboard shortcut</a>.</li>
+<li><strong>Assistive technology</strong>: Controls have a name and tell their state, like buttons that show and hide something. What changes without a page load, like the results of a search, is announced. Decorative icons are hidden.</li>
+<li><strong>Vision</strong>: The <a href="/hugo-theme-relearn/configuration/branding/colors/index.html#shipped-variants">contrast variants</a> have colors chosen for high contrast, and the forced colors of the operating system are honored. Links can be <a href="/hugo-theme-relearn/configuration/publishing/accessibility/index.html#underlined-links">underlined</a>, so they are told apart by more than their color.</li>
+<li><strong>Motion</strong>: Animations are turned off if the operating system asks for reduced motion.</li>
+<li><strong>Math</strong>: Formulae are written as MathML, which screen readers can read.</li>
+<li><strong>Languages</strong>: Each page declares its language and reading direction, and the texts the theme writes itself are translated.</li>
+</ul>
+<h2 id="what-is-up-to-you">What Is Up to You<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>The theme can only care for what it writes itself. A site built with it is only as accessible as its content, its colors and its customizations, so this document does not cover your site. If you are obliged to publish an accessibility statement for your site, this document is a basis for it, not a replacement.</p>
+<ul>
+<li><strong>Colors</strong>: The contrast of text depends on the <a href="/hugo-theme-relearn/configuration/branding/colors/index.html">color variant</a> you choose or write. Colors you set yourself, like the one of a badge or a box, are yours to check.</li>
+<li><strong>Headings</strong>: The theme writes the title of a page as its first heading, so start the headings of your content one level below and don&rsquo;t skip a level. The headings the theme writes for you fit in on their own. The exception is the <a href="/hugo-theme-relearn/shortcodes/pages/index.html"><code>pages</code> shortcode</a>, whose <code>headinglevel</code> you have to set to match the place you call it from.</li>
+<li><strong>Images</strong>: Give each image an alternative text. For a complex image or a graph, describe it in the text around it.</li>
+<li><strong>Links</strong>: Write link texts that tell where they lead even if read on their own.</li>
+</ul>
+<h2 id="contributor-expectations">Contributor Expectations<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>The automated tests of the theme don&rsquo;t check accessibility. If your contribution changes what a reader sees or operates, check it by hand before you send it:</p>
+<ul>
+<li><strong>Keyboard</strong>: Go through your change with the keyboard alone. Everything can be reached in a sensible order and operated, the focus is always visible and nothing traps it.</li>
+<li><strong>Screen reader</strong>: For a new or changed control, check that it has a name telling its purpose, that it tells its state and that what it changes on the page is announced.</li>
+<li><strong>Colors</strong>: Look at your change in the contrast variants and with the forced colors of your operating system. Don&rsquo;t use color as the only way to tell things apart.</li>
+<li><strong>Motion</strong>: A new animation has to be turned off if reduced motion is asked for.</li>
+<li><strong>Zoom</strong>: Your change keeps working in the mobile layout and with the page zoomed in, without content getting lost.</li>
+<li><strong>Documentation</strong>: What you write for the docs follows what is asked from every author <a href="/hugo-theme-relearn/configuration/publishing/accessibility/index.html#what-is-up-to-you">above</a>.</li>
+</ul>
+<p>See the <a href="/hugo-theme-relearn/development/contributing/index.html">contribution guidelines</a> for everything else.</p>
+<h2 id="reporting-accessibility-issues">Reporting Accessibility Issues<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>If you run into a barrier, please <a href="https://github.com/McShelby/hugo-theme-relearn/issues" rel="external" target="_self">open an issue</a>. Your report is welcome and is treated like any other bug of the theme.</p>
+<p>It helps if you include</p>
+<ul>
+<li>what you were trying to do and what happened instead</li>
+<li>the page it happened on, best a page of this documentation that shows it</li>
+<li>your operating system, your browser and your assistive technology, with their versions</li>
+<li>the color variant in use</li>
+</ul>
+<p>You don&rsquo;t need to tell anything about yourself, and a screenshot or recording is welcome but not required.</p>
+<p>You will be told whether the barrier can be reproduced, whether it is caused by the theme, your site or a third-party library, and whether there is a workaround until it is fixed. There are no guaranteed times for a fix.</p>
+<h2 id="ownership-and-maintenance">Ownership and Maintenance<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>Accessibility is owned by the <a href="https://github.com/McShelby" rel="external" target="_self">maintainer</a> of the theme, who triages the reports, tracks the known barriers and keeps this document current. It describes the version of the theme it is shipped with.</p>
+<h2 id="supported-environments">Supported Environments<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>The theme writes static HTML that is meant to work in the current versions of the common browsers, on desktop and mobile devices, operated by mouse, keyboard or touch. It relies on standard HTML and ARIA instead of the behavior of a specific assistive technology.</p>
+<p>No list of tested combinations of browsers and assistive technologies is kept, so none is claimed to be free of barriers.</p>
+<h2 id="known-limitations">Known Limitations<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<ul>
+<li><strong>Color variants</strong>: Not every shipped <a href="/hugo-theme-relearn/configuration/branding/colors/index.html#shipped-variants">color variant</a> has enough contrast in every place. Use the contrast variants if you need it.</li>
+<li><strong>Mermaid</strong>: The graphs of the <a href="/hugo-theme-relearn/shortcodes/mermaid/index.html"><code>mermaid</code> shortcode</a> are drawn in the browser by the Mermaid library. The theme does not give them a text alternative. Describe your graph in the text around it, or with the <code>accTitle</code> and <code>accDescr</code> keywords of Mermaid.</li>
+<li><strong>OpenAPI</strong>: The <a href="/hugo-theme-relearn/shortcodes/openapi/index.html"><code>openapi</code> shortcode</a> shows your specification with the Swagger UI library. The theme has no influence on how accessible its interface is.</li>
+<li><strong>Math</strong>: How well a formula is read aloud depends on the support for MathML in the browser and the screen reader.</li>
+<li><strong>Testing</strong>: As accessibility is checked by hand, a regression may go unnoticed until it is reported.</li>
+</ul>
+<p>If you find a barrier not listed here, please <a href="/hugo-theme-relearn/configuration/publishing/accessibility/index.html#reporting-accessibility-issues">report it</a>.</p>
+<h2 id="feedback">Feedback<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>Accessibility is never finished. If you have a suggestion to improve this document or the way the theme handles accessibility, open an issue or a pull request.</p>
+</div>
+<h2 id="underlined-links">Underlined Links<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears" aria-hidden="true"></i></span><span class="badge-content">Option</span></span> By default, links in your content are told apart from the text around them only by their color. Readers who can not distinguish these colors don&rsquo;t see that there is a link.</p>
+<p>Set <code>link.underline=true</code> to also underline them. This affects the links in your content, not the menu or the topbar, and not what looks like a control of its own, like buttons or cards.</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title" id="R-tabs-title-725192f04044d4d35829786686bd1e60">hugo.</div>
+    <div class="tab-nav-list" role="tablist" aria-labelledby="R-tabs-title-725192f04044d4d35829786686bd1e60">
+      <button
+        role="tab" id="R-tab-id-8fb3b6606beda0d2ad7b3293f41fdc6d-tab" aria-controls="R-tab-id-8fb3b6606beda0d2ad7b3293f41fdc6d" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-c88050653d33af48b1de49073c99f569-tab" aria-controls="R-tab-id-c88050653d33af48b1de49073c99f569" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-cf36106e241d23a72a06e90f703519d5-tab" aria-controls="R-tab-id-cf36106e241d23a72a06e90f703519d5" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-8fb3b6606beda0d2ad7b3293f41fdc6d" role="tabpanel" aria-labelledby="R-tab-id-8fb3b6606beda0d2ad7b3293f41fdc6d-tab"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">link</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">underline</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-c88050653d33af48b1de49073c99f569" role="tabpanel" aria-labelledby="R-tab-id-c88050653d33af48b1de49073c99f569-tab"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">link</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">underline</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-cf36106e241d23a72a06e90f703519d5" role="tabpanel" aria-labelledby="R-tab-id-cf36106e241d23a72a06e90f703519d5-tab"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;link&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;underline&#34;</span><span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<p>The theme marks the page with the class <code>link-underline</code> on the <code>body</code> element, in case your own styles want to react on it.</p>
+
+  <footer class="footline">
+<div class="R-taxonomy taxonomy-categories" title="Categories">
+  <i class="fa-fw fas fa-layer-group" aria-hidden="true"></i>
+  <ul>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/explanation/index.html">Explanation</a></li>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/howto/index.html">Howto</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="deployment-scenarios">Deployment Scenarios</h1>
+
+<h2 id="offline-usage">Offline Usage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>The theme is usable offline. No internet connection is required to load your page. This is achieved by storing all dependencies within the theme.</p>
+<p>No calls to 3rd party servers, no calling home, no tracking. Privacy friendly.</p>
+<h2 id="server-deployment">Server Deployment<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>If your server deployment has no special requirements, you can skip this section and use the <a href="https://gohugo.io/content-management/urls/" rel="external" target="_self">standard Hugo options</a>.</p>
+<p>For special requirements, the theme is capable of different scenarios, requiring the following mandatory settings in your <code>hugo.toml</code>. All settings not mentioned in the examples below can be set to your liking.</p>
+<h3 id="public-web-server-from-root">Public Web Server from Root<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title" id="R-tabs-title-b052282657cff71bc9d8fbfaab9b8294">hugo.</div>
+    <div class="tab-nav-list" role="tablist" aria-labelledby="R-tabs-title-b052282657cff71bc9d8fbfaab9b8294">
+      <button
+        role="tab" id="R-tab-id-1bdf11ad4e892b10930f59a218ba697d-tab" aria-controls="R-tab-id-1bdf11ad4e892b10930f59a218ba697d" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-2e57a982b90facdc1551752bad3993c6-tab" aria-controls="R-tab-id-2e57a982b90facdc1551752bad3993c6" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-db57907d42a1ac66118fb6365636572b-tab" aria-controls="R-tab-id-db57907d42a1ac66118fb6365636572b" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-1bdf11ad4e892b10930f59a218ba697d" role="tabpanel" aria-labelledby="R-tab-id-1bdf11ad4e892b10930f59a218ba697d-tab"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/&#39;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-2e57a982b90facdc1551752bad3993c6" role="tabpanel" aria-labelledby="R-tab-id-2e57a982b90facdc1551752bad3993c6-tab"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-db57907d42a1ac66118fb6365636572b" role="tabpanel" aria-labelledby="R-tab-id-db57907d42a1ac66118fb6365636572b-tab"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.com/&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<h3 id="public-web-server-from-subdirectory">Public Web Server from Subdirectory<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title" id="R-tabs-title-c4ddb574866aa15381209fdb3f9b3a4e">hugo.</div>
+    <div class="tab-nav-list" role="tablist" aria-labelledby="R-tabs-title-c4ddb574866aa15381209fdb3f9b3a4e">
+      <button
+        role="tab" id="R-tab-id-adae9e36e127784e731cf034636919bb-tab" aria-controls="R-tab-id-adae9e36e127784e731cf034636919bb" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-aaed510492754708433cde1dfe91e2a0-tab" aria-controls="R-tab-id-aaed510492754708433cde1dfe91e2a0" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-7923dcf9c01509857f2c462e444fc77a-tab" aria-controls="R-tab-id-7923dcf9c01509857f2c462e444fc77a" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-adae9e36e127784e731cf034636919bb" role="tabpanel" aria-labelledby="R-tab-id-adae9e36e127784e731cf034636919bb-tab"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.com/mysite/&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">relativeURLs</span> <span class="p">=</span> <span class="kc">false</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-aaed510492754708433cde1dfe91e2a0" role="tabpanel" aria-labelledby="R-tab-id-aaed510492754708433cde1dfe91e2a0-tab"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/mysite/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">relativeURLs</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-7923dcf9c01509857f2c462e444fc77a" role="tabpanel" aria-labelledby="R-tab-id-7923dcf9c01509857f2c462e444fc77a-tab"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.com/mysite/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;relativeURLs&#34;</span><span class="p">:</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<p>If you are still using Hugo&rsquo;s <code>relref</code> shortcode (which you shouldn&rsquo;t), you will need <a href="/hugo-theme-relearn/configuration/content/linking/index.html#patching-the-relref-shortcode">further configuration</a>.</p>
+
+<div role="note" aria-labelledby="R-box-label-3d3c24fdbd6fa73aba15b49febe339a0" class="box cstyle callout warning">
+  <div id="R-box-label-3d3c24fdbd6fa73aba15b49febe339a0" class="box-label">
+    <i class="fa-fw fas fa-exclamation-triangle" aria-hidden="true"></i> 
+    Warning
+  </div>
+  <div class="box-content">
+<p>Don&rsquo;t use a <code>baseURL</code> with a subdirectory and <code>relativeURLs=true</code> together. <a href="https://github.com/gohugoio/hugo/issues/12130" rel="external" target="_self">Hugo doesn&rsquo;t apply the <code>baseURL</code> correctly</a> in this case. If you need both, generate your site twice with different settings into separate directories.</p>
+  </div>
+</div>
+<h3 id="private-web-server-lan">Private Web Server (LAN)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>The same settings as with any of the public web server scenarios or</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title" id="R-tabs-title-a1f3cd08ce184e9f7ef50278abbeb97a">hugo.</div>
+    <div class="tab-nav-list" role="tablist" aria-labelledby="R-tabs-title-a1f3cd08ce184e9f7ef50278abbeb97a">
+      <button
+        role="tab" id="R-tab-id-aa39dfd15386554be3aed76f75e95d44-tab" aria-controls="R-tab-id-aa39dfd15386554be3aed76f75e95d44" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-184b2c47a075baa836f386423192a43f-tab" aria-controls="R-tab-id-184b2c47a075baa836f386423192a43f" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-d8fc8e555057a2ea1771af6ef3ae02fc-tab" aria-controls="R-tab-id-d8fc8e555057a2ea1771af6ef3ae02fc" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-aa39dfd15386554be3aed76f75e95d44" role="tabpanel" aria-labelledby="R-tab-id-aa39dfd15386554be3aed76f75e95d44-tab"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;/&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">relativeURLs</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-184b2c47a075baa836f386423192a43f" role="tabpanel" aria-labelledby="R-tab-id-184b2c47a075baa836f386423192a43f-tab"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">relativeURLs</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-d8fc8e555057a2ea1771af6ef3ae02fc" role="tabpanel" aria-labelledby="R-tab-id-d8fc8e555057a2ea1771af6ef3ae02fc-tab"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;relativeURLs&#34;</span><span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<h3 id="file-system">File System<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>Your generated site can be used headless without a HTTP server.</p>
+<p>This can be achieved by using the <code>file://</code> protocol in your browser&rsquo;s address bar or by double click on a generated <code>*.html</code> file in your file navigation tool.</p>
+<p>Use the following settings</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title" id="R-tabs-title-c116aef7b1c09c1e0421728e4cd69058">hugo.</div>
+    <div class="tab-nav-list" role="tablist" aria-labelledby="R-tabs-title-c116aef7b1c09c1e0421728e4cd69058">
+      <button
+        role="tab" id="R-tab-id-f08a5cccc93a6140daefbf504130c84f-tab" aria-controls="R-tab-id-f08a5cccc93a6140daefbf504130c84f" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-2b4d2a598da71a1feb941b6751aa791e-tab" aria-controls="R-tab-id-2b4d2a598da71a1feb941b6751aa791e" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-c86f7aac0e82a9edae6b400fe5acd563-tab" aria-controls="R-tab-id-c86f7aac0e82a9edae6b400fe5acd563" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-f08a5cccc93a6140daefbf504130c84f" role="tabpanel" aria-labelledby="R-tab-id-f08a5cccc93a6140daefbf504130c84f-tab"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;/&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">relativeURLs</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-2b4d2a598da71a1feb941b6751aa791e" role="tabpanel" aria-labelledby="R-tab-id-2b4d2a598da71a1feb941b6751aa791e-tab"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">relativeURLs</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-c86f7aac0e82a9edae6b400fe5acd563" role="tabpanel" aria-labelledby="R-tab-id-c86f7aac0e82a9edae6b400fe5acd563-tab"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;relativeURLs&#34;</span><span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div role="note" aria-labelledby="R-box-label-4f6faddaa4e8830ad685645c3571db63" class="box cstyle callout note">
+  <div id="R-box-label-4f6faddaa4e8830ad685645c3571db63" class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i> 
+    Note
+  </div>
+  <div class="box-content">
+<p>Pages like <code>sitemap.xml</code> and <code>rss.xml</code>, and social media links will always use absolute URLs. They won&rsquo;t work with <code>relativeURLs=true</code>.</p>
+  </div>
+</div>
+
+  <footer class="footline">
+<div class="R-taxonomy taxonomy-categories" title="Categories">
+  <i class="fa-fw fas fa-layer-group" aria-hidden="true"></i>
+  <ul>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/howto/index.html">Howto</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="gdpr--cookie-consent">GDPR &amp; Cookie Consent</h1>
+
+<p>The theme will store information in the reader&rsquo;s browser. Those are essential information and are considered to fall under the exception clause in <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02002L0058-20091219#id-8b90d9c9-eb09-44f5-a58d-51d9cb3a50cd" rel="external" target="_self">DIRECTIVE 2002/58/EC OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL, Art. 5(3)</a>.</p>
+<blockquote>
+<p>This shall not prevent any technical storage or access for the sole purpose of carrying out the transmission of a communication over an electronic communications network, or as strictly necessary in order for the provider of an information society service explicitly requested by the subscriber or user to provide the service.</p>
+</blockquote>
+<h2 id="stored-theme-information">Stored Theme Information<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>The theme stores the following information in localstorage or sessionstorage.</p>
+<ul>
+<li>
+<p>The scroll position of the content area to be restored on browser back navigation.</p>
+<p>This cannot be turned off.</p>
+</li>
+<li>
+<p><a href="/hugo-theme-relearn/shortcodes/tabs/index.html#behavior-of-the-groupid">Selected tab</a> of a tab group to apply the selection to other tab groups on the present page and all following presented pages.</p>
+<p>This cannot be turned off.</p>
+</li>
+<li>
+<p>Currently applicable search term to carry over to the following presented pages. This will be used to mark the search term in the page&rsquo;s text.</p>
+<p>This can be turned off by <a href="/hugo-theme-relearn/configuration/sidebar/search/index.html#configure-search">disabling search</a>.</p>
+</li>
+<li>
+<p>Visited pages to show a check mark in the menu if the page was previously visited.</p>
+<p>This can be turned off by <a href="/hugo-theme-relearn/configuration/sidebar/headerfooter/index.html#history">disabling the history</a>.</p>
+</li>
+<li>
+<p>The selected theme variant to carry over to the following presented pages.</p>
+<p>This can be turned off by only having <a href="/hugo-theme-relearn/configuration/branding/colors/index.html#single-variant">one theme variant configured</a>.</p>
+</li>
+</ul>
+<h2 id="stored-third-party-information">Stored Third Party Information<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>The theme is not responsible for stored information of third-party-dependencies (every library stored in subdirectories of <code>assets/js/</code>).</p>
+<h2 id="implementing-gdpr-cookie-consent">Implementing GDPR Cookie Consent<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>Because the theme stores only essential information, it does not provide a mechanism to implement stricter data protection regulations.</p>
+<p>Nevertheless you can achieve this by using a library or implementing a <a href="https://developer.mozilla.org/en-US/docs/Web/API/Storage" rel="external" target="_self">storage</a> proxy yourself.</p>
+
+  <footer class="footline">
+<div class="R-taxonomy taxonomy-categories" title="Categories">
+  <i class="fa-fw fas fa-layer-group" aria-hidden="true"></i>
+  <ul>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/explanation/index.html">Explanation</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="stable-output">Stable Output</h1>
+
+<h2 id="disabling-the-generator-meta">Disabling the Generator Meta<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears" aria-hidden="true"></i></span><span class="badge-content">Option</span></span> The theme adds a meta tag with its version number to each page.</p>
+<p>This isn&rsquo;t a security risk and helps us support you better.</p>
+<p>To turn this off, set <code>disableGeneratorVersion=true</code>.</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title" id="R-tabs-title-38c4b8476bcfd9848d202cb869d9ecb6">hugo.</div>
+    <div class="tab-nav-list" role="tablist" aria-labelledby="R-tabs-title-38c4b8476bcfd9848d202cb869d9ecb6">
+      <button
+        role="tab" id="R-tab-id-4ed80b5e0edd286d859446ed232cbaea-tab" aria-controls="R-tab-id-4ed80b5e0edd286d859446ed232cbaea" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-6dbb5d499e412310e30ff5607e38be0c-tab" aria-controls="R-tab-id-6dbb5d499e412310e30ff5607e38be0c" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-208a5d5aed660569226897a94b074cce-tab" aria-controls="R-tab-id-208a5d5aed660569226897a94b074cce" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-4ed80b5e0edd286d859446ed232cbaea" role="tabpanel" aria-labelledby="R-tab-id-4ed80b5e0edd286d859446ed232cbaea-tab"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">disableGeneratorVersion</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-6dbb5d499e412310e30ff5607e38be0c" role="tabpanel" aria-labelledby="R-tab-id-6dbb5d499e412310e30ff5607e38be0c-tab"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">disableGeneratorVersion</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-208a5d5aed660569226897a94b074cce" role="tabpanel" aria-labelledby="R-tab-id-208a5d5aed660569226897a94b074cce-tab"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;disableGeneratorVersion&#34;</span><span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<p>If you also want to turn off <a href="https://gohugo.io/getting-started/configuration/#disablehugogeneratorinject" rel="external" target="_self">Hugo&rsquo;s version meta tag</a>, use <code>disableHugoGeneratorInject=true</code>.</p>
+<h2 id="disabling-ids-for-referenced-assets">Disabling IDs for Referenced Assets<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears" aria-hidden="true"></i></span><span class="badge-content">Option</span></span> The theme puts a hash of each referenced asset&rsquo;s content into its file name to make browsers not keep outdated cached assets.</p>
+<p>As the hash only changes once the asset itself changes, a rebuild of unchanged content results in unchanged file names. You only need to switch this off if your setup can not deal with file names that change at all.</p>
+<p>To disable this, set <code>disableAssetsBusting=true</code>.</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title" id="R-tabs-title-0485dba7bf7a285a4f2feac6f0b923a1">hugo.</div>
+    <div class="tab-nav-list" role="tablist" aria-labelledby="R-tabs-title-0485dba7bf7a285a4f2feac6f0b923a1">
+      <button
+        role="tab" id="R-tab-id-76ac2b92517865bbc8d662c24fea2499-tab" aria-controls="R-tab-id-76ac2b92517865bbc8d662c24fea2499" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-56fad39dad7d632eb2bdab4994cc60ef-tab" aria-controls="R-tab-id-56fad39dad7d632eb2bdab4994cc60ef" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-334b26b4604b10746b5a7d5949368407-tab" aria-controls="R-tab-id-334b26b4604b10746b5a7d5949368407" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-76ac2b92517865bbc8d662c24fea2499" role="tabpanel" aria-labelledby="R-tab-id-76ac2b92517865bbc8d662c24fea2499-tab"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">disableAssetsBusting</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-56fad39dad7d632eb2bdab4994cc60ef" role="tabpanel" aria-labelledby="R-tab-id-56fad39dad7d632eb2bdab4994cc60ef-tab"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">disableAssetsBusting</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-334b26b4604b10746b5a7d5949368407" role="tabpanel" aria-labelledby="R-tab-id-334b26b4604b10746b5a7d5949368407-tab"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;disableAssetsBusting&#34;</span><span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<h2 id="disabling-ids-for-interactive-html-elements">Disabling IDs for Interactive HTML Elements<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears" aria-hidden="true"></i></span><span class="badge-content">Option</span></span> Features like expanders, notices, and tabs use unique IDs to work. These IDs change with each build.</p>
+<p>This is necessary for the theme to work properly, but it can make comparing outputs between builds difficult.</p>
+<p>To turn this off, set <code>disableRandomIds=true</code>. Note, that this will result in a non-functional site!.</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title" id="R-tabs-title-053a4e6e757e03211455ef7cfcbe7858">hugo.</div>
+    <div class="tab-nav-list" role="tablist" aria-labelledby="R-tabs-title-053a4e6e757e03211455ef7cfcbe7858">
+      <button
+        role="tab" id="R-tab-id-2a0428a5e7c6ec5f6c2313fdfae91d4f-tab" aria-controls="R-tab-id-2a0428a5e7c6ec5f6c2313fdfae91d4f" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-be33e99f54db8d0089ebc6307bf5a77f-tab" aria-controls="R-tab-id-be33e99f54db8d0089ebc6307bf5a77f" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-5a6dec8abeed9e49e1bcfcbc195f4c81-tab" aria-controls="R-tab-id-5a6dec8abeed9e49e1bcfcbc195f4c81" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-2a0428a5e7c6ec5f6c2313fdfae91d4f" role="tabpanel" aria-labelledby="R-tab-id-2a0428a5e7c6ec5f6c2313fdfae91d4f-tab"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">disableRandomIds</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-be33e99f54db8d0089ebc6307bf5a77f" role="tabpanel" aria-labelledby="R-tab-id-be33e99f54db8d0089ebc6307bf5a77f-tab"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">disableRandomIds</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-5a6dec8abeed9e49e1bcfcbc195f4c81" role="tabpanel" aria-labelledby="R-tab-id-5a6dec8abeed9e49e1bcfcbc195f4c81-tab"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;disableRandomIds&#34;</span><span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<h2 id="disabling-assets-minification">Disabling Assets Minification<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears" aria-hidden="true"></i></span><span class="badge-content">Option</span></span> If <code>minify=true</code>, further theme assets will be minified during build. If no value is set, the theme will avoid minification if you have started with <code>hugo server</code> and otherwise will minify.</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title" id="R-tabs-title-2ccd972b6805ee86d95d2b68b89c2e93">hugo.</div>
+    <div class="tab-nav-list" role="tablist" aria-labelledby="R-tabs-title-2ccd972b6805ee86d95d2b68b89c2e93">
+      <button
+        role="tab" id="R-tab-id-663ab73a8d31e264ae8d950a01a31e47-tab" aria-controls="R-tab-id-663ab73a8d31e264ae8d950a01a31e47" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-4e02437c14aaa7997d91339b3eb5992b-tab" aria-controls="R-tab-id-4e02437c14aaa7997d91339b3eb5992b" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-c91cc18319cc902941a98e6d37937d79-tab" aria-controls="R-tab-id-c91cc18319cc902941a98e6d37937d79" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-663ab73a8d31e264ae8d950a01a31e47" role="tabpanel" aria-labelledby="R-tab-id-663ab73a8d31e264ae8d950a01a31e47-tab"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">minify</span> <span class="p">=</span> <span class="kc">false</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-4e02437c14aaa7997d91339b3eb5992b" role="tabpanel" aria-labelledby="R-tab-id-4e02437c14aaa7997d91339b3eb5992b-tab"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">minify</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-c91cc18319cc902941a98e6d37937d79" role="tabpanel" aria-labelledby="R-tab-id-c91cc18319cc902941a98e6d37937d79-tab"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;minify&#34;</span><span class="p">:</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer class="footline">
+<div class="R-taxonomy taxonomy-categories" title="Categories">
+  <i class="fa-fw fas fa-layer-group" aria-hidden="true"></i>
+  <ul>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/howto/index.html">Howto</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="sbom">SBOM</h1>
+
+<p>The theme ships a <a href="https://cyclonedx.org/" rel="external" target="_self">CycloneDX</a> 1.6 SBOM at <code>sbom.cdx.json</code>, listing every third-party resource it can publish with your site, each with a license, a SHA-256 digest of the files the theme ships and - where upstream publishes them - a version and a package URL.</p>
+<p>A component vendored as a single file carries that file&rsquo;s checksum in <code>hashes</code>. One vendored as a directory, or under several paths, has no single artifact to describe, so it carries one digest over every file it holds, across all its paths, as a <code>relearn:treehash</code> property instead - a directory holding only one file included, because that digest covers the names as well as the bytes and a rename inside the directory has to move the document. Some carry no version or package URL at all, because upstream publishes none.</p>
+
+<div role="note" aria-labelledby="R-box-label-57f78e2fc12e291808ee985b26be97af" class="box cstyle callout warning">
+  <div id="R-box-label-57f78e2fc12e291808ee985b26be97af" class="box-label">
+    <i class="fa-fw fas fa-exclamation-triangle" aria-hidden="true"></i> 
+    Checksums describe the vendored file
+  </div>
+  <div class="box-content">
+<p>A <code>hashes</code> entry is the digest of the file as this theme ships it, which for most components is a minified build rather than the artifact the <code>purl</code> names. Fetching the package the coordinate points at and comparing digests will therefore not match, and that is expected rather than a sign of tampering. Use the checksum to verify the copy you received from the theme; use the <code>purl</code> to look the component up.</p>
+  </div>
+</div>
+<h2 id="getting-it">Getting It<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>The file is part of the theme however you installed it, and is attached to each GitHub release</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">curl -LO https://github.com/McShelby/hugo-theme-relearn/releases/download/&lt;version&gt;/sbom.cdx.json
+</span></span><span class="line"><span class="cl">curl -LO https://github.com/McShelby/hugo-theme-relearn/releases/latest/download/sbom.cdx.json</span></span></code></pre></div>
+<p>It is not copied into your generated site. Nothing is served from your domain unless you put it there yourself.</p>
+<h2 id="verifying-it">Verifying It<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>Releases attach a signed <a href="https://docs.github.com/en/actions/security-for-github-actions/using-artifact-attestations/using-artifact-attestations-to-establish-provenance-for-builds" rel="external" target="_self">build provenance attestation</a> to the file, recording which workflow produced it and from which commit. If you have the <a href="https://cli.github.com/" rel="external" target="_self">GitHub CLI</a></p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">gh attestation verify sbom.cdx.json --repo McShelby/hugo-theme-relearn</span></span></code></pre></div>
+<p>A copy that has been altered after the release, or that never came from this repository, fails the check. Attestations are looked up by the file&rsquo;s digest, so an altered copy typically fails by no attestation being found at all.</p>
+<h2 id="using-it-for-your-own-site">Using It for Your Own Site<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+
+<div role="note" aria-labelledby="R-box-label-724539dda9ac7e01520a7d638442ccf9" class="box cstyle callout note">
+  <div id="R-box-label-724539dda9ac7e01520a7d638442ccf9" class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i> 
+    This document describes the theme, not your site
+  </div>
+  <div class="box-content">
+<p>It lists everything the theme is <em>able</em> to publish, while your site publishes only what it uses - a site with no diagrams ships no Mermaid. It also says nothing about Hugo, your other modules, or your own content and assets.</p>
+  </div>
+</div>
+<p>Treat it as one input to your site&rsquo;s SBOM rather than as the finished document. Rather than copying its components into yours, reference it by <a href="https://cyclonedx.org/capabilities/bomlink/" rel="external" target="_self">BOM-Link</a>, built from the UUID inside the document&rsquo;s own <code>serialNumber</code> - that is, the field with its <code>urn:uuid:</code> prefix stripped - plus its <code>version</code></p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;bom&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;url&#34;</span><span class="p">:</span> <span class="s2">&#34;urn:cdx:&lt;uuid&gt;/&lt;version&gt;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+<h2 id="stability">Stability<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>The serial number and timestamp are derived rather than taken from a random number generator and the clock, so regenerating a given release produces the same bytes and a BOM-Link keeps naming what it named.</p>
+<p>The serial number is a UUIDv5 over a digest of the document itself, so it names this exact document: it moves as soon as any component, version or checksum in it moves, and stays put when nothing does. Two documents that differ can therefore never share one BOM-Link.</p>
+<p>To recompute it from the file alone, put <code>urn:uuid:00000000-0000-0000-0000-000000000000</code> back in place of the published serial, serialize the document as JSON without insignificant whitespace, in the key order the file has and with non-ASCII characters written as they are rather than escaped - which is what JavaScript&rsquo;s <code>JSON.stringify</code> produces - take the SHA-256 of its UTF-8 bytes, and derive the UUIDv5 over <code>pkg:github/mcshelby/hugo-theme-relearn@&lt;theme version&gt;?content=&lt;digest&gt;</code> with the digest in lowercase hex, in the standard URL namespace, where <code>&lt;theme version&gt;</code> is the document&rsquo;s own <code>metadata.component.version</code>.</p>
+<p>The timestamp is the release date recorded in the changelog. The <code>version</code> in the BOM-Link is a different number again: it is CycloneDX&rsquo;s own revision counter, stays at <code>1</code>, because a changed document receives a new serial number rather than a new revision of the old one.</p>
+<h2 id="what-it-covers">What It Covers<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>Only what a site using the theme publishes. The resources used to build the documentation, develop the theme or run its releases are listed on the <a href="/hugo-theme-relearn/more/credits/index.html">credits</a> page but deliberately left out of the SBOM, because your readers never receive them.</p>
+<p>Bundles that compile or ship their own dependencies in are listed as single components marked with a <code>relearn:bundled</code> property, and what they contain is not enumerated. Those are the ones to look into if you are auditing licenses: the document does not say what they carry, and a bundle can carry something that is itself a bundle.</p>
+<p>Components carrying local modifications record that as CycloneDX <code>pedigree</code>, so a vulnerability match against the upstream coordinate can account for the copy not being pristine.</p>
+
+  <footer class="footline">
+<div class="R-taxonomy taxonomy-categories" title="Categories">
+  <i class="fa-fw fas fa-layer-group" aria-hidden="true"></i>
+  <ul>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/explanation/index.html">Explanation</a></li>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/howto/index.html">Howto</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="content-security-policy">Content Security Policy</h1>
+
+<p>The theme writes no inline JavaScript. Its settings travel as JSON data blocks and all of its code comes from script files, so your site can be served with a strict <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP" rel="external" target="_self">Content Security Policy</a>.</p>
+<h2 id="policy">Policy<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>This policy covers every feature of the theme except Mermaid</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-http" data-lang="http"><span class="line"><span class="cl"><span class="err">Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; style-src-attr &#39;unsafe-inline&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:</span></span></span></code></pre></div>
+<p><code>style-src-attr 'unsafe-inline'</code> allows <code>style</code> attributes: the theme writes colors and image sizes given in your content as such, and Hugo colors highlighted code this way unless you <a href="/hugo-theme-relearn/configuration/branding/modules/index.html#change-syntax-highlighting">set <code>markup.highlight.noClasses=false</code></a>. If none of this applies, you use no Mermaid and your <a href="/hugo-theme-relearn/shortcodes/math/index.html#output-of-the-formulae">math output</a> is <code>mathml</code>, you can leave it out: Mermaid and the other math outputs write <code>style</code> attributes as well. Inline <code>&lt;style&gt;</code> elements stay forbidden; the theme writes none.</p>
+<h2 id="what-needs-more">What Needs More<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<ul>
+<li><strong>Mermaid</strong>: Mermaid writes its styles into inline <code>&lt;style&gt;</code> elements. Add <code>style-src-elem 'self' 'unsafe-inline'</code> - with <code>'self'</code> repeated, as it replaces <code>style-src</code> for all style elements.</li>
+<li><strong>Inlined SVGs</strong>: an SVG shown with the <a href="/hugo-theme-relearn/authoring/linking/imageeffects/index.html"><code>inlinecontent</code> image effect</a> brings its own <code>&lt;style&gt;</code> elements into the page, if it has any, and needs the same <code>style-src-elem</code>.</li>
+<li><strong>Your own inline JavaScript</strong>: a <code>javascript:</code> URL as the <code>href</code> of a <a href="/hugo-theme-relearn/shortcodes/button/index.html">button</a>, <a href="/hugo-theme-relearn/shortcodes/cards/index.html">card</a> or <a href="/hugo-theme-relearn/configuration/customization/topbar/index.html#button">topbar button</a> is blocked. Give it an <code>action</code> instead and <a href="/hugo-theme-relearn/shortcodes/button/index.html#button-with-own-action">handle that in a script file</a>.</li>
+</ul>
+<h2 id="subresource-integrity">Subresource Integrity<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>Set <code>enableSubresourceIntegrity=true</code> to have the theme add an <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity" rel="external" target="_self">integrity hash</a> to each script and stylesheet it links, including the search index and the stylesheets of the OpenAPI shortcode. A browser then refuses a file that changed after the build.</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title" id="R-tabs-title-39b112321107e5569cb2ee3208c54d87">hugo.</div>
+    <div class="tab-nav-list" role="tablist" aria-labelledby="R-tabs-title-39b112321107e5569cb2ee3208c54d87">
+      <button
+        role="tab" id="R-tab-id-64a80f6c330ec1c984b542263158aaa0-tab" aria-controls="R-tab-id-64a80f6c330ec1c984b542263158aaa0" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-ed3627a681d1908cff14fe534f93a681-tab" aria-controls="R-tab-id-ed3627a681d1908cff14fe534f93a681" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-80ffe2bd705533e7d201af96d9521e23-tab" aria-controls="R-tab-id-80ffe2bd705533e7d201af96d9521e23" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-64a80f6c330ec1c984b542263158aaa0" role="tabpanel" aria-labelledby="R-tab-id-64a80f6c330ec1c984b542263158aaa0-tab"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">enableSubresourceIntegrity</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-ed3627a681d1908cff14fe534f93a681" role="tabpanel" aria-labelledby="R-tab-id-ed3627a681d1908cff14fe534f93a681-tab"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">enableSubresourceIntegrity</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-80ffe2bd705533e7d201af96d9521e23" role="tabpanel" aria-labelledby="R-tab-id-80ffe2bd705533e7d201af96d9521e23-tab"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;enableSubresourceIntegrity&#34;</span><span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div role="note" aria-labelledby="R-box-label-3616cb85b94ccea62eabfbea2c7fa38d" class="box cstyle callout warning">
+  <div id="R-box-label-3616cb85b94ccea62eabfbea2c7fa38d" class="box-label">
+    <i class="fa-fw fas fa-exclamation-triangle" aria-hidden="true"></i> 
+    Not for the file system
+  </div>
+  <div class="box-content">
+<p>A browser can not check an integrity hash for a page opened from the file system and refuses the file instead, which leaves the page without any script or style. Keep this off if your site must work that way.</p>
+  </div>
+</div>
+
+  <footer class="footline">
+<div class="R-taxonomy taxonomy-categories" title="Categories">
+  <i class="fa-fw fas fa-layer-group" aria-hidden="true"></i>
+  <ul>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/explanation/index.html">Explanation</a></li>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/howto/index.html">Howto</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="vs-code-front-matter-cms">VS Code Front Matter CMS</h1>
+
+<p>The theme supports the great <a href="https://github.com/estruyf/vscode-front-matter" rel="external" target="_self">VSCode Front Matter CMS extension</a> which provides on-premise CMS capabilties to Hugo.</p>
+<p>For that, the theme provides a snippets file so you can use shortcodes from inside the Front Matter CMS.</p>
+<p>Currently only English and German is supported.</p>
+<p>To use them in your Front Matter CMS, put a reference into your <code>frontmatter.json</code> like this</p>
+<div class="tab-panel" data-tab-group="R-tabs-22ba47633b6a1bec9cc918072c6a0154">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-a423706158d25acf927126d17b0918b7-tab" aria-controls="R-tab-id-a423706158d25acf927126d17b0918b7" aria-selected="true"
+        data-tab-item="R-tab-42a431011ae2471d003574e031c3356a"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">frontmatter.json</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-a423706158d25acf927126d17b0918b7" role="tabpanel" aria-labelledby="R-tab-id-a423706158d25acf927126d17b0918b7-tab"
+      data-tab-item="R-tab-42a431011ae2471d003574e031c3356a"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;frontMatter.extends&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;./vscode-frontmatter/snippets.en.json&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+  <footer class="footline">
+<div class="R-taxonomy taxonomy-categories" title="Categories">
+  <i class="fa-fw fas fa-layer-group" aria-hidden="true"></i>
+  <ul>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/howto/index.html">Howto</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="keyboard-shortcuts">Keyboard Shortcuts</h1>
+
+<p>Besides the keys every browser knows, the theme brings shortcuts of its own. Those of a button are also shown in its tooltip.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Shortcut</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><kbd>CTRL</kbd> <kbd>ALT</kbd> <kbd>n</kbd></td>
+      <td>Shows or hides the menu in the mobile layout.</td>
+    </tr>
+    <tr>
+      <td><kbd>CTRL</kbd> <kbd>ALT</kbd> <kbd>f</kbd></td>
+      <td>Puts the focus into the search box, pressed again back into the content.</td>
+    </tr>
+    <tr>
+      <td><kbd>CTRL</kbd> <kbd>ALT</kbd> <kbd>t</kbd></td>
+      <td>Shows or hides the table of contents.</td>
+    </tr>
+    <tr>
+      <td><kbd>CTRL</kbd> <kbd>ALT</kbd> <kbd>w</kbd></td>
+      <td>Opens the page for editing, if <a href="/hugo-theme-relearn/configuration/customization/topbar/index.html">configured</a>.</td>
+    </tr>
+    <tr>
+      <td><kbd>CTRL</kbd> <kbd>ALT</kbd> <kbd>p</kbd></td>
+      <td>Opens the print view, if <a href="/hugo-theme-relearn/configuration/customization/topbar/index.html">configured</a>.</td>
+    </tr>
+    <tr>
+      <td><kbd>🡐</kbd> / <kbd>🡒</kbd></td>
+      <td>Goes to the previous or next page. If the focus is on a tab, selects the previous or next tab instead, as <kbd>HOME</kbd> and <kbd>END</kbd> select the first and last one.</td>
+    </tr>
+    <tr>
+      <td><kbd>ALT</kbd> <kbd>🡑</kbd> / <kbd>ALT</kbd> <kbd>🡓</kbd></td>
+      <td>Scrolls to the previous or next heading of the page.</td>
+    </tr>
+    <tr>
+      <td><kbd>🡐</kbd> / <kbd>🡒</kbd> / <kbd>🡑</kbd> / <kbd>🡓</kbd></td>
+      <td>Pans a <a href="/hugo-theme-relearn/shortcodes/mermaid/index.html#configuring-pan-and-zoom">Mermaid</a> graph, if the focus is on it and it is zoomable.</td>
+    </tr>
+    <tr>
+      <td><kbd>+</kbd> / <kbd>-</kbd></td>
+      <td>Zooms into or out of a <a href="/hugo-theme-relearn/shortcodes/mermaid/index.html#configuring-pan-and-zoom">Mermaid</a> graph, if the focus is on it and it is zoomable.</td>
+    </tr>
+    <tr>
+      <td><kbd>ESC</kbd></td>
+      <td>Closes what was opened, like the menu of the mobile layout, the table of contents or the lightbox of an image or graph, and clears the search.</td>
+    </tr>
+  </tbody>
+</table>
+
+  <footer class="footline">
+<div class="R-taxonomy taxonomy-categories" title="Categories">
+  <i class="fa-fw fas fa-layer-group" aria-hidden="true"></i>
+  <ul>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/reference/index.html">Reference</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="/hugo-theme-relearn/js/theme.min.f66b851115ea46f239f782bd19e65c09786103c8cb054f72664b912bc561d1c8.js" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

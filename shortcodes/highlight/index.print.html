@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.166.0">
-    <meta name="generator" content="Relearn 9.1.0+edd32dd46699cf37d4c81be4a1fbeb8bd7112e9e">
+    <meta name="generator" content="Hugo 0.167.0">
+    <meta name="generator" content="Relearn 9.2.0+a9b397c5d13bccbd206ef42c15e37966e99cda51">
     <meta name="description" content="Render code with a syntax highlighter">
     <meta name="author" content="Sören Weber">
     <meta name="twitter:card" content="summary_large_image">
@@ -29,13 +29,15 @@
     <link href="https://fkaminski.github.io/hugo-theme-relearn/pir/shortcodes/highlight/index.html" rel="alternate" hreflang="art-x-pir">
     <link href="https://fkaminski.github.io/hugo-theme-relearn/shortcodes/highlight/index.html" rel="canonical" type="text/html" title="Highlight :: Hugo Relearn Theme">
     <link href="/hugo-theme-relearn/shortcodes/highlight/index.xml" rel="alternate" type="application/rss+xml" title="Highlight :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/shortcodes/highlight/index.md" rel="alternate" type="text/markdown" title="Highlight :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/shortcodes/highlight/index.source.md" rel="alternate" type="text/markdown" title="Highlight :: Hugo Relearn Theme">
     <link href="/hugo-theme-relearn/images/logo.d30ab0425821f45713322a73c1eeb192e311689b03371519abbe061a24d1201e.svg" rel="icon" type="image/svg+xml">
     <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.78b49c23f59ffb08554285843ed4c841484fe34c489058b2991edc027cdd47fc.css" rel="stylesheet">
-    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.7b340a2a0841d2466dca47e43cbd8c4dfe6a4f77a6c81c984d49ebb60ba2e299.js" defer></script>
-    <script src="/hugo-theme-relearn/js/search-lunr.min.2e613f0a1ce042c097f61ecc0e3f843d395bf3a42717715f9c08a11dc2f21122.js" defer></script>
-    <script src="/hugo-theme-relearn/js/search.min.373845112980472e938f57e7ec9a00ff9d7b651d7e72cacce2b29211ad5f1924.js" defer></script>
+    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.9657edd589a1ca6962a3cf03df5aa17f16f2c67350aea0a84dddbd8d5698316f.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.9897ffe790e716e8b90e4a9e200dce63c2603e69a9eec9bbdce6a483811ea180.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.4bcf60afa00d9f5c3adf08ff55811ce4cc679bd6d4b5747d674667994ee1debb.js" defer></script>
     <script type="application/json" id="R-search-config">{
-      "indexFile": "searchindex.en.min.00b99188351628699a21cf5dfc96dcbfb52e0b985835ac4b1c8faf03933fbfa8.js"
+      "indexFile": "searchindex.en.min.c4f041a00cc99840cf39073ec5ee0c85a4b4738e5a58acbd24b4ecb2e0d4600e.js"
     }</script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
@@ -47,10 +49,9 @@
       ]
     }</script>
     <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" class="R-async-style"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
-    <link href="/hugo-theme-relearn/css/theme.min.c5e57f8072c26c3936afb7f1f29896beccceeb26ad977baa337cb1cbf585deea.css" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/format-print.min.39e0dc30e3ca73e623fcf660fac10bf09db5539b3d13e59e90977cf7137e6aee.css" rel="stylesheet" id="R-format-style">
+    <link href="/hugo-theme-relearn/css/theme.min.8cd3fb0d94b35d653c73be5b6192808bb4d4b49792cbf9c092307d30edc9487f.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/format-print.min.fde31a3bc19a193360c646fd67b62d0fb98ae684449d1922b5ac0ed941277607.css" rel="stylesheet" id="R-format-style">
     <script type="application/json" id="R-theme-config">{
-      "absBaseUri": "https://fkaminski.github.io/hugo-theme-relearn",
       "disableInlineCopyToClipboard": true,
       "enableBlockCodeWrap": true,
       "path": "/shortcodes/highlight/index.html",
@@ -64,6 +65,9 @@
         "zen-auto",
         "zen-dark",
         "zen-light",
+        "contrast-auto",
+        "contrast-dark",
+        "contrast-light",
         "retro-auto",
         "neon",
         "learn",
@@ -73,16 +77,24 @@
       ],
       "translations": {
         "Browser_unsupported_feature": "This browser doesn't support this feature",
+        "Close_graph": "Close enlarged graph",
         "Copied_to_clipboard": "Text copied to clipboard!",
         "Copy_to_clipboard": "Copy text to clipboard",
+        "Deleted_text_end": "End of deleted text",
+        "Deleted_text_start": "Start of deleted text",
+        "Enlarge_graph": "Enlarge graph",
+        "History_cleared": "History cleared",
+        "Inserted_text_end": "End of inserted text",
+        "Inserted_text_start": "Start of inserted text",
         "Link_copied_to_clipboard": "Link copied to clipboard!",
+        "N_matches_on_page": "{1} matches for \"{0}\" on this page",
         "N_results_found": "{1} results found for \"{0}\"",
         "No_results_found": "No results found for \"{0}\"",
         "Reset_view": "Reset view",
         "View_reset": "View reset!"
       }
     }</script>
-    <script src="/hugo-theme-relearn/js/theme-head.min.eb092668f5b427260df95861e28028bbd22ff85e2af068b9bfbedf0cbdbea887.js"></script>
+    <script src="/hugo-theme-relearn/js/theme-head.min.8c8c3bb99b655d91386ff7fefb5fceeb088bff4bb82bcde54fbef7dacb3388cc.js"></script>
     <style>
        
       #R-body img.bg-white {
@@ -91,20 +103,21 @@
     </style>
   </head>
   <body class="mobile-support print" data-origin="/hugo-theme-relearn/shortcodes/highlight/index.html">
+    <a id="R-skip-link" href="#R-body-inner">Skip to main content</a>
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
-      <nav id="R-topbar" class="default-animation">
+      <header id="R-topbar" class="default-animation">
         <div class="topbar-wrapper default-animation">
           <div class="topbar-sidebar-divider default-animation"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)" aria-label="Menu (CTRL&#43;ALT&#43;n)" aria-expanded="false"><i class="fa-fw fas fa-bars" aria-hidden="true"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)" aria-label="Table of Contents (CTRL&#43;ALT&#43;t)" aria-expanded="false"><i class="fa-fw fas fa-table-list" aria-hidden="true"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper" tabindex="-1">
-<nav class="TableOfContents">
+<nav class="TableOfContents" aria-label="Table of Contents">
   <ul>
     <li><a href="#usage">Usage</a>
       <ul>
@@ -134,33 +147,43 @@
               </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/index.html"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/shortcodes/index.html"><span itemprop="name">Shortcodes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Highlight</span><meta itemprop="position" content="3"></li>
-          </ol>
+          <div class="topbar-area topbar-area-middle" data-area="middle">
+            <nav class="topbar-breadcrumbs breadcrumbs highlightable" aria-label="Breadcrumbs" data-overflow-title="Shortcodes &gt; Highlight">
+              <ol itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/index.html" tabindex="-1"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/shortcodes/index.html"><span itemprop="name">Shortcodes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="" aria-current="page"><span itemprop="name">Highlight</span><meta itemprop="position" content="3"></li>
+              </ol>
+            </nav>
+          </div>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/shortcodes/highlight/_index.en.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen"></i></a></span>
-            </div>
-            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/shortcodes/highlight/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
             <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/shortcodes/expand/index.html" title="Expand (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Details (🡐)" href="/hugo-theme-relearn/shortcodes/details/index.html" title="Details (🡐)"><i class="fa-fw fas fa-chevron-left" aria-hidden="true"></i></a></span>
             </div>
             <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/shortcodes/icon/index.html" title="Icon (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Icon (🡒)" href="/hugo-theme-relearn/shortcodes/icon/index.html" title="Icon (🡒)"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i></a></span>
             </div>
             <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="More" aria-label="More" aria-expanded="false"><i class="fa-fw fas fa-ellipsis-v" aria-hidden="true"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper" tabindex="-1">
                   <div class="topbar-area topbar-area-more" data-area="more">
+            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Edit (CTRL+ALT+w)" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/shortcodes/highlight/_index.en.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-source default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Show source code" href="/hugo-theme-relearn/shortcodes/highlight/index.source.md" title="Show source code"><i class="fa-fw fas fa-code" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-markdown default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Show Markdown" href="/hugo-theme-relearn/shortcodes/highlight/index.md" title="Show Markdown"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Print whole chapter (CTRL+ALT+p)" href="/hugo-theme-relearn/shortcodes/highlight/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print" aria-hidden="true"></i></a></span>
+            </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </nav>
+      </header>
       <div id="R-main-overlay"></div>
       <main id="R-body-inner" class="highlightable shortcodes" tabindex="-1">
         <div class="flex-block-wrapper">
@@ -172,106 +195,110 @@
 
 <p>The <code>highlight</code> shortcode renders your code with a syntax highlighter.</p>
 
-<div class="tab-panel" data-tab-group="R-tabs-830fd92af0273387f0b4d07a24e57265">
+<div class="tab-panel" data-tab-group="R-tabs-3275348595b7e81131e0e6e4059f21c2">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-b1fb0582dd34d00ca75c519c33a7f1fb" aria-expanded="true"
-      data-tab-item="R-tab-23eeeb4347bdd26bfc6b7ee9a3b755dd"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">python</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-d280df157dedc85d1b9388d1edcb2af3-tab" aria-controls="R-tab-id-d280df157dedc85d1b9388d1edcb2af3" aria-selected="true"
+        data-tab-item="R-tab-23eeeb4347bdd26bfc6b7ee9a3b755dd"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">python</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-b1fb0582dd34d00ca75c519c33a7f1fb"
+      id="R-tab-id-d280df157dedc85d1b9388d1edcb2af3" role="tabpanel" aria-labelledby="R-tab-id-d280df157dedc85d1b9388d1edcb2af3-tab"
       data-tab-item="R-tab-23eeeb4347bdd26bfc6b7ee9a3b755dd"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello World!&#34;</span><span class="p">)</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello World!&#34;</span><span class="p">)</span></span></span></code></pre></div>
       </div>
     </div>
   </div>
 </div>
-<h2 id="usage">Usage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="usage">Usage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-22b1c0daa7eff49f2c9cd2ee7c922d14" aria-expanded="true"
-      data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Markdown</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-b6e098bb78d9f7054fde5a9b86fd67cf" aria-expanded="false"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-971b3a0c804284c189905ddc0518f821" aria-expanded="false"
-      data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode (positional)</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-c1a72d763f30ac8a3a6535c4747955cb" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-d03ed66afbdbb34a012c5c8ea64f2dbb" aria-expanded="false"
-      data-tab-item="R-tab-f5069710d34a774fc1b0e90d198fbcb1"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial (compact)</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-b8390bd731c6340f763644f5582dcb08-tab" aria-controls="R-tab-id-b8390bd731c6340f763644f5582dcb08" aria-selected="true"
+        data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Markdown</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-0823dd5ee67aedccebf15d2f62deea92-tab" aria-controls="R-tab-id-0823dd5ee67aedccebf15d2f62deea92" aria-selected="false"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-918a1d0b7e082b0f5328fb7f62b997c6-tab" aria-controls="R-tab-id-918a1d0b7e082b0f5328fb7f62b997c6" aria-selected="false"
+        data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Shortcode (positional)</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-40300a0e3187287232534898f88a835f-tab" aria-controls="R-tab-id-40300a0e3187287232534898f88a835f" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-0944dd26f2413f7960d09e4466197c82-tab" aria-controls="R-tab-id-0944dd26f2413f7960d09e4466197c82" aria-selected="false"
+        data-tab-item="R-tab-f5069710d34a774fc1b0e90d198fbcb1"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial (compact)</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-22b1c0daa7eff49f2c9cd2ee7c922d14"
+      id="R-tab-id-b8390bd731c6340f763644f5582dcb08" role="tabpanel" aria-labelledby="R-tab-id-b8390bd731c6340f763644f5582dcb08-tab"
       data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```py {lineNos=&#34;true&#34; title=&#34;python&#34; wrap=&#34;true&#34;}
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```py {lineNos=&#34;true&#34; title=&#34;python&#34; wrap=&#34;true&#34;}
 </span></span></span><span class="line"><span class="cl"><span class="s">print(&#34;Hello World!&#34;)
 </span></span></span><span class="line"><span class="cl"><span class="s">```</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-b6e098bb78d9f7054fde5a9b86fd67cf"
+      id="R-tab-id-0823dd5ee67aedccebf15d2f62deea92" role="tabpanel" aria-labelledby="R-tab-id-0823dd5ee67aedccebf15d2f62deea92-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">highlight</span><span class="w"> </span><span class="nx">lineNos</span><span class="p">=</span><span class="s">&#34;true&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;python&#34;</span><span class="w"> </span><span class="kd">type</span><span class="p">=</span><span class="s">&#34;py&#34;</span><span class="w"> </span><span class="nx">wrap</span><span class="p">=</span><span class="s">&#34;true&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">highlight</span><span class="w"> </span><span class="nx">lineNos</span><span class="p">=</span><span class="s">&#34;true&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;python&#34;</span><span class="w"> </span><span class="kd">type</span><span class="p">=</span><span class="s">&#34;py&#34;</span><span class="w"> </span><span class="nx">wrap</span><span class="p">=</span><span class="s">&#34;true&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s">&#34;Hello World!&#34;</span><span class="p">)</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">highlight</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-971b3a0c804284c189905ddc0518f821"
+      id="R-tab-id-918a1d0b7e082b0f5328fb7f62b997c6" role="tabpanel" aria-labelledby="R-tab-id-918a1d0b7e082b0f5328fb7f62b997c6-tab"
       data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">highlight</span><span class="w"> </span><span class="s">&#34;py&#34;</span><span class="w"> </span><span class="s">&#34;lineNos=true,title=python,wrap=true&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">highlight</span><span class="w"> </span><span class="s">&#34;py&#34;</span><span class="w"> </span><span class="s">&#34;lineNos=true,title=python,wrap=true&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s">&#34;Hello World!&#34;</span><span class="p">)</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">highlight</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-c1a72d763f30ac8a3a6535c4747955cb"
+      id="R-tab-id-40300a0e3187287232534898f88a835f" role="tabpanel" aria-labelledby="R-tab-id-40300a0e3187287232534898f88a835f-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/highlight.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/highlight.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;print(\&#34;Hello World!\&#34;)&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;lineNos&#34;</span><span class="w"> </span><span class="s">&#34;true&#34;</span><span class="w">
@@ -282,11 +309,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-d03ed66afbdbb34a012c5c8ea64f2dbb"
+      id="R-tab-id-0944dd26f2413f7960d09e4466197c82" role="tabpanel" aria-labelledby="R-tab-id-0944dd26f2413f7960d09e4466197c82-tab"
       data-tab-item="R-tab-f5069710d34a774fc1b0e90d198fbcb1"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/highlight.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/highlight.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;print(\&#34;Hello World!\&#34;)&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;type&#34;</span><span class="w"> </span><span class="s">&#34;py&#34;</span><span class="w">
@@ -301,111 +328,113 @@
 <p>You are free to also call this shortcode from your own partials. In this case it resembles Hugo&rsquo;s <a href="https://gohugo.io/functions/highlight/" rel="external" target="_self"><code>highlight</code> function</a> syntax if you call it using compatibility syntax.</p>
 <p>Markdown codefence syntax is widely available in other Markdown parsers like GitHub and therefore is the recommended syntax for generating portable Markdown.</p>
 <p>The <a href="/hugo-theme-relearn/shortcodes/tabs/index.html#single-tab"><code>tab</code> shortcode</a> is also capable of displaying code but with limited options.</p>
-<h3 id="parameters">Parameters<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="parameters">Parameters<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
 <table>
-	<thead>
-			<tr>
-					<th>Name</th>
-					<th>Position</th>
-					<th>Default</th>
-					<th>Notes</th>
-			</tr>
-	</thead>
-	<tbody>
-			<tr>
-					<td><strong>type</strong></td>
-					<td>1</td>
-					<td><em>&lt;empty&gt;</em></td>
-					<td>The language of the code to highlight. Choose from one of the <a href="https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages" rel="external" target="_self">supported languages</a>. Case-insensitive.</td>
-			</tr>
-			<tr>
-					<td><strong>title</strong></td>
-					<td></td>
-					<td><em>&lt;empty&gt;</em></td>
-					<td><strong>Extension</strong>. Arbitrary title for code. This displays the code like a <a href="/hugo-theme-relearn/shortcodes/tabs/index.html#single-tab">single tab</a> if <code>hl_inline=false</code> (which is Hugo&rsquo;s default).</td>
-			</tr>
-			<tr>
-					<td><strong>wrap</strong></td>
-					<td></td>
-					<td>see notes</td>
-					<td><strong>Extension</strong>. When <code>true</code> the content may wrap on long lines otherwise it will be scrollable.<br><br>The default value can be set in your <code>hugo.toml</code> and overwritten via front matter. <a href="/hugo-theme-relearn/shortcodes/highlight/index.html#setting-wrap-of-long-lines">See below</a>.</td>
-			</tr>
-			<tr>
-					<td><strong>options</strong></td>
-					<td>2</td>
-					<td><em>&lt;empty&gt;</em></td>
-					<td>An optional, comma-separated list of zero or more <a href="https://gohugo.io/functions/highlight/#options" rel="external" target="_self">Hugo supported options</a> as well as extension parameter from this table.</td>
-			</tr>
-			<tr>
-					<td><em><strong>&lt;option&gt;</strong></em></td>
-					<td></td>
-					<td><em>&lt;empty&gt;</em></td>
-					<td>Any of <a href="https://gohugo.io/functions/highlight/#options" rel="external" target="_self">Hugo&rsquo;s supported options</a>.</td>
-			</tr>
-			<tr>
-					<td><em><strong>&lt;content&gt;</strong></em></td>
-					<td></td>
-					<td><em>&lt;empty&gt;</em></td>
-					<td>Your code to highlight.</td>
-			</tr>
-	</tbody>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Position</th>
+      <th>Default</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>type</strong></td>
+      <td>1</td>
+      <td><em>&lt;empty&gt;</em></td>
+      <td>The language of the code to highlight. Choose from one of the <a href="https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages" rel="external" target="_self">supported languages</a>. Case-insensitive.</td>
+    </tr>
+    <tr>
+      <td><strong>title</strong></td>
+      <td></td>
+      <td><em>&lt;empty&gt;</em></td>
+      <td><strong>Extension</strong>. Arbitrary title for code. This displays the code like a <a href="/hugo-theme-relearn/shortcodes/tabs/index.html#single-tab">single tab</a> if <code>hl_inline=false</code> (which is Hugo&rsquo;s default).</td>
+    </tr>
+    <tr>
+      <td><strong>wrap</strong></td>
+      <td></td>
+      <td>see notes</td>
+      <td><strong>Extension</strong>. When <code>true</code> the content may wrap on long lines otherwise it will be scrollable.<br><br>The default value can be set in your <code>hugo.toml</code> and overwritten via front matter. <a href="/hugo-theme-relearn/shortcodes/highlight/index.html#setting-wrap-of-long-lines">See below</a>.</td>
+    </tr>
+    <tr>
+      <td><strong>options</strong></td>
+      <td>2</td>
+      <td><em>&lt;empty&gt;</em></td>
+      <td>An optional, comma-separated list of zero or more <a href="https://gohugo.io/functions/highlight/#options" rel="external" target="_self">Hugo supported options</a> as well as extension parameter from this table.</td>
+    </tr>
+    <tr>
+      <td><em><strong>&lt;option&gt;</strong></em></td>
+      <td></td>
+      <td><em>&lt;empty&gt;</em></td>
+      <td>Any of <a href="https://gohugo.io/functions/highlight/#options" rel="external" target="_self">Hugo&rsquo;s supported options</a>.</td>
+    </tr>
+    <tr>
+      <td><em><strong>&lt;content&gt;</strong></em></td>
+      <td></td>
+      <td><em>&lt;empty&gt;</em></td>
+      <td>Your code to highlight.</td>
+    </tr>
+  </tbody>
 </table>
-<h2 id="settings">Settings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<h3 id="setting-default-values-for-hugos-options">Setting Default Values for Hugo&rsquo;s Options<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h2 id="settings">Settings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<h3 id="setting-default-values-for-hugos-options">Setting Default Values for Hugo&rsquo;s Options<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
 <p>Default values for <a href="https://gohugo.io/functions/highlight/#options" rel="external" target="_self">Hugo&rsquo;s supported options</a> can be set via <a href="https://gohugo.io/getting-started/configuration-markup/#highlight" rel="external" target="_self">goldmark settings</a>.</p>
 <p>If used together with wrapping of long lines, use this recommended settings. Otherwise, line numbers will shift if code wraps.</p>
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
-    <div class="tab-nav-title">hugo.</div>
-    <button
-      aria-controls="R-tab-id-1aade92b3e09d8f67feefba034551b7e" aria-expanded="true"
-      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">toml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-f502effa3ef73c42983a8d7d16ed1f55" aria-expanded="false"
-      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">yaml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-1c7d2913787689583b41962e1b4e68f5" aria-expanded="false"
-      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">json</span>
-    </button>
+    <div class="tab-nav-title" id="R-tabs-title-bd679fe3245c6c2452fc1e221faace36">hugo.</div>
+    <div class="tab-nav-list" role="tablist" aria-labelledby="R-tabs-title-bd679fe3245c6c2452fc1e221faace36">
+      <button
+        role="tab" id="R-tab-id-fa0e20a9f7cd35f0ef7fd721679e486b-tab" aria-controls="R-tab-id-fa0e20a9f7cd35f0ef7fd721679e486b" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-12bd8cfed0d09d437530a30561530ac9-tab" aria-controls="R-tab-id-12bd8cfed0d09d437530a30561530ac9" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-90118a1ff18257e0fb23710bc7b7cb93-tab" aria-controls="R-tab-id-90118a1ff18257e0fb23710bc7b7cb93" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-1aade92b3e09d8f67feefba034551b7e"
+      id="R-tab-id-fa0e20a9f7cd35f0ef7fd721679e486b" role="tabpanel" aria-labelledby="R-tab-id-fa0e20a9f7cd35f0ef7fd721679e486b-tab"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">]</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">highlight</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">lineNumbersInTable</span> <span class="p">=</span> <span class="kc">false</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-f502effa3ef73c42983a8d7d16ed1f55"
+      id="R-tab-id-12bd8cfed0d09d437530a30561530ac9" role="tabpanel" aria-labelledby="R-tab-id-12bd8cfed0d09d437530a30561530ac9-tab"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">markup</span><span class="p">:</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">markup</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">highlight</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">lineNumbersInTable</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-1c7d2913787689583b41962e1b4e68f5"
+      id="R-tab-id-90118a1ff18257e0fb23710bc7b7cb93" role="tabpanel" aria-labelledby="R-tab-id-90118a1ff18257e0fb23710bc7b7cb93-tab"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;markup&#34;</span><span class="p">:</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">      <span class="nt">&#34;highlight&#34;</span><span class="p">:</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">         <span class="nt">&#34;lineNumbersInTable&#34;</span><span class="p">:</span> <span class="kc">false</span>
@@ -416,59 +445,61 @@
     </div>
   </div>
 </div>
-<h3 id="setting-wrap-of-long-lines">Setting Wrap of Long Lines<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears"></i></span><span class="badge-content">Option</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown"></i></span><span class="badge-content">Front Matter</span></span> By default, code will be wrapped if the line is not long enough.</p>
+<h3 id="setting-wrap-of-long-lines">Setting Wrap of Long Lines<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears" aria-hidden="true"></i></span><span class="badge-content">Option</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></span><span class="badge-content">Front Matter</span></span> By default, code will be wrapped if the line is not long enough.</p>
 <p>You can disable wrapping by setting <code>highlightWrap=false</code> or by setting the <a href="/hugo-theme-relearn/shortcodes/highlight/index.html#parameters"><code>wrap</code> parameter</a> individually for each code block.</p>
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-a0254a89c06a9d0ff8067096dd9065e1" aria-expanded="true"
-      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">toml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-dae0ddae68fe248b1b9071667f2cb285" aria-expanded="false"
-      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">yaml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-ef7ad241e6383347699e2b7fc73b2636" aria-expanded="false"
-      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">json</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-e92f133d08eafae80e473c90b1c4f2d2-tab" aria-controls="R-tab-id-e92f133d08eafae80e473c90b1c4f2d2" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-0478fd76a006f909cad070a2f640caf4-tab" aria-controls="R-tab-id-0478fd76a006f909cad070a2f640caf4" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-7d9fbda35654205f9b15133e88b8ff02-tab" aria-controls="R-tab-id-7d9fbda35654205f9b15133e88b8ff02" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-a0254a89c06a9d0ff8067096dd9065e1"
+      id="R-tab-id-e92f133d08eafae80e473c90b1c4f2d2" role="tabpanel" aria-labelledby="R-tab-id-e92f133d08eafae80e473c90b1c4f2d2-tab"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">highlightWrap</span> <span class="p">=</span> <span class="kc">false</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-dae0ddae68fe248b1b9071667f2cb285"
+      id="R-tab-id-0478fd76a006f909cad070a2f640caf4" role="tabpanel" aria-labelledby="R-tab-id-0478fd76a006f909cad070a2f640caf4-tab"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">highlightWrap</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-ef7ad241e6383347699e2b7fc73b2636"
+      id="R-tab-id-7d9fbda35654205f9b15133e88b8ff02" role="tabpanel" aria-labelledby="R-tab-id-7d9fbda35654205f9b15133e88b8ff02-tab"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">      <span class="nt">&#34;highlightWrap&#34;</span><span class="p">:</span> <span class="kc">false</span>
 </span></span><span class="line"><span class="cl">   <span class="p">}</span>
@@ -477,59 +508,61 @@
     </div>
   </div>
 </div>
-<h3 id="copy-to-clipboard-for-inline-code">Copy to Clipboard for Inline Code<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears"></i></span><span class="badge-content">Option</span></span> By default inline code has a button to copy the code to the clipboard.</p>
+<h3 id="copy-to-clipboard-for-inline-code">Copy to Clipboard for Inline Code<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears" aria-hidden="true"></i></span><span class="badge-content">Option</span></span> By default inline code has a button to copy the code to the clipboard.</p>
 <p>If you want to disable this feature, set <code>disableInlineCopyToClipBoard=true</code>.</p>
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
-    <div class="tab-nav-title">hugo.</div>
-    <button
-      aria-controls="R-tab-id-77c8cd9213605592efd247f57bd46274" aria-expanded="true"
-      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">toml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-7f8b5acda30f5f18ec7fd3b6a836bbdc" aria-expanded="false"
-      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">yaml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-b30b0bc9894d97f44e1ed38127413251" aria-expanded="false"
-      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">json</span>
-    </button>
+    <div class="tab-nav-title" id="R-tabs-title-0f260a71c6d7c93e42ccfbcbfdec7e60">hugo.</div>
+    <div class="tab-nav-list" role="tablist" aria-labelledby="R-tabs-title-0f260a71c6d7c93e42ccfbcbfdec7e60">
+      <button
+        role="tab" id="R-tab-id-cbaa726558584f0c4c30467916e3ffb4-tab" aria-controls="R-tab-id-cbaa726558584f0c4c30467916e3ffb4" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-9eb53f571d76395d136ad7fea773b364-tab" aria-controls="R-tab-id-9eb53f571d76395d136ad7fea773b364" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-d3920dd91db48a9adfc56bd806a9e487-tab" aria-controls="R-tab-id-d3920dd91db48a9adfc56bd806a9e487" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-77c8cd9213605592efd247f57bd46274"
+      id="R-tab-id-cbaa726558584f0c4c30467916e3ffb4" role="tabpanel" aria-labelledby="R-tab-id-cbaa726558584f0c4c30467916e3ffb4-tab"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">disableInlineCopyToClipBoard</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-7f8b5acda30f5f18ec7fd3b6a836bbdc"
+      id="R-tab-id-9eb53f571d76395d136ad7fea773b364" role="tabpanel" aria-labelledby="R-tab-id-9eb53f571d76395d136ad7fea773b364-tab"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">disableInlineCopyToClipBoard</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-b30b0bc9894d97f44e1ed38127413251"
+      id="R-tab-id-d3920dd91db48a9adfc56bd806a9e487" role="tabpanel" aria-labelledby="R-tab-id-d3920dd91db48a9adfc56bd806a9e487-tab"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">      <span class="nt">&#34;disableInlineCopyToClipBoard&#34;</span><span class="p">:</span> <span class="kc">true</span>
 </span></span><span class="line"><span class="cl">   <span class="p">}</span>
@@ -538,59 +571,61 @@
     </div>
   </div>
 </div>
-<h3 id="copy-to-clipboard-for-block-code">Copy to Clipboard for Block Code<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears"></i></span><span class="badge-content">Option</span></span> By default block code has a button to copy the code to the clipboard that is only visible on hover.</p>
+<h3 id="copy-to-clipboard-for-block-code">Copy to Clipboard for Block Code<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears" aria-hidden="true"></i></span><span class="badge-content">Option</span></span> By default block code has a button to copy the code to the clipboard that is only visible on hover.</p>
 <p>Set <code>disableHoverBlockCopyToClipBoard=true</code> to disable the hover effect and always show the button.</p>
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
-    <div class="tab-nav-title">hugo.</div>
-    <button
-      aria-controls="R-tab-id-64fa316b56a4d6d8e52779edc61921be" aria-expanded="true"
-      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">toml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-d2b02d154fa2aa29e4e209bb914c9d74" aria-expanded="false"
-      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">yaml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-f197324d546e517c707003b66a71d984" aria-expanded="false"
-      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">json</span>
-    </button>
+    <div class="tab-nav-title" id="R-tabs-title-bc04f2c69b28ecf86f5d99eb10cce2f7">hugo.</div>
+    <div class="tab-nav-list" role="tablist" aria-labelledby="R-tabs-title-bc04f2c69b28ecf86f5d99eb10cce2f7">
+      <button
+        role="tab" id="R-tab-id-480b1efa0294df62b016c5c307e53a7c-tab" aria-controls="R-tab-id-480b1efa0294df62b016c5c307e53a7c" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-5b153ef189e6a5df034717fd14490ec2-tab" aria-controls="R-tab-id-5b153ef189e6a5df034717fd14490ec2" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-58468a76d21bb2196d43b6bf144fdb20-tab" aria-controls="R-tab-id-58468a76d21bb2196d43b6bf144fdb20" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-64fa316b56a4d6d8e52779edc61921be"
+      id="R-tab-id-480b1efa0294df62b016c5c307e53a7c" role="tabpanel" aria-labelledby="R-tab-id-480b1efa0294df62b016c5c307e53a7c-tab"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">disableHoverBlockCopyToClipBoard</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-d2b02d154fa2aa29e4e209bb914c9d74"
+      id="R-tab-id-5b153ef189e6a5df034717fd14490ec2" role="tabpanel" aria-labelledby="R-tab-id-5b153ef189e6a5df034717fd14490ec2-tab"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">disableHoverBlockCopyToClipBoard</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-f197324d546e517c707003b66a71d984"
+      id="R-tab-id-58468a76d21bb2196d43b6bf144fdb20" role="tabpanel" aria-labelledby="R-tab-id-58468a76d21bb2196d43b6bf144fdb20-tab"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">      <span class="nt">&#34;disableHoverBlockCopyToClipBoard&#34;</span><span class="p">:</span> <span class="kc">true</span>
 </span></span><span class="line"><span class="cl">   <span class="p">}</span>
@@ -599,58 +634,60 @@
     </div>
   </div>
 </div>
-<h3 id="setting-a-specific-color-scheme">Setting a Specific Color Scheme<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="setting-a-specific-color-scheme">Setting a Specific Color Scheme<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
 <p>You can configure the color style used for code blocks in your <a href="/hugo-theme-relearn/configuration/branding/modules/index.html#change-syntax-highlighting">color variants stylesheet</a> file using the <code>--CODE-theme</code> variable. This requires further configuration as described in the above link.</p>
-<h2 id="examples">Examples<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<h3 id="line-numbers-with-starting-offset">Line Numbers with Starting Offset<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h2 id="examples">Examples<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<h3 id="line-numbers-with-starting-offset">Line Numbers with Starting Offset<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
 <p>As mentioned above, line numbers in a <code>table</code> layout will shift if code is wrapping, so better use <code>inline</code>. To make things easier for you, set <code>lineNumbersInTable = false</code> in your <code>hugo.toml</code> and add <code>lineNos = true</code> when calling the shortcode instead of the specific values <code>table</code> or <code>inline</code>.</p>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-ba122ddbd8a8b4844d3cf9a101a37eb6" aria-expanded="true"
-      data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Markdown</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-9335f47d1aedf84928286ed44626d7e9" aria-expanded="false"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-74c4087c5ca51aaf1ff8139f14102ae1" aria-expanded="false"
-      data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode (positional)</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-ea31fc751a51f7500d5ad32d981924cf" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-52fcba44ca3de8c56ea8286ec5854231" aria-expanded="false"
-      data-tab-item="R-tab-f5069710d34a774fc1b0e90d198fbcb1"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial (compact)</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-b961cb6121d30f43f4a479ce99f4fc77-tab" aria-controls="R-tab-id-b961cb6121d30f43f4a479ce99f4fc77" aria-selected="true"
+        data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Markdown</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-2835fbc7585a94d492d4a169ad95f0fe-tab" aria-controls="R-tab-id-2835fbc7585a94d492d4a169ad95f0fe" aria-selected="false"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-354b5ec9d85ab4327f72325987a07872-tab" aria-controls="R-tab-id-354b5ec9d85ab4327f72325987a07872" aria-selected="false"
+        data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Shortcode (positional)</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-005b593050883d6964bf1d874c26c980-tab" aria-controls="R-tab-id-005b593050883d6964bf1d874c26c980" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-81a989e7a4fb5ca65a906a6f3287d231-tab" aria-controls="R-tab-id-81a989e7a4fb5ca65a906a6f3287d231" aria-selected="false"
+        data-tab-item="R-tab-f5069710d34a774fc1b0e90d198fbcb1"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial (compact)</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-ba122ddbd8a8b4844d3cf9a101a37eb6"
+      id="R-tab-id-b961cb6121d30f43f4a479ce99f4fc77" role="tabpanel" aria-labelledby="R-tab-id-b961cb6121d30f43f4a479ce99f4fc77-tab"
       data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```py {lineNoStart=&#34;666&#34; lineNos=&#34;true&#34;}
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```py {lineNoStart=&#34;666&#34; lineNos=&#34;true&#34;}
 </span></span></span><span class="line"><span class="cl"><span class="s"># the hardest part is to start writing code; here&#39;s a kickstart; just copy and paste this; it&#39;s free; the next lines will cost you serious credits
 </span></span></span><span class="line"><span class="cl"><span class="s">print(&#34;Hello&#34;)
 </span></span></span><span class="line"><span class="cl"><span class="s">print(&#34; &#34;)
@@ -660,11 +697,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-9335f47d1aedf84928286ed44626d7e9"
+      id="R-tab-id-2835fbc7585a94d492d4a169ad95f0fe" role="tabpanel" aria-labelledby="R-tab-id-2835fbc7585a94d492d4a169ad95f0fe-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">highlight</span><span class="w"> </span><span class="nx">lineNoStart</span><span class="p">=</span><span class="s">&#34;666&#34;</span><span class="w"> </span><span class="nx">lineNos</span><span class="p">=</span><span class="s">&#34;true&#34;</span><span class="w"> </span><span class="kd">type</span><span class="p">=</span><span class="s">&#34;py&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">highlight</span><span class="w"> </span><span class="nx">lineNoStart</span><span class="p">=</span><span class="s">&#34;666&#34;</span><span class="w"> </span><span class="nx">lineNos</span><span class="p">=</span><span class="s">&#34;true&#34;</span><span class="w"> </span><span class="kd">type</span><span class="p">=</span><span class="s">&#34;py&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="err">#</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">hardest</span><span class="w"> </span><span class="nx">part</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">start</span><span class="w"> </span><span class="nx">writing</span><span class="w"> </span><span class="nx">code</span><span class="p">;</span><span class="w"> </span><span class="nx">here</span><span class="err">&#39;</span><span class="nx">s</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">kickstart</span><span class="p">;</span><span class="w"> </span><span class="nx">just</span><span class="w"> </span><span class="nx">copy</span><span class="w"> </span><span class="nx">and</span><span class="w"> </span><span class="nx">paste</span><span class="w"> </span><span class="nx">this</span><span class="p">;</span><span class="w"> </span><span class="nx">it</span><span class="err">&#39;</span><span class="nx">s</span><span class="w"> </span><span class="nx">free</span><span class="p">;</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">next</span><span class="w"> </span><span class="nx">lines</span><span class="w"> </span><span class="nx">will</span><span class="w"> </span><span class="nx">cost</span><span class="w"> </span><span class="nx">you</span><span class="w"> </span><span class="nx">serious</span><span class="w"> </span><span class="nx">credits</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s">&#34;Hello&#34;</span><span class="p">)</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s">&#34; &#34;</span><span class="p">)</span><span class="w">
@@ -674,11 +711,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-74c4087c5ca51aaf1ff8139f14102ae1"
+      id="R-tab-id-354b5ec9d85ab4327f72325987a07872" role="tabpanel" aria-labelledby="R-tab-id-354b5ec9d85ab4327f72325987a07872-tab"
       data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">highlight</span><span class="w"> </span><span class="s">&#34;py&#34;</span><span class="w"> </span><span class="s">&#34;lineNoStart=666,lineNos=true&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">highlight</span><span class="w"> </span><span class="s">&#34;py&#34;</span><span class="w"> </span><span class="s">&#34;lineNoStart=666,lineNos=true&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="err">#</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">hardest</span><span class="w"> </span><span class="nx">part</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">start</span><span class="w"> </span><span class="nx">writing</span><span class="w"> </span><span class="nx">code</span><span class="p">;</span><span class="w"> </span><span class="nx">here</span><span class="err">&#39;</span><span class="nx">s</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">kickstart</span><span class="p">;</span><span class="w"> </span><span class="nx">just</span><span class="w"> </span><span class="nx">copy</span><span class="w"> </span><span class="nx">and</span><span class="w"> </span><span class="nx">paste</span><span class="w"> </span><span class="nx">this</span><span class="p">;</span><span class="w"> </span><span class="nx">it</span><span class="err">&#39;</span><span class="nx">s</span><span class="w"> </span><span class="nx">free</span><span class="p">;</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">next</span><span class="w"> </span><span class="nx">lines</span><span class="w"> </span><span class="nx">will</span><span class="w"> </span><span class="nx">cost</span><span class="w"> </span><span class="nx">you</span><span class="w"> </span><span class="nx">serious</span><span class="w"> </span><span class="nx">credits</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s">&#34;Hello&#34;</span><span class="p">)</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s">&#34; &#34;</span><span class="p">)</span><span class="w">
@@ -688,11 +725,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-ea31fc751a51f7500d5ad32d981924cf"
+      id="R-tab-id-005b593050883d6964bf1d874c26c980" role="tabpanel" aria-labelledby="R-tab-id-005b593050883d6964bf1d874c26c980-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/highlight.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/highlight.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;# the hardest part is to start writing code; here&#39;s a kickstart; just copy and paste this; it&#39;s free; the next lines will cost you serious credits\nprint(\&#34;Hello\&#34;)\nprint(\&#34; \&#34;)\nprint(\&#34;World\&#34;)\nprint(\&#34;!\&#34;)&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;lineNoStart&#34;</span><span class="w"> </span><span class="s">&#34;666&#34;</span><span class="w">
@@ -702,11 +739,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-52fcba44ca3de8c56ea8286ec5854231"
+      id="R-tab-id-81a989e7a4fb5ca65a906a6f3287d231" role="tabpanel" aria-labelledby="R-tab-id-81a989e7a4fb5ca65a906a6f3287d231-tab"
       data-tab-item="R-tab-f5069710d34a774fc1b0e90d198fbcb1"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/highlight.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/highlight.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;# the hardest part is to start writing code; here&#39;s a kickstart; just copy and paste this; it&#39;s free; the next lines will cost you serious credits\nprint(\&#34;Hello\&#34;)\nprint(\&#34; \&#34;)\nprint(\&#34;World\&#34;)\nprint(\&#34;!\&#34;)&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;type&#34;</span><span class="w"> </span><span class="s">&#34;py&#34;</span><span class="w">
@@ -716,93 +753,95 @@
     </div>
   </div>
 </div>
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="ln">666</span><span class="cl"><span class="c1"># the hardest part is to start writing code; here&#39;s a kickstart; just copy and paste this; it&#39;s free; the next lines will cost you serious credits</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="ln">666</span><span class="cl"><span class="c1"># the hardest part is to start writing code; here&#39;s a kickstart; just copy and paste this; it&#39;s free; the next lines will cost you serious credits</span>
 </span></span><span class="line"><span class="ln">667</span><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="ln">668</span><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34; &#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="ln">669</span><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;World&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="ln">670</span><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;!&#34;</span><span class="p">)</span></span></span></code></pre></div>
 
-<h3 id="with-title">With Title<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="with-title">With Title<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-0459297f08d6fec5cbc477ea9218a9ad" aria-expanded="true"
-      data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Markdown</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-968d2301d1079eb5c76295ea10d00c06" aria-expanded="false"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-d6769e3309fed1c9652c2318a1b73c2c" aria-expanded="false"
-      data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode (positional)</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-d5480f085c902c79933d46f0af612fc7" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-071f56013ddb36f83b3874605f4bb157" aria-expanded="false"
-      data-tab-item="R-tab-f5069710d34a774fc1b0e90d198fbcb1"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial (compact)</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-a2adfb5643183c8a111dda360d24480c-tab" aria-controls="R-tab-id-a2adfb5643183c8a111dda360d24480c" aria-selected="true"
+        data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Markdown</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-894fb523a61f0a3f286b769f733c103a-tab" aria-controls="R-tab-id-894fb523a61f0a3f286b769f733c103a" aria-selected="false"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-483930e0442964d5dedc82d519c3bca6-tab" aria-controls="R-tab-id-483930e0442964d5dedc82d519c3bca6" aria-selected="false"
+        data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Shortcode (positional)</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-5d2d08fa820d8d26f5d670416f5f3071-tab" aria-controls="R-tab-id-5d2d08fa820d8d26f5d670416f5f3071" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-4fbc87fc2d96f3c4c49e3eb93822ba3a-tab" aria-controls="R-tab-id-4fbc87fc2d96f3c4c49e3eb93822ba3a" aria-selected="false"
+        data-tab-item="R-tab-f5069710d34a774fc1b0e90d198fbcb1"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial (compact)</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-0459297f08d6fec5cbc477ea9218a9ad"
+      id="R-tab-id-a2adfb5643183c8a111dda360d24480c" role="tabpanel" aria-labelledby="R-tab-id-a2adfb5643183c8a111dda360d24480c-tab"
       data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```py {title=&#34;python&#34;}
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```py {title=&#34;python&#34;}
 </span></span></span><span class="line"><span class="cl"><span class="s"># a bit shorter
 </span></span></span><span class="line"><span class="cl"><span class="s">print(&#34;Hello World!&#34;)
 </span></span></span><span class="line"><span class="cl"><span class="s">```</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-968d2301d1079eb5c76295ea10d00c06"
+      id="R-tab-id-894fb523a61f0a3f286b769f733c103a" role="tabpanel" aria-labelledby="R-tab-id-894fb523a61f0a3f286b769f733c103a-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">highlight</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;python&#34;</span><span class="w"> </span><span class="kd">type</span><span class="p">=</span><span class="s">&#34;py&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">highlight</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;python&#34;</span><span class="w"> </span><span class="kd">type</span><span class="p">=</span><span class="s">&#34;py&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="err">#</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">bit</span><span class="w"> </span><span class="nx">shorter</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s">&#34;Hello World!&#34;</span><span class="p">)</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">highlight</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-d6769e3309fed1c9652c2318a1b73c2c"
+      id="R-tab-id-483930e0442964d5dedc82d519c3bca6" role="tabpanel" aria-labelledby="R-tab-id-483930e0442964d5dedc82d519c3bca6-tab"
       data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">highlight</span><span class="w"> </span><span class="s">&#34;py&#34;</span><span class="w"> </span><span class="s">&#34;title=python&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">highlight</span><span class="w"> </span><span class="s">&#34;py&#34;</span><span class="w"> </span><span class="s">&#34;title=python&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="err">#</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">bit</span><span class="w"> </span><span class="nx">shorter</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s">&#34;Hello World!&#34;</span><span class="p">)</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">highlight</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-d5480f085c902c79933d46f0af612fc7"
+      id="R-tab-id-5d2d08fa820d8d26f5d670416f5f3071" role="tabpanel" aria-labelledby="R-tab-id-5d2d08fa820d8d26f5d670416f5f3071-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/highlight.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/highlight.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;# a bit shorter\nprint(\&#34;Hello World!\&#34;)&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;python&#34;</span><span class="w">
@@ -811,11 +850,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-071f56013ddb36f83b3874605f4bb157"
+      id="R-tab-id-4fbc87fc2d96f3c4c49e3eb93822ba3a" role="tabpanel" aria-labelledby="R-tab-id-4fbc87fc2d96f3c4c49e3eb93822ba3a-tab"
       data-tab-item="R-tab-f5069710d34a774fc1b0e90d198fbcb1"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/highlight.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/highlight.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;# a bit shorter\nprint(\&#34;Hello World!\&#34;)&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;type&#34;</span><span class="w"> </span><span class="s">&#34;py&#34;</span><span class="w">
@@ -825,77 +864,81 @@
     </div>
   </div>
 </div>
-<div class="tab-panel" data-tab-group="R-tabs-55f2e5ffc2ad0edb24072e0fef522639">
+<div class="tab-panel" data-tab-group="R-tabs-5ae8a14d375e97220a60f9acabfcec24">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-39d0423405c42ac0a5dc8c1debfa8f83" aria-expanded="true"
-      data-tab-item="R-tab-23eeeb4347bdd26bfc6b7ee9a3b755dd"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">python</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-833100b3690b6e62a75ad4592bb0336a-tab" aria-controls="R-tab-id-833100b3690b6e62a75ad4592bb0336a" aria-selected="true"
+        data-tab-item="R-tab-23eeeb4347bdd26bfc6b7ee9a3b755dd"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">python</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-39d0423405c42ac0a5dc8c1debfa8f83"
+      id="R-tab-id-833100b3690b6e62a75ad4592bb0336a" role="tabpanel" aria-labelledby="R-tab-id-833100b3690b6e62a75ad4592bb0336a-tab"
       data-tab-item="R-tab-23eeeb4347bdd26bfc6b7ee9a3b755dd"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="c1"># a bit shorter</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="c1"># a bit shorter</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello World!&#34;</span><span class="p">)</span></span></span></code></pre></div>
       </div>
     </div>
   </div>
 </div>
-<h3 id="with-wrap">With Wrap<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="with-wrap">With Wrap<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-6661734cc2442e1c4b0f1ebe56883f57" aria-expanded="true"
-      data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Markdown</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-eb67aaa7b8d95667a45fa7021b880e93" aria-expanded="false"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-9e7868600a930e874968f03ee575bd4a" aria-expanded="false"
-      data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode (positional)</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-5f3bee4cc9cb6b1dd6260f0887d5da11" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-75be366efec89f7a1a53476d87d36414" aria-expanded="false"
-      data-tab-item="R-tab-f5069710d34a774fc1b0e90d198fbcb1"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial (compact)</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-8c2bb91ef7d45e4b8965a074b27cb3b5-tab" aria-controls="R-tab-id-8c2bb91ef7d45e4b8965a074b27cb3b5" aria-selected="true"
+        data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Markdown</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-dc9baa1b5284487ec0c8364727d703db-tab" aria-controls="R-tab-id-dc9baa1b5284487ec0c8364727d703db" aria-selected="false"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-b99ec7855a80721643ebaf9866b867f3-tab" aria-controls="R-tab-id-b99ec7855a80721643ebaf9866b867f3" aria-selected="false"
+        data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Shortcode (positional)</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-8f1eb12a8206baf507cff701bbd7a0dc-tab" aria-controls="R-tab-id-8f1eb12a8206baf507cff701bbd7a0dc" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-e05ba154868f377a7696b1cf3c3fd335-tab" aria-controls="R-tab-id-e05ba154868f377a7696b1cf3c3fd335" aria-selected="false"
+        data-tab-item="R-tab-f5069710d34a774fc1b0e90d198fbcb1"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial (compact)</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-6661734cc2442e1c4b0f1ebe56883f57"
+      id="R-tab-id-8c2bb91ef7d45e4b8965a074b27cb3b5" role="tabpanel" aria-labelledby="R-tab-id-8c2bb91ef7d45e4b8965a074b27cb3b5-tab"
       data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```py {hl_lines=&#34;2&#34; wrap=&#34;true&#34;}
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```py {hl_lines=&#34;2&#34; wrap=&#34;true&#34;}
 </span></span></span><span class="line"><span class="cl"><span class="s"># Quicksort Python One-liner
 </span></span></span><span class="line"><span class="cl"><span class="s">lambda L: [] if L==[] else qsort([x for x in L[1:] if x&lt; L[0]]) + L[0:1] + qsort([x for x in L[1:] if x&gt;=L[0]])
 </span></span></span><span class="line"><span class="cl"><span class="s"># Some more stuff
@@ -903,11 +946,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-eb67aaa7b8d95667a45fa7021b880e93"
+      id="R-tab-id-dc9baa1b5284487ec0c8364727d703db" role="tabpanel" aria-labelledby="R-tab-id-dc9baa1b5284487ec0c8364727d703db-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">highlight</span><span class="w"> </span><span class="nx">hl_lines</span><span class="p">=</span><span class="s">&#34;2&#34;</span><span class="w"> </span><span class="kd">type</span><span class="p">=</span><span class="s">&#34;py&#34;</span><span class="w"> </span><span class="nx">wrap</span><span class="p">=</span><span class="s">&#34;true&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">highlight</span><span class="w"> </span><span class="nx">hl_lines</span><span class="p">=</span><span class="s">&#34;2&#34;</span><span class="w"> </span><span class="kd">type</span><span class="p">=</span><span class="s">&#34;py&#34;</span><span class="w"> </span><span class="nx">wrap</span><span class="p">=</span><span class="s">&#34;true&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="err">#</span><span class="w"> </span><span class="nx">Quicksort</span><span class="w"> </span><span class="nx">Python</span><span class="w"> </span><span class="nx">One</span><span class="o">-</span><span class="nx">liner</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nx">lambda</span><span class="w"> </span><span class="nx">L</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nx">L</span><span class="o">==</span><span class="p">[]</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="nf">qsort</span><span class="p">([</span><span class="nx">x</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="nx">in</span><span class="w"> </span><span class="nx">L</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nx">x</span><span class="p">&lt;</span><span class="w"> </span><span class="nx">L</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">L</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">qsort</span><span class="p">([</span><span class="nx">x</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="nx">in</span><span class="w"> </span><span class="nx">L</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nx">x</span><span class="o">&gt;=</span><span class="nx">L</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="err">#</span><span class="w"> </span><span class="nx">Some</span><span class="w"> </span><span class="nx">more</span><span class="w"> </span><span class="nx">stuff</span><span class="w">
@@ -915,11 +958,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-9e7868600a930e874968f03ee575bd4a"
+      id="R-tab-id-b99ec7855a80721643ebaf9866b867f3" role="tabpanel" aria-labelledby="R-tab-id-b99ec7855a80721643ebaf9866b867f3-tab"
       data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">highlight</span><span class="w"> </span><span class="s">&#34;py&#34;</span><span class="w"> </span><span class="s">&#34;hl_lines=2,wrap=true&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">highlight</span><span class="w"> </span><span class="s">&#34;py&#34;</span><span class="w"> </span><span class="s">&#34;hl_lines=2,wrap=true&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="err">#</span><span class="w"> </span><span class="nx">Quicksort</span><span class="w"> </span><span class="nx">Python</span><span class="w"> </span><span class="nx">One</span><span class="o">-</span><span class="nx">liner</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nx">lambda</span><span class="w"> </span><span class="nx">L</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nx">L</span><span class="o">==</span><span class="p">[]</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="nf">qsort</span><span class="p">([</span><span class="nx">x</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="nx">in</span><span class="w"> </span><span class="nx">L</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nx">x</span><span class="p">&lt;</span><span class="w"> </span><span class="nx">L</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">L</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">qsort</span><span class="p">([</span><span class="nx">x</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="nx">in</span><span class="w"> </span><span class="nx">L</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nx">x</span><span class="o">&gt;=</span><span class="nx">L</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="err">#</span><span class="w"> </span><span class="nx">Some</span><span class="w"> </span><span class="nx">more</span><span class="w"> </span><span class="nx">stuff</span><span class="w">
@@ -927,11 +970,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-5f3bee4cc9cb6b1dd6260f0887d5da11"
+      id="R-tab-id-8f1eb12a8206baf507cff701bbd7a0dc" role="tabpanel" aria-labelledby="R-tab-id-8f1eb12a8206baf507cff701bbd7a0dc-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/highlight.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/highlight.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;# Quicksort Python One-liner\nlambda L: [] if L==[] else qsort([x for x in L[1:] if x&lt; L[0]]) + L[0:1] + qsort([x for x in L[1:] if x&gt;=L[0]])\n# Some more stuff&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;hl_lines&#34;</span><span class="w"> </span><span class="s">&#34;2&#34;</span><span class="w">
@@ -941,11 +984,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-75be366efec89f7a1a53476d87d36414"
+      id="R-tab-id-e05ba154868f377a7696b1cf3c3fd335" role="tabpanel" aria-labelledby="R-tab-id-e05ba154868f377a7696b1cf3c3fd335-tab"
       data-tab-item="R-tab-f5069710d34a774fc1b0e90d198fbcb1"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/highlight.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/highlight.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;# Quicksort Python One-liner\nlambda L: [] if L==[] else qsort([x for x in L[1:] if x&lt; L[0]]) + L[0:1] + qsort([x for x in L[1:] if x&gt;=L[0]])\n# Some more stuff&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;type&#34;</span><span class="w"> </span><span class="s">&#34;py&#34;</span><span class="w">
@@ -955,58 +998,60 @@
     </div>
   </div>
 </div>
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="c1"># Quicksort Python One-liner</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="c1"># Quicksort Python One-liner</span>
 </span></span><span class="line hl"><span class="cl"><span class="k">lambda</span> <span class="n">L</span><span class="p">:</span> <span class="p">[]</span> <span class="k">if</span> <span class="n">L</span><span class="o">==</span><span class="p">[]</span> <span class="k">else</span> <span class="n">qsort</span><span class="p">([</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">L</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="k">if</span> <span class="n">x</span><span class="o">&lt;</span> <span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span> <span class="o">+</span> <span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">qsort</span><span class="p">([</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">L</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="k">if</span> <span class="n">x</span><span class="o">&gt;=</span><span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># Some more stuff</span></span></span></code></pre></div>
 
-<h3 id="without-wrap">Without Wrap<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="without-wrap">Without Wrap<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-0dd4e917e146106160286491ea5bfdc5" aria-expanded="true"
-      data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Markdown</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-388e834684691cff47c89621da243e55" aria-expanded="false"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-9315cb8de56420ef018e5d47fe5620ae" aria-expanded="false"
-      data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode (positional)</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-1a2467bf4de7359a8ff0056a6fa93b73" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-0cba0737299e83d123c907af03aff934" aria-expanded="false"
-      data-tab-item="R-tab-f5069710d34a774fc1b0e90d198fbcb1"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial (compact)</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-665534bb49949f4d5716e30f48efd44d-tab" aria-controls="R-tab-id-665534bb49949f4d5716e30f48efd44d" aria-selected="true"
+        data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Markdown</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-4946b7a1533129ac9bc402e42022ef79-tab" aria-controls="R-tab-id-4946b7a1533129ac9bc402e42022ef79" aria-selected="false"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-ef1d13a0d201bc313fc41d5ae161ab37-tab" aria-controls="R-tab-id-ef1d13a0d201bc313fc41d5ae161ab37" aria-selected="false"
+        data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Shortcode (positional)</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-ccfe994349cd31baa14b4a6451f1b012-tab" aria-controls="R-tab-id-ccfe994349cd31baa14b4a6451f1b012" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-c6d80bdc90965ef8d21cbe8a42e66bbc-tab" aria-controls="R-tab-id-c6d80bdc90965ef8d21cbe8a42e66bbc" aria-selected="false"
+        data-tab-item="R-tab-f5069710d34a774fc1b0e90d198fbcb1"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial (compact)</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-0dd4e917e146106160286491ea5bfdc5"
+      id="R-tab-id-665534bb49949f4d5716e30f48efd44d" role="tabpanel" aria-labelledby="R-tab-id-665534bb49949f4d5716e30f48efd44d-tab"
       data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```py {hl_lines=&#34;2&#34; wrap=&#34;false&#34;}
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```py {hl_lines=&#34;2&#34; wrap=&#34;false&#34;}
 </span></span></span><span class="line"><span class="cl"><span class="s"># Quicksort Python One-liner
 </span></span></span><span class="line"><span class="cl"><span class="s">lambda L: [] if L==[] else qsort([x for x in L[1:] if x&lt; L[0]]) + L[0:1] + qsort([x for x in L[1:] if x&gt;=L[0]])
 </span></span></span><span class="line"><span class="cl"><span class="s"># Some more stuff
@@ -1014,11 +1059,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-388e834684691cff47c89621da243e55"
+      id="R-tab-id-4946b7a1533129ac9bc402e42022ef79" role="tabpanel" aria-labelledby="R-tab-id-4946b7a1533129ac9bc402e42022ef79-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">highlight</span><span class="w"> </span><span class="nx">hl_lines</span><span class="p">=</span><span class="s">&#34;2&#34;</span><span class="w"> </span><span class="kd">type</span><span class="p">=</span><span class="s">&#34;py&#34;</span><span class="w"> </span><span class="nx">wrap</span><span class="p">=</span><span class="s">&#34;false&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">highlight</span><span class="w"> </span><span class="nx">hl_lines</span><span class="p">=</span><span class="s">&#34;2&#34;</span><span class="w"> </span><span class="kd">type</span><span class="p">=</span><span class="s">&#34;py&#34;</span><span class="w"> </span><span class="nx">wrap</span><span class="p">=</span><span class="s">&#34;false&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="err">#</span><span class="w"> </span><span class="nx">Quicksort</span><span class="w"> </span><span class="nx">Python</span><span class="w"> </span><span class="nx">One</span><span class="o">-</span><span class="nx">liner</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nx">lambda</span><span class="w"> </span><span class="nx">L</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nx">L</span><span class="o">==</span><span class="p">[]</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="nf">qsort</span><span class="p">([</span><span class="nx">x</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="nx">in</span><span class="w"> </span><span class="nx">L</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nx">x</span><span class="p">&lt;</span><span class="w"> </span><span class="nx">L</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">L</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">qsort</span><span class="p">([</span><span class="nx">x</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="nx">in</span><span class="w"> </span><span class="nx">L</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nx">x</span><span class="o">&gt;=</span><span class="nx">L</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="err">#</span><span class="w"> </span><span class="nx">Some</span><span class="w"> </span><span class="nx">more</span><span class="w"> </span><span class="nx">stuff</span><span class="w">
@@ -1026,11 +1071,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-9315cb8de56420ef018e5d47fe5620ae"
+      id="R-tab-id-ef1d13a0d201bc313fc41d5ae161ab37" role="tabpanel" aria-labelledby="R-tab-id-ef1d13a0d201bc313fc41d5ae161ab37-tab"
       data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">highlight</span><span class="w"> </span><span class="s">&#34;py&#34;</span><span class="w"> </span><span class="s">&#34;hl_lines=2,wrap=false&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">highlight</span><span class="w"> </span><span class="s">&#34;py&#34;</span><span class="w"> </span><span class="s">&#34;hl_lines=2,wrap=false&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="err">#</span><span class="w"> </span><span class="nx">Quicksort</span><span class="w"> </span><span class="nx">Python</span><span class="w"> </span><span class="nx">One</span><span class="o">-</span><span class="nx">liner</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nx">lambda</span><span class="w"> </span><span class="nx">L</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nx">L</span><span class="o">==</span><span class="p">[]</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="nf">qsort</span><span class="p">([</span><span class="nx">x</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="nx">in</span><span class="w"> </span><span class="nx">L</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nx">x</span><span class="p">&lt;</span><span class="w"> </span><span class="nx">L</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">L</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">qsort</span><span class="p">([</span><span class="nx">x</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="nx">in</span><span class="w"> </span><span class="nx">L</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nx">x</span><span class="o">&gt;=</span><span class="nx">L</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="err">#</span><span class="w"> </span><span class="nx">Some</span><span class="w"> </span><span class="nx">more</span><span class="w"> </span><span class="nx">stuff</span><span class="w">
@@ -1038,11 +1083,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-1a2467bf4de7359a8ff0056a6fa93b73"
+      id="R-tab-id-ccfe994349cd31baa14b4a6451f1b012" role="tabpanel" aria-labelledby="R-tab-id-ccfe994349cd31baa14b4a6451f1b012-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/highlight.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/highlight.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;# Quicksort Python One-liner\nlambda L: [] if L==[] else qsort([x for x in L[1:] if x&lt; L[0]]) + L[0:1] + qsort([x for x in L[1:] if x&gt;=L[0]])\n# Some more stuff&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;hl_lines&#34;</span><span class="w"> </span><span class="s">&#34;2&#34;</span><span class="w">
@@ -1052,11 +1097,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-0cba0737299e83d123c907af03aff934"
+      id="R-tab-id-c6d80bdc90965ef8d21cbe8a42e66bbc" role="tabpanel" aria-labelledby="R-tab-id-c6d80bdc90965ef8d21cbe8a42e66bbc-tab"
       data-tab-item="R-tab-f5069710d34a774fc1b0e90d198fbcb1"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/highlight.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/highlight.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;# Quicksort Python One-liner\nlambda L: [] if L==[] else qsort([x for x in L[1:] if x&lt; L[0]]) + L[0:1] + qsort([x for x in L[1:] if x&gt;=L[0]])\n# Some more stuff&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;type&#34;</span><span class="w"> </span><span class="s">&#34;py&#34;</span><span class="w">
@@ -1066,14 +1111,14 @@
     </div>
   </div>
 </div>
-<div class="highlight actionbar-wrapper" dir="auto"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="c1"># Quicksort Python One-liner</span>
+<div class="highlight actionbar-wrapper" dir="auto"><pre class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="c1"># Quicksort Python One-liner</span>
 </span></span><span class="line hl"><span class="cl"><span class="k">lambda</span> <span class="n">L</span><span class="p">:</span> <span class="p">[]</span> <span class="k">if</span> <span class="n">L</span><span class="o">==</span><span class="p">[]</span> <span class="k">else</span> <span class="n">qsort</span><span class="p">([</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">L</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="k">if</span> <span class="n">x</span><span class="o">&lt;</span> <span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span> <span class="o">+</span> <span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">qsort</span><span class="p">([</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">L</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="k">if</span> <span class="n">x</span><span class="o">&gt;=</span><span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># Some more stuff</span></span></span></code></pre></div>
 
 
   <footer class="footline">
 <div class="R-taxonomy taxonomy-categories" title="Categories">
-  <i class="fa-fw fas fa-layer-group"></i>
+  <i class="fa-fw fas fa-layer-group" aria-hidden="true"></i>
   <ul>
     <li><a class="term-link" href="/hugo-theme-relearn/categories/howto/index.html">Howto</a></li>
     <li><a class="term-link" href="/hugo-theme-relearn/categories/reference/index.html">Reference</a></li>
@@ -1084,7 +1129,7 @@
         </div>
       </main>
     </div>
-    <script src="/hugo-theme-relearn/js/theme.min.5e81b78e5900bce96f55e277df01b5b477b164c8094c7fc0a689ccfd86eeb4b3.js" defer></script>
+    <script src="/hugo-theme-relearn/js/theme.min.f66b851115ea46f239f782bd19e65c09786103c8cb054f72664b912bc561d1c8.js" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

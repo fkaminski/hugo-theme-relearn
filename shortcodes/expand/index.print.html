@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.166.0">
-    <meta name="generator" content="Relearn 9.1.0+edd32dd46699cf37d4c81be4a1fbeb8bd7112e9e">
+    <meta name="generator" content="Hugo 0.167.0">
+    <meta name="generator" content="Relearn 9.2.0+a9b397c5d13bccbd206ef42c15e37966e99cda51">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="Expandable/collapsible sections of text">
     <meta name="author" content="Sören Weber">
     <meta name="twitter:card" content="summary_large_image">
@@ -20,7 +21,7 @@
     <meta property="og:image" content="https://fkaminski.github.io/hugo-theme-relearn/shortcodes/expand/featured.png">
     <meta itemprop="name" content="Expand :: Hugo Relearn Theme">
     <meta itemprop="description" content="Expandable/collapsible sections of text">
-    <meta itemprop="wordCount" content="738">
+    <meta itemprop="wordCount" content="349">
     <meta itemprop="image" content="https://fkaminski.github.io/hugo-theme-relearn/shortcodes/expand/featured.png">
     <meta itemprop="keywords" content="Howto,Reference">
     <title>Expand :: Hugo Relearn Theme</title>
@@ -29,13 +30,15 @@
     <link href="https://fkaminski.github.io/hugo-theme-relearn/pir/shortcodes/expand/index.html" rel="alternate" hreflang="art-x-pir">
     <link href="https://fkaminski.github.io/hugo-theme-relearn/shortcodes/expand/index.html" rel="canonical" type="text/html" title="Expand :: Hugo Relearn Theme">
     <link href="/hugo-theme-relearn/shortcodes/expand/index.xml" rel="alternate" type="application/rss+xml" title="Expand :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/shortcodes/expand/index.md" rel="alternate" type="text/markdown" title="Expand :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/shortcodes/expand/index.source.md" rel="alternate" type="text/markdown" title="Expand :: Hugo Relearn Theme">
     <link href="/hugo-theme-relearn/images/logo.d30ab0425821f45713322a73c1eeb192e311689b03371519abbe061a24d1201e.svg" rel="icon" type="image/svg+xml">
     <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.78b49c23f59ffb08554285843ed4c841484fe34c489058b2991edc027cdd47fc.css" rel="stylesheet">
-    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.7b340a2a0841d2466dca47e43cbd8c4dfe6a4f77a6c81c984d49ebb60ba2e299.js" defer></script>
-    <script src="/hugo-theme-relearn/js/search-lunr.min.2e613f0a1ce042c097f61ecc0e3f843d395bf3a42717715f9c08a11dc2f21122.js" defer></script>
-    <script src="/hugo-theme-relearn/js/search.min.373845112980472e938f57e7ec9a00ff9d7b651d7e72cacce2b29211ad5f1924.js" defer></script>
+    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.9657edd589a1ca6962a3cf03df5aa17f16f2c67350aea0a84dddbd8d5698316f.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.9897ffe790e716e8b90e4a9e200dce63c2603e69a9eec9bbdce6a483811ea180.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.4bcf60afa00d9f5c3adf08ff55811ce4cc679bd6d4b5747d674667994ee1debb.js" defer></script>
     <script type="application/json" id="R-search-config">{
-      "indexFile": "searchindex.en.min.00b99188351628699a21cf5dfc96dcbfb52e0b985835ac4b1c8faf03933fbfa8.js"
+      "indexFile": "searchindex.en.min.c4f041a00cc99840cf39073ec5ee0c85a4b4738e5a58acbd24b4ecb2e0d4600e.js"
     }</script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
@@ -47,10 +50,9 @@
       ]
     }</script>
     <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" class="R-async-style"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
-    <link href="/hugo-theme-relearn/css/theme.min.c5e57f8072c26c3936afb7f1f29896beccceeb26ad977baa337cb1cbf585deea.css" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/format-print.min.39e0dc30e3ca73e623fcf660fac10bf09db5539b3d13e59e90977cf7137e6aee.css" rel="stylesheet" id="R-format-style">
+    <link href="/hugo-theme-relearn/css/theme.min.8cd3fb0d94b35d653c73be5b6192808bb4d4b49792cbf9c092307d30edc9487f.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/format-print.min.fde31a3bc19a193360c646fd67b62d0fb98ae684449d1922b5ac0ed941277607.css" rel="stylesheet" id="R-format-style">
     <script type="application/json" id="R-theme-config">{
-      "absBaseUri": "https://fkaminski.github.io/hugo-theme-relearn",
       "disableInlineCopyToClipboard": true,
       "enableBlockCodeWrap": true,
       "path": "/shortcodes/expand/index.html",
@@ -64,6 +66,9 @@
         "zen-auto",
         "zen-dark",
         "zen-light",
+        "contrast-auto",
+        "contrast-dark",
+        "contrast-light",
         "retro-auto",
         "neon",
         "learn",
@@ -73,16 +78,24 @@
       ],
       "translations": {
         "Browser_unsupported_feature": "This browser doesn't support this feature",
+        "Close_graph": "Close enlarged graph",
         "Copied_to_clipboard": "Text copied to clipboard!",
         "Copy_to_clipboard": "Copy text to clipboard",
+        "Deleted_text_end": "End of deleted text",
+        "Deleted_text_start": "Start of deleted text",
+        "Enlarge_graph": "Enlarge graph",
+        "History_cleared": "History cleared",
+        "Inserted_text_end": "End of inserted text",
+        "Inserted_text_start": "Start of inserted text",
         "Link_copied_to_clipboard": "Link copied to clipboard!",
+        "N_matches_on_page": "{1} matches for \"{0}\" on this page",
         "N_results_found": "{1} results found for \"{0}\"",
         "No_results_found": "No results found for \"{0}\"",
         "Reset_view": "Reset view",
         "View_reset": "View reset!"
       }
     }</script>
-    <script src="/hugo-theme-relearn/js/theme-head.min.eb092668f5b427260df95861e28028bbd22ff85e2af068b9bfbedf0cbdbea887.js"></script>
+    <script src="/hugo-theme-relearn/js/theme-head.min.8c8c3bb99b655d91386ff7fefb5fceeb088bff4bb82bcde54fbef7dacb3388cc.js"></script>
     <style>
        
       #R-body img.bg-white {
@@ -91,32 +104,26 @@
     </style>
   </head>
   <body class="mobile-support print" data-origin="/hugo-theme-relearn/shortcodes/expand/index.html">
+    <a id="R-skip-link" href="#R-body-inner">Skip to main content</a>
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
-      <nav id="R-topbar" class="default-animation">
+      <header id="R-topbar" class="default-animation">
         <div class="topbar-wrapper default-animation">
           <div class="topbar-sidebar-divider default-animation"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)" aria-label="Menu (CTRL&#43;ALT&#43;n)" aria-expanded="false"><i class="fa-fw fas fa-bars" aria-hidden="true"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)" aria-label="Table of Contents (CTRL&#43;ALT&#43;t)" aria-expanded="false"><i class="fa-fw fas fa-table-list" aria-hidden="true"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper" tabindex="-1">
-<nav class="TableOfContents">
+<nav class="TableOfContents" aria-label="Table of Contents">
   <ul>
+    <li><a href="#migration">Migration</a></li>
     <li><a href="#usage">Usage</a>
       <ul>
         <li><a href="#parameters">Parameters</a></li>
-      </ul>
-    </li>
-    <li><a href="#examples">Examples</a>
-      <ul>
-        <li><a href="#all-defaults">All Defaults</a></li>
-        <li><a href="#initially-expanded">Initially Expanded</a></li>
-        <li><a href="#arbitrary-text">Arbitrary Text</a></li>
-        <li><a href="#using-hugos-details-shortcode">Using Hugo’s <code>details</code> Shortcode</a></li>
       </ul>
     </li>
   </ul>
@@ -125,33 +132,43 @@
               </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/index.html"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/shortcodes/index.html"><span itemprop="name">Shortcodes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Expand</span><meta itemprop="position" content="3"></li>
-          </ol>
+          <div class="topbar-area topbar-area-middle" data-area="middle">
+            <nav class="topbar-breadcrumbs breadcrumbs highlightable" aria-label="Breadcrumbs" data-overflow-title="Shortcodes &gt; Expand">
+              <ol itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/index.html" tabindex="-1"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/shortcodes/index.html"><span itemprop="name">Shortcodes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="" aria-current="page"><span itemprop="name">Expand</span><meta itemprop="position" content="3"></li>
+              </ol>
+            </nav>
+          </div>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/shortcodes/expand/_index.en.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen"></i></a></span>
-            </div>
-            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/shortcodes/expand/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
             <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/shortcodes/children/children-3/test3/index.html" title="page 3-1 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Details (🡐)" href="/hugo-theme-relearn/shortcodes/details/index.html" title="Details (🡐)"><i class="fa-fw fas fa-chevron-left" aria-hidden="true"></i></a></span>
             </div>
             <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/shortcodes/highlight/index.html" title="Highlight (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Highlight (🡒)" href="/hugo-theme-relearn/shortcodes/highlight/index.html" title="Highlight (🡒)"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i></a></span>
             </div>
             <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="More" aria-label="More" aria-expanded="false"><i class="fa-fw fas fa-ellipsis-v" aria-hidden="true"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper" tabindex="-1">
                   <div class="topbar-area topbar-area-more" data-area="more">
+            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Edit (CTRL+ALT+w)" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/shortcodes/expand/_index.en.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-source default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Show source code" href="/hugo-theme-relearn/shortcodes/expand/index.source.md" title="Show source code"><i class="fa-fw fas fa-code" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-markdown default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Show Markdown" href="/hugo-theme-relearn/shortcodes/expand/index.md" title="Show Markdown"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Print whole chapter (CTRL+ALT+p)" href="/hugo-theme-relearn/shortcodes/expand/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print" aria-hidden="true"></i></a></span>
+            </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </nav>
+      </header>
       <div id="R-main-overlay"></div>
       <main id="R-body-inner" class="highlightable shortcodes" tabindex="-1">
         <div class="flex-block-wrapper">
@@ -161,87 +178,112 @@
 
 <h1 id="expand">Expand</h1>
 
-<p>The <code>expand</code> shortcode displays an expandable/collapsible section of text.</p>
 
-<details class="box cstyle notices transparent expand">
-  <summary class="box-label">
-    <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
-    Expand me&hellip;
-  </summary>
-  <div class="box-content">
-Thank you!
+<div role="note" aria-labelledby="R-box-label-483851cb20274b1c5797ea2f12710f42" class="box cstyle callout warning">
+  <div id="R-box-label-483851cb20274b1c5797ea2f12710f42" class="box-label">
+    <i class="fa-fw fas fa-exclamation-triangle" aria-hidden="true"></i> 
+    Warning
   </div>
-</details>
-<h2 id="usage">Usage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+  <div class="box-content">
+<p>This shortcode is deprecated in favor of Hugo&rsquo;s <a href="/hugo-theme-relearn/shortcodes/details/index.html"><code>details</code> shortcode</a>. See <a href="/hugo-theme-relearn/shortcodes/expand/index.html#migration">migration instructions</a> below.</p>
+<p>The examples on this page were removed.</p>
+  </div>
+</div>
+<p>The <code>expand</code> shortcode displays an expandable/collapsible section of text.</p>
+<h2 id="migration">Migration<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>While this shortcode will still be available for some time, it does not receive support anymore. Start to migrate early, as it will be removed with the next major update of the theme.</p>
+<p>Each use of the <code>expand</code> shortcode issues a warning during the build.</p>
+<p>The <a href="/hugo-theme-relearn/shortcodes/details/index.html"><code>details</code> shortcode</a> displays the same section but is called differently. A call can not just be renamed.</p>
+<table>
+  <thead>
+    <tr>
+      <th><code>expand</code></th>
+      <th><code>details</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>title</code> or first parameter</td>
+      <td><code>summary</code></td>
+    </tr>
+    <tr>
+      <td><code>expanded</code> or second parameter</td>
+      <td><code>open</code></td>
+    </tr>
+    <tr>
+      <td><code>{{% expand %}}</code></td>
+      <td><code>{{&lt; details &gt;}}</code></td>
+    </tr>
+    <tr>
+      <td><code>{{&lt; expand &gt;}}</code></td>
+      <td><code>{{&lt; details raw=true &gt;}}</code></td>
+    </tr>
+  </tbody>
+</table>
+<ul>
+<li>The <code>details</code> shortcode takes no positional parameters. Name them.</li>
+<li>Don&rsquo;t keep <code>title</code>. The <code>details</code> shortcode knows this parameter too, but displays it as a tooltip. Your section would silently be titled <code>Details</code>.</li>
+<li>Call the <code>details</code> shortcode with <code>{{&lt; details &gt;}}</code>. It renders its content as Markdown in this notation, where the <code>expand</code> shortcode wrote it as it is.</li>
+<li>If you called the <code>expand</code> shortcode with <code>{{&lt; expand &gt;}}</code>, your content is HTML or contains other shortcodes. Set <code>raw=true</code> to keep it written as it is.</li>
+<li>The content of the <code>details</code> shortcode is rendered apart from the rest of your page. If it defines footnotes, contains headings or calls other shortcodes, see <a href="/hugo-theme-relearn/shortcodes/details/index.html#raw-content">the consequences</a>.</li>
+</ul>
+<p>If you call the shortcode from your own partials, rename <code>shortcodes/expand.html</code> to <code>shortcodes/details.html</code>, rename the parameters as above and set <code>raw</code> to <code>true</code> if your content is HTML already.</p>
+<h2 id="usage">Usage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-040df2dbb143dcf89895b0cd169a4aa5" aria-expanded="true"
-      data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Markdown</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-a6cece38f4b49a115ecdc811c6de7552" aria-expanded="false"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-3d05dfd3a96c711b58c54f2b111e83dd" aria-expanded="false"
-      data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode (positional)</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-1f3934490161c6a76a433a265e9f8f8e" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-fa011d5486861fee0009df903ed90f0a-tab" aria-controls="R-tab-id-fa011d5486861fee0009df903ed90f0a" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-ea2d7b6af77f67377aa0a5e156999f8b-tab" aria-controls="R-tab-id-ea2d7b6af77f67377aa0a5e156999f8b" aria-selected="false"
+        data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Shortcode (positional)</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-b7383e3b0af108949785898859eae2b1-tab" aria-controls="R-tab-id-b7383e3b0af108949785898859eae2b1" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-040df2dbb143dcf89895b0cd169a4aa5"
-      data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
+      id="R-tab-id-fa011d5486861fee0009df903ed90f0a" role="tabpanel" aria-labelledby="R-tab-id-fa011d5486861fee0009df903ed90f0a-tab"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> </span><span class="p">[!</span><span class="k">default</span><span class="p">]</span><span class="w"> </span><span class="nx">Expand</span><span class="w"> </span><span class="nx">me</span><span class="o">...</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> </span><span class="nx">Thank</span><span class="w"> </span><span class="nx">you</span><span class="p">!</span></span></span></code></pre></div>
-      </div>
-    </div>
-    <div
-      id="R-tab-id-a6cece38f4b49a115ecdc811c6de7552"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-content tab-panel-style cstyle code codify">
-      <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">expand</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Expand me...&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">expand</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Expand me...&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nx">Thank</span><span class="w"> </span><span class="nx">you</span><span class="p">!</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">expand</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-3d05dfd3a96c711b58c54f2b111e83dd"
+      id="R-tab-id-ea2d7b6af77f67377aa0a5e156999f8b" role="tabpanel" aria-labelledby="R-tab-id-ea2d7b6af77f67377aa0a5e156999f8b-tab"
       data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">expand</span><span class="w"> </span><span class="s">&#34;Expand me...&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">expand</span><span class="w"> </span><span class="s">&#34;Expand me...&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nx">Thank</span><span class="w"> </span><span class="nx">you</span><span class="p">!</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">expand</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-1f3934490161c6a76a433a265e9f8f8e"
+      id="R-tab-id-b7383e3b0af108949785898859eae2b1" role="tabpanel" aria-labelledby="R-tab-id-b7383e3b0af108949785898859eae2b1-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/expand.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/expand.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;Thank you!&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;Expand me...&#34;</span><span class="w">
@@ -250,433 +292,41 @@ Thank you!
     </div>
   </div>
 </div>
-<p><a href="https://gohugo.io/render-hooks/blockquotes/#extended-syntax" rel="external" target="_self">Markdown callout syntax</a> is available in other Markdown parsers like <a href="https://help.obsidian.md/Editing+and+formatting/Callouts#Change+the+title" rel="external" target="_self">Obsidian</a> and therefore is the recommended syntax for generating portable Markdown.</p>
-<p>The <a href="/hugo-theme-relearn/shortcodes/notice/index.html"><code>notice</code> shortcode</a> is also capable of displaying expandable/collapsible sections of text but with additional parameters for color and additional icons.</p>
-<p>The theme supports Hugo&rsquo;s built-in <a href="https://gohugo.io/content-management/shortcodes/#details" rel="external" target="_self"><code>details</code> shortcode</a> by mapping the parameter to the theme&rsquo;s <code>expand</code> shortcode.</p>
-<h3 id="parameters">Parameters<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="parameters">Parameters<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
 <table>
-	<thead>
-			<tr>
-					<th>Name</th>
-					<th>Position</th>
-					<th>Default</th>
-					<th>Notes</th>
-			</tr>
-	</thead>
-	<tbody>
-			<tr>
-					<td><strong>title</strong></td>
-					<td>1</td>
-					<td><code>&quot;Details&quot;</code></td>
-					<td>Arbitrary text to appear next to the expand/collapse icon.</td>
-			</tr>
-			<tr>
-					<td><strong>expanded</strong></td>
-					<td>2</td>
-					<td><code>false</code></td>
-					<td>How the content is displayed.<br><br>- <code>true</code>: the content is initially shown<br>- <code>false</code>: the content is initially hidden</td>
-			</tr>
-			<tr>
-					<td><em><strong>&lt;content&gt;</strong></em></td>
-					<td></td>
-					<td><em>&lt;empty&gt;</em></td>
-					<td>Arbitrary text to be displayed on expand.</td>
-			</tr>
-	</tbody>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Position</th>
+      <th>Default</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>title</strong></td>
+      <td>1</td>
+      <td><code>&quot;Details&quot;</code></td>
+      <td>Arbitrary text to appear next to the expand/collapse icon.</td>
+    </tr>
+    <tr>
+      <td><strong>expanded</strong></td>
+      <td>2</td>
+      <td><code>false</code></td>
+      <td>How the content is displayed.<br><br>- <code>true</code>: the content is initially shown<br>- <code>false</code>: the content is initially hidden</td>
+    </tr>
+    <tr>
+      <td><em><strong>&lt;content&gt;</strong></em></td>
+      <td></td>
+      <td><em>&lt;empty&gt;</em></td>
+      <td>Arbitrary text to be displayed on expand.</td>
+    </tr>
+  </tbody>
 </table>
-<h2 id="examples">Examples<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<h3 id="all-defaults">All Defaults<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-
-<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
-  <div class="tab-nav">
-    <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-cdb5bee49bce9e58722b4a62f4958ed4" aria-expanded="true"
-      data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Markdown</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-8f5919cb1e968a186d09b0017daecc2c" aria-expanded="false"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-86525d7920fdec7536480804f158f74a" aria-expanded="false"
-      data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode (positional)</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-99fd7fd4428268e34d3a2713254a9645" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
-  </div>
-  <div class="tab-content-container">
-    <div
-      id="R-tab-id-cdb5bee49bce9e58722b4a62f4958ed4"
-      data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
-      class="tab-content tab-panel-style cstyle code active codify">
-      <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> </span><span class="p">[!</span><span class="k">default</span><span class="p">]</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> </span><span class="nx">Yes</span><span class="p">,</span><span class="w"> </span><span class="nx">you</span><span class="w"> </span><span class="nx">did</span><span class="w"> </span><span class="nx">it</span><span class="p">!</span></span></span></code></pre></div>
-      </div>
-    </div>
-    <div
-      id="R-tab-id-8f5919cb1e968a186d09b0017daecc2c"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-content tab-panel-style cstyle code codify">
-      <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">expand</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="nx">Yes</span><span class="p">,</span><span class="w"> </span><span class="nx">you</span><span class="w"> </span><span class="nx">did</span><span class="w"> </span><span class="nx">it</span><span class="p">!</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">expand</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
-      </div>
-    </div>
-    <div
-      id="R-tab-id-86525d7920fdec7536480804f158f74a"
-      data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
-      class="tab-content tab-panel-style cstyle code codify">
-      <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">expand</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="nx">Yes</span><span class="p">,</span><span class="w"> </span><span class="nx">you</span><span class="w"> </span><span class="nx">did</span><span class="w"> </span><span class="nx">it</span><span class="p">!</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">expand</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
-      </div>
-    </div>
-    <div
-      id="R-tab-id-99fd7fd4428268e34d3a2713254a9645"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-content tab-panel-style cstyle code codify">
-      <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/expand.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;Yes, you did it!&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
-      </div>
-    </div>
-  </div>
-</div>
-<details class="box cstyle notices transparent expand">
-  <summary class="box-label">
-    <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
-    Details
-  </summary>
-  <div class="box-content">
-Yes, you did it!
-  </div>
-</details>
-<h3 id="initially-expanded">Initially Expanded<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-
-<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
-  <div class="tab-nav">
-    <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-ca8d6a1578d1a919850d75a1421766d9" aria-expanded="true"
-      data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Markdown</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-4855c8a68a4359d727a012be1e63595a" aria-expanded="false"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-db1f783e9c9aa27ed85bbb5b8f740866" aria-expanded="false"
-      data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode (positional)</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-dccf6e19ed54b56cc41134c2c06eb1ac" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
-  </div>
-  <div class="tab-content-container">
-    <div
-      id="R-tab-id-ca8d6a1578d1a919850d75a1421766d9"
-      data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
-      class="tab-content tab-panel-style cstyle code active codify">
-      <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> </span><span class="p">[!</span><span class="nx">transparent</span><span class="p">]</span><span class="o">+</span><span class="w"> </span><span class="nx">Expand</span><span class="w"> </span><span class="nx">me</span><span class="o">...</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> </span><span class="nx">No</span><span class="w"> </span><span class="nx">need</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">press</span><span class="w"> </span><span class="nx">you</span><span class="p">!</span></span></span></code></pre></div>
-      </div>
-    </div>
-    <div
-      id="R-tab-id-4855c8a68a4359d727a012be1e63595a"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-content tab-panel-style cstyle code codify">
-      <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">expand</span><span class="w"> </span><span class="nx">expanded</span><span class="p">=</span><span class="s">&#34;true&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Expand me...&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="nx">No</span><span class="w"> </span><span class="nx">need</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">press</span><span class="w"> </span><span class="nx">you</span><span class="p">!</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">expand</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
-      </div>
-    </div>
-    <div
-      id="R-tab-id-db1f783e9c9aa27ed85bbb5b8f740866"
-      data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
-      class="tab-content tab-panel-style cstyle code codify">
-      <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">expand</span><span class="w"> </span><span class="s">&#34;Expand me...&#34;</span><span class="w"> </span><span class="s">&#34;true&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="nx">No</span><span class="w"> </span><span class="nx">need</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">press</span><span class="w"> </span><span class="nx">you</span><span class="p">!</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">expand</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
-      </div>
-    </div>
-    <div
-      id="R-tab-id-dccf6e19ed54b56cc41134c2c06eb1ac"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-content tab-panel-style cstyle code codify">
-      <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/expand.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;No need to press you!&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;expanded&#34;</span><span class="w"> </span><span class="s">&#34;true&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;Expand me...&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
-      </div>
-    </div>
-  </div>
-</div>
-<details open class="box cstyle notices transparent expand">
-  <summary class="box-label">
-    <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
-    Expand me&hellip;
-  </summary>
-  <div class="box-content">
-No need to press you!
-  </div>
-</details>
-<h3 id="arbitrary-text">Arbitrary Text<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-
-<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
-  <div class="tab-nav">
-    <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-5221da8f8acb0575de95a4d45b52bf84" aria-expanded="true"
-      data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Markdown</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-e9788ddddbdb963503df6e00e75f8280" aria-expanded="false"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-fcfc9954124ee1b26480884e0dc05d46" aria-expanded="false"
-      data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode (positional)</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-b768a161b17b6d8f089953cf00dc7e2f" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
-  </div>
-  <div class="tab-content-container">
-    <div
-      id="R-tab-id-5221da8f8acb0575de95a4d45b52bf84"
-      data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
-      class="tab-content tab-panel-style cstyle code active codify">
-      <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> </span><span class="p">[!</span><span class="k">default</span><span class="p">]</span><span class="w"> </span><span class="nx">Show</span><span class="w"> </span><span class="nx">me</span><span class="w"> </span><span class="nx">almost</span><span class="w"> </span><span class="o">**</span><span class="nx">endless</span><span class="o">**</span><span class="w"> </span><span class="nx">possibilities</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> </span><span class="nx">You</span><span class="w"> </span><span class="nx">can</span><span class="w"> </span><span class="nx">add</span><span class="w"> </span><span class="nx">standard</span><span class="w"> </span><span class="nx">markdown</span><span class="w"> </span><span class="nx">syntax</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">multiple</span><span class="w"> </span><span class="nx">paragraphs</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">bullet</span><span class="w"> </span><span class="nx">point</span><span class="w"> </span><span class="nx">lists</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">_emphasized_</span><span class="p">,</span><span class="w"> </span><span class="o">**</span><span class="nx">bold</span><span class="o">**</span><span class="w"> </span><span class="nx">and</span><span class="w"> </span><span class="nx">even</span><span class="w"> </span><span class="o">**</span><span class="nx">_bold</span><span class="w"> </span><span class="nx">emphasized_</span><span class="o">**</span><span class="w"> </span><span class="nx">text</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">[</span><span class="nx">links</span><span class="p">](</span><span class="nx">https</span><span class="p">:</span><span class="cp">//example.com)</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">etc</span><span class="p">.</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> </span><span class="s">```plaintext
-</span></span></span><span class="line"><span class="cl"><span class="s">&gt; ...and even source code
-</span></span></span><span class="line"><span class="cl"><span class="s">&gt; ```</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">possibilities</span><span class="w"> </span><span class="nx">are</span><span class="w"> </span><span class="nf">endless</span><span class="w"> </span><span class="p">(</span><span class="nx">almost</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">including</span><span class="w"> </span><span class="nx">other</span><span class="w"> </span><span class="nx">shortcodes</span><span class="w"> </span><span class="nx">may</span><span class="w"> </span><span class="nx">or</span><span class="w"> </span><span class="nx">may</span><span class="w"> </span><span class="nx">not</span><span class="w"> </span><span class="nx">work</span><span class="p">)</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> </span><span class="nx">That</span><span class="err">&#39;</span><span class="nx">s</span><span class="w"> </span><span class="nx">some</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="nx">with</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">footnote</span><span class="p">[^</span><span class="mi">1</span><span class="p">]</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> </span><span class="p">[^</span><span class="mi">1</span><span class="p">]:</span><span class="w"> </span><span class="nx">And</span><span class="w"> </span><span class="nx">that</span><span class="err">&#39;</span><span class="nx">s</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">footnote</span><span class="p">.</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> </span><span class="nx">That</span><span class="err">&#39;</span><span class="nx">s</span><span class="w"> </span><span class="nx">some</span><span class="w"> </span><span class="nx">more</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="nx">with</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">footnote</span><span class="p">.[^</span><span class="nx">someid</span><span class="p">]</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> </span><span class="p">[^</span><span class="nx">someid</span><span class="p">]:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w">     </span><span class="nx">Anything</span><span class="w"> </span><span class="nx">of</span><span class="w"> </span><span class="nx">interest</span><span class="w"> </span><span class="nx">goes</span><span class="w"> </span><span class="nx">here</span><span class="p">.</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w">     </span><span class="nx">Blue</span><span class="w"> </span><span class="nx">light</span><span class="w"> </span><span class="nx">glows</span><span class="w"> </span><span class="nx">blue</span><span class="p">.</span></span></span></code></pre></div>
-      </div>
-    </div>
-    <div
-      id="R-tab-id-e9788ddddbdb963503df6e00e75f8280"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-content tab-panel-style cstyle code codify">
-      <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">expand</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Show me almost **endless** possibilities&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="nx">You</span><span class="w"> </span><span class="nx">can</span><span class="w"> </span><span class="nx">add</span><span class="w"> </span><span class="nx">standard</span><span class="w"> </span><span class="nx">markdown</span><span class="w"> </span><span class="nx">syntax</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="o">-</span><span class="w"> </span><span class="nx">multiple</span><span class="w"> </span><span class="nx">paragraphs</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="o">-</span><span class="w"> </span><span class="nx">bullet</span><span class="w"> </span><span class="nx">point</span><span class="w"> </span><span class="nx">lists</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="o">-</span><span class="w"> </span><span class="nx">_emphasized_</span><span class="p">,</span><span class="w"> </span><span class="o">**</span><span class="nx">bold</span><span class="o">**</span><span class="w"> </span><span class="nx">and</span><span class="w"> </span><span class="nx">even</span><span class="w"> </span><span class="o">**</span><span class="nx">_bold</span><span class="w"> </span><span class="nx">emphasized_</span><span class="o">**</span><span class="w"> </span><span class="nx">text</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="o">-</span><span class="w"> </span><span class="p">[</span><span class="nx">links</span><span class="p">](</span><span class="nx">https</span><span class="p">:</span><span class="cp">//example.com)</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="o">-</span><span class="w"> </span><span class="nx">etc</span><span class="p">.</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="s">```plaintext
-</span></span></span><span class="line"><span class="cl"><span class="s">...and even source code
-</span></span></span><span class="line"><span class="cl"><span class="s">```</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">possibilities</span><span class="w"> </span><span class="nx">are</span><span class="w"> </span><span class="nf">endless</span><span class="w"> </span><span class="p">(</span><span class="nx">almost</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">including</span><span class="w"> </span><span class="nx">other</span><span class="w"> </span><span class="nx">shortcodes</span><span class="w"> </span><span class="nx">may</span><span class="w"> </span><span class="nx">or</span><span class="w"> </span><span class="nx">may</span><span class="w"> </span><span class="nx">not</span><span class="w"> </span><span class="nx">work</span><span class="p">)</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="nx">That</span><span class="err">&#39;</span><span class="nx">s</span><span class="w"> </span><span class="nx">some</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="nx">with</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">footnote</span><span class="p">[^</span><span class="mi">1</span><span class="p">]</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">[^</span><span class="mi">1</span><span class="p">]:</span><span class="w"> </span><span class="nx">And</span><span class="w"> </span><span class="nx">that</span><span class="err">&#39;</span><span class="nx">s</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">footnote</span><span class="p">.</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="nx">That</span><span class="err">&#39;</span><span class="nx">s</span><span class="w"> </span><span class="nx">some</span><span class="w"> </span><span class="nx">more</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="nx">with</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">footnote</span><span class="p">.[^</span><span class="nx">someid</span><span class="p">]</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">[^</span><span class="nx">someid</span><span class="p">]:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nx">Anything</span><span class="w"> </span><span class="nx">of</span><span class="w"> </span><span class="nx">interest</span><span class="w"> </span><span class="nx">goes</span><span class="w"> </span><span class="nx">here</span><span class="p">.</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nx">Blue</span><span class="w"> </span><span class="nx">light</span><span class="w"> </span><span class="nx">glows</span><span class="w"> </span><span class="nx">blue</span><span class="p">.</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">expand</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
-      </div>
-    </div>
-    <div
-      id="R-tab-id-fcfc9954124ee1b26480884e0dc05d46"
-      data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
-      class="tab-content tab-panel-style cstyle code codify">
-      <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">expand</span><span class="w"> </span><span class="s">&#34;Show me almost **endless** possibilities&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="nx">You</span><span class="w"> </span><span class="nx">can</span><span class="w"> </span><span class="nx">add</span><span class="w"> </span><span class="nx">standard</span><span class="w"> </span><span class="nx">markdown</span><span class="w"> </span><span class="nx">syntax</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="o">-</span><span class="w"> </span><span class="nx">multiple</span><span class="w"> </span><span class="nx">paragraphs</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="o">-</span><span class="w"> </span><span class="nx">bullet</span><span class="w"> </span><span class="nx">point</span><span class="w"> </span><span class="nx">lists</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="o">-</span><span class="w"> </span><span class="nx">_emphasized_</span><span class="p">,</span><span class="w"> </span><span class="o">**</span><span class="nx">bold</span><span class="o">**</span><span class="w"> </span><span class="nx">and</span><span class="w"> </span><span class="nx">even</span><span class="w"> </span><span class="o">**</span><span class="nx">_bold</span><span class="w"> </span><span class="nx">emphasized_</span><span class="o">**</span><span class="w"> </span><span class="nx">text</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="o">-</span><span class="w"> </span><span class="p">[</span><span class="nx">links</span><span class="p">](</span><span class="nx">https</span><span class="p">:</span><span class="cp">//example.com)</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="o">-</span><span class="w"> </span><span class="nx">etc</span><span class="p">.</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="s">```plaintext
-</span></span></span><span class="line"><span class="cl"><span class="s">...and even source code
-</span></span></span><span class="line"><span class="cl"><span class="s">```</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">possibilities</span><span class="w"> </span><span class="nx">are</span><span class="w"> </span><span class="nf">endless</span><span class="w"> </span><span class="p">(</span><span class="nx">almost</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">including</span><span class="w"> </span><span class="nx">other</span><span class="w"> </span><span class="nx">shortcodes</span><span class="w"> </span><span class="nx">may</span><span class="w"> </span><span class="nx">or</span><span class="w"> </span><span class="nx">may</span><span class="w"> </span><span class="nx">not</span><span class="w"> </span><span class="nx">work</span><span class="p">)</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="nx">That</span><span class="err">&#39;</span><span class="nx">s</span><span class="w"> </span><span class="nx">some</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="nx">with</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">footnote</span><span class="p">[^</span><span class="mi">1</span><span class="p">]</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">[^</span><span class="mi">1</span><span class="p">]:</span><span class="w"> </span><span class="nx">And</span><span class="w"> </span><span class="nx">that</span><span class="err">&#39;</span><span class="nx">s</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">footnote</span><span class="p">.</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="nx">That</span><span class="err">&#39;</span><span class="nx">s</span><span class="w"> </span><span class="nx">some</span><span class="w"> </span><span class="nx">more</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="nx">with</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">footnote</span><span class="p">.[^</span><span class="nx">someid</span><span class="p">]</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">[^</span><span class="nx">someid</span><span class="p">]:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nx">Anything</span><span class="w"> </span><span class="nx">of</span><span class="w"> </span><span class="nx">interest</span><span class="w"> </span><span class="nx">goes</span><span class="w"> </span><span class="nx">here</span><span class="p">.</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nx">Blue</span><span class="w"> </span><span class="nx">light</span><span class="w"> </span><span class="nx">glows</span><span class="w"> </span><span class="nx">blue</span><span class="p">.</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">expand</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
-      </div>
-    </div>
-    <div
-      id="R-tab-id-b768a161b17b6d8f089953cf00dc7e2f"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-content tab-panel-style cstyle code codify">
-      <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/expand.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;You can add standard markdown syntax:\n\n- multiple paragraphs\n- bullet point lists\n- _emphasized_, **bold** and even **_bold emphasized_** text\n- [links](https://example.com)\n- etc.\n\n```plaintext\n...and even source code\n```\n\n&gt; the possibilities are endless (almost - including other shortcodes may or may not work)\n\nThat&#39;s some text with a footnote[^1]\n\n[^1]: And that&#39;s the footnote.\n\nThat&#39;s some more text with a footnote.[^someid]\n\n[^someid]:\n    Anything of interest goes here.\n\n    Blue light glows blue.&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;Show me almost **endless** possibilities&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
-      </div>
-    </div>
-  </div>
-</div>
-<details class="box cstyle notices transparent expand">
-  <summary class="box-label">
-    <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
-    Show me almost <strong>endless</strong> possibilities
-  </summary>
-  <div class="box-content">
-<p>You can add standard markdown syntax:</p>
-<ul>
-<li>multiple paragraphs</li>
-<li>bullet point lists</li>
-<li><em>emphasized</em>, <strong>bold</strong> and even <strong><em>bold emphasized</em></strong> text</li>
-<li><a href="https://example.com" rel="external" target="_self">links</a></li>
-<li>etc.</li>
-</ul>
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="cl">...and even source code</span></span></code></pre></div>
-<blockquote>
-<p>the possibilities are endless (almost - including other shortcodes may or may not work)</p>
-</blockquote>
-<p>That&rsquo;s some text with a footnote<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
-<p>That&rsquo;s some more text with a footnote.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
-<div class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1">
-<p>And that&rsquo;s the footnote.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:2">
-<p>Anything of interest goes here.</p>
-<p>Blue light glows blue.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</div>
-  </div>
-</details>
-<h3 id="using-hugos-details-shortcode">Using Hugo&rsquo;s <code>details</code> Shortcode<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-
-<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
-  <div class="tab-nav">
-    <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-8c0f40c0677bb57fa7b056dc60fa82c9" aria-expanded="true"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-  </div>
-  <div class="tab-content-container">
-    <div
-      id="R-tab-id-8c0f40c0677bb57fa7b056dc60fa82c9"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-content tab-panel-style cstyle code active codify">
-      <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">details</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="o">...</span><span class="nx">is</span><span class="w"> </span><span class="nx">what</span><span class="w"> </span><span class="nx">it</span><span class="err">&#39;</span><span class="nx">s</span><span class="w"> </span><span class="nx">all</span><span class="w"> </span><span class="nx">about</span><span class="p">!&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">details</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
-      </div>
-    </div>
-  </div>
-</div>
-<details class="box cstyle notices transparent expand">
-  <summary class="box-label">
-    <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
-    Details
-  </summary>
-  <div class="box-content">
-&hellip;is what it&rsquo;s all about!
-  </div>
-</details>
 
   <footer class="footline">
 <div class="R-taxonomy taxonomy-categories" title="Categories">
-  <i class="fa-fw fas fa-layer-group"></i>
+  <i class="fa-fw fas fa-layer-group" aria-hidden="true"></i>
   <ul>
     <li><a class="term-link" href="/hugo-theme-relearn/categories/howto/index.html">Howto</a></li>
     <li><a class="term-link" href="/hugo-theme-relearn/categories/reference/index.html">Reference</a></li>
@@ -687,7 +337,7 @@ No need to press you!
         </div>
       </main>
     </div>
-    <script src="/hugo-theme-relearn/js/theme.min.5e81b78e5900bce96f55e277df01b5b477b164c8094c7fc0a689ccfd86eeb4b3.js" defer></script>
+    <script src="/hugo-theme-relearn/js/theme.min.f66b851115ea46f239f782bd19e65c09786103c8cb054f72664b912bc561d1c8.js" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

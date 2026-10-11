@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.166.0">
-    <meta name="generator" content="Relearn 9.1.0+edd32dd46699cf37d4c81be4a1fbeb8bd7112e9e">
+    <meta name="generator" content="Hugo 0.167.0">
+    <meta name="generator" content="Relearn 9.2.0+a9b397c5d13bccbd206ef42c15e37966e99cda51">
     <meta name="description" content="Configure the topbar">
     <meta name="author" content="Sören Weber">
     <meta name="twitter:card" content="summary_large_image">
@@ -33,11 +33,11 @@
     <link href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.source.md" rel="alternate" type="text/markdown" title="Topbarrr :: Cap&#39;n Hugo Relearrrn Theme">
     <link href="/hugo-theme-relearn/images/logo.d30ab0425821f45713322a73c1eeb192e311689b03371519abbe061a24d1201e.svg" rel="icon" type="image/svg+xml">
     <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.78b49c23f59ffb08554285843ed4c841484fe34c489058b2991edc027cdd47fc.css" rel="stylesheet">
-    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.7b340a2a0841d2466dca47e43cbd8c4dfe6a4f77a6c81c984d49ebb60ba2e299.js" defer></script>
-    <script src="/hugo-theme-relearn/js/search-lunr.min.2e613f0a1ce042c097f61ecc0e3f843d395bf3a42717715f9c08a11dc2f21122.js" defer></script>
-    <script src="/hugo-theme-relearn/js/search.min.373845112980472e938f57e7ec9a00ff9d7b651d7e72cacce2b29211ad5f1924.js" defer></script>
+    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.9657edd589a1ca6962a3cf03df5aa17f16f2c67350aea0a84dddbd8d5698316f.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.9897ffe790e716e8b90e4a9e200dce63c2603e69a9eec9bbdce6a483811ea180.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.4bcf60afa00d9f5c3adf08ff55811ce4cc679bd6d4b5747d674667994ee1debb.js" defer></script>
     <script type="application/json" id="R-search-config">{
-      "indexFile": "searchindex.pir.min.236bf34e230f11bc60ca718bcc3e07adbb46b91291717cb8bce31038c88717bb.js"
+      "indexFile": "searchindex.pir.min.c2a7e6834462a202a0a1fd0a729f0f6e78b23bfa1cdfee49248aff7d17b9997a.js"
     }</script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
@@ -51,10 +51,9 @@
       ]
     }</script>
     <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" class="R-async-style"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
-    <link href="/hugo-theme-relearn/css/theme.min.c5e57f8072c26c3936afb7f1f29896beccceeb26ad977baa337cb1cbf585deea.css" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/format-print.min.39e0dc30e3ca73e623fcf660fac10bf09db5539b3d13e59e90977cf7137e6aee.css" rel="stylesheet" id="R-format-style">
+    <link href="/hugo-theme-relearn/css/theme.min.8cd3fb0d94b35d653c73be5b6192808bb4d4b49792cbf9c092307d30edc9487f.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/format-print.min.fde31a3bc19a193360c646fd67b62d0fb98ae684449d1922b5ac0ed941277607.css" rel="stylesheet" id="R-format-style">
     <script type="application/json" id="R-theme-config">{
-      "absBaseUri": "https://fkaminski.github.io/hugo-theme-relearn",
       "disableInlineCopyToClipboard": true,
       "enableBlockCodeWrap": true,
       "path": "/pir/authoring/frontmatter/topbar/index.html",
@@ -68,6 +67,9 @@
         "zen-auto",
         "zen-dark",
         "zen-light",
+        "contrast-auto",
+        "contrast-dark",
+        "contrast-light",
         "retro-auto",
         "neon",
         "learn",
@@ -77,16 +79,24 @@
       ],
       "translations": {
         "Browser_unsupported_feature": "This browserrr doesn't supporrrt this featurrre",
+        "Close_graph": "Close th' enlarrrged chart",
         "Copied_to_clipboard": "Text copied t' clipboard!",
         "Copy_to_clipboard": "Copy text t' clipboard",
+        "Deleted_text_end": "End o' text sent overboard",
+        "Deleted_text_start": "Start o' text sent overboard",
+        "Enlarge_graph": "Enlarrrge th' chart",
+        "History_cleared": "Historrry clearrred",
+        "Inserted_text_end": "End o' text hauled aboard",
+        "Inserted_text_start": "Start o' text hauled aboard",
         "Link_copied_to_clipboard": "Link copied t' clipboard!",
+        "N_matches_on_page": "{1} matches fer \"{0}\" on this here page",
         "N_results_found": "{1} rrresults found fer \"{0}\"",
         "No_results_found": "No rrresults found fer \"{0}\"",
         "Reset_view": "Rrreset view",
         "View_reset": "View rrreset!"
       }
     }</script>
-    <script src="/hugo-theme-relearn/js/theme-head.min.eb092668f5b427260df95861e28028bbd22ff85e2af068b9bfbedf0cbdbea887.js"></script>
+    <script src="/hugo-theme-relearn/js/theme-head.min.8c8c3bb99b655d91386ff7fefb5fceeb088bff4bb82bcde54fbef7dacb3388cc.js"></script>
     <style>
        
       #R-body img.bg-white {
@@ -95,20 +105,21 @@
     </style>
   </head>
   <body class="mobile-support print" data-origin="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.html">
+    <a id="R-skip-link" href="#R-body-inner">Skip t&#39; th&#39; main rrreadin&#39;</a>
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
-      <nav id="R-topbar" class="default-animation">
+      <header id="R-topbar" class="default-animation">
         <div class="topbar-wrapper default-animation">
           <div class="topbar-sidebar-divider default-animation"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)" aria-label="Menu (CTRL&#43;ALT&#43;n)" aria-expanded="false"><i class="fa-fw fas fa-bars" aria-hidden="true"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table o&#39; Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table o&#39; Contents (CTRL&#43;ALT&#43;t)" aria-label="Table o&#39; Contents (CTRL&#43;ALT&#43;t)" aria-expanded="false"><i class="fa-fw fas fa-table-list" aria-hidden="true"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper" tabindex="-1">
-<nav class="TableOfContents">
+<nav class="TableOfContents" aria-label="Table o&#39; Contents">
   <ul>
     <li><a href="#table-of-contents">T'ble o' Contents</a></li>
     <li><a href="#breadcrumbs">Breadcrumbs</a></li>
@@ -123,39 +134,43 @@
               </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/pir/index.html"><span itemprop="name">Cap&#39;n Hugo Relearrrn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/pir/authoring/index.html"><span itemprop="name">Rambl&#39;n</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/pir/authoring/frontmatter/index.html"><span itemprop="name">Front Matter</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Topbarrr</span><meta itemprop="position" content="4"></li>
-          </ol>
+          <div class="topbar-area topbar-area-middle" data-area="middle">
+            <nav class="topbar-breadcrumbs breadcrumbs highlightable" aria-label="Brrreadcrumbs" data-overflow-title="Rambl&#39;n &gt; Front Matter &gt; Topbarrr">
+              <ol itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/pir/index.html" tabindex="-1"><span itemprop="name">Cap&#39;n Hugo Relearrrn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/pir/authoring/index.html"><span itemprop="name">Rambl&#39;n</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/pir/authoring/frontmatter/index.html"><span itemprop="name">Front Matter</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="" aria-current="page"><span itemprop="name">Topbarrr</span><meta itemprop="position" content="4"></li>
+              </ol>
+            </nav>
+          </div>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/authoring/frontmatter/topbar/_index.pir.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen"></i></a></span>
-            </div>
-            <div class="topbar-button topbar-button-source default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.source.md" title="Show source code"><i class="fa-fw fas fa-code"></i></a></span>
-            </div>
-            <div class="topbar-button topbar-button-markdown default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.md" title="Show Marrrkd'n"><i class="fa-fw fab fa-markdown"></i></a></span>
-            </div>
-            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.print.html" title="Prrrint whole chapterrr (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
             <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/pir/authoring/frontmatter/linking/index.html" title="Linking (🡒)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Linking (🡒)" href="/hugo-theme-relearn/pir/authoring/frontmatter/linking/index.html" title="Linking (🡒)"><i class="fa-fw fas fa-chevron-left" aria-hidden="true"></i></a></span>
             </div>
             <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/pir/authoring/frontmatter/reference/index.html" title="Front Matter Reference (🡐)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Front Matter Reference (🡐)" href="/hugo-theme-relearn/pir/authoring/frontmatter/reference/index.html" title="Front Matter Reference (🡐)"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i></a></span>
             </div>
             <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Morrre"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Morrre" aria-label="Morrre" aria-expanded="false"><i class="fa-fw fas fa-ellipsis-v" aria-hidden="true"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper" tabindex="-1">
                   <div class="topbar-area topbar-area-more" data-area="more">
+            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Edit (CTRL+ALT+w)" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/authoring/frontmatter/topbar/_index.pir.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-source default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Show source code" href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.source.md" title="Show source code"><i class="fa-fw fas fa-code" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-markdown default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Show Marrrkd'n" href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.md" title="Show Marrrkd'n"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Prrrint whole chapterrr (CTRL+ALT+p)" href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.print.html" title="Prrrint whole chapterrr (CTRL+ALT+p)"><i class="fa-fw fas fa-print" aria-hidden="true"></i></a></span>
+            </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </nav>
+      </header>
       <div id="R-main-overlay"></div>
       <main id="R-body-inner" class="highlightable authoring" tabindex="-1">
         <div class="flex-block-wrapper">
@@ -165,184 +180,190 @@
 
 <h1 id="topbarrr">Topbarrr</h1>
 
-<p>This plank be about how t' configure th' topbar us'n configurat'n opt'ns. If ye want t' add further buttons or functionality, <a href="/hugo-theme-relearn/pir/configuration/customization/topbar/index.html">see this section</a>.</p>
+<p>This plank be about how t' configure th' topbar us'n configurat'n options. If ye want t' add further buttons or functionality, <a href="/hugo-theme-relearn/pir/configuration/customization/topbar/index.html">see this section</a>.</p>
 <p>Yer topbar contains th' follow'n elements. Some o' them be configuar'ble:</p>
 <ul>
-<li><span class="btn cstyle button transparent notitle"><span><i class="fa-fw fas fa-bars"></i></span></span> <strong>sidebar</strong>: opens th' sidebar flyout if 'n mobile layout</li>
-<li><span class="btn cstyle button transparent notitle"><span><i class="fa-fw fas fa-table-list"></i></span></span> <strong>toc</strong>: <a href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.html#table-of-contents">opens th' table o' contents 'n an overlay</a></li>
-<li><span class="btn cstyle button transparent notitle"><span><i class="fa-fw fas fa-empty"></i></span></span> <strong>breadcrumb</strong>: shows th' click'ble <a href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.html#breadcrumbs">breadcrumbs</a></li>
-<li><span class="btn cstyle button transparent notitle"><span><i class="fa-fw fas fa-pen"></i></span></span> <strong>edit</strong>: browses t' th' editable plank if th' <code>editURL</code> <a href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.html#edit-button">parameter be set</a></li>
-<li><span class="btn cstyle button transparent notitle"><span><i class="fa-fw fas fa-code"></i></span></span> <strong>source</strong>: browses t' th' <a href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.html#source-button">chapters source code</a> if <a href="/hugo-theme-relearn/pir/configuration/sitemanagement/outputformats/index.html#source-support">source support</a> was activated</li>
-<li><span class="btn cstyle button transparent notitle"><span><i class="fa-fw fab fa-markdown"></i></span></span> <strong>markdown</strong>: browses t' th' <a href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.html#markdown-button">chapters Marrrkdown source</a> if <a href="/hugo-theme-relearn/pir/configuration/sitemanagement/outputformats/index.html#markdown-support">markdown support</a> was activated</li>
-<li><span class="btn cstyle button transparent notitle"><span><i class="fa-fw fas fa-print"></i></span></span> <strong>print</strong>: browses t' th' <a href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.html#print-button">chapters printable plank</a> if <a href="/hugo-theme-relearn/pir/configuration/sitemanagement/outputformats/index.html#print-support">print support</a> was activated</li>
-<li><span class="btn cstyle button transparent notitle"><span><i class="fa-fw fas fa-chevron-left"></i></span></span> <strong>prev</strong>: browses t' th' <a href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.html#arrow-navigation">previous plank</a> if there be one</li>
-<li><span class="btn cstyle button transparent notitle"><span><i class="fa-fw fas fa-chevron-right"></i></span></span> <strong>next</strong>: browses t' th' <a href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.html#arrow-navigation">next plank</a> if there be one</li>
-<li><span class="btn cstyle button transparent notitle"><span><i class="fa-fw fas fa-ellipsis-v"></i></span></span> <strong>more</strong>: opens th' overlay if screen space be limited</li>
+<li><span class="btn cstyle button transparent notitle"><span><i class="fa-fw fas fa-bars" aria-hidden="true"></i></span></span> <strong>sidebar</strong>: opens th' sidebar flyout if 'n mobile layout</li>
+<li><span class="btn cstyle button transparent notitle"><span><i class="fa-fw fas fa-table-list" aria-hidden="true"></i></span></span> <strong>toc</strong>: <a href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.html#table-of-contents">opens th' table o' contents 'n an overlay</a></li>
+<li><span class="btn cstyle button transparent notitle"><span><i class="fa-fw fas fa-empty" aria-hidden="true"></i></span></span> <strong>breadcrumb</strong>: shows th' click'ble <a href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.html#breadcrumbs">breadcrumbs</a></li>
+<li><span class="btn cstyle button transparent notitle"><span><i class="fa-fw fas fa-pen" aria-hidden="true"></i></span></span> <strong>edit</strong>: browses t' th' editable plank if th' <code>editURL</code> <a href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.html#edit-button">parameter be set</a></li>
+<li><span class="btn cstyle button transparent notitle"><span><i class="fa-fw fas fa-code" aria-hidden="true"></i></span></span> <strong>source</strong>: browses t' th' <a href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.html#source-button">chapters source code</a> if <a href="/hugo-theme-relearn/pir/configuration/sitemanagement/outputformats/index.html#source-support">source support</a> was activated</li>
+<li><span class="btn cstyle button transparent notitle"><span><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></span></span> <strong>markdown</strong>: browses t' th' <a href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.html#markdown-button">chapters Marrrkdown source</a> if <a href="/hugo-theme-relearn/pir/configuration/sitemanagement/outputformats/index.html#markdown-support">markdown support</a> was activated</li>
+<li><span class="btn cstyle button transparent notitle"><span><i class="fa-fw fas fa-print" aria-hidden="true"></i></span></span> <strong>print</strong>: browses t' th' <a href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.html#print-button">chapters printable plank</a> if <a href="/hugo-theme-relearn/pir/configuration/sitemanagement/outputformats/index.html#print-support">print support</a> was activated</li>
+<li><span class="btn cstyle button transparent notitle"><span><i class="fa-fw fas fa-chevron-left" aria-hidden="true"></i></span></span> <strong>prev</strong>: browses t' th' <a href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.html#arrow-navigation">previous plank</a> if there be one</li>
+<li><span class="btn cstyle button transparent notitle"><span><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i></span></span> <strong>next</strong>: browses t' th' <a href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.html#arrow-navigation">next plank</a> if there be one</li>
+<li><span class="btn cstyle button transparent notitle"><span><i class="fa-fw fas fa-ellipsis-v" aria-hidden="true"></i></span></span> <strong>more</strong>: opens th' overlay if screen space be limited</li>
 </ul>
-<h2 id="table-of-contents">T'ble o' Contents<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><span class="badge cstyle opt'n badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears"></i></span><span class="badge-content">Opt'n</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown"></i></span><span class="badge-content">Front Matter</span></span> Set <code>disableToc=true</code> t' hide th' TOC button on all planks. If th' button be hidden, also th' keyboard shortcut be disabled. This can be overridden 'n a page&rsquo;s front matter.</p>
+<h2 id="table-of-contents">T'ble o' Contents<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears" aria-hidden="true"></i></span><span class="badge-content">Opt'n</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></span><span class="badge-content">Front Matter</span></span> Set <code>disableToc=true</code> t' hide th' TOC button on all planks. If th' button be hidden, also th' keyboard shortcut be disabled. This can be overridden 'n a page&rsquo;s front matter.</p>
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-5a9ec27e9e6ef62110cda64a39b912c9" aria-expanded="true"
-      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">toml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-57e64c1828a6e9246a351c9a0e142248" aria-expanded="false"
-      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">yaml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-aaf3fd608fc6fd5e80842f5262258354" aria-expanded="false"
-      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">json</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-9abaf3512e5a90ec67552e5bf4e3266b-tab" aria-controls="R-tab-id-9abaf3512e5a90ec67552e5bf4e3266b" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-355c1af9bd28ade3c338007ba575ed48-tab" aria-controls="R-tab-id-355c1af9bd28ade3c338007ba575ed48" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-7b17d6c60ea825cd4c474225616d4632-tab" aria-controls="R-tab-id-7b17d6c60ea825cd4c474225616d4632" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-5a9ec27e9e6ef62110cda64a39b912c9"
+      id="R-tab-id-9abaf3512e5a90ec67552e5bf4e3266b" role="tabpanel" aria-labelledby="R-tab-id-9abaf3512e5a90ec67552e5bf4e3266b-tab"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">disableToc</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">disableToc</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-57e64c1828a6e9246a351c9a0e142248"
+      id="R-tab-id-355c1af9bd28ade3c338007ba575ed48" role="tabpanel" aria-labelledby="R-tab-id-355c1af9bd28ade3c338007ba575ed48-tab"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">disableToc</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">disableToc</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-aaf3fd608fc6fd5e80842f5262258354"
+      id="R-tab-id-7b17d6c60ea825cd4c474225616d4632" role="tabpanel" aria-labelledby="R-tab-id-7b17d6c60ea825cd4c474225616d4632-tab"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;disableToc&#34;</span><span class="p">:</span> <span class="kc">true</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
       </div>
     </div>
   </div>
 </div>
-<h2 id="breadcrumbs">Breadcrumbs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><span class="badge cstyle opt'n badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears"></i></span><span class="badge-content">Opt'n</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown"></i></span><span class="badge-content">Front Matter</span></span> Set <code>disableBreadcrumb=true</code> t' hide th' breadcrumb 'n th' topbar.</p>
+<h2 id="breadcrumbs">Breadcrumbs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears" aria-hidden="true"></i></span><span class="badge-content">Opt'n</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></span><span class="badge-content">Front Matter</span></span> Set <code>disableBreadcrumb=true</code> t' hide th' breadcrumb 'n th' topbar.</p>
 <p>Further breadcrumbs sett'ns can be found 'n th' <a href="/hugo-theme-relearn/pir/configuration/content/titles/index.html">rrrambl'n configurat'n section</a>.</p>
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-caec9abefd4e45aeb8ea28c5fdf2825e" aria-expanded="true"
-      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">toml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-afca35461f997ba3d3dc0e617e25dbdd" aria-expanded="false"
-      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">yaml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-9eb6e9b6a32f789523de9098094c1356" aria-expanded="false"
-      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">json</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-45cdbdcefdae1d5983735c54d6d73e0d-tab" aria-controls="R-tab-id-45cdbdcefdae1d5983735c54d6d73e0d" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-767861651ef9a16733394b053704cf7c-tab" aria-controls="R-tab-id-767861651ef9a16733394b053704cf7c" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-d7eb45f2126c25d0bc637f9cf97a108c-tab" aria-controls="R-tab-id-d7eb45f2126c25d0bc637f9cf97a108c" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-caec9abefd4e45aeb8ea28c5fdf2825e"
+      id="R-tab-id-45cdbdcefdae1d5983735c54d6d73e0d" role="tabpanel" aria-labelledby="R-tab-id-45cdbdcefdae1d5983735c54d6d73e0d-tab"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">disableBreadcrumb</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">disableBreadcrumb</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-afca35461f997ba3d3dc0e617e25dbdd"
+      id="R-tab-id-767861651ef9a16733394b053704cf7c" role="tabpanel" aria-labelledby="R-tab-id-767861651ef9a16733394b053704cf7c-tab"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">disableBreadcrumb</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">disableBreadcrumb</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-9eb6e9b6a32f789523de9098094c1356"
+      id="R-tab-id-d7eb45f2126c25d0bc637f9cf97a108c" role="tabpanel" aria-labelledby="R-tab-id-d7eb45f2126c25d0bc637f9cf97a108c-tab"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;disableBreadcrumb&#34;</span><span class="p">:</span> <span class="kc">true</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
       </div>
     </div>
   </div>
 </div>
-<h2 id="edit-button">Edit Button<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><span class="badge cstyle opt'n badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears"></i></span><span class="badge-content">Opt'n</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown"></i></span><span class="badge-content">Front Matter</span></span> If <code>editURL</code> be set t' a URL, an edit button will be shown 'n th' topbar. If th' button be hidden, also th' keyboard shortcut be disabled.</p>
+<h2 id="edit-button">Edit Button<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears" aria-hidden="true"></i></span><span class="badge-content">Opt'n</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></span><span class="badge-content">Front Matter</span></span> If <code>editURL</code> be set t' a URL, an edit button will be shown 'n th' topbar. If th' button be hidden, also th' keyboard shortcut be disabled.</p>
 <p>Th' value can contain th' macro <code>${FilePath}</code> which will be replaced by th' file path o' yer displayed plank. If no <code>${FilePath}</code> be given 'n th' value, th' value be treated as if th' <code>${FilePath}</code> was appended at th' end o' th' value. This can be overridden 'n th' planks front matter.</p>
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-d087c1c1418594947c2511ba06195077" aria-expanded="true"
-      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">toml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-29e7817ccd8a20c7b861d12cd4a2040a" aria-expanded="false"
-      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">yaml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-0e5edc20af5abd6a5a343bdc5983e8f1" aria-expanded="false"
-      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">json</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-17bbea606b921f7f06819fc237b103c0-tab" aria-controls="R-tab-id-17bbea606b921f7f06819fc237b103c0" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-5f5f2b68d20f3c29b159bae54b4e0314-tab" aria-controls="R-tab-id-5f5f2b68d20f3c29b159bae54b4e0314" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-df6e01ff3a32aa566a248f9988b04288-tab" aria-controls="R-tab-id-df6e01ff3a32aa566a248f9988b04288" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-d087c1c1418594947c2511ba06195077"
+      id="R-tab-id-17bbea606b921f7f06819fc237b103c0" role="tabpanel" aria-labelledby="R-tab-id-17bbea606b921f7f06819fc237b103c0-tab"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">editURL</span> <span class="p">=</span> <span class="s1">&#39;https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/${FilePath}&#39;</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">editURL</span> <span class="p">=</span> <span class="s1">&#39;https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/${FilePath}&#39;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-29e7817ccd8a20c7b861d12cd4a2040a"
+      id="R-tab-id-5f5f2b68d20f3c29b159bae54b4e0314" role="tabpanel" aria-labelledby="R-tab-id-5f5f2b68d20f3c29b159bae54b4e0314-tab"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">editURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/${FilePath}</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">editURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/${FilePath}</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-0e5edc20af5abd6a5a343bdc5983e8f1"
+      id="R-tab-id-df6e01ff3a32aa566a248f9988b04288" role="tabpanel" aria-labelledby="R-tab-id-df6e01ff3a32aa566a248f9988b04288-tab"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;editURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/${FilePath}&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
       </div>
@@ -355,51 +376,53 @@
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-4d8bb2ad883528983a902a4f025260cd" aria-expanded="true"
-      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">toml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-df476e9088c4126ea5c41d97bb8db057" aria-expanded="false"
-      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">yaml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-e58dde7fefd1f22017dad01b96e68768" aria-expanded="false"
-      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">json</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-2d146597a142b3e24434ad3ceb9ead28-tab" aria-controls="R-tab-id-2d146597a142b3e24434ad3ceb9ead28" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-0dca638d9dc1cb665cff67847d197575-tab" aria-controls="R-tab-id-0dca638d9dc1cb665cff67847d197575" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-74b2f65c9066ea445cf3f993dff2ae5b-tab" aria-controls="R-tab-id-74b2f65c9066ea445cf3f993dff2ae5b" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-4d8bb2ad883528983a902a4f025260cd"
+      id="R-tab-id-2d146597a142b3e24434ad3ceb9ead28" role="tabpanel" aria-labelledby="R-tab-id-2d146597a142b3e24434ad3ceb9ead28-tab"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">editURL</span> <span class="p">=</span> <span class="s1">&#39;vscode://file/${BaseDir}/${FilePath}&#39;</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">editURL</span> <span class="p">=</span> <span class="s1">&#39;vscode://file/${BaseDir}/${FilePath}&#39;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-df476e9088c4126ea5c41d97bb8db057"
+      id="R-tab-id-0dca638d9dc1cb665cff67847d197575" role="tabpanel" aria-labelledby="R-tab-id-0dca638d9dc1cb665cff67847d197575-tab"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">editURL</span><span class="p">:</span><span class="w"> </span><span class="l">vscode://file/${BaseDir}/${FilePath}</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">editURL</span><span class="p">:</span><span class="w"> </span><span class="l">vscode://file/${BaseDir}/${FilePath}</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-e58dde7fefd1f22017dad01b96e68768"
+      id="R-tab-id-74b2f65c9066ea445cf3f993dff2ae5b" role="tabpanel" aria-labelledby="R-tab-id-74b2f65c9066ea445cf3f993dff2ae5b-tab"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;editURL&#34;</span><span class="p">:</span> <span class="s2">&#34;vscode://file/${BaseDir}/${FilePath}&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
       </div>
@@ -407,233 +430,241 @@
   </div>
 </div>
 
-<details open class="box cstyle notices note">
-  <summary class="box-label" tabindex="-1">
-    <i class="fa-fw fas fa-exclamation-circle"></i> 
+<div role="note" aria-labelledby="R-box-label-bc7e8981db8c19e0c2802c4e93997998" class="box cstyle callout note">
+  <div id="R-box-label-bc7e8981db8c19e0c2802c4e93997998" class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i> 
     Avast
-  </summary>
+  </div>
   <div class="box-content">
 <p>An editor URL only works on th' machine yer ship was built on, as it names a path 'n yer file system. Don&rsquo;t set one fer a ship ye deploy.</p>
   </div>
-</details>
-<h2 id="markdown-button">Marrrkdown Button<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><span class="badge cstyle opt'n badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears"></i></span><span class="badge-content">Opt'n</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown"></i></span><span class="badge-content">Front Matter</span></span> Ye can hide th' Marrrkdown button if th' <a href="/hugo-theme-relearn/pir/configuration/sitemanagement/outputformats/index.html#markdown-support">Marrrkdown output format</a> be active by sett'n <code>disableMarkdownButton=true</code>.</p>
+</div>
+<h2 id="markdown-button">Marrrkdown Button<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears" aria-hidden="true"></i></span><span class="badge-content">Opt'n</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></span><span class="badge-content">Front Matter</span></span> Ye can hide th' Marrrkdown button if th' <a href="/hugo-theme-relearn/pir/configuration/sitemanagement/outputformats/index.html#markdown-support">Marrrkdown output format</a> be active by sett'n <code>disableMarkdownButton=true</code>.</p>
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-d0a4b9b538ed6c1a936be5fe335640b2" aria-expanded="true"
-      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">toml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-77fbe5ed64777518ab778148abd56068" aria-expanded="false"
-      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">yaml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-5d67482ee13e416d5c8853583f8be25b" aria-expanded="false"
-      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">json</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-0c9994608ceebf18bf9907f43847197b-tab" aria-controls="R-tab-id-0c9994608ceebf18bf9907f43847197b" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-5908e08d6cf8af236db718e7dc441ddf-tab" aria-controls="R-tab-id-5908e08d6cf8af236db718e7dc441ddf" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-32b5171d796ec0c8bf7267292a252ee9-tab" aria-controls="R-tab-id-32b5171d796ec0c8bf7267292a252ee9" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-d0a4b9b538ed6c1a936be5fe335640b2"
+      id="R-tab-id-0c9994608ceebf18bf9907f43847197b" role="tabpanel" aria-labelledby="R-tab-id-0c9994608ceebf18bf9907f43847197b-tab"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">disableMarkdownButton</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">disableMarkdownButton</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-77fbe5ed64777518ab778148abd56068"
+      id="R-tab-id-5908e08d6cf8af236db718e7dc441ddf" role="tabpanel" aria-labelledby="R-tab-id-5908e08d6cf8af236db718e7dc441ddf-tab"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">disableMarkdownButton</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">disableMarkdownButton</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-5d67482ee13e416d5c8853583f8be25b"
+      id="R-tab-id-32b5171d796ec0c8bf7267292a252ee9" role="tabpanel" aria-labelledby="R-tab-id-32b5171d796ec0c8bf7267292a252ee9-tab"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;disableMarkdownButton&#34;</span><span class="p">:</span> <span class="kc">true</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
       </div>
     </div>
   </div>
 </div>
-<h2 id="source-button">Source Button<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><span class="badge cstyle opt'n badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears"></i></span><span class="badge-content">Opt'n</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown"></i></span><span class="badge-content">Front Matter</span></span> Ye can hide th' Source button if th' <a href="/hugo-theme-relearn/pir/configuration/sitemanagement/outputformats/index.html#source-support">Source output format</a> be active by sett'n <code>disableSourceButton=true</code>.</p>
+<h2 id="source-button">Source Button<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears" aria-hidden="true"></i></span><span class="badge-content">Opt'n</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></span><span class="badge-content">Front Matter</span></span> Ye can hide th' Source button if th' <a href="/hugo-theme-relearn/pir/configuration/sitemanagement/outputformats/index.html#source-support">Source output format</a> be active by sett'n <code>disableSourceButton=true</code>.</p>
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-5512f0fe15cf65a66b537fa6f6e87806" aria-expanded="true"
-      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">toml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-f063bb4ccd08731906776513ded52626" aria-expanded="false"
-      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">yaml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-dd75df2a159dd4d886e53c4af5ed060b" aria-expanded="false"
-      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">json</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-e0b6b9151e6f57e9b761c6838fde04c9-tab" aria-controls="R-tab-id-e0b6b9151e6f57e9b761c6838fde04c9" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-37a44a847d0281f4388660e8e138678f-tab" aria-controls="R-tab-id-37a44a847d0281f4388660e8e138678f" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-35b0a7b07c0e76dcaaf8a7c287cd5933-tab" aria-controls="R-tab-id-35b0a7b07c0e76dcaaf8a7c287cd5933" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-5512f0fe15cf65a66b537fa6f6e87806"
+      id="R-tab-id-e0b6b9151e6f57e9b761c6838fde04c9" role="tabpanel" aria-labelledby="R-tab-id-e0b6b9151e6f57e9b761c6838fde04c9-tab"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">disableSourceButton</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">disableSourceButton</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-f063bb4ccd08731906776513ded52626"
+      id="R-tab-id-37a44a847d0281f4388660e8e138678f" role="tabpanel" aria-labelledby="R-tab-id-37a44a847d0281f4388660e8e138678f-tab"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">disableSourceButton</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">disableSourceButton</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-dd75df2a159dd4d886e53c4af5ed060b"
+      id="R-tab-id-35b0a7b07c0e76dcaaf8a7c287cd5933" role="tabpanel" aria-labelledby="R-tab-id-35b0a7b07c0e76dcaaf8a7c287cd5933-tab"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;disableSourceButton&#34;</span><span class="p">:</span> <span class="kc">true</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
       </div>
     </div>
   </div>
 </div>
-<h2 id="print-button">Print Button<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><span class="badge cstyle opt'n badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears"></i></span><span class="badge-content">Opt'n</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown"></i></span><span class="badge-content">Front Matter</span></span> Ye can hide th' print button if th' <a href="/hugo-theme-relearn/pir/configuration/sitemanagement/outputformats/index.html#print-support">print output format</a> be active by sett'n <code>disablePrintButton=true</code>.</p>
+<h2 id="print-button">Print Button<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears" aria-hidden="true"></i></span><span class="badge-content">Opt'n</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></span><span class="badge-content">Front Matter</span></span> Ye can hide th' print button if th' <a href="/hugo-theme-relearn/pir/configuration/sitemanagement/outputformats/index.html#print-support">print output format</a> be active by sett'n <code>disablePrintButton=true</code>.</p>
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-b58baf2f2cef6fc756af818df74ec67a" aria-expanded="true"
-      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">toml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-c8cfe1767ac950889ebc22887d7be11d" aria-expanded="false"
-      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">yaml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-de84e6962f1621661acf5af5c99079ac" aria-expanded="false"
-      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">json</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-f6a2bf0d5a1ed79792144277d6d457f6-tab" aria-controls="R-tab-id-f6a2bf0d5a1ed79792144277d6d457f6" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-53a270f2903eaae6c988c6a6ab973837-tab" aria-controls="R-tab-id-53a270f2903eaae6c988c6a6ab973837" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-b6bb59c89e11f1ca0de575b78a635898-tab" aria-controls="R-tab-id-b6bb59c89e11f1ca0de575b78a635898" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-b58baf2f2cef6fc756af818df74ec67a"
+      id="R-tab-id-f6a2bf0d5a1ed79792144277d6d457f6" role="tabpanel" aria-labelledby="R-tab-id-f6a2bf0d5a1ed79792144277d6d457f6-tab"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">disablePrintButton</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">disablePrintButton</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-c8cfe1767ac950889ebc22887d7be11d"
+      id="R-tab-id-53a270f2903eaae6c988c6a6ab973837" role="tabpanel" aria-labelledby="R-tab-id-53a270f2903eaae6c988c6a6ab973837-tab"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">disablePrintButton</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">disablePrintButton</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-de84e6962f1621661acf5af5c99079ac"
+      id="R-tab-id-b6bb59c89e11f1ca0de575b78a635898" role="tabpanel" aria-labelledby="R-tab-id-b6bb59c89e11f1ca0de575b78a635898-tab"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;disablePrintButton&#34;</span><span class="p">:</span> <span class="kc">true</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
       </div>
     </div>
   </div>
 </div>
-<h2 id="arrow-navigation">Arrow Navigat'n<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><span class="badge cstyle opt'n badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears"></i></span><span class="badge-content">Opt'n</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown"></i></span><span class="badge-content">Front Matter</span></span> Ye can hide th' previous/next buttons by sett'n <code>disableNextPrev=true</code>. If th' buttons be hidden, also th' keyboard shortcuts be disabled.</p>
+<h2 id="arrow-navigation">Arrow Navigat'n<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears" aria-hidden="true"></i></span><span class="badge-content">Opt'n</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></span><span class="badge-content">Front Matter</span></span> Ye can hide th' previous/next buttons by sett'n <code>disableNextPrev=true</code>. If th' buttons be hidden, also th' keyboard shortcuts be disabled.</p>
 <div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-cb9ddf64752082337777083176173ed2" aria-expanded="true"
-      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">toml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-c40aa210657808cbf1790946c175d537" aria-expanded="false"
-      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">yaml</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-856d0780c50e261ab0f95e2a44f640c7" aria-expanded="false"
-      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">json</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-f2a5b2eacd98ac9ea614f8e459ec631c-tab" aria-controls="R-tab-id-f2a5b2eacd98ac9ea614f8e459ec631c" aria-selected="true"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-d61acb081e3085d11d76dafeb61275e4-tab" aria-controls="R-tab-id-d61acb081e3085d11d76dafeb61275e4" aria-selected="false"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-4697998d828772ed682a7baf9a72123e-tab" aria-controls="R-tab-id-4697998d828772ed682a7baf9a72123e" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-cb9ddf64752082337777083176173ed2"
+      id="R-tab-id-f2a5b2eacd98ac9ea614f8e459ec631c" role="tabpanel" aria-labelledby="R-tab-id-f2a5b2eacd98ac9ea614f8e459ec631c-tab"
       data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">disableNextPrev</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">disableNextPrev</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-c40aa210657808cbf1790946c175d537"
+      id="R-tab-id-d61acb081e3085d11d76dafeb61275e4" role="tabpanel" aria-labelledby="R-tab-id-d61acb081e3085d11d76dafeb61275e4-tab"
       data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">disableNextPrev</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">disableNextPrev</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-856d0780c50e261ab0f95e2a44f640c7"
+      id="R-tab-id-4697998d828772ed682a7baf9a72123e" role="tabpanel" aria-labelledby="R-tab-id-4697998d828772ed682a7baf9a72123e-tab"
       data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">   <span class="nt">&#34;disableNextPrev&#34;</span><span class="p">:</span> <span class="kc">true</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
       </div>
@@ -644,7 +675,7 @@
 
   <footer class="footline">
 <div class="R-taxonomy taxonomy-categories" title="Categorrries">
-  <i class="fa-fw fas fa-layer-group"></i>
+  <i class="fa-fw fas fa-layer-group" aria-hidden="true"></i>
   <ul>
     <li><a class="term-link" href="/hugo-theme-relearn/pir/categories/howto/index.html">Howto</a></li>
   </ul>
@@ -654,7 +685,7 @@
         </div>
       </main>
     </div>
-    <script src="/hugo-theme-relearn/js/theme.min.5e81b78e5900bce96f55e277df01b5b477b164c8094c7fc0a689ccfd86eeb4b3.js" defer></script>
+    <script src="/hugo-theme-relearn/js/theme.min.f66b851115ea46f239f782bd19e65c09786103c8cb054f72664b912bc561d1c8.js" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

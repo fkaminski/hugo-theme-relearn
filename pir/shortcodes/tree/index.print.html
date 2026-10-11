@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.166.0">
-    <meta name="generator" content="Relearn 9.1.0+edd32dd46699cf37d4c81be4a1fbeb8bd7112e9e">
+    <meta name="generator" content="Hugo 0.167.0">
+    <meta name="generator" content="Relearn 9.2.0+a9b397c5d13bccbd206ef42c15e37966e99cda51">
     <meta name="description" content="Display text as a tree">
     <meta name="author" content="Sören Weber">
     <meta name="twitter:card" content="summary_large_image">
@@ -29,13 +29,15 @@
     <link href="https://fkaminski.github.io/hugo-theme-relearn/pir/shortcodes/tree/index.html" rel="alternate" hreflang="art-x-pir">
     <link href="https://fkaminski.github.io/hugo-theme-relearn/pir/shortcodes/tree/index.html" rel="canonical" type="text/html" title="Tree :: Cap&#39;n Hugo Relearrrn Theme">
     <link href="/hugo-theme-relearn/pir/shortcodes/tree/index.xml" rel="alternate" type="application/rss+xml" title="Tree :: Cap&#39;n Hugo Relearrrn Theme">
+    <link href="/hugo-theme-relearn/pir/shortcodes/tree/index.md" rel="alternate" type="text/markdown" title="Tree :: Cap&#39;n Hugo Relearrrn Theme">
+    <link href="/hugo-theme-relearn/pir/shortcodes/tree/index.source.md" rel="alternate" type="text/markdown" title="Tree :: Cap&#39;n Hugo Relearrrn Theme">
     <link href="/hugo-theme-relearn/images/logo.d30ab0425821f45713322a73c1eeb192e311689b03371519abbe061a24d1201e.svg" rel="icon" type="image/svg+xml">
     <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.78b49c23f59ffb08554285843ed4c841484fe34c489058b2991edc027cdd47fc.css" rel="stylesheet">
-    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.7b340a2a0841d2466dca47e43cbd8c4dfe6a4f77a6c81c984d49ebb60ba2e299.js" defer></script>
-    <script src="/hugo-theme-relearn/js/search-lunr.min.2e613f0a1ce042c097f61ecc0e3f843d395bf3a42717715f9c08a11dc2f21122.js" defer></script>
-    <script src="/hugo-theme-relearn/js/search.min.373845112980472e938f57e7ec9a00ff9d7b651d7e72cacce2b29211ad5f1924.js" defer></script>
+    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.9657edd589a1ca6962a3cf03df5aa17f16f2c67350aea0a84dddbd8d5698316f.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.9897ffe790e716e8b90e4a9e200dce63c2603e69a9eec9bbdce6a483811ea180.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.4bcf60afa00d9f5c3adf08ff55811ce4cc679bd6d4b5747d674667994ee1debb.js" defer></script>
     <script type="application/json" id="R-search-config">{
-      "indexFile": "searchindex.pir.min.236bf34e230f11bc60ca718bcc3e07adbb46b91291717cb8bce31038c88717bb.js"
+      "indexFile": "searchindex.pir.min.c2a7e6834462a202a0a1fd0a729f0f6e78b23bfa1cdfee49248aff7d17b9997a.js"
     }</script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
@@ -49,10 +51,9 @@
       ]
     }</script>
     <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" class="R-async-style"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
-    <link href="/hugo-theme-relearn/css/theme.min.c5e57f8072c26c3936afb7f1f29896beccceeb26ad977baa337cb1cbf585deea.css" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/format-print.min.39e0dc30e3ca73e623fcf660fac10bf09db5539b3d13e59e90977cf7137e6aee.css" rel="stylesheet" id="R-format-style">
+    <link href="/hugo-theme-relearn/css/theme.min.8cd3fb0d94b35d653c73be5b6192808bb4d4b49792cbf9c092307d30edc9487f.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/format-print.min.fde31a3bc19a193360c646fd67b62d0fb98ae684449d1922b5ac0ed941277607.css" rel="stylesheet" id="R-format-style">
     <script type="application/json" id="R-theme-config">{
-      "absBaseUri": "https://fkaminski.github.io/hugo-theme-relearn",
       "disableInlineCopyToClipboard": true,
       "enableBlockCodeWrap": true,
       "path": "/pir/shortcodes/tree/index.html",
@@ -66,6 +67,9 @@
         "zen-auto",
         "zen-dark",
         "zen-light",
+        "contrast-auto",
+        "contrast-dark",
+        "contrast-light",
         "retro-auto",
         "neon",
         "learn",
@@ -75,16 +79,24 @@
       ],
       "translations": {
         "Browser_unsupported_feature": "This browserrr doesn't supporrrt this featurrre",
+        "Close_graph": "Close th' enlarrrged chart",
         "Copied_to_clipboard": "Text copied t' clipboard!",
         "Copy_to_clipboard": "Copy text t' clipboard",
+        "Deleted_text_end": "End o' text sent overboard",
+        "Deleted_text_start": "Start o' text sent overboard",
+        "Enlarge_graph": "Enlarrrge th' chart",
+        "History_cleared": "Historrry clearrred",
+        "Inserted_text_end": "End o' text hauled aboard",
+        "Inserted_text_start": "Start o' text hauled aboard",
         "Link_copied_to_clipboard": "Link copied t' clipboard!",
+        "N_matches_on_page": "{1} matches fer \"{0}\" on this here page",
         "N_results_found": "{1} rrresults found fer \"{0}\"",
         "No_results_found": "No rrresults found fer \"{0}\"",
         "Reset_view": "Rrreset view",
         "View_reset": "View rrreset!"
       }
     }</script>
-    <script src="/hugo-theme-relearn/js/theme-head.min.eb092668f5b427260df95861e28028bbd22ff85e2af068b9bfbedf0cbdbea887.js"></script>
+    <script src="/hugo-theme-relearn/js/theme-head.min.8c8c3bb99b655d91386ff7fefb5fceeb088bff4bb82bcde54fbef7dacb3388cc.js"></script>
     <style>
        
       #R-body img.bg-white {
@@ -93,20 +105,21 @@
     </style>
   </head>
   <body class="mobile-support print" data-origin="/hugo-theme-relearn/pir/shortcodes/tree/index.html">
+    <a id="R-skip-link" href="#R-body-inner">Skip t&#39; th&#39; main rrreadin&#39;</a>
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
-      <nav id="R-topbar" class="default-animation">
+      <header id="R-topbar" class="default-animation">
         <div class="topbar-wrapper default-animation">
           <div class="topbar-sidebar-divider default-animation"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)" aria-label="Menu (CTRL&#43;ALT&#43;n)" aria-expanded="false"><i class="fa-fw fas fa-bars" aria-hidden="true"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table o&#39; Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table o&#39; Contents (CTRL&#43;ALT&#43;t)" aria-label="Table o&#39; Contents (CTRL&#43;ALT&#43;t)" aria-expanded="false"><i class="fa-fw fas fa-table-list" aria-hidden="true"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper" tabindex="-1">
-<nav class="TableOfContents">
+<nav class="TableOfContents" aria-label="Table o&#39; Contents">
   <ul>
     <li><a href="#usage">Usage</a>
       <ul>
@@ -126,33 +139,43 @@
               </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/pir/index.html"><span itemprop="name">Cap&#39;n Hugo Relearrrn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/pir/shortcodes/index.html"><span itemprop="name">Shorrrtcodes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Tree</span><meta itemprop="position" content="3"></li>
-          </ol>
+          <div class="topbar-area topbar-area-middle" data-area="middle">
+            <nav class="topbar-breadcrumbs breadcrumbs highlightable" aria-label="Brrreadcrumbs" data-overflow-title="Shorrrtcodes &gt; Tree">
+              <ol itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/pir/index.html" tabindex="-1"><span itemprop="name">Cap&#39;n Hugo Relearrrn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/pir/shortcodes/index.html"><span itemprop="name">Shorrrtcodes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="" aria-current="page"><span itemprop="name">Tree</span><meta itemprop="position" content="3"></li>
+              </ol>
+            </nav>
+          </div>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/shortcodes/tree/_index.pir.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen"></i></a></span>
-            </div>
-            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/pir/shortcodes/tree/index.print.html" title="Prrrint whole chapterrr (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
             <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/pir/shortcodes/tabs/index.html" title="Tabs (🡒)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Tabs (🡒)" href="/hugo-theme-relearn/pir/shortcodes/tabs/index.html" title="Tabs (🡒)"><i class="fa-fw fas fa-chevron-left" aria-hidden="true"></i></a></span>
             </div>
             <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle"><span><i class="fa-fw fas fa-chevron-right"></i></span></span>
+<span class="btn cstyle button link noborder notitle"><span><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i></span></span>
             </div>
             <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Morrre"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Morrre" aria-label="Morrre" aria-expanded="false"><i class="fa-fw fas fa-ellipsis-v" aria-hidden="true"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper" tabindex="-1">
                   <div class="topbar-area topbar-area-more" data-area="more">
+            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Edit (CTRL+ALT+w)" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/shortcodes/tree/_index.pir.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-source default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Show source code" href="/hugo-theme-relearn/pir/shortcodes/tree/index.source.md" title="Show source code"><i class="fa-fw fas fa-code" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-markdown default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Show Marrrkd'n" href="/hugo-theme-relearn/pir/shortcodes/tree/index.md" title="Show Marrrkd'n"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Prrrint whole chapterrr (CTRL+ALT+p)" href="/hugo-theme-relearn/pir/shortcodes/tree/index.print.html" title="Prrrint whole chapterrr (CTRL+ALT+p)"><i class="fa-fw fas fa-print" aria-hidden="true"></i></a></span>
+            </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </nav>
+      </header>
       <div id="R-main-overlay"></div>
       <main id="R-body-inner" class="highlightable shortcodes" tabindex="-1">
         <div class="flex-block-wrapper">
@@ -165,50 +188,52 @@
 <p>Th' <code>tree</code> shortcode displays text as a tree wit' configur'ble ay'cons an' colors.</p>
 
 <div class="list-tree"><ul>
-<li><i class="fa-fw fas fa-folder"></i><span>home</span><ul>
-<li><i class="fa-fw fas fa-folder"></i><span><a href="http://example.com" rel="external" target="_self">.config</a></span></li>
-<li><i class="fa-fw fas fa-folder magic cstyle"></i><span>My Documents</span><ul>
-<li><i class="fa-fw fab fa-php" style="color: #888cc4;"></i><span>home.php</span></li>
+<li><i class="fa-fw fas fa-folder" aria-hidden="true"></i><span>home</span><ul>
+<li><i class="fa-fw fas fa-folder" aria-hidden="true"></i><span><a href="http://example.com" rel="external" target="_self">.config</a></span></li>
+<li><i class="fa-fw fas fa-folder magic cstyle" aria-hidden="true"></i><span>My Documents</span><ul>
+<li><i class="fa-fw fab fa-php" aria-hidden="true" style="color: #888cc4;"></i><span>home.php</span></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </div>
-<h2 id="usage">Usage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="usage">Usage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-ef1fe704de82e89913644f1b5c0ce1f2" aria-expanded="true"
-      data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Marrrkdown</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-6ea3c96b1a9f8ecf3a3d848cc2e13648" aria-expanded="false"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-1e14a12d0f133a31aecace4cb3421119" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-088bddf5f4e755c35d853ba1ad4103fe-tab" aria-controls="R-tab-id-088bddf5f4e755c35d853ba1ad4103fe" aria-selected="true"
+        data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Marrrkdown</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-3bf4a8a49e3ac2877e59d55d3e40edfe-tab" aria-controls="R-tab-id-3bf4a8a49e3ac2877e59d55d3e40edfe" aria-selected="false"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-7b65fda0f94c8bb76cb20889e5178821-tab" aria-controls="R-tab-id-7b65fda0f94c8bb76cb20889e5178821" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-ef1fe704de82e89913644f1b5c0ce1f2"
+      id="R-tab-id-088bddf5f4e755c35d853ba1ad4103fe" role="tabpanel" aria-labelledby="R-tab-id-088bddf5f4e755c35d853ba1ad4103fe-tab"
       data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```tree
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```tree
 </span></span></span><span class="line"><span class="cl"><span class="s">- home | folder
 </span></span></span><span class="line"><span class="cl"><span class="s">  - [.config](http://example.com) | folder
 </span></span></span><span class="line"><span class="cl"><span class="s">  - My Documents | folder | magic
@@ -217,11 +242,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-6ea3c96b1a9f8ecf3a3d848cc2e13648"
+      id="R-tab-id-3bf4a8a49e3ac2877e59d55d3e40edfe" role="tabpanel" aria-labelledby="R-tab-id-3bf4a8a49e3ac2877e59d55d3e40edfe-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tree</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tree</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="o">-</span><span class="w"> </span><span class="nx">home</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nx">folder</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="o">-</span><span class="w"> </span><span class="p">[.</span><span class="nx">config</span><span class="p">](</span><span class="nx">http</span><span class="p">:</span><span class="cp">//example.com) | folder</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="o">-</span><span class="w"> </span><span class="nx">My</span><span class="w"> </span><span class="nx">Documents</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nx">folder</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nx">magic</span><span class="w">
@@ -230,11 +255,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-1e14a12d0f133a31aecace4cb3421119"
+      id="R-tab-id-7b65fda0f94c8bb76cb20889e5178821" role="tabpanel" aria-labelledby="R-tab-id-7b65fda0f94c8bb76cb20889e5178821-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/tree.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/tree.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;- home | folder\r\n  - [.config](http://example.com) | folder\r\n  - My Documents | folder | magic\r\n    - home.php | fa-fw fab fa-php | #888cc4&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
@@ -243,7 +268,7 @@
   </div>
 </div>
 <p>Marrrkdown codefence rules be widely avail'ble 'n other Marrrkdown parsers like GitHub an' therefore be th' recommended rules fer generat'n portable Marrrkdown.</p>
-<h3 id="parameters">Parameters<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="parameters">Parameters<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
 <table>
   <thead>
     <tr>
@@ -260,7 +285,7 @@
     </tr>
   </tbody>
 </table>
-<h3 id="item-syntax">Item Rules<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="item-syntax">Item Rules<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
 <p><code>&lt;NAME&gt;</code> [ <code>|</code> <code>&lt;ICON&gt;</code> [ <code>|</code> <code>&lt;COLOR&gt;</code> ] ]</p>
 <p>Th' <strong>NAME</strong> can be followed by an optional pipe (<code>|</code>) t' define an <strong>ICON</strong> an' further optional pipe t' define th' icon&rsquo;s <strong>COLOR</strong>.</p>
 <ul>
@@ -271,51 +296,53 @@
 <p><strong>COLOR</strong>: Th' <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" rel="external" target="_self">CSS color value</a> t' be used. If not set, th' primary color will be used.</p>
 <p>Ye can also set a <strong>style</strong> value known from other shorrrtcodes.</p>
 <ul>
-<li>by severity: <code>caut'n</code>, <code>important</code>, <code>info</code>, <code>note</code>, <code>tip</code>, <code>warning</code></li>
+<li>by severity: <code>caution</code>, <code>important</code>, <code>info</code>, <code>note</code>, <code>tip</code>, <code>warning</code></li>
 <li>by brand color: <code>primary</code>, <code>secondary</code>, <code>accent</code></li>
 <li>by color: <code>blue</code>, <code>cyan</code>, <code>green</code>, <code>grey</code>, <code>magenta</code>, <code>orange</code>, <code>red</code></li>
-<li>by special color: <code>default</code>, <code>transparent</code>, <code>code</code>, <code>link</code>, <code>act'n</code>, <code>inline</code></li>
-<li>ye can also <a href="/hugo-theme-relearn/pir/shortcodes/notice/index.html#defining-own-styles">define yer own styles</a>.</li>
+<li>by special color: <code>default</code>, <code>transparent</code>, <code>code</code>, <code>link</code>, <code>action</code>, <code>inline</code></li>
+<li>ye can also <a href="/hugo-theme-relearn/pir/shortcodes/callout/index.html#defining-own-styles">define yer own styles</a>.</li>
 </ul>
 <p>If a <strong>style</strong> an' a named HTML color have th' same name, th' <strong>style</strong> color will be used.</p>
 </li>
 </ul>
-<h2 id="examples">Examples<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<h3 id="tree-command-output"><code>tree</code> Command Output<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h2 id="examples">Examples<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<h3 id="tree-command-output"><code>tree</code> Command Output<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
 <p>Use th' <code>tree</code> command o' yer favorite operat'n system an' dump it right into th' shortcode. Avast, that th' directory marker (here <code>C:.</code>) be removed if present.</p>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-ac7dae6e806679851c2770322ae04cac" aria-expanded="true"
-      data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Marrrkdown</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-b3602fb82ca0cfcf62e6a91674700194" aria-expanded="false"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-75e2b6615d6a9ea4017c89a09aec6c69" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-23dc05da7fd0769cb94f8dab18f21cb6-tab" aria-controls="R-tab-id-23dc05da7fd0769cb94f8dab18f21cb6" aria-selected="true"
+        data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Marrrkdown</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-a0eb9fc508d3febecd932764c862931f-tab" aria-controls="R-tab-id-a0eb9fc508d3febecd932764c862931f" aria-selected="false"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-612e78fca873b176a617c4fc2729f3a0-tab" aria-controls="R-tab-id-612e78fca873b176a617c4fc2729f3a0" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-ac7dae6e806679851c2770322ae04cac"
+      id="R-tab-id-23dc05da7fd0769cb94f8dab18f21cb6" role="tabpanel" aria-labelledby="R-tab-id-23dc05da7fd0769cb94f8dab18f21cb6-tab"
       data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```tree
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```tree
 </span></span></span><span class="line"><span class="cl"><span class="s">C:.
 </span></span></span><span class="line"><span class="cl"><span class="s">│   featured.png
 </span></span></span><span class="line"><span class="cl"><span class="s">│   index.en.md
@@ -331,11 +358,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-b3602fb82ca0cfcf62e6a91674700194"
+      id="R-tab-id-a0eb9fc508d3febecd932764c862931f" role="tabpanel" aria-labelledby="R-tab-id-a0eb9fc508d3febecd932764c862931f-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tree</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tree</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nx">C</span><span class="p">:.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="err">│</span><span class="w">   </span><span class="nx">featured</span><span class="p">.</span><span class="nx">png</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="err">│</span><span class="w">   </span><span class="nx">index</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">md</span><span class="w">
@@ -351,11 +378,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-75e2b6615d6a9ea4017c89a09aec6c69"
+      id="R-tab-id-612e78fca873b176a617c4fc2729f3a0" role="tabpanel" aria-labelledby="R-tab-id-612e78fca873b176a617c4fc2729f3a0-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/tree.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/tree.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;C:.\r\n│   featured.png\r\n│   index.en.md\r\n│   index.pir.md\r\n│   MaybeTreasure.en.txt\r\n│   MaybeTreasure.pir.txt\r\n│   NoTreasure.en.txt\r\n│   Treasure.pir.txt\r\n│\r\n└───subdir\r\n        hugo.png&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
@@ -378,41 +405,43 @@
 </li>
 </ul>
 </div>
-<h3 id="markdown-list-with-styled-items">Marrrkdown List wit' Styled Items<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="markdown-list-with-styled-items">Marrrkdown List wit' Styled Items<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
 <p>Every poss'ble combinat'n</p>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-ba5635eef25661776f8fb34404dde48e" aria-expanded="true"
-      data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Marrrkdown</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-36d1e13459a38cd8b84293ec8d971bbf" aria-expanded="false"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-183820c7dc773309ecc968d582860125" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-101e1790f74c4adfc44da0d5211f4f8b-tab" aria-controls="R-tab-id-101e1790f74c4adfc44da0d5211f4f8b" aria-selected="true"
+        data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Marrrkdown</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-822ee0f9724b9a0d4c65b8e8a8ae08fa-tab" aria-controls="R-tab-id-822ee0f9724b9a0d4c65b8e8a8ae08fa" aria-selected="false"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-4151eb396fbd66e9aadfb6e7cedc2e9e-tab" aria-controls="R-tab-id-4151eb396fbd66e9aadfb6e7cedc2e9e" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-ba5635eef25661776f8fb34404dde48e"
+      id="R-tab-id-101e1790f74c4adfc44da0d5211f4f8b" role="tabpanel" aria-labelledby="R-tab-id-101e1790f74c4adfc44da0d5211f4f8b-tab"
       data-tab-item="R-tab-2182a74bab7188d959e795d9301e87ff"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```tree
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="s">```tree
 </span></span></span><span class="line"><span class="cl"><span class="s">- just names
 </span></span></span><span class="line"><span class="cl"><span class="s">  - Document
 </span></span></span><span class="line"><span class="cl"><span class="s">  - My Document
@@ -431,11 +460,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-36d1e13459a38cd8b84293ec8d971bbf"
+      id="R-tab-id-822ee0f9724b9a0d4c65b8e8a8ae08fa" role="tabpanel" aria-labelledby="R-tab-id-822ee0f9724b9a0d4c65b8e8a8ae08fa-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tree</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tree</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="o">-</span><span class="w"> </span><span class="nx">just</span><span class="w"> </span><span class="nx">names</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="o">-</span><span class="w"> </span><span class="nx">Document</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="o">-</span><span class="w"> </span><span class="nx">My</span><span class="w"> </span><span class="nx">Document</span><span class="w">
@@ -454,11 +483,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-183820c7dc773309ecc968d582860125"
+      id="R-tab-id-4151eb396fbd66e9aadfb6e7cedc2e9e" role="tabpanel" aria-labelledby="R-tab-id-4151eb396fbd66e9aadfb6e7cedc2e9e-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/tree.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/tree.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;- just names\r\n  - Document\r\n  - My Document\r\n  - [My linked Document](http://example.com)\r\n- simple ay'cons | folder\r\n  - Document | file\r\n  - My Document | file\r\n- mindblow'n icons\r\n  - index.md | fa-fw fab fa-markdown\r\n  - index.html | fa-fw fab fa-html5\r\n- an' now wit' color\r\n  - script.php | fa-fw fab fa-php | purple\r\n  - alt script.php | fa-fw fab fa-php | #888cc4\r\n  - magic.php | fa-fw fab fa-php | magic&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
@@ -474,22 +503,22 @@
 <li><a href="http://example.com" rel="external" target="_self">My linked Document</a></li>
 </ul>
 </li>
-<li><i class="fa-fw fas fa-folder"></i><span>simple ay'cons</span><ul>
-<li><i class="fa-fw fas fa-file"></i><span>Document</span></li>
-<li><i class="fa-fw fas fa-file"></i><span>My Document</span></li>
+<li><i class="fa-fw fas fa-folder" aria-hidden="true"></i><span>simple ay'cons</span><ul>
+<li><i class="fa-fw fas fa-file" aria-hidden="true"></i><span>Document</span></li>
+<li><i class="fa-fw fas fa-file" aria-hidden="true"></i><span>My Document</span></li>
 </ul>
 </li>
 <li>mindblow'n ay'cons
 <ul>
-<li><i class="fa-fw fab fa-markdown"></i><span>index.md</span></li>
-<li><i class="fa-fw fab fa-html5"></i><span>index.html</span></li>
+<li><i class="fa-fw fab fa-markdown" aria-hidden="true"></i><span>index.md</span></li>
+<li><i class="fa-fw fab fa-html5" aria-hidden="true"></i><span>index.html</span></li>
 </ul>
 </li>
 <li>an' now wit' color
 <ul>
-<li><i class="fa-fw fab fa-php" style="color: purple;"></i><span>script.php</span></li>
-<li><i class="fa-fw fab fa-php" style="color: #888cc4;"></i><span>alt script.php</span></li>
-<li><i class="fa-fw fab fa-php magic cstyle"></i><span>magic.php</span></li>
+<li><i class="fa-fw fab fa-php" aria-hidden="true" style="color: purple;"></i><span>script.php</span></li>
+<li><i class="fa-fw fab fa-php" aria-hidden="true" style="color: #888cc4;"></i><span>alt script.php</span></li>
+<li><i class="fa-fw fab fa-php magic cstyle" aria-hidden="true"></i><span>magic.php</span></li>
 </ul>
 </li>
 </ul>
@@ -498,7 +527,7 @@
 
   <footer class="footline">
 <div class="R-taxonomy taxonomy-categories" title="Categorrries">
-  <i class="fa-fw fas fa-layer-group"></i>
+  <i class="fa-fw fas fa-layer-group" aria-hidden="true"></i>
   <ul>
     <li><a class="term-link" href="/hugo-theme-relearn/pir/categories/howto/index.html">Howto</a></li>
     <li><a class="term-link" href="/hugo-theme-relearn/pir/categories/reference/index.html">Reference</a></li>
@@ -509,7 +538,7 @@
         </div>
       </main>
     </div>
-    <script src="/hugo-theme-relearn/js/theme.min.5e81b78e5900bce96f55e277df01b5b477b164c8094c7fc0a689ccfd86eeb4b3.js" defer></script>
+    <script src="/hugo-theme-relearn/js/theme.min.f66b851115ea46f239f782bd19e65c09786103c8cb054f72664b912bc561d1c8.js" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

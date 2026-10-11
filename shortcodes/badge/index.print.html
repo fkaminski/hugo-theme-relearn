@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.166.0">
-    <meta name="generator" content="Relearn 9.1.0+edd32dd46699cf37d4c81be4a1fbeb8bd7112e9e">
+    <meta name="generator" content="Hugo 0.167.0">
+    <meta name="generator" content="Relearn 9.2.0+a9b397c5d13bccbd206ef42c15e37966e99cda51">
     <meta name="description" content="Marker badges to display in your text">
     <meta name="author" content="Sören Weber">
     <meta name="twitter:card" content="summary_large_image">
@@ -29,13 +29,15 @@
     <link href="https://fkaminski.github.io/hugo-theme-relearn/pir/shortcodes/badge/index.html" rel="alternate" hreflang="art-x-pir">
     <link href="https://fkaminski.github.io/hugo-theme-relearn/shortcodes/badge/index.html" rel="canonical" type="text/html" title="Badge :: Hugo Relearn Theme">
     <link href="/hugo-theme-relearn/shortcodes/badge/index.xml" rel="alternate" type="application/rss+xml" title="Badge :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/shortcodes/badge/index.md" rel="alternate" type="text/markdown" title="Badge :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/shortcodes/badge/index.source.md" rel="alternate" type="text/markdown" title="Badge :: Hugo Relearn Theme">
     <link href="/hugo-theme-relearn/images/logo.d30ab0425821f45713322a73c1eeb192e311689b03371519abbe061a24d1201e.svg" rel="icon" type="image/svg+xml">
     <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.78b49c23f59ffb08554285843ed4c841484fe34c489058b2991edc027cdd47fc.css" rel="stylesheet">
-    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.7b340a2a0841d2466dca47e43cbd8c4dfe6a4f77a6c81c984d49ebb60ba2e299.js" defer></script>
-    <script src="/hugo-theme-relearn/js/search-lunr.min.2e613f0a1ce042c097f61ecc0e3f843d395bf3a42717715f9c08a11dc2f21122.js" defer></script>
-    <script src="/hugo-theme-relearn/js/search.min.373845112980472e938f57e7ec9a00ff9d7b651d7e72cacce2b29211ad5f1924.js" defer></script>
+    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.9657edd589a1ca6962a3cf03df5aa17f16f2c67350aea0a84dddbd8d5698316f.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.9897ffe790e716e8b90e4a9e200dce63c2603e69a9eec9bbdce6a483811ea180.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.4bcf60afa00d9f5c3adf08ff55811ce4cc679bd6d4b5747d674667994ee1debb.js" defer></script>
     <script type="application/json" id="R-search-config">{
-      "indexFile": "searchindex.en.min.00b99188351628699a21cf5dfc96dcbfb52e0b985835ac4b1c8faf03933fbfa8.js"
+      "indexFile": "searchindex.en.min.c4f041a00cc99840cf39073ec5ee0c85a4b4738e5a58acbd24b4ecb2e0d4600e.js"
     }</script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
     <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
@@ -47,10 +49,9 @@
       ]
     }</script>
     <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" class="R-async-style"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
-    <link href="/hugo-theme-relearn/css/theme.min.c5e57f8072c26c3936afb7f1f29896beccceeb26ad977baa337cb1cbf585deea.css" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/format-print.min.39e0dc30e3ca73e623fcf660fac10bf09db5539b3d13e59e90977cf7137e6aee.css" rel="stylesheet" id="R-format-style">
+    <link href="/hugo-theme-relearn/css/theme.min.8cd3fb0d94b35d653c73be5b6192808bb4d4b49792cbf9c092307d30edc9487f.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/format-print.min.fde31a3bc19a193360c646fd67b62d0fb98ae684449d1922b5ac0ed941277607.css" rel="stylesheet" id="R-format-style">
     <script type="application/json" id="R-theme-config">{
-      "absBaseUri": "https://fkaminski.github.io/hugo-theme-relearn",
       "disableInlineCopyToClipboard": true,
       "enableBlockCodeWrap": true,
       "path": "/shortcodes/badge/index.html",
@@ -64,6 +65,9 @@
         "zen-auto",
         "zen-dark",
         "zen-light",
+        "contrast-auto",
+        "contrast-dark",
+        "contrast-light",
         "retro-auto",
         "neon",
         "learn",
@@ -73,16 +77,24 @@
       ],
       "translations": {
         "Browser_unsupported_feature": "This browser doesn't support this feature",
+        "Close_graph": "Close enlarged graph",
         "Copied_to_clipboard": "Text copied to clipboard!",
         "Copy_to_clipboard": "Copy text to clipboard",
+        "Deleted_text_end": "End of deleted text",
+        "Deleted_text_start": "Start of deleted text",
+        "Enlarge_graph": "Enlarge graph",
+        "History_cleared": "History cleared",
+        "Inserted_text_end": "End of inserted text",
+        "Inserted_text_start": "Start of inserted text",
         "Link_copied_to_clipboard": "Link copied to clipboard!",
+        "N_matches_on_page": "{1} matches for \"{0}\" on this page",
         "N_results_found": "{1} results found for \"{0}\"",
         "No_results_found": "No results found for \"{0}\"",
         "Reset_view": "Reset view",
         "View_reset": "View reset!"
       }
     }</script>
-    <script src="/hugo-theme-relearn/js/theme-head.min.eb092668f5b427260df95861e28028bbd22ff85e2af068b9bfbedf0cbdbea887.js"></script>
+    <script src="/hugo-theme-relearn/js/theme-head.min.8c8c3bb99b655d91386ff7fefb5fceeb088bff4bb82bcde54fbef7dacb3388cc.js"></script>
     <style>
        
       #R-body img.bg-white {
@@ -91,20 +103,21 @@
     </style>
   </head>
   <body class="mobile-support print" data-origin="/hugo-theme-relearn/shortcodes/badge/index.html">
+    <a id="R-skip-link" href="#R-body-inner">Skip to main content</a>
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
-      <nav id="R-topbar" class="default-animation">
+      <header id="R-topbar" class="default-animation">
         <div class="topbar-wrapper default-animation">
           <div class="topbar-sidebar-divider default-animation"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)" aria-label="Menu (CTRL&#43;ALT&#43;n)" aria-expanded="false"><i class="fa-fw fas fa-bars" aria-hidden="true"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)" aria-label="Table of Contents (CTRL&#43;ALT&#43;t)" aria-expanded="false"><i class="fa-fw fas fa-table-list" aria-hidden="true"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper" tabindex="-1">
-<nav class="TableOfContents">
+<nav class="TableOfContents" aria-label="Table of Contents">
   <ul>
     <li><a href="#usage">Usage</a>
       <ul>
@@ -124,33 +137,43 @@
               </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/index.html"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/shortcodes/index.html"><span itemprop="name">Shortcodes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Badge</span><meta itemprop="position" content="3"></li>
-          </ol>
+          <div class="topbar-area topbar-area-middle" data-area="middle">
+            <nav class="topbar-breadcrumbs breadcrumbs highlightable" aria-label="Breadcrumbs" data-overflow-title="Shortcodes &gt; Badge">
+              <ol itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/index.html" tabindex="-1"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/shortcodes/index.html"><span itemprop="name">Shortcodes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="" aria-current="page"><span itemprop="name">Badge</span><meta itemprop="position" content="3"></li>
+              </ol>
+            </nav>
+          </div>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/shortcodes/badge/_index.en.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen"></i></a></span>
-            </div>
-            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/shortcodes/badge/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
             <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/shortcodes/index.html" title="Shortcodes (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Shortcodes (🡐)" href="/hugo-theme-relearn/shortcodes/index.html" title="Shortcodes (🡐)"><i class="fa-fw fas fa-chevron-left" aria-hidden="true"></i></a></span>
             </div>
             <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/shortcodes/button/index.html" title="Button (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Button (🡒)" href="/hugo-theme-relearn/shortcodes/button/index.html" title="Button (🡒)"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i></a></span>
             </div>
             <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="More" aria-label="More" aria-expanded="false"><i class="fa-fw fas fa-ellipsis-v" aria-hidden="true"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper" tabindex="-1">
                   <div class="topbar-area topbar-area-more" data-area="more">
+            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Edit (CTRL+ALT+w)" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/shortcodes/badge/_index.en.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-source default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Show source code" href="/hugo-theme-relearn/shortcodes/badge/index.source.md" title="Show source code"><i class="fa-fw fas fa-code" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-markdown default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Show Markdown" href="/hugo-theme-relearn/shortcodes/badge/index.md" title="Show Markdown"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Print whole chapter (CTRL+ALT+p)" href="/hugo-theme-relearn/shortcodes/badge/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print" aria-hidden="true"></i></a></span>
+            </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </nav>
+      </header>
       <div id="R-main-overlay"></div>
       <main id="R-body-inner" class="highlightable shortcodes" tabindex="-1">
         <div class="flex-block-wrapper">
@@ -164,36 +187,38 @@
 
 <span class="badge cstyle default"><span class="badge-content">Important</span></span>
 <span class="badge cstyle primary badge-with-title"><span class="badge-title">Version</span><span class="badge-content">6.6.6</span></span>
-<span class="badge cstyle red badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-angle-double-up"></i></span><span class="badge-content">Captain</span></span>
-<span class="badge cstyle info badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-info-circle"></i> Info</span><span class="badge-content">New</span></span>
-<span class="badge cstyle default badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank"></i></span><span class="badge-content" style="background-color: fuchsia;">Awesome</span></span>
-<h2 id="usage">Usage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<span class="badge cstyle red badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-angle-double-up" aria-hidden="true"></i></span><span class="badge-content">Captain</span></span>
+<span class="badge cstyle info badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-info-circle" aria-hidden="true"></i> Info</span><span class="badge-content">New</span></span>
+<span class="badge cstyle default badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank" aria-hidden="true"></i></span><span class="badge-content" style="background-color: fuchsia;">Awesome</span></span>
+<h2 id="usage">Usage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-a02f65d6be1a1ecee02a7db369a1c37f" aria-expanded="true"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-02a679273933a600c9e0c67f33f83a25" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-0fcfec2992d4c682b7c9226de25777e4-tab" aria-controls="R-tab-id-0fcfec2992d4c682b7c9226de25777e4" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-f04ee44445cc1be8f695ca2a7b601f8c-tab" aria-controls="R-tab-id-f04ee44445cc1be8f695ca2a7b601f8c" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-a02f65d6be1a1ecee02a7db369a1c37f"
+      id="R-tab-id-0fcfec2992d4c682b7c9226de25777e4" role="tabpanel" aria-labelledby="R-tab-id-0fcfec2992d4c682b7c9226de25777e4-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Important</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Important</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;primary&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Version&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="mf">6.6.6</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;angle-double-up&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;red&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Captain</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;info&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">New</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
@@ -201,11 +226,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-02a679273933a600c9e0c67f33f83a25"
+      id="R-tab-id-f04ee44445cc1be8f695ca2a7b601f8c" role="tabpanel" aria-labelledby="R-tab-id-f04ee44445cc1be8f695ca2a7b601f8c-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;Important&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span><span class="w">
@@ -236,72 +261,74 @@
     </div>
   </div>
 </div>
-<h3 id="parameters">Parameters<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="parameters">Parameters<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
 <table>
-	<thead>
-			<tr>
-					<th>Name</th>
-					<th>Default</th>
-					<th>Notes</th>
-			</tr>
-	</thead>
-	<tbody>
-			<tr>
-					<td><strong>style</strong></td>
-					<td><code>default</code></td>
-					<td>The style scheme used for the badge.<br><br>- by severity: <code>caution</code>, <code>important</code>, <code>info</code>, <code>note</code>, <code>tip</code>, <code>warning</code><br>- by brand color: <code>primary</code>, <code>secondary</code>, <code>accent</code><br>- by color: <code>blue</code>, <code>cyan</code>, <code>green</code>, <code>grey</code>, <code>magenta</code>, <code>orange</code>, <code>red</code><br>- by special color: <code>default</code>, <code>transparent</code>, <code>code</code>, <code>link</code>, <code>action</code>, <code>inline</code><br><br>You can also <a href="/hugo-theme-relearn/shortcodes/notice/index.html#defining-own-styles">define your own styles</a>.</td>
-			</tr>
-			<tr>
-					<td><strong>color</strong></td>
-					<td>see notes</td>
-					<td>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" rel="external" target="_self">CSS color value</a> to be used. If not set, the chosen color depends on the <strong>style</strong>. Any given value will overwrite the default.<br><br>- for severity styles: a nice matching color for the severity<br>- for all other styles: the corresponding color</td>
-			</tr>
-			<tr>
-					<td><strong>title</strong></td>
-					<td>see notes</td>
-					<td>Arbitrary text for the badge title. Depending on the <strong>style</strong> there may be a default title. Any given value will overwrite the default.<br><br>- for severity styles: the matching title for the severity<br>- for all other styles: <em>&lt;empty&gt;</em><br><br>If you want no title for a severity style, you have to set this parameter to <code>&quot; &quot;</code> (a non empty string filled with spaces)</td>
-			</tr>
-			<tr>
-					<td><strong>icon</strong></td>
-					<td>see notes</td>
-					<td><a href="/hugo-theme-relearn/shortcodes/icon/index.html#finding-an-icon">Font Awesome icon name</a> set to the left of the title. Depending on the <strong>style</strong> there may be a default icon. Any given value will overwrite the default.<br><br>- for severity styles: a nice matching icon for the severity<br>- for all other styles: <em>&lt;empty&gt;</em><br><br>If you want no icon for a severity style, you have to set this parameter to <code>&quot; &quot;</code> (a non empty string filled with spaces)</td>
-			</tr>
-			<tr>
-					<td><em><strong>&lt;content&gt;</strong></em></td>
-					<td><em>&lt;empty&gt;</em></td>
-					<td>Arbitrary text for the badge.</td>
-			</tr>
-	</tbody>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Default</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>style</strong></td>
+      <td><code>default</code></td>
+      <td>The style scheme used for the badge.<br><br>- by severity: <code>caution</code>, <code>important</code>, <code>info</code>, <code>note</code>, <code>tip</code>, <code>warning</code><br>- by brand color: <code>primary</code>, <code>secondary</code>, <code>accent</code><br>- by color: <code>blue</code>, <code>cyan</code>, <code>green</code>, <code>grey</code>, <code>magenta</code>, <code>orange</code>, <code>red</code><br>- by special color: <code>default</code>, <code>transparent</code>, <code>code</code>, <code>link</code>, <code>action</code>, <code>inline</code><br><br>You can also <a href="/hugo-theme-relearn/shortcodes/callout/index.html#defining-own-styles">define your own styles</a>.</td>
+    </tr>
+    <tr>
+      <td><strong>color</strong></td>
+      <td>see notes</td>
+      <td>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" rel="external" target="_self">CSS color value</a> to be used. If not set, the chosen color depends on the <strong>style</strong>. Any given value will overwrite the default.<br><br>- for severity styles: a nice matching color for the severity<br>- for all other styles: the corresponding color</td>
+    </tr>
+    <tr>
+      <td><strong>title</strong></td>
+      <td>see notes</td>
+      <td>Arbitrary text for the badge title. Depending on the <strong>style</strong> there may be a default title. Any given value will overwrite the default.<br><br>- for severity styles: the matching title for the severity<br>- for all other styles: <em>&lt;empty&gt;</em><br><br>If you want no title for a severity style, you have to set this parameter to <code>&quot; &quot;</code> (a non empty string filled with spaces)</td>
+    </tr>
+    <tr>
+      <td><strong>icon</strong></td>
+      <td>see notes</td>
+      <td><a href="/hugo-theme-relearn/shortcodes/icon/index.html#finding-an-icon">Font Awesome icon name</a> set to the left of the title. Depending on the <strong>style</strong> there may be a default icon. Any given value will overwrite the default.<br><br>- for severity styles: a nice matching icon for the severity<br>- for all other styles: <em>&lt;empty&gt;</em><br><br>If you want no icon for a severity style, you have to set this parameter to <code>&quot; &quot;</code> (a non empty string filled with spaces)</td>
+    </tr>
+    <tr>
+      <td><em><strong>&lt;content&gt;</strong></em></td>
+      <td><em>&lt;empty&gt;</em></td>
+      <td>Arbitrary text for the badge.</td>
+    </tr>
+  </tbody>
 </table>
-<h2 id="examples">Examples<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<h3 id="style">Style<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<h4 id="by-severity">By Severity<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<h2 id="examples">Examples<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<h3 id="style">Style<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<h4 id="by-severity">By Severity<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h4>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-dfde4eaf576fc01285661bb51d850611" aria-expanded="true"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-04a5ab2c475813ec6eded43352ecfe94" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-76915e8344464c38255c2d517ce15506-tab" aria-controls="R-tab-id-76915e8344464c38255c2d517ce15506" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-1a4cf4ce56a26f0fc798d7a2b110478a-tab" aria-controls="R-tab-id-1a4cf4ce56a26f0fc798d7a2b110478a" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-dfde4eaf576fc01285661bb51d850611"
+      id="R-tab-id-76915e8344464c38255c2d517ce15506" role="tabpanel" aria-labelledby="R-tab-id-76915e8344464c38255c2d517ce15506-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;caution&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Magenta</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;caution&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Magenta</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;important&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Cyan</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;info&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Blue</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;note&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Orange</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
@@ -310,11 +337,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-04a5ab2c475813ec6eded43352ecfe94"
+      id="R-tab-id-1a4cf4ce56a26f0fc798d7a2b110478a" role="tabpanel" aria-labelledby="R-tab-id-1a4cf4ce56a26f0fc798d7a2b110478a-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;Magenta&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;style&#34;</span><span class="w"> </span><span class="s">&#34;caution&#34;</span><span class="w">
@@ -348,49 +375,51 @@
     </div>
   </div>
 </div>
-<span class="badge cstyle caution badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-hand"></i> Caution</span><span class="badge-content">Magenta</span></span>
-<span class="badge cstyle important badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-bolt"></i> Important</span><span class="badge-content">Cyan</span></span>
-<span class="badge cstyle info badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-info-circle"></i> Info</span><span class="badge-content">Blue</span></span>
-<span class="badge cstyle note badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i> Note</span><span class="badge-content">Orange</span></span>
-<span class="badge cstyle tip badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-lightbulb"></i> Tip</span><span class="badge-content">Green</span></span>
-<span class="badge cstyle warning badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-triangle"></i> Warning</span><span class="badge-content">Red</span></span>
-<h4 id="by-brand-colors">By Brand Colors<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<span class="badge cstyle caution badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-hand" aria-hidden="true"></i> Caution</span><span class="badge-content">Magenta</span></span>
+<span class="badge cstyle important badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-bolt" aria-hidden="true"></i> Important</span><span class="badge-content">Cyan</span></span>
+<span class="badge cstyle info badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-info-circle" aria-hidden="true"></i> Info</span><span class="badge-content">Blue</span></span>
+<span class="badge cstyle note badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i> Note</span><span class="badge-content">Orange</span></span>
+<span class="badge cstyle tip badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-lightbulb" aria-hidden="true"></i> Tip</span><span class="badge-content">Green</span></span>
+<span class="badge cstyle warning badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-triangle" aria-hidden="true"></i> Warning</span><span class="badge-content">Red</span></span>
+<h4 id="by-brand-colors">By Brand Colors<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h4>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-aa02d661945ff6bc6cedc729d3003f70" aria-expanded="true"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-4ebb6b86ad81e8d65d30fa3951e06bda" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-47917b2a5a1969eca1bbde899c01f6b7-tab" aria-controls="R-tab-id-47917b2a5a1969eca1bbde899c01f6b7" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-560eed086bbb646c6d4f13d86da95496-tab" aria-controls="R-tab-id-560eed086bbb646c6d4f13d86da95496" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-aa02d661945ff6bc6cedc729d3003f70"
+      id="R-tab-id-47917b2a5a1969eca1bbde899c01f6b7" role="tabpanel" aria-labelledby="R-tab-id-47917b2a5a1969eca1bbde899c01f6b7-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;bullhorn&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;primary&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Announcement&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Mandatory</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;bullhorn&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;primary&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Announcement&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Mandatory</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;bullhorn&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;secondary&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Announcement&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Optional</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;bullhorn&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;accent&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Announcement&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Special</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-4ebb6b86ad81e8d65d30fa3951e06bda"
+      id="R-tab-id-560eed086bbb646c6d4f13d86da95496" role="tabpanel" aria-labelledby="R-tab-id-560eed086bbb646c6d4f13d86da95496-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;Mandatory&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;icon&#34;</span><span class="w"> </span><span class="s">&#34;bullhorn&#34;</span><span class="w">
@@ -415,36 +444,38 @@
     </div>
   </div>
 </div>
-<span class="badge cstyle primary badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-bullhorn"></i> Announcement</span><span class="badge-content">Mandatory</span></span>
-<span class="badge cstyle secondary badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-bullhorn"></i> Announcement</span><span class="badge-content">Optional</span></span>
-<span class="badge cstyle accent badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-bullhorn"></i> Announcement</span><span class="badge-content">Special</span></span>
-<h4 id="by-color">By Color<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<span class="badge cstyle primary badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-bullhorn" aria-hidden="true"></i> Announcement</span><span class="badge-content">Mandatory</span></span>
+<span class="badge cstyle secondary badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-bullhorn" aria-hidden="true"></i> Announcement</span><span class="badge-content">Optional</span></span>
+<span class="badge cstyle accent badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-bullhorn" aria-hidden="true"></i> Announcement</span><span class="badge-content">Special</span></span>
+<h4 id="by-color">By Color<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h4>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-53b77fd42fa7d67113c2b4011cf6e884" aria-expanded="true"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-09c42a3fe7e6e33d97a02df1f09c001d" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-2228fcf11b7ede0374f232b7e0463226-tab" aria-controls="R-tab-id-2228fcf11b7ede0374f232b7e0463226" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-253fc9191284a625b1c3dcd2b87612cc-tab" aria-controls="R-tab-id-253fc9191284a625b1c3dcd2b87612cc" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-53b77fd42fa7d67113c2b4011cf6e884"
+      id="R-tab-id-2228fcf11b7ede0374f232b7e0463226" role="tabpanel" aria-labelledby="R-tab-id-2228fcf11b7ede0374f232b7e0463226-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;palette&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;blue&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Color&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Blue</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;palette&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;blue&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Color&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Blue</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;palette&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;cyan&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Color&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Cyan</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;palette&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;green&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Color&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Green</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;palette&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;grey&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Color&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Grey</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
@@ -454,11 +485,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-09c42a3fe7e6e33d97a02df1f09c001d"
+      id="R-tab-id-253fc9191284a625b1c3dcd2b87612cc" role="tabpanel" aria-labelledby="R-tab-id-253fc9191284a625b1c3dcd2b87612cc-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;Blue&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;icon&#34;</span><span class="w"> </span><span class="s">&#34;palette&#34;</span><span class="w">
@@ -511,40 +542,42 @@
     </div>
   </div>
 </div>
-<span class="badge cstyle blue badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette"></i> Color</span><span class="badge-content">Blue</span></span>
-<span class="badge cstyle cyan badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette"></i> Color</span><span class="badge-content">Cyan</span></span>
-<span class="badge cstyle green badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette"></i> Color</span><span class="badge-content">Green</span></span>
-<span class="badge cstyle grey badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette"></i> Color</span><span class="badge-content">Grey</span></span>
-<span class="badge cstyle magenta badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette"></i> Color</span><span class="badge-content">Magenta</span></span>
-<span class="badge cstyle orange badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette"></i> Color</span><span class="badge-content">Orange</span></span>
-<span class="badge cstyle red badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette"></i> Color</span><span class="badge-content">Red</span></span>
-<h4 id="by-special-color">By Special Color<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<span class="badge cstyle blue badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette" aria-hidden="true"></i> Color</span><span class="badge-content">Blue</span></span>
+<span class="badge cstyle cyan badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette" aria-hidden="true"></i> Color</span><span class="badge-content">Cyan</span></span>
+<span class="badge cstyle green badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette" aria-hidden="true"></i> Color</span><span class="badge-content">Green</span></span>
+<span class="badge cstyle grey badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette" aria-hidden="true"></i> Color</span><span class="badge-content">Grey</span></span>
+<span class="badge cstyle magenta badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette" aria-hidden="true"></i> Color</span><span class="badge-content">Magenta</span></span>
+<span class="badge cstyle orange badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette" aria-hidden="true"></i> Color</span><span class="badge-content">Orange</span></span>
+<span class="badge cstyle red badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette" aria-hidden="true"></i> Color</span><span class="badge-content">Red</span></span>
+<h4 id="by-special-color">By Special Color<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h4>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-93ccf5dc6377bb5ded4b8aed93a9c661" aria-expanded="true"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-98d0f9ec606fb8730e5ea3128da07e10" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-0a9dee7f3b8af818b58d5898dee8b0bf-tab" aria-controls="R-tab-id-0a9dee7f3b8af818b58d5898dee8b0bf" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-3e0c568c9211e159a635028ee20e08fb-tab" aria-controls="R-tab-id-3e0c568c9211e159a635028ee20e08fb" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-93ccf5dc6377bb5ded4b8aed93a9c661"
+      id="R-tab-id-0a9dee7f3b8af818b58d5898dee8b0bf" role="tabpanel" aria-labelledby="R-tab-id-0a9dee7f3b8af818b58d5898dee8b0bf-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;palette&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;default&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Color&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Default</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;palette&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;default&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Color&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Default</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;palette&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;transparent&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Color&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Transparent</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;palette&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;code&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Color&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Code</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;palette&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;link&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Color&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Link</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
@@ -553,11 +586,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-98d0f9ec606fb8730e5ea3128da07e10"
+      id="R-tab-id-3e0c568c9211e159a635028ee20e08fb" role="tabpanel" aria-labelledby="R-tab-id-3e0c568c9211e159a635028ee20e08fb-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;Default&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;icon&#34;</span><span class="w"> </span><span class="s">&#34;palette&#34;</span><span class="w">
@@ -603,50 +636,52 @@
     </div>
   </div>
 </div>
-<span class="badge cstyle default badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette"></i> Color</span><span class="badge-content">Default</span></span>
-<span class="badge cstyle transparent badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette"></i> Color</span><span class="badge-content">Transparent</span></span>
-<span class="badge cstyle code badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette"></i> Color</span><span class="badge-content">Code</span></span>
-<span class="badge cstyle link badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette"></i> Color</span><span class="badge-content">Link</span></span>
-<span class="badge cstyle action badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette"></i> Color</span><span class="badge-content">Action</span></span>
-<span class="badge cstyle inline badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette"></i> Color</span><span class="badge-content">Inline</span></span>
-<h3 id="variants">Variants<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<h4 id="without-icon-and-title-text">Without Icon and Title Text<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<span class="badge cstyle default badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette" aria-hidden="true"></i> Color</span><span class="badge-content">Default</span></span>
+<span class="badge cstyle transparent badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette" aria-hidden="true"></i> Color</span><span class="badge-content">Transparent</span></span>
+<span class="badge cstyle code badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette" aria-hidden="true"></i> Color</span><span class="badge-content">Code</span></span>
+<span class="badge cstyle link badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette" aria-hidden="true"></i> Color</span><span class="badge-content">Link</span></span>
+<span class="badge cstyle action badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette" aria-hidden="true"></i> Color</span><span class="badge-content">Action</span></span>
+<span class="badge cstyle inline badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-palette" aria-hidden="true"></i> Color</span><span class="badge-content">Inline</span></span>
+<h3 id="variants">Variants<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<h4 id="without-icon-and-title-text">Without Icon and Title Text<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h4>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-8f6ac4de76eb135acc4b5f22c171766e" aria-expanded="true"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-cf002a2f283f3cebfd5da36b222a94c4" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-8323497720fd277e111a7556e9d639cb-tab" aria-controls="R-tab-id-8323497720fd277e111a7556e9d639cb" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-a0225f89c8f6535e9095f136bdfd3b24-tab" aria-controls="R-tab-id-a0225f89c8f6535e9095f136bdfd3b24" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-8f6ac4de76eb135acc4b5f22c171766e"
+      id="R-tab-id-8323497720fd277e111a7556e9d639cb" role="tabpanel" aria-labelledby="R-tab-id-8323497720fd277e111a7556e9d639cb-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="mf">6.6.6</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="mf">6.6.6</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34; &#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;info&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34; &#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Awesome</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;red&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Captain</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-cf002a2f283f3cebfd5da36b222a94c4"
+      id="R-tab-id-a0225f89c8f6535e9095f136bdfd3b24" role="tabpanel" aria-labelledby="R-tab-id-a0225f89c8f6535e9095f136bdfd3b24-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;6.6.6&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span><span class="w">
@@ -669,43 +704,45 @@
 <span class="badge cstyle default"><span class="badge-content">6.6.6</span></span>
 <span class="badge cstyle info"><span class="badge-content">Awesome</span></span>
 <span class="badge cstyle red"><span class="badge-content">Captain</span></span>
-<h4 id="without-icon">Without Icon<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<h4 id="without-icon">Without Icon<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h4>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-9c8b17b6c4355f342e67bbf2761e972e" aria-expanded="true"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-693733e70eee83c38fe0a5f1d5477d46" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-8ca07534592dc582666b378820b146f9-tab" aria-controls="R-tab-id-8ca07534592dc582666b378820b146f9" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-43d89e61c421c4e9dae71a8c754fcf26-tab" aria-controls="R-tab-id-43d89e61c421c4e9dae71a8c754fcf26" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-9c8b17b6c4355f342e67bbf2761e972e"
+      id="R-tab-id-8ca07534592dc582666b378820b146f9" role="tabpanel" aria-labelledby="R-tab-id-8ca07534592dc582666b378820b146f9-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Version&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="mf">6.6.6</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Version&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="mf">6.6.6</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34; &#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;info&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Awesome</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;red&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Rank&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Captain</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-693733e70eee83c38fe0a5f1d5477d46"
+      id="R-tab-id-43d89e61c421c4e9dae71a8c754fcf26" role="tabpanel" aria-labelledby="R-tab-id-43d89e61c421c4e9dae71a8c754fcf26-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;6.6.6&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;Version&#34;</span><span class="w">
@@ -729,43 +766,45 @@
 <span class="badge cstyle default badge-with-title"><span class="badge-title">Version</span><span class="badge-content">6.6.6</span></span>
 <span class="badge cstyle info badge-with-title"><span class="badge-title">Info</span><span class="badge-content">Awesome</span></span>
 <span class="badge cstyle red badge-with-title"><span class="badge-title">Rank</span><span class="badge-content">Captain</span></span>
-<h4 id="without-title-text">Without Title Text<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<h4 id="without-title-text">Without Title Text<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h4>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-677caa0f19ac9e550a3888d0534b3be6" aria-expanded="true"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-100866dca33f9a2ecf6798c0034c0325" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-335bceaf3c4cae3fe549b8cb37d3b75b-tab" aria-controls="R-tab-id-335bceaf3c4cae3fe549b8cb37d3b75b" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-a945bfc847b30263ad41a45065fd32b2-tab" aria-controls="R-tab-id-a945bfc847b30263ad41a45065fd32b2" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-677caa0f19ac9e550a3888d0534b3be6"
+      id="R-tab-id-335bceaf3c4cae3fe549b8cb37d3b75b" role="tabpanel" aria-labelledby="R-tab-id-335bceaf3c4cae3fe549b8cb37d3b75b-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;star&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="mf">6.6.6</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;star&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="mf">6.6.6</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;info&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34; &#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Awesome</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;angle-double-up&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;red&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Captain</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-100866dca33f9a2ecf6798c0034c0325"
+      id="R-tab-id-a945bfc847b30263ad41a45065fd32b2" role="tabpanel" aria-labelledby="R-tab-id-a945bfc847b30263ad41a45065fd32b2-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;6.6.6&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;icon&#34;</span><span class="w"> </span><span class="s">&#34;star&#34;</span><span class="w">
@@ -786,46 +825,48 @@
     </div>
   </div>
 </div>
-<span class="badge cstyle default badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-star"></i></span><span class="badge-content">6.6.6</span></span>
-<span class="badge cstyle info badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-info-circle"></i></span><span class="badge-content">Awesome</span></span>
-<span class="badge cstyle red badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-angle-double-up"></i></span><span class="badge-content">Captain</span></span>
-<h4 id="all-set">All Set<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<span class="badge cstyle default badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-star" aria-hidden="true"></i></span><span class="badge-content">6.6.6</span></span>
+<span class="badge cstyle info badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-info-circle" aria-hidden="true"></i></span><span class="badge-content">Awesome</span></span>
+<span class="badge cstyle red badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-angle-double-up" aria-hidden="true"></i></span><span class="badge-content">Captain</span></span>
+<h4 id="all-set">All Set<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h4>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-36c9ca095c6563d692da357fc948e5d2" aria-expanded="true"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-526be347d9ba06fc81305d17a5375046" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-a9c6373c14d0d1bf7e60411339c57474-tab" aria-controls="R-tab-id-a9c6373c14d0d1bf7e60411339c57474" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-a8af8fb808ff9d2b0c0d5d63e9ac6fdb-tab" aria-controls="R-tab-id-a8af8fb808ff9d2b0c0d5d63e9ac6fdb" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-36c9ca095c6563d692da357fc948e5d2"
+      id="R-tab-id-a9c6373c14d0d1bf7e60411339c57474" role="tabpanel" aria-labelledby="R-tab-id-a9c6373c14d0d1bf7e60411339c57474-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;star&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Version&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="mf">6.6.6</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;star&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Version&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="mf">6.6.6</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;info&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Awesome</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;angle-double-up&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;red&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Rank&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Captain</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-526be347d9ba06fc81305d17a5375046"
+      id="R-tab-id-a8af8fb808ff9d2b0c0d5d63e9ac6fdb" role="tabpanel" aria-labelledby="R-tab-id-a8af8fb808ff9d2b0c0d5d63e9ac6fdb-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;6.6.6&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;icon&#34;</span><span class="w"> </span><span class="s">&#34;star&#34;</span><span class="w">
@@ -847,44 +888,46 @@
     </div>
   </div>
 </div>
-<span class="badge cstyle default badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-star"></i> Version</span><span class="badge-content">6.6.6</span></span>
-<span class="badge cstyle info badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-info-circle"></i> Info</span><span class="badge-content">Awesome</span></span>
-<span class="badge cstyle red badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-angle-double-up"></i> Rank</span><span class="badge-content">Captain</span></span>
-<h4 id="override-for-severity">Override for Severity<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<span class="badge cstyle default badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-star" aria-hidden="true"></i> Version</span><span class="badge-content">6.6.6</span></span>
+<span class="badge cstyle info badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-info-circle" aria-hidden="true"></i> Info</span><span class="badge-content">Awesome</span></span>
+<span class="badge cstyle red badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-angle-double-up" aria-hidden="true"></i> Rank</span><span class="badge-content">Captain</span></span>
+<h4 id="override-for-severity">Override for Severity<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h4>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-91b11718307fa53cc9821652c6421c7f" aria-expanded="true"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-02fbe8ebdaa4d75a27184ee4af98faed" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-fba0d0d890d75134e4e96739140be7dc-tab" aria-controls="R-tab-id-fba0d0d890d75134e4e96739140be7dc" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-9a237d7c54f243017ec88868c4748c1b-tab" aria-controls="R-tab-id-9a237d7c54f243017ec88868c4748c1b" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-91b11718307fa53cc9821652c6421c7f"
+      id="R-tab-id-fba0d0d890d75134e4e96739140be7dc" role="tabpanel" aria-labelledby="R-tab-id-fba0d0d890d75134e4e96739140be7dc-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;rocket&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;info&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Feature&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Awesome</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;rocket&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;info&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Feature&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Awesome</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-02fbe8ebdaa4d75a27184ee4af98faed"
+      id="R-tab-id-9a237d7c54f243017ec88868c4748c1b" role="tabpanel" aria-labelledby="R-tab-id-9a237d7c54f243017ec88868c4748c1b-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;Awesome&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;icon&#34;</span><span class="w"> </span><span class="s">&#34;rocket&#34;</span><span class="w">
@@ -895,43 +938,45 @@
     </div>
   </div>
 </div>
-<span class="badge cstyle info badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-rocket"></i> Feature</span><span class="badge-content">Awesome</span></span>
-<h3 id="other">Other<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<h4 id="with-user-defined-color-font-awesome-brand-icon-and-markdown-title-and-content">With User-Defined Color, Font Awesome Brand Icon and Markdown Title and Content<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<span class="badge cstyle info badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-rocket" aria-hidden="true"></i> Feature</span><span class="badge-content">Awesome</span></span>
+<h3 id="other">Other<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<h4 id="with-user-defined-color-font-awesome-brand-icon-and-markdown-title-and-content">With User-Defined Color, Font Awesome Brand Icon and Markdown Title and Content<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h4>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-ccab8b1159c5907e2b73f0d6f9d44c4d" aria-expanded="true"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-59b87715047de492ac72f4880e863ba6" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-a7d035c8a39b3e2fad5d383249bcf50d-tab" aria-controls="R-tab-id-a7d035c8a39b3e2fad5d383249bcf50d" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-49fe740f12a7843bc6be8bf9ea92d3bb-tab" aria-controls="R-tab-id-49fe740f12a7843bc6be8bf9ea92d3bb" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-ccab8b1159c5907e2b73f0d6f9d44c4d"
+      id="R-tab-id-a7d035c8a39b3e2fad5d383249bcf50d" role="tabpanel" aria-labelledby="R-tab-id-a7d035c8a39b3e2fad5d383249bcf50d-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">color</span><span class="p">=</span><span class="s">&#34;fuchsia&#34;</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;fa-fw fab fa-hackerrank&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;**Font**&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="o">**</span><span class="nx">Awesome</span><span class="o">**</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">color</span><span class="p">=</span><span class="s">&#34;fuchsia&#34;</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;fa-fw fab fa-hackerrank&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;**Font**&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="o">**</span><span class="nx">Awesome</span><span class="o">**</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-59b87715047de492ac72f4880e863ba6"
+      id="R-tab-id-49fe740f12a7843bc6be8bf9ea92d3bb" role="tabpanel" aria-labelledby="R-tab-id-49fe740f12a7843bc6be8bf9ea92d3bb-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;color&#34;</span><span class="w"> </span><span class="s">&#34;fuchsia&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;**Awesome**&#34;</span><span class="w">
@@ -942,36 +987,38 @@
     </div>
   </div>
 </div>
-<span class="badge cstyle default badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank"></i> <strong>Font</strong></span><span class="badge-content" style="background-color: fuchsia;"><strong>Awesome</strong></span></span>
-<h4 id="with-icon-content">With Icon Content<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<span class="badge cstyle default badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank" aria-hidden="true"></i> <strong>Font</strong></span><span class="badge-content" style="background-color: fuchsia;"><strong>Awesome</strong></span></span>
+<h4 id="with-icon-content">With Icon Content<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h4>
 <p>You can combine the badge with the <a href="/hugo-theme-relearn/shortcodes/icon/index.html"><code>icon</code> shortcode</a> to create even more stunning visuals.</p>
 <p>In this case you need to declare <code>{{&lt; badge &gt;}}</code> instead of <code>{{% badge %}}</code>. Note, that in this case it is not possible to put markdown in the content.</p>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-5f804bfa262c7a8abaa7440fe472d922" aria-expanded="true"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-06c69e0b3e9dbdc381e912b7b200cd85" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-36524e31e30275bfa71842cd2ced8859-tab" aria-controls="R-tab-id-36524e31e30275bfa71842cd2ced8859" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-cbefb7f0cbe365109cabe6bb5274597f-tab" aria-controls="R-tab-id-cbefb7f0cbe365109cabe6bb5274597f" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-5f804bfa262c7a8abaa7440fe472d922"
+      id="R-tab-id-36524e31e30275bfa71842cd2ced8859" role="tabpanel" aria-labelledby="R-tab-id-36524e31e30275bfa71842cd2ced8859-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;angle-double-up&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;primary&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">icon</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;skull-crossbones&#34;</span><span class="w"> </span><span class="o">/%</span><span class="p">&#125;&#125;&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">  
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;angle-double-up&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;primary&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">icon</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;skull-crossbones&#34;</span><span class="w"> </span><span class="o">/%</span><span class="p">&#125;&#125;&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">  
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;angle-double-up&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;primary&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">icon</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;skull-crossbones&#34;</span><span class="w"> </span><span class="o">/%</span><span class="p">&#125;&#125;</span><span class="w"> </span><span class="nx">Pirate</span><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">  
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;primary&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Rank&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">icon</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;skull-crossbones&#34;</span><span class="w"> </span><span class="o">/%</span><span class="p">&#125;&#125;&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">  
 </span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;primary&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Rank&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">icon</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;skull-crossbones&#34;</span><span class="w"> </span><span class="o">/%</span><span class="p">&#125;&#125;</span><span class="w"> </span><span class="nx">Pirate</span><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">  
@@ -980,11 +1027,11 @@
       </div>
     </div>
     <div
-      id="R-tab-id-06c69e0b3e9dbdc381e912b7b200cd85"
+      id="R-tab-id-cbefb7f0cbe365109cabe6bb5274597f" role="tabpanel" aria-labelledby="R-tab-id-cbefb7f0cbe365109cabe6bb5274597f-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;icon&#34;</span><span class="w"> </span><span class="s">&#34;angle-double-up&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/icon.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
@@ -1044,47 +1091,49 @@
     </div>
   </div>
 </div>
-<span class="badge cstyle primary badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-angle-double-up"></i></span><span class="badge-content"><i class="fa-fw fas fa-skull-crossbones"></i></span></span><br>
-<span class="badge cstyle primary badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-angle-double-up"></i></span><span class="badge-content"><i class="fa-fw fas fa-skull-crossbones"></i> Pirate</span></span><br>
-<span class="badge cstyle primary badge-with-title"><span class="badge-title">Rank</span><span class="badge-content"><i class="fa-fw fas fa-skull-crossbones"></i></span></span><br>
-<span class="badge cstyle primary badge-with-title"><span class="badge-title">Rank</span><span class="badge-content"><i class="fa-fw fas fa-skull-crossbones"></i> Pirate</span></span><br>
-<span class="badge cstyle primary badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-angle-double-up"></i> Rank</span><span class="badge-content"><i class="fa-fw fas fa-skull-crossbones"></i></span></span><br>
-<span class="badge cstyle primary badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-angle-double-up"></i> Rank</span><span class="badge-content"><i class="fa-fw fas fa-skull-crossbones"></i> Pirate</span></span>
-<h4 id="inside-of-text">Inside of Text<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<span class="badge cstyle primary badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-angle-double-up" aria-hidden="true"></i></span><span class="badge-content"><i class="fa-fw fas fa-skull-crossbones" aria-hidden="true"></i></span></span><br>
+<span class="badge cstyle primary badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-angle-double-up" aria-hidden="true"></i></span><span class="badge-content"><i class="fa-fw fas fa-skull-crossbones" aria-hidden="true"></i> Pirate</span></span><br>
+<span class="badge cstyle primary badge-with-title"><span class="badge-title">Rank</span><span class="badge-content"><i class="fa-fw fas fa-skull-crossbones" aria-hidden="true"></i></span></span><br>
+<span class="badge cstyle primary badge-with-title"><span class="badge-title">Rank</span><span class="badge-content"><i class="fa-fw fas fa-skull-crossbones" aria-hidden="true"></i> Pirate</span></span><br>
+<span class="badge cstyle primary badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-angle-double-up" aria-hidden="true"></i> Rank</span><span class="badge-content"><i class="fa-fw fas fa-skull-crossbones" aria-hidden="true"></i></span></span><br>
+<span class="badge cstyle primary badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-angle-double-up" aria-hidden="true"></i> Rank</span><span class="badge-content"><i class="fa-fw fas fa-skull-crossbones" aria-hidden="true"></i> Pirate</span></span>
+<h4 id="inside-of-text">Inside of Text<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h4>
 
 <div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
-    <button
-      aria-controls="R-tab-id-280607321665d1e1f73249887ea773de" aria-expanded="true"
-      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
-      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
-    >
-      <span class="tab-nav-text">Shortcode</span>
-    </button>
-    <button
-      aria-controls="R-tab-id-c96b2257868a14aaa87d4087d2d475ce" aria-expanded="false"
-      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
-      class="tab-nav-button tab-panel-style cstyle code"
-    >
-      <span class="tab-nav-text">Partial</span>
-    </button>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-64b678e05e60baec059c7d5f38722a9a-tab" aria-controls="R-tab-id-64b678e05e60baec059c7d5f38722a9a" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-66b4b3ae654dcae78f9f2aea240be54e-tab" aria-controls="R-tab-id-66b4b3ae654dcae78f9f2aea240be54e" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
   </div>
   <div class="tab-content-container">
     <div
-      id="R-tab-id-280607321665d1e1f73249887ea773de"
+      id="R-tab-id-64b678e05e60baec059c7d5f38722a9a" role="tabpanel" aria-labelledby="R-tab-id-64b678e05e60baec059c7d5f38722a9a-tab"
       data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
       class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">Lorem</span><span class="w"> </span><span class="nx">ipsum</span><span class="w"> </span><span class="nx">dolor</span><span class="w"> </span><span class="nx">sit</span><span class="w"> </span><span class="nx">amet</span><span class="p">,</span><span class="w"> </span><span class="nx">graecis</span><span class="w"> </span><span class="nx">denique</span><span class="w"> </span><span class="nx">ei</span><span class="w"> </span><span class="nx">vel</span><span class="p">,</span><span class="w"> </span><span class="nx">at</span><span class="w"> </span><span class="nx">duo</span><span class="w"> </span><span class="nx">primis</span><span class="w"> </span><span class="nx">mandamus</span><span class="p">.</span><span class="w"> </span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;rocket&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;blue&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Awesome</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w"> </span><span class="nx">Et</span><span class="w"> </span><span class="nx">legere</span><span class="w"> </span><span class="nx">ocurreret</span><span class="w"> </span><span class="nx">pri</span><span class="p">,</span><span class="w"> </span><span class="nx">animal</span><span class="w"> </span><span class="nx">tacimates</span><span class="w"> </span><span class="nx">complectitur</span><span class="w"> </span><span class="nx">ad</span><span class="w"> </span><span class="nx">cum</span><span class="p">.</span><span class="w"> </span><span class="nx">Cu</span><span class="w"> </span><span class="nx">eum</span><span class="w"> </span><span class="nx">inermis</span><span class="w"> </span><span class="nx">inimicus</span><span class="w"> </span><span class="nx">efficiendi</span><span class="p">.</span><span class="w"> </span><span class="nx">Labore</span><span class="w"> </span><span class="nx">officiis</span><span class="w"> </span><span class="nx">his</span><span class="w"> </span><span class="nx">ex</span><span class="p">,</span><span class="w"> </span><span class="nx">soluta</span><span class="w"> </span><span class="nx">officiis</span><span class="w"> </span><span class="nx">concludaturque</span><span class="w"> </span><span class="nx">ei</span><span class="w"> </span><span class="nx">qui</span><span class="p">,</span><span class="w"> </span><span class="nx">vide</span><span class="w"> </span><span class="nx">sensibus</span><span class="w"> </span><span class="nx">vim</span><span class="w"> </span><span class="nx">ad</span><span class="p">.</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">Lorem</span><span class="w"> </span><span class="nx">ipsum</span><span class="w"> </span><span class="nx">dolor</span><span class="w"> </span><span class="nx">sit</span><span class="w"> </span><span class="nx">amet</span><span class="p">,</span><span class="w"> </span><span class="nx">graecis</span><span class="w"> </span><span class="nx">denique</span><span class="w"> </span><span class="nx">ei</span><span class="w"> </span><span class="nx">vel</span><span class="p">,</span><span class="w"> </span><span class="nx">at</span><span class="w"> </span><span class="nx">duo</span><span class="w"> </span><span class="nx">primis</span><span class="w"> </span><span class="nx">mandamus</span><span class="p">.</span><span class="w"> </span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">badge</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;rocket&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;blue&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Awesome</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">badge</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w"> </span><span class="nx">Et</span><span class="w"> </span><span class="nx">legere</span><span class="w"> </span><span class="nx">ocurreret</span><span class="w"> </span><span class="nx">pri</span><span class="p">,</span><span class="w"> </span><span class="nx">animal</span><span class="w"> </span><span class="nx">tacimates</span><span class="w"> </span><span class="nx">complectitur</span><span class="w"> </span><span class="nx">ad</span><span class="w"> </span><span class="nx">cum</span><span class="p">.</span><span class="w"> </span><span class="nx">Cu</span><span class="w"> </span><span class="nx">eum</span><span class="w"> </span><span class="nx">inermis</span><span class="w"> </span><span class="nx">inimicus</span><span class="w"> </span><span class="nx">efficiendi</span><span class="p">.</span><span class="w"> </span><span class="nx">Labore</span><span class="w"> </span><span class="nx">officiis</span><span class="w"> </span><span class="nx">his</span><span class="w"> </span><span class="nx">ex</span><span class="p">,</span><span class="w"> </span><span class="nx">soluta</span><span class="w"> </span><span class="nx">officiis</span><span class="w"> </span><span class="nx">concludaturque</span><span class="w"> </span><span class="nx">ei</span><span class="w"> </span><span class="nx">qui</span><span class="p">,</span><span class="w"> </span><span class="nx">vide</span><span class="w"> </span><span class="nx">sensibus</span><span class="w"> </span><span class="nx">vim</span><span class="w"> </span><span class="nx">ad</span><span class="p">.</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      id="R-tab-id-c96b2257868a14aaa87d4087d2d475ce"
+      id="R-tab-id-66b4b3ae654dcae78f9f2aea240be54e" role="tabpanel" aria-labelledby="R-tab-id-66b4b3ae654dcae78f9f2aea240be54e-tab"
       data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
       class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">Lorem</span><span class="w"> </span><span class="nx">ipsum</span><span class="w"> </span><span class="nx">dolor</span><span class="w"> </span><span class="nx">sit</span><span class="w"> </span><span class="nx">amet</span><span class="p">,</span><span class="w"> </span><span class="nx">graecis</span><span class="w"> </span><span class="nx">denique</span><span class="w"> </span><span class="nx">ei</span><span class="w"> </span><span class="nx">vel</span><span class="p">,</span><span class="w"> </span><span class="nx">at</span><span class="w"> </span><span class="nx">duo</span><span class="w"> </span><span class="nx">primis</span><span class="w"> </span><span class="nx">mandamus</span><span class="p">.</span><span class="w"> </span><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">Lorem</span><span class="w"> </span><span class="nx">ipsum</span><span class="w"> </span><span class="nx">dolor</span><span class="w"> </span><span class="nx">sit</span><span class="w"> </span><span class="nx">amet</span><span class="p">,</span><span class="w"> </span><span class="nx">graecis</span><span class="w"> </span><span class="nx">denique</span><span class="w"> </span><span class="nx">ei</span><span class="w"> </span><span class="nx">vel</span><span class="p">,</span><span class="w"> </span><span class="nx">at</span><span class="w"> </span><span class="nx">duo</span><span class="w"> </span><span class="nx">primis</span><span class="w"> </span><span class="nx">mandamus</span><span class="p">.</span><span class="w"> </span><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/badge.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;Awesome&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;icon&#34;</span><span class="w"> </span><span class="s">&#34;rocket&#34;</span><span class="w">
@@ -1094,11 +1143,11 @@
     </div>
   </div>
 </div>
-Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. <span class="badge cstyle blue badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-rocket"></i></span><span class="badge-content">Awesome</span></span> Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.
+Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. <span class="badge cstyle blue badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-rocket" aria-hidden="true"></i></span><span class="badge-content">Awesome</span></span> Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.
 
   <footer class="footline">
 <div class="R-taxonomy taxonomy-categories" title="Categories">
-  <i class="fa-fw fas fa-layer-group"></i>
+  <i class="fa-fw fas fa-layer-group" aria-hidden="true"></i>
   <ul>
     <li><a class="term-link" href="/hugo-theme-relearn/categories/howto/index.html">Howto</a></li>
     <li><a class="term-link" href="/hugo-theme-relearn/categories/reference/index.html">Reference</a></li>
@@ -1109,7 +1158,7 @@ Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. <spa
         </div>
       </main>
     </div>
-    <script src="/hugo-theme-relearn/js/theme.min.5e81b78e5900bce96f55e277df01b5b477b164c8094c7fc0a689ccfd86eeb4b3.js" defer></script>
+    <script src="/hugo-theme-relearn/js/theme.min.f66b851115ea46f239f782bd19e65c09786103c8cb054f72664b912bc561d1c8.js" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

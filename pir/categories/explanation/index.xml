@@ -3,10 +3,17 @@
   <channel>
     <title>Explanation :: Categorrry :: Cap&#39;n Hugo Relearrrn Theme</title>
     <link>https://fkaminski.github.io/hugo-theme-relearn/pir/categories/explanation/index.html</link>
-    <description></description>
+    <description>Explanat&#39;ns give ye th&#39; background on how th&#39;ns work an&#39; why they be th&#39; way they be.</description>
     <generator>Hugo</generator>
     <language>art-x-pir</language>
     <atom:link href="https://fkaminski.github.io/hugo-theme-relearn/pir/categories/explanation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Accessibility</title>
+      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/publishing/accessibility/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/publishing/accessibility/index.html</guid>
+      <description>What the theme does to be usable by everyone</description>
+    </item>
     <item>
       <title>Directory Structure</title>
       <link>https://fkaminski.github.io/hugo-theme-relearn/pir/authoring/structure/index.html</link>
@@ -57,6 +64,13 @@
       <description>How to apply effects to your links</description>
     </item>
     <item>
+      <title>GDPR &amp; Cookie Consent</title>
+      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/publishing/storedinformation/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/publishing/storedinformation/index.html</guid>
+      <description>Information on what&#39;s stored on the reader&#39;s side</description>
+    </item>
+    <item>
       <title>Image Effects</title>
       <link>https://fkaminski.github.io/hugo-theme-relearn/pir/authoring/linking/imageeffects/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -85,11 +99,11 @@
       <description>What&#39;s new in this version</description>
     </item>
     <item>
-      <title>GDPR &amp; Cookie Consent</title>
-      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sitemanagement/storedinformation/index.html</link>
+      <title>SBOM</title>
+      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/publishing/sbom/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sitemanagement/storedinformation/index.html</guid>
-      <description>Information on what&#39;s stored on the reader&#39;s side</description>
+      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/publishing/sbom/index.html</guid>
+      <description>What the theme publishes with your site, as a CycloneDX SBOM</description>
     </item>
     <item>
       <title>Topbarrr</title>
@@ -97,6 +111,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/customization/topbar/index.html</guid>
       <description>How to extend the topbar</description>
+    </item>
+    <item>
+      <title>Content Security Policy</title>
+      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/publishing/csp/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/publishing/csp/index.html</guid>
+      <description>Serving your site with a strict Content Security Policy</description>
     </item>
     <item>
       <title>Hidden Pages</title>
@@ -125,20 +146,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/customization/taxonomy/index.html</guid>
       <description>How to display custom taxonomies on your pages</description>
-    </item>
-    <item>
-      <title>SBOM</title>
-      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sitemanagement/sbom/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sitemanagement/sbom/index.html</guid>
-      <description>What the theme publishes with your site, as a CycloneDX SBOM</description>
-    </item>
-    <item>
-      <title>Content Security Policy</title>
-      <link>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sitemanagement/csp/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fkaminski.github.io/hugo-theme-relearn/pir/configuration/sitemanagement/csp/index.html</guid>
-      <description>Serving your site with a strict Content Security Policy</description>
     </item>
   </channel>
 </rss>
